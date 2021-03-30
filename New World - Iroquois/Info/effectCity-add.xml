@@ -19,3 +19,19 @@
 			</Pair>
 		</aeTraitPromotion>
 	</Entry>
+		<Entry>
+		<zType>EFFECTCITY_FAMILYCLASS_WARCHIEFS_SEAT</zType>
+		<Name>TEXT_FAMILYCLASS_WARCHIEFS</Name>
+		<Source>TEXT_EFFECTCITY_SEAT_SOURCE</Source>
+		<SourceFamilyClass>FAMILYCLASS_WARCHIEFS</SourceFamilyClass>
+		<aiYieldModifier>
+			<Pair>
+				<zIndex>YIELD_ORDERS</zIndex>
+				<iValue>15</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_DISCONTENT</zIndex>
+				<iValue>-10</iValue>
+			</Pair>
+		</aiYieldModifier>
+	</Entry>
