@@ -9,7 +9,7 @@
 		<CharacterSelectPortrait>CHARACTER_SELECT_TADODAHO</CharacterSelectPortrait>
 		<iAge>38</iAge>
 		<aeTraits>
-			<zValue>TRAIT_TACTICIAN_ARCHETYPE</zValue>
+			<zValue>TRAIT_COMMANDER_ARCHETYPE</zValue>
 			<zValue>TRAIT_CRUEL</zValue>
 		</aeTraits>
 	</Entry>
