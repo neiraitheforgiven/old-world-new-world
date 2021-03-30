@@ -1,0 +1,72 @@
+    <Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE</zType>
+		<zName>Haudenosaunee</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#adad85</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_TEXT</zType>
+		<zName>Haudenosaunee Text</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#adad85</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_01</zType>
+		<zName>Haudenosaunee Family 1</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#b53c01</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_01_TEXT</zType>
+		<zName>Haudenosaunee Family 1 Text</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#53c01</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_02</zType>
+		<zName>Haudenosaunee Family 2</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#e1c35d</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_02_TEXT</zType>
+		<zName>Haudenosaunee Family 2 Text</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#e1c35d</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_03</zType>
+		<zName>Haudenosaunee Family 3</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#b47800</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_03_TEXT</zType>
+		<zName>Haudenosaunee Family 3 Text</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#b47800</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_04</zType>
+		<zName>Haudenosaunee Family 4</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#4d0028</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_04_TEXT</zType>
+		<zName>Haudenosaunee Family 4 Text</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#4d0028</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_NONE</zType>
+		<zName>Haudenosaunee Family None</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#ffd9b3</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_NATION_HAUDENOSAUNEE_FAMILY_NONE_TEXT</zType>
+		<zName>Haudenosaunee Family None Text</zName>
+		<ColorClass>COLORCLASS_NATIONS</ColorClass>
+		<zHexValue>#ffd9b3</zHexValue>
+	</Entry>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType>TEAMCOLOR_NATION_HAUDENOSAUNEE</zType>
+		<TeamPlayerColor>PLAYERCOLOR_NATION_HAUDENOSAUNEE</TeamPlayerColor>
+		<bNation>1</bNation>
+		<aePlayerColors>
+			<zValue>PLAYERCOLOR_NATION_HAUDENOSAUNEE_FAMILY_01</zValue>
+			<zValue>PLAYERCOLOR_NATION_HAUDENOSAUNEE_FAMILY_02</zValue>
+			<zValue>PLAYERCOLOR_NATION_HAUDENOSAUNEE_FAMILY_03</zValue>
+			<zValue>PLAYERCOLOR_NATION_HAUDENOSAUNEE_FAMILY_04</zValue>
+			<zValue>PLAYERCOLOR_NATION_HAUDENOSAUNEE_FAMILY_NONE</zValue>
+		</aePlayerColors>
+		<aeBorderPatterns>
+			<zValue>BORDER_PATTERN_TRIANGLE</zValue>
+			<zValue>BORDER_PATTERN_DASH</zValue>
+			<zValue>BORDER_PATTERN_PLUS</zValue>
+			<zValue>BORDER_PATTERN_CIRCLE</zValue>
+			<zValue>BORDER_PATTERN_DIAMOND</zValue>
+			<zValue>BORDER_PATTERN_X</zValue>
+		</aeBorderPatterns>
+	</Entry>
+</Root>
