@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<Root>
+	<Entry>
+		<zType>NATION_HAUDENOSAUNEE</zType>
+		<Name>TEXT_NATION_HAUDENOSAUNEE</Name>
+		<TeamColor>TEAMCOLOR_NATION_HAUDENOSAUNEE</TeamColor>
+		<Crest>CREST_NATION_HAUDENOSAUNEE</Crest>
+		<zAttackPortraitName>ATTACKPREVIEW_CITY</zAttackPortraitName>
+		<zCharacterPortraitBackground>PORTRAIT_BACKGROUND_HAUDENOSAUNEE</zCharacterPortraitBackground>
+		<CapitalAsset>ASSET_VARIATION_CITY_BABYLONIA_CAPITAL</CapitalAsset>
+		<CityAsset>ASSET_VARIATION_CITY_BABYLONIA_CAPITAL</CityAsset>
+		<UrbanAsset>ASSET_VARIATION_BABYLONIA_URBAN</UrbanAsset>
+		<Founder>CHARACTER_TADODAHO</Founder>
+		<FirstRuler>CHARACTER_TADODAHO</FirstRuler>
+		<FirstBuild>UNIT_SETTLER</FirstBuild>
+		<EffectPlayer>EFFECTPLAYER_NATION_HAUDENOSAUNEE</EffectPlayer>
+		<MapElementNames>MAP_ELEMENT_NAMES_FOR_HAUDENOSAUNEE</MapElementNames>
+		<iFirstBuildPercent>40</iFirstBuildPercent>
+		<aiStartUnit>
+			<Pair>
+				<zIndex>UNIT_SCOUT</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+		</aiStartUnit>
+		<aiCityUnit>
+			<Pair>
+				<zIndex>UNIT_WORKER</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>UNIT_SLINGER</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+		</aiCityUnit>
+		<aeStartingTech>
+			<zValue>TECH_TRAPPING</zValue>
+			<zValue>TECH_ADMINISTRATION</zValue>
+			<zValue>TECH_MILITARY_DRILL</zValue>
+		</aeStartingTech>
+		<aeFirstNamesMale>
+			<zValue>NAME_AKWIRARON</zValue>
+			<zValue>NAME_DEKANAWIDA</zValue>
+			<zValue>NAME_DONEHOGAWA</zValue>
+			<zValue>NAME_HASANOANDA</zValue>
+			<zValue>NAME_KANATASE</zValue>
+			<zValue>NAME_KAHENRAHTIIO</zValue>			
+			<zValue>NAME_KANERHAKENIATE</zValue> <!--KANERHAKEN:IATE-->
+			<zValue>NAME_KARIWASE</zValue>
+			<zValue>NAME_KARONGHYONTYE</zValue>
+			<zValue>NAME_KARONHYAWAKE</zValue>
+			<zValue>NAME_KOYENGQUAHTAH</zValue>
+			<zValue>NAME_OHSERASE</zValue>
+			<zValue>NAME_OKWAHO</zValue>
+			<zValue>NAME_ONWANONSYSHON</zValue>
+			<zValue>NAME_OWISOKON</zValue> <!--OWISÒ:KON-->
+			<zValue>NAME_RATONHNHAKETON</zValue> <!--RATONHNHAKÉ:TON-->
+			<zValue>NAME_SAGOYEWATHA</zValue>
+			<zValue>NAME_SHAKOHAHIIOSTHA</zValue>
+			<zValue>NAME_SHAWATIS</zValue> <!--SHAWÁTIS -->
+			<zValue>NAME_SOSE</zValue> <!--SÓ:SE-->
+			<zValue>NAME_TAWINEONAWIRA</zValue> <!--TA'WINEONAWIRA -->
+			<zValue>NAME_TAWIT</zValue> <!--TÁ:WIT-->
+			<zValue>NAME_TEHWEHRON</zValue>
+			<zValue>NAME_TSIOKWARIS</zValue> <!--TSIO:KWARIS-->
+			<zValue>NAME_WAHIAKERON</zValue> <!--WAHIAKE:RON -->
+		</aeFirstNamesMale>
+		<aeFirstNamesFemale>
+			<zValue>NAME_ALLIQUIPPA</zValue>			
+			<zValue>NAME_ANEN</zValue> <!--Á:NEN-->
+		    <zValue>NAME_JOHIEHON</zValue>
+			<zValue>NAME_KAHENTOREHTHA</zValue>
+			<zValue>NAME_KAHWIHTA</zValue>
+			<zValue>NAME_KAKAIONSTHA</zValue>
+			<zValue>NAME_KAIENTARONKWEN</zValue>
+			<zValue>NAME_KANAHSTATSI</zValue>
+			<zValue>NAME_KANERAHTENHAWI</zValue> <!--KANERAHTENHÁ:WI -->
+			<zValue>NAME_KARATITAHKHE</zValue> <!--KARA’TITAHKHE-->
+			<zValue>NAME_KARIHWENHAWE</zValue> <!--KARIHWÉNHAWE-->
+			<zValue>NAME_KATSITSIENHAWI</zValue>
+			<zValue>NAME_KATSITSOHRONKWAS</zValue> <!--KATSI’TSOHRÓNKWAS-->
+			<zValue>NAME_KONWARONHIAWI</zValue> <!--KONWARONHIA:WI-->
+			<zValue>NAME_KONWATSITSIAIENNI</zValue>  <!--KONWATSI'TSIAIENNI-->
+			<zValue>NAME_KWATIENSE </zValue> <!--KWATIÉN:SE-->
+			<zValue>NAME_MINNEHAHA</zValue>
+			<zValue>NAME_OKWAHO</zValue>
+			<zValue>NAME_OTSTOCH</zValue>
+			<zValue>NAME_SKAWENNATI</zValue>
+			<zValue>NAME_TEIAKOTSINARENTONTE</zValue> <!--TEIAKOTSINARÈN:TONTE-->
+			<zValue>NAME_TEKAKWITHA</zValue>
+			<zValue>NAME_WATHAHINE</zValue> <!--WATHAHI:NE-->
+			<zValue>NAME_YODAGENT</zValue> <!--YO-DA-GENT-->
+		</aeFirstNamesFemale>
+		<aeCityNames>
+			<zValue>CITYNAME_ASSUR</zValue>
+			<zValue>CITYNAME_NINEVEH</zValue>
+			<zValue>CITYNAME_KALHU</zValue>
+			<zValue>CITYNAME_HALAB</zValue>
+			<zValue>CITYNAME_ARPAD</zValue>
+			<zValue>CITYNAME_KANESH</zValue>
+			<zValue>CITYNAME_DUR_SHARRUKIN</zValue>
+			<zValue>CITYNAME_QATNA</zValue>
+			<zValue>CITYNAME_HARRAN</zValue>
+			<zValue>CITYNAME_SAREISA</zValue>
+			<zValue>CITYNAME_ERBIL</zValue>
+			<zValue>CITYNAME_MARDAMAN</zValue>
+			<zValue>CITYNAME_EKALLATUM</zValue>
+			<zValue>CITYNAME_TUSHHAN</zValue>
+			<zValue>CITYNAME_MARDIN</zValue>
+			<zValue>CITYNAME_ARRAPHA</zValue>
+			<zValue>CITYNAME_CARCHEMISH</zValue>
+			<zValue>CITYNAME_KAHAT</zValue>
+			<zValue>CITYNAME_GOZAN</zValue>
+			<zValue>CITYNAME_NISIBIS</zValue>
+			<zValue>CITYNAME_TARSUS</zValue>
+			<zValue>CITYNAME_PTERIA</zValue>
+			<zValue>CITYNAME_RESEN</zValue>
+			<zValue>CITYNAME_KAR_SULMANU_ASAREDU</zValue>
+			<zValue>CITYNAME_MALIDIYA</zValue>
+			<zValue>CITYNAME_HAMAT</zValue>
+			<zValue>CITYNAME_QADESH</zValue>
+			<zValue>CITYNAME_MELIDDU</zValue>
+		</aeCityNames>
+		<aeCharacterPortraits>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_01</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_02</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_03</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_04</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_05</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_06</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_07</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_08</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_09</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_10</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_11</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_12</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_13</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_14</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_15</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_16</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_01</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_02</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_03</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_04</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_05</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_06</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_07</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_08</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_09</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_10</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_11</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_12</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_13</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_14</zValue>
+			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_FEMALE_15</zValue>
+		</aeCharacterPortraits>
+		<Story>TEXT_NATION_HAUDENOSAUNEE_STORY</Story>
+	</Entry>
