@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<Root>
+	<Entry>
+		<zType>CHARACTER_TADODAHO</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_TADODAHO</FirstName>
+		<PlayerNation>NATION_HAUDENOSAUNEE</PlayerNation>
+		<CharacterSelectPortrait>CHARACTER_SELECT_TADODAHO</CharacterSelectPortrait>
+		<iAge>38</iAge>
+		<aeTraits>
+			<zValue>TRAIT_TACTICIAN_ARCHETYPE</zValue>
+			<zValue>TRAIT_CRUEL</zValue>
+		</aeTraits>
+	</Entry>
+</Root>
