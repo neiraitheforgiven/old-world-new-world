@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Root>
+	<!-- This file contains data for the custom map options, toggle choices. -->
+	<Entry>
+		<zType/>
+		<Name/>
+		<zDescription/>
+		<bDefault/>
+		<bSinglePlayerValid/>
+		<bMultiPlayerValid/>
+	</Entry>
+	<Entry>
+		<zType>MAP_OPTIONS_SINGLE_MIRROR</zType>
+		<Name>TEXT_MAP_OPTION_MIRROR_MAP</Name>
+		<zDescription>East-West symmetric map: need even number of teams</zDescription>
+		<bSinglePlayerValid>0</bSinglePlayerValid>
+	</Entry>
+	<Entry>
+		<zType>MAP_OPTIONS_SINGLE_SEASIDE_CENTER_BIAS</zType>
+		<Name>TEXT_MAP_OPTION_CENTER_BIAS</Name>
+		<zDescription>Player starts near the center of the map, only in single player</zDescription>
+		<bDefault>1</bDefault>
+		<bMultiPlayerValid>0</bMultiPlayerValid>
+	</Entry>
+	<Entry>
+		<zType>MAP_OPTIONS_SINGLE_CENTER_BIAS</zType>
+		<Name>TEXT_MAP_OPTION_CENTER_BIAS</Name>
+		<zDescription>Avoid starting near west or east map edges, only in single player</zDescription>
+		<bDefault>1</bDefault>
+		<bMultiPlayerValid>0</bMultiPlayerValid>
+	</Entry>
+</Root>

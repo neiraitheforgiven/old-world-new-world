@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<Name/>
+		<bToggle/>
+		<bConquest/>
+		<bAmbitions/>
+		<iPercentVP/>
+		<iOpponentMaxPointPercent/>
+		<iMinTurns/>
+		<zHelp/>
+	</Entry>
+	<Entry>
+		<zType>VICTORY_POINTS</zType>
+		<Name>TEXT_VICTORY_POINTS</Name>
+		<bToggle>1</bToggle>
+		<iPercentVP>100</iPercentVP>
+		<zHelp>Victory from acquiring the target number of VPs.</zHelp>
+	</Entry>
+	<Entry>
+		<zType>VICTORY_DOUBLE</zType>
+		<Name>TEXT_VICTORY_DOUBLE</Name>
+		<bToggle>1</bToggle>
+		<iPercentVP>50</iPercentVP>
+		<iOpponentMaxPointPercent>50</iOpponentMaxPointPercent>
+		<zHelp>Victory from acquiring twice as many VPs as any other Nation.
+(Must also have at least half the target number of VPs.)</zHelp>
+	</Entry>
+	<Entry>
+		<zType>VICTORY_AMBITION</zType>
+		<Name>TEXT_VICTORY_AMBITION</Name>
+		<bToggle>1</bToggle>
+		<bAmbitions>1</bAmbitions>
+		<zHelp>Victory from completing int(MAX_AMBITIONS) Ambitions.</zHelp>
+	</Entry>
+	<Entry>
+		<zType>VICTORY_TIME</zType>
+		<Name>TEXT_VICTORY_TIME</Name>
+		<iOpponentMaxPointPercent>100</iOpponentMaxPointPercent>
+		<iMinTurns>200</iMinTurns>
+		<zHelp>Victory from having the most VPs at the end of 200 Years.</zHelp>
+	</Entry>
+	<Entry>
+		<zType>VICTORY_CONQUEST</zType>
+		<Name>TEXT_VICTORY_CONQUEST</Name>
+		<bConquest>1</bConquest>
+		<zHelp>Victory from conquering all other Nations.</zHelp>
+	</Entry>
+</Root>

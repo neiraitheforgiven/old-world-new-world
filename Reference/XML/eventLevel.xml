@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<zHelp/>
+		<iPercent/>
+		<iTurns/>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_LOW</zType>
+		<zName>Low</zName>
+		<zHelp>Fewer Events than normal</zHelp>
+		<iPercent>50</iPercent>
+		<iTurns>8</iTurns>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_MODERATE</zType>
+		<zName>Moderate</zName>
+		<zHelp>The default Event rate</zHelp>
+		<iPercent>75</iPercent>
+		<iTurns>6</iTurns>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_HIGH</zType>
+		<zName>High</zName>
+		<zHelp>More Events than normal</zHelp>
+		<iPercent>100</iPercent>
+		<iTurns>4</iTurns>
+	</Entry>
+</Root>

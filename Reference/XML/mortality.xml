@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<zHelp/>
+	</Entry>
+	<Entry>
+		<zType>MORTALITY_LONG</zType>
+		<zName>Lengthy</zName>
+		<zHelp>Characters live longer lives</zHelp>
+	</Entry>
+	<Entry>
+		<zType>MORTALITY_STANDARD</zType>
+		<zName>Standard</zName>
+		<zHelp>Characters do not frequently die young</zHelp>
+	</Entry>
+	<Entry>
+		<zType>MORTALITY_REALISTIC</zType>
+		<zName>Realistic</zName>
+		<zHelp>Nasty, Brutish, and Short</zHelp>
+	</Entry>
+</Root>

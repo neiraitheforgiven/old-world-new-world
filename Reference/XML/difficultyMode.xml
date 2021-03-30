@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<Difficulty/>
+		<Development/>
+		<OpponentLevel/>
+		<TribeLevel/>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_ABLE</zType>
+		<zName>The Able</zName>
+		<Difficulty>DIFFICULTY_ABLE</Difficulty>
+		<Development>DEVELOPMENT_FLEDGLING</Development>
+		<OpponentLevel>OPPONENTLEVEL_PEACEFUL</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_PASSIVE</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_JUST</zType>
+		<zName>The Just</zName>
+		<Difficulty>DIFFICULTY_JUST</Difficulty>
+		<Development>DEVELOPMENT_FLEDGLING</Development>
+		<OpponentLevel>OPPONENTLEVEL_PEACEFUL</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_WEAK</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_GOOD</zType>
+		<zName>The Good</zName>
+		<Difficulty>DIFFICULTY_GOOD</Difficulty>
+		<Development>DEVELOPMENT_ESTABLISHED</Development>
+		<OpponentLevel>OPPONENTLEVEL_NORMAL</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_WEAK</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_STRONG</zType>
+		<zName>The Strong</zName>
+		<Difficulty>DIFFICULTY_STRONG</Difficulty>
+		<Development>DEVELOPMENT_ESTABLISHED</Development>
+		<OpponentLevel>OPPONENTLEVEL_NORMAL</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_NORMAL</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_NOBLE</zType>
+		<zName>The Noble</zName>
+		<Difficulty>DIFFICULTY_NOBLE</Difficulty>
+		<Development>DEVELOPMENT_ADVANCED</Development>
+		<OpponentLevel>OPPONENTLEVEL_AGGRESSIVE</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_NORMAL</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_GLORIOUS</zType>
+		<zName>The Glorious</zName>
+		<Difficulty>DIFFICULTY_GLORIOUS</Difficulty>
+		<Development>DEVELOPMENT_ADVANCED</Development>
+		<OpponentLevel>OPPONENTLEVEL_AGGRESSIVE</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_STRONG</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_MAGNIFICENT</zType>
+		<zName>The Magnificent</zName>
+		<Difficulty>DIFFICULTY_MAGNIFICENT</Difficulty>
+		<Development>DEVELOPMENT_MASSIVE</Development>
+		<OpponentLevel>OPPONENTLEVEL_COMPETITIVE</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_STRONG</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_GREAT</zType>
+		<zName>The Great</zName>
+		<Difficulty>DIFFICULTY_GREAT</Difficulty>
+		<Development>DEVELOPMENT_MASSIVE</Development>
+		<OpponentLevel>OPPONENTLEVEL_COMPETITIVE</OpponentLevel>
+		<TribeLevel>TRIBELEVEL_RAGING</TribeLevel>
+	</Entry>
+	<Entry>
+		<zType>DIFFICULTYMODE_CUSTOM</zType>
+		<zName>Custom</zName>
+	</Entry>
+</Root>

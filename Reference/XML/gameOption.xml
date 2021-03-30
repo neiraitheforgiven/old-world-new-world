@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<zHelp/>
+		<bDefaultSinglePlayer/>
+		<bDefaultMultiPlayer/>
+		<bSinglePlayer/>
+		<bMultiPlayer/>
+		<bDebug/>
+		<abFirstUnitInvalid/>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_AI_ONLY</zType>
+		<zName>AI Only</zName>
+		<zHelp>Human players follow the same rules as the AI.</zHelp>
+		<bDebug>1</bDebug>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_NO_CHARACTERS</zType>
+		<zName>No Characters</zName>
+		<zHelp>Characters and Families are removed from the game.</zHelp>
+		<bDefaultMultiPlayer>1</bDefaultMultiPlayer>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_NO_TRIBES</zType>
+		<zName>No Tribes</zName>
+		<zHelp>Tribes are replaced by link(TRIBE_BARBARIANS).</zHelp>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_NO_FOG_OF_WAR</zType>
+		<zName>No Fog of War</zName>
+		<zHelp>Map starts fully revealed and stays visible.</zHelp>
+		<abFirstUnitInvalid>
+			<Pair>
+				<zIndex>UNIT_SCOUT</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abFirstUnitInvalid>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_NO_TEAM_MOVEMENT</zType>
+		<zName>No Team Movement</zName>
+		<zHelp>Players cannot move their Teammates' Units.</zHelp>
+		<bSinglePlayer>0</bSinglePlayer>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_LOCKED_SAVE</zType>
+		<zName>Lock Save</zName>
+		<zHelp>The save file is checked against a hash to prevent modification using an outside editor.</zHelp>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_NO_UNDO</zType>
+		<zName>No Undo</zName>
+		<zHelp>Player is not allowed to undo a move after it has been made.</zHelp>
+		<bMultiPlayer>0</bMultiPlayer>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_LOCK_PLAYER_OPTIONS</zType>
+		<zName>Lock Player Options</zName>
+		<zHelp>Cannot change gameplay player options after the game has started</zHelp>
+		<bMultiPlayer>0</bMultiPlayer>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_RANDOMIZE_LEADERS</zType>
+		<zName>Randomize Leaders</zName>
+		<zHelp>Randomize starting Leader of each Nation.</zHelp>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_RANDOMIZE_FAMILIES</zType>
+		<zName>Randomize Families</zName>
+		<zHelp>Randomize the class of each Family (Sage, Artisan, Champion, etc).</zHelp>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_ROLE_PLAYING</zType>
+		<zName>Role Playing</zName>
+		<zHelp>No popup help when making narrative choices for events</zHelp>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_PLAY_TO_WIN</zType>
+		<zName>Play to Win</zName>
+		<zHelp>AI nations will try to keep each other (including you) from winning</zHelp>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_ONE_CITY_CHALLENGE</zType>
+		<zName>One City Challenge</zName>
+		<zHelp>Players are not allowed to control more than one city.</zHelp>
+		<abFirstUnitInvalid>
+			<Pair>
+				<zIndex>UNIT_SETTLER</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abFirstUnitInvalid>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_MP_JOIN_AS_ANY_PLAYER</zType>
+		<zName>Join as Any Player</zName>
+		<zHelp>Allow players to join a multiplayer game even if a slot has already been claimed.</zHelp>
+		<bSinglePlayer>0</bSinglePlayer>
+	</Entry>
+	<Entry>
+		<zType>GAMEOPTION_ALLOW_OBSERVE</zType>
+		<zName>Allow observe mode</zName>
+		<zHelp>Players can join the game as observers</zHelp>
+		<bSinglePlayer>0</bSinglePlayer>
+	</Entry>
+</Root>

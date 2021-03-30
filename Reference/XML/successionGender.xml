@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+    <Entry>
+        <zType/>
+        <zName/>
+        <zHelp/>
+        <bSingleGender/>
+        <Gender/>
+    </Entry>
+    <Entry>
+        <zType>SUCCESSIONGENDER_AGNATIC</zType>
+        <zName>Agnatic</zName>
+        <zHelp>Only Males descendants can inherit</zHelp>
+        <bSingleGender>1</bSingleGender>
+        <Gender>GENDER_MALE</Gender>
+    </Entry>
+    <Entry>
+        <zType>SUCCESSIONGENDER_AGNATIC_COGNATIC</zType>
+        <zName>Agnatic Cognatic</zName>
+        <zHelp>Males inherit before Females</zHelp>
+        <Gender>GENDER_MALE</Gender>
+    </Entry>
+    <Entry>
+        <zType>SUCCESSIONGENDER_ABSOLUTE_COGNATIC</zType>
+        <zName>Absolute Cognatic</zName>
+        <zHelp>Genders inherit equally</zHelp>
+    </Entry>
+    <Entry>
+        <zType>SUCCESSIONGENDER_ENATIC_COGNATIC</zType>
+        <zName>Enatic Cognatic</zName>
+        <zHelp>Females inherit before Males</zHelp>
+        <Gender>GENDER_FEMALE</Gender>
+    </Entry>
+    <Entry>
+        <zType>SUCCESSIONGENDER_ENATIC</zType>
+        <zName>Enatic</zName>
+        <zHelp>Only Females descendants can inherit</zHelp>
+        <bSingleGender>1</bSingleGender>
+        <Gender>GENDER_FEMALE</Gender>
+    </Entry>
+    <Entry>
+        <zType>SUCCESSIONGENDER_RANDOM</zType>
+        <zName>Random</zName>
+        <zHelp>Each player follows a random, potentially different, succession gender</zHelp>
+    </Entry>
+</Root>

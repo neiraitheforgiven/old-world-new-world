@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<DataAllowed comment="The Event can test for this via TriggerData"/>
+		<SubjectClass comment="The Event can test for this Subject via TriggerSubject"/>
+		<ExtraClass comment="The Event can test for this Subject via TriggerExtra"/>
+		<iProb comment="The probability of an Event if this Trigger occurs"/>
+		<iSortOrder comment="The order in which Events are sorted (higher means earlier)"/>
+		<bLevel comment="The probability of an Event is modifier by EventLevel"/>
+		<bModal comment="The event will popup immediately"/>
+	</Entry>
+	<Entry>
+		<zType>EVENTTRIGGER_START_GAME</zType>
+		<DataAllowed>VICTORY</DataAllowed>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Data = VictoryType">
+		<zType>EVENTTRIGGER_WIN_GAME</zType>
+		<DataAllowed>VICTORY</DataAllowed>
+		<iSortOrder>6</iSortOrder>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry>
+		<zType>EVENTTRIGGER_LOSE_GAME</zType>
+		<iSortOrder>6</iSortOrder>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry>
+		<zType>EVENTTRIGGER_NEW_TURN</zType>
+	</Entry>
+	<Entry comment="Subject = Character">
+		<zType>EVENTTRIGGER_NEW_TURN_CHARACTER</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+	</Entry>
+	<Entry comment="Data = TechType">
+		<zType>EVENTTRIGGER_TECHNOLOGY</zType>
+		<DataAllowed>TECH</DataAllowed>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Religion">
+		<zType>EVENTTRIGGER_RELIGION_FOUNDED_US</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_RELIGION</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Religion">
+		<zType>EVENTTRIGGER_RELIGION_FOUNDED_THEM</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_RELIGION</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Religion">
+		<zType>EVENTTRIGGER_RELIGION_SPREAD</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_RELIGION</ExtraClass>
+		<iProb>10</iProb>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Religion">
+		<zType>EVENTTRIGGER_RELIGION_REMOVE</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_RELIGION</ExtraClass>
+		<iProb>10</iProb>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Theology">
+		<zType>EVENTTRIGGER_THEOLOGY_ESTABLISHED</zType>
+		<DataAllowed>THEOLOGY</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_RELIGION</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_THEOLOGY</ExtraClass>
+		<iProb>10</iProb>
+	</Entry>
+	<Entry comment="Subject = Tribe, Extra = Tile">
+		<zType>EVENTTRIGGER_TRIBE_CONTACT</zType>
+		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Tribe">
+		<zType>EVENTTRIGGER_TRIBE_PEACE_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Tribe">
+		<zType>EVENTTRIGGER_TRIBE_TRUCE_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Tribe">
+		<zType>EVENTTRIGGER_TRIBE_WAR_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
+		<iSortOrder>2</iSortOrder>
+	</Entry>
+	<Entry comment="Subject = Tribe, Extra = Tile">
+		<zType>EVENTTRIGGER_TRIBE_RAID</zType>
+		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = Player, Extra = Tile">
+		<zType>EVENTTRIGGER_PLAYER_CONTACT</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Player">
+		<zType>EVENTTRIGGER_PLAYER_PEACE_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Player">
+		<zType>EVENTTRIGGER_PLAYER_TRUCE_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Player">
+		<zType>EVENTTRIGGER_PLAYER_WAR_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<iSortOrder>2</iSortOrder>
+	</Entry>
+	<Entry comment="Subject = Player">
+		<zType>EVENTTRIGGER_PLAYER_WAR_DECLARE</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<iSortOrder>3</iSortOrder>
+	</Entry>
+	<Entry comment="Subject = Player">
+		<zType>EVENTTRIGGER_PLAYER_DIPLOMACY_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = City">
+		<zType>EVENTTRIGGER_CITY_FOUNDED</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Player, Extra = City">
+		<zType>EVENTTRIGGER_CITY_LOST</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CITY</ExtraClass>
+		<iProb>10</iProb>
+	</Entry>
+	<Entry comment="Subject = Player, Extra = City">
+		<zType>EVENTTRIGGER_CITY_BREACHED</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CITY</ExtraClass>
+		<iProb>10</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = City, Data = CultureType">
+		<zType>EVENTTRIGGER_CITY_CULTURE</zType>
+		<DataAllowed>CULTURE</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = City">
+		<zType>EVENTTRIGGER_CITY_DISCONTENT</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = City, Data = ProjectType">
+		<zType>EVENTTRIGGER_PRODUCTION_PROJECT</zType>
+		<DataAllowed>PROJECT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = City, Data = SpecialistType">
+		<zType>EVENTTRIGGER_PRODUCTION_SPECIALIST</zType>
+		<DataAllowed>SPECIALIST</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Unit, Data = UnitType">
+		<zType>EVENTTRIGGER_PRODUCTION_UNIT</zType>
+		<DataAllowed>UNIT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = City, Data = ImprovementType">
+		<zType>EVENTTRIGGER_IMPROVEMENT_FINISHED</zType>
+		<DataAllowed>IMPROVEMENT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Tribe, Extra = Tile, Data = ImprovementType">
+		<zType>EVENTTRIGGER_IMPROVEMENT_PILLAGED_TRIBE</zType>
+		<DataAllowed>IMPROVEMENT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = Player, Extra = Tile, Data = ImprovementType">
+		<zType>EVENTTRIGGER_IMPROVEMENT_PILLAGED_ENEMY</zType>
+		<DataAllowed>IMPROVEMENT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
+	</Entry>
+	<Entry>
+		<zType>EVENTTRIGGER_CHOOSE_AMBITION</zType>
+	</Entry>
+	<Entry comment="Data = GoalType">
+		<zType>EVENTTRIGGER_AMBITION_FINISHED</zType>
+		<DataAllowed>GOAL</DataAllowed>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Data = GoalType">
+		<zType>EVENTTRIGGER_QUEST_FINISHED</zType>
+		<DataAllowed>GOAL</DataAllowed>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Data = GoalType">
+		<zType>EVENTTRIGGER_QUEST_FAILED</zType>
+		<DataAllowed>GOAL</DataAllowed>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Extra = Character, Data = MissionType">
+		<zType>EVENTTRIGGER_MISSION_FINISHED</zType>
+		<DataAllowed>MISSION</DataAllowed>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+		<iSortOrder>4</iSortOrder>
+	</Entry>
+	<Entry comment="Subject = Character">
+		<zType>EVENTTRIGGER_MARRIAGE_OFFER</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Character">
+		<zType>EVENTTRIGGER_MARRIAGE</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+		<iProb>25</iProb>
+		<bLevel>1</bLevel>
+	</Entry>
+	<Entry comment="Subject = Character">
+		<zType>EVENTTRIGGER_BIRTH</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<iProb>25</iProb>
+		<bLevel>1</bLevel>
+	</Entry>
+	<Entry comment="Subject = Character">
+		<zType>EVENTTRIGGER_DEATH</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<iSortOrder>6</iSortOrder>
+	</Entry>
+	<Entry comment="Subject = Character">
+		<zType>EVENTTRIGGER_ADULTHOOD</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<iProb>25</iProb>
+		<bLevel>1</bLevel>
+	</Entry>
+	<Entry comment="Subject = Character">
+		<zType>EVENTTRIGGER_COURTIER</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Character">
+		<zType>EVENTTRIGGER_ADOPTED</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+		<iProb>25</iProb>
+		<bLevel>1</bLevel>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Character">
+		<zType>EVENTTRIGGER_DIVORCE</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+		<iProb>25</iProb>
+		<bLevel>1</bLevel>
+	</Entry>
+	<Entry comment="Subject = Character, Data = CognomenType">
+		<zType>EVENTTRIGGER_COGNOMEN</zType>
+		<DataAllowed>COGNOMEN</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Character">
+		<zType>EVENTTRIGGER_SUCCESSION_US</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+		<iSortOrder>5</iSortOrder>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Character">
+		<zType>EVENTTRIGGER_SUCCESSION_THEM</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Character">
+		<zType>EVENTTRIGGER_SUCCESSION_TRIBE</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+	</Entry>
+	<Entry comment="Subject = Unit, Extra = Unit">
+		<zType>EVENTTRIGGER_UNIT_COMBAT</zType>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
+		<iProb>1</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Extra = City">
+		<zType>EVENTTRIGGER_CITY_COMBAT</zType>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CITY</ExtraClass>
+		<iProb>1</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = City">
+		<zType>EVENTTRIGGER_ATTACKED_CITY</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<iProb>5</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = City, Extra = Player">
+		<zType>EVENTTRIGGER_CITY_ATTACKED</zType>
+		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>5</iProb>
+	</Entry>
+	<Entry comment="Subject = Unit, Extra = Player">
+		<zType>EVENTTRIGGER_UNIT_KILL</zType>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>1</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Player">
+		<zType>EVENTTRIGGER_GENERAL_KILL</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>5</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Player">
+		<zType>EVENTTRIGGER_GENERAL_ATTACK</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>5</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Player">
+		<zType>EVENTTRIGGER_GENERAL_DUEL</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
+		<iProb>50</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Player">
+		<zType>EVENTTRIGGER_GENERAL_CRITICAL</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>10</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Player">
+		<zType>EVENTTRIGGER_GENERAL_INJURY</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>10</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Character, Extra = Player">
+		<zType>EVENTTRIGGER_GENERAL_UNIT_KILLED</zType>
+		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<iProb>10</iProb>
+		<bLevel>1</bLevel>
+	</Entry>
+	<Entry comment="Subject = Unit, Data = PromotionType">
+		<zType>EVENTTRIGGER_UNIT_PROMOTION</zType>
+		<DataAllowed>PROMOTION</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Extra = Tile">
+		<zType>EVENTTRIGGER_SET_TILE</zType>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Tile, Extra = Unit">
+		<zType>EVENTTRIGGER_RESOURCE_HARVESTED</zType>
+		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
+		<iProb>10</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Tile, Extra = Unit">
+		<zType>EVENTTRIGGER_RUINS_EXPLORED</zType>
+		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
+		<iSortOrder>1</iSortOrder>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Tile">
+		<zType>EVENTTRIGGER_LANDMARK_DISCOVERED</zType>
+		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
+		<iProb>10</iProb>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Tile, Extra = Unit, Data = ImprovementType">
+		<zType>EVENTTRIGGER_TRIBE_CLEARED</zType>
+		<DataAllowed>IMPROVEMENT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Tile, Extra = Unit, Data = ImprovementType">
+		<zType>EVENTTRIGGER_TRIBE_ELIMINATED</zType>
+		<DataAllowed>IMPROVEMENT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Player, Extra = Player">
+		<zType>EVENTTRIGGER_PLAYER_ELIMINATED</zType>
+		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
+		<ExtraClass>SUBJECTCLASS_PLAYER</ExtraClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Data = UnitType">
+		<zType>EVENTTRIGGER_UNIT_SELECTED</zType>
+		<DataAllowed>UNIT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Data = UnitType">
+		<zType>EVENTTRIGGER_UNIT_ATTACK_COOLDOWN</zType>
+		<DataAllowed>UNIT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Data = UnitType">
+		<zType>EVENTTRIGGER_UNIT_MOVE_COOLDOWN</zType>
+		<DataAllowed>UNIT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Data = UnitType">
+		<zType>EVENTTRIGGER_UNIT_IS_FATIGUED</zType>
+		<DataAllowed>UNIT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+	<Entry comment="Subject = Unit, Data = UnitType">
+		<zType>EVENTTRIGGER_UNIT_NO_ORDERS</zType>
+		<DataAllowed>UNIT</DataAllowed>
+		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
+		<bModal>1</bModal>
+	</Entry>
+</Root>

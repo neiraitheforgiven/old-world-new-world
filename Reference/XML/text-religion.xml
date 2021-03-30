@@ -1,0 +1,59 @@
+<Root>
+	<!--English Indices: Noun ~ Adjective ~ Indefinite & Adjective ~ Plural-->
+	<Entry>
+		<zType/>
+		<English/>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_ZOROASTRIANISM</zType>
+		<English>Zoroastrianism~Zoroastrian~a Zoroastrian~Zoroastrians</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_JUDAISM</zType>
+		<English>Judaism~Jewish~a Jewish~Jews</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_CHRISTIANITY</zType>
+		<English>Christianity~Christian~a Christian~Christians</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_MANICHAEISM</zType>
+		<English>Manichaeism~Manichaean~a Manichaean~Manichaeans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN</zType>
+		<English>Paganism~Pagan~a Pagan~Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_ASSYRIA</zType>
+		<English>Assyrian Paganism~Assyrian Pagan~an Assyrian Pagan~Assyrian Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_BABYLONIA</zType>
+		<English>Babylonian Paganism~Babylonian Pagan~a Babylonian Pagan~Babylonian Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_CARTHAGE</zType>
+		<English>Carthaginian Paganism~Carthaginian Pagan~a Carthaginian Pagan~Carthaginian Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_EGYPT</zType>
+		<English>Egyptian Paganism~Egyptian Pagan~a Egyptian Pagan~Egyptian Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_GREECE</zType>
+		<English>Greek Paganism~Greek Pagan~a Greek Pagan~Greek Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_ROME</zType>
+		<English>Roman Paganism~Roman Pagan~a Roman Pagan~Roman Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_PAGAN_PERSIA</zType>
+		<English>Persian Paganism~Persian Pagan~a Persian Pagan~Persian Pagans</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RELIGION_CUSTOM</zType>
+		<English>{RELIGION-NOUN}~{RELIGION-ADJECTIVE}~a(n) {RELIGION-ADJECTIVE}~{RELIGION-ADJECTIVE}(s)</English>
+	</Entry>
+</Root>

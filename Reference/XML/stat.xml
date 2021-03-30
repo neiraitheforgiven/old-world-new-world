@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+	</Entry>
+	<Entry>
+		<zType>STAT_AMBITION_ACHIEVED</zType>
+		<zName>Ambition Achieved</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_LEGACY_ACHIEVED</zType>
+		<zName>Legacy Achieved</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TRIBE_CONTACTED</zType>
+		<zName>Tribal Contacted</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TRIBE_CLEARED</zType>
+		<zName>Tribe Cleared</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TRIBE_PEACE</zType>
+		<zName>Tribal Peace</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TRIBE_ALLIANCE</zType>
+		<zName>Tribal Alliance</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TRIBE_CONVERSION</zType>
+		<zName>Tribal Conversion</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TEAM_CONTACTED</zType>
+		<zName>Player Contacted</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TEAM_ALLIANCE</zType>
+		<zName>Player Alliance</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_CARAVAN_ARRIVED</zType>
+		<zName>Caravan Arrived</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_CAPITAL_CAPTURED</zType>
+		<zName>Capitals Captured</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_CITY_FOUNDED</zType>
+		<zName>Cities Founded</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_CITY_CAPTURED</zType>
+		<zName>Cities Captured</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_CITY_RECAPTURED</zType>
+		<zName>Cities Recaptured</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_CITY_LOST</zType>
+		<zName>Cities Lost</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_COURTIER_ADDED</zType>
+		<zName>Courtier Added</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_IMPROVEMENT_FINISHED</zType>
+		<zName>Improvements Finished</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_IMPROVEMENT_REPAIRED</zType>
+		<zName>Improvements Repaired</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_LANDMARK_DISCOVERED</zType>
+		<zName>Landmarks Discovered</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_LANDMARK_NAMED</zType>
+		<zName>Landmarks Named</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_NATION_FOUNDED</zType>
+		<zName>Nation Founded</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_WORLD_RELIGION_FOUNDED</zType>
+		<zName>World Religion Founded</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_RELIGION_SPREAD</zType>
+		<zName>Religion Spread</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_RUINS_EXPLORED</zType>
+		<zName>Ruins Explored</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_SPECIALIST_PRODUCED</zType>
+		<zName>Specialist Trained</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TECH_DISCOVERED</zType>
+		<zName>Techs Discovered</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_THEOLOGY_ESTABLISHED</zType>
+		<zName>Theology Established</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_TILES_REVEALED</zType>
+		<zName>Tiles Revealed</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_UNIT_TRAINED</zType>
+		<zName>Units Trained</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_UNIT_PROMOTED</zType>
+		<zName>Units Promoted</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_UNIT_MILITARY_KILLED</zType>
+		<zName>Military Units Killed</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_UNIT_KILLED_MILITARY_GENERAL</zType>
+		<zName>Military Units Killed (as General)</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_UNIT_LOST</zType>
+		<zName>Units Lost</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_VEGETATION_REMOVED</zType>
+		<zName>Vegetation Removed</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_WONDER_FINISHED</zType>
+		<zName>Wonder Finished</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_YEARS_REIGNED</zType>
+		<zName>Years Reigned</zName>
+	</Entry>
+</Root>

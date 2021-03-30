@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<zHelp/>
+		<iAvgCities/>
+		<iMaxCities/>
+		<iCapitalPopulation/>
+		<iTechs/>
+		<iLoneOpponentChange/>
+	</Entry>
+	<Entry>
+		<zType>DEVELOPMENT_NONE</zType>
+		<zName>None</zName>
+		<zHelp>Existing nations don't start with any extra territory</zHelp>
+	</Entry>
+	<Entry>
+		<zType>DEVELOPMENT_FLEDGLING</zType>
+		<zName>Fledgling</zName>
+		<zHelp>Existing nations start with an average of two cities</zHelp>
+		<iAvgCities>2</iAvgCities>
+		<iMaxCities>3</iMaxCities>
+		<iCapitalPopulation>2</iCapitalPopulation>
+		<iTechs>2</iTechs>
+	</Entry>
+	<Entry>
+		<zType>DEVELOPMENT_ESTABLISHED</zType>
+		<zName>Established</zName>
+		<zHelp>Existing nations start with an average of three cities</zHelp>
+		<iAvgCities>3</iAvgCities>
+		<iMaxCities>5</iMaxCities>
+		<iCapitalPopulation>3</iCapitalPopulation>
+		<iTechs>3</iTechs>
+		<iLoneOpponentChange>1</iLoneOpponentChange>
+	</Entry>
+	<Entry>
+		<zType>DEVELOPMENT_ADVANCED</zType>
+		<zName>Advanced</zName>
+		<zHelp>Existing nations start with an average of four cities</zHelp>
+		<iAvgCities>4</iAvgCities>
+		<iMaxCities>6</iMaxCities>
+		<iCapitalPopulation>4</iCapitalPopulation>
+		<iTechs>4</iTechs>
+		<iLoneOpponentChange>2</iLoneOpponentChange>
+	</Entry>
+	<Entry>
+		<zType>DEVELOPMENT_MASSIVE</zType>
+		<zName>Massive</zName>
+		<zHelp>Existing nations start with an average of five cities</zHelp>
+		<iAvgCities>5</iAvgCities>
+		<iMaxCities>8</iMaxCities>
+		<iCapitalPopulation>5</iCapitalPopulation>
+		<iTechs>5</iTechs>
+		<iLoneOpponentChange>3</iLoneOpponentChange>
+	</Entry>
+</Root>

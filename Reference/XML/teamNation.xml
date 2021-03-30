@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<zHelp/>
+	</Entry>
+	<Entry>
+		<zType>TEAMNATION_ALLOW_DUPLICATES</zType>
+		<zName>Allow Duplicates</zName>
+		<zHelp>Multiple players can claim each nation</zHelp>
+	</Entry>
+	<Entry>
+		<zType>TEAMNATION_GAME_UNIQUE</zType>
+		<zName>Unique</zName>
+		<zHelp>Each available nation can be claimed by one player</zHelp>
+	</Entry>
+	<Entry>
+		<zType>TEAMNATION_TEAM_UNIQUE</zType>
+		<zName>Unique within each Team</zName>
+		<zHelp>Each nation can be claimed by one player per team</zHelp>
+	</Entry>
+</Root>

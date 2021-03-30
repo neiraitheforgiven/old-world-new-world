@@ -1,0 +1,3801 @@
+<!--    
+    zType = game audio asset name
+    zAsset = WWise event name
+    
+    If no zAsset is specified, then zAsset will be set to zType 
+-->
+<Root>
+	<!-- this is a template, ignore it. -->
+	<Entry>
+		<zType comment="Game audio asset name."/>
+		<zAsset comment="Wwise event name."/>
+		<bOnlyAllowOnePerFrame/>
+		<Creators comment="Information about the creator."/>
+		<zInstrumentation comment="List of instruments and sounds used in the audio asset."/>
+		<zTags comment="Terms used to describe the audio asset."/>
+	</Entry>
+	<!-- Divider -->
+	<Entry>
+		<zType/>
+		<zAsset/>
+		<bOnlyAllowOnePerFrame/>
+		<Creators/>
+		<zInstrumentation/>
+		<zTags/>
+	</Entry>
+	<!-- Game Events -->
+	<Entry>
+		<zType>AUDIO_PLAYER_TURN_STARTS</zType>
+		<zAsset>PLAYER_TURN_STARTS</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_PLAYER_TURN_ENDS</zType>
+		<zAsset>PLAYER_TURN_ENDS</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_IMPROVEMENT_CREATING__START</zType>
+		<zAsset>IMPROVEMENT_CREATING__START</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_IMPROVEMENT_CREATING__COMPLETED</zType>
+		<zAsset>IMPROVEMENT_CREATING__COMPLETED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_IMPROVEMENT_PILLAGED</zType>
+		<zAsset>IMPROVEMENT_PILLAGED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_CITY_ATTACKED</zType>
+		<zAsset>CITY_ATTACKED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_CITY_CAPTURED</zType>
+		<zAsset>CITY_CAPTURED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_CITY_FOUNDED</zType>
+		<zAsset>CITY_FOUNDED</zAsset>
+	</Entry>
+    
+    <!-- combat audio - projectiles -->
+
+	<Entry>
+		<zType>AUDIO_UNIT_PROJECTILE_IMPACT_DEFAULT</zType>
+		<zAsset>UNIT_PROJECTILE_IMPACT_DEFAULT</zAsset>
+	</Entry>
+
+    <Entry>
+        <zType>AUDIO_UNIT_PROJECTILE_IMPACT_DEFAULT_EARLY</zType>
+        <zAsset>UNIT_PROJECTILE_IMPACT_DEFAULT_EARLY</zAsset>
+    </Entry>
+    
+    
+    <Entry>
+        <zType>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW</zType>
+        <zAsset>UNIT_PROJECTILE_IMPACT_ARROW</zAsset>
+    </Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW_EARLY</zType>
+		<zAsset>UNIT_PROJECTILE_IMPACT_ARROW_EARLY</zAsset>
+	</Entry>
+	
+	<Entry>
+		<zType>AUDIO_UNIT_PROJECTILE_IMPACT_SLINGER_ROCK</zType>
+		<zAsset>UNIT_PROJECTILE_IMPACT_SLINGER_ROCK</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_PROJECTILE_IMPACT_SPEAR_SMALL</zType>
+		<zAsset>UNIT_PROJECTILE_IMPACT_SPEAR_SMALL</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_PROJECTILE_IMPACT_HAMMER</zType>
+		<zAsset>UNIT_PROJECTILE_IMPACT_HAMMER</zAsset>
+	</Entry>
+	<!-- Animation **************************************************************************************************** -->
+	<!-- Units ************************************************************************************-->
+	
+	<!-- African_Elephant ***************************************************** -->
+	<!-- African_Elephant_Attack_A *************************** -->
+	<Entry>
+		<zType>AUDIO_African_Elephant_Attack_A_movement_chain_large_rattle</zType>
+		<zAsset>African_Elephant_Attack_A_movement_chain_large_rattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Attack_A_movement_elephant_stomp_deep</zType>
+		<zAsset>African_Elephant_Attack_A_movement_elephant_stomp_deep</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Attack_A_movement_wood_large_creak</zType>
+		<zAsset>African_Elephant_Attack_A_movement_wood_large_creak</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Attack_A_vocal_elephant_trumpet</zType>
+		<zAsset>African_Elephant_Attack_A_vocal_elephant_trumpet</zAsset>
+	</Entry>
+	<!-- /African_Elephant_Attack_A ************************** -->
+	<!-- African_Elephant_Death_A **************************** -->
+	<Entry>
+		<zType>AUDIO_African_Elephant_Death_A_bodyfall_heavy_deep_dirt</zType>
+		<zAsset>African_Elephant_Death_A_bodyfall_heavy_deep_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Death_A_impact_siege_wood_large_rattle</zType>
+		<zAsset>African_Elephant_Death_A_impact_siege_wood_large_rattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Death_A_movement_chain_large_rattle</zType>
+		<zAsset>African_Elephant_Death_A_movement_chain_large_rattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Death_A_movement_elephant_step_light_mud</zType>
+		<zAsset>African_Elephant_Death_A_movement_elephant_step_light_mud</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Death_A_utility_deepHit</zType>
+		<zAsset>African_Elephant_Death_A_utility_deepHit</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Death_A_vocal_elephant_groan_death</zType>
+		<zAsset>African_Elephant_Death_A_vocal_elephant_groan_death</zAsset>
+	</Entry>
+	<!-- /African_Elephant_Death_A *************************** -->
+	<!-- African_Elephant_Hit_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_African_Elephant_Hit_A_impact_siege_wood_large_rattle</zType>
+		<zAsset>African_Elephant_Hit_A_impact_siege_wood_large_rattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Hit_A_movement_chain_large_rattle</zType>
+		<zAsset>African_Elephant_Hit_A_movement_chain_large_rattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Hit_A_movement_elephant_step_light_mud</zType>
+		<zAsset>African_Elephant_Hit_A_movement_elephant_step_light_mud</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Hit_A_vocal_elephant_grunt_growl</zType>
+		<zAsset>African_Elephant_Hit_A_vocal_elephant_grunt_growl</zAsset>
+	</Entry>
+	<!-- /African_Elephant_Hit_A ***************************** -->
+	<!-- African_Elephant_Walk_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_African_Elephant_Walk_A_movement_chain_large_rattle</zType>
+		<zAsset>African_Elephant_Walk_A_movement_chain_large_rattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Walk_A_movement_elephant_step_backFoot</zType>
+		<zAsset>African_Elephant_Walk_A_movement_elephant_step_backFoot</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Walk_A_movement_elephant_step_frontFoot</zType>
+		<zAsset>African_Elephant_Walk_A_movement_elephant_step_frontFoot</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_African_Elephant_Walk_A_movement_wood_large_creak</zType>
+		<zAsset>African_Elephant_Walk_A_movement_wood_large_creak</zAsset>
+	</Entry>
+	<!-- /African_Elephant_Walk_A **************************** -->
+	<!-- /African_Elephant **************************************************** -->
+	
+	<!-- Archer *************************************************************** -->
+	<!-- Archer_Attack_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Archer_Attack_A_weapon_arrow_shot</zType>
+		<zAsset>Archer_Attack_A_weapon_arrow_shot</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Attack_A_weapon_bow_charge</zType>
+		<zAsset>Archer_Attack_A_weapon_bow_charge</zAsset>
+	</Entry>
+	<!-- /Archer_Attack_A ************************************ -->
+	<!-- Archer_Death_A ************************************** -->
+	<Entry>
+		<zType>AUDIO_Archer_Death_A_bodyfall_chest_dirt_grass_01</zType>
+		<zAsset>Archer_Death_A_bodyfall_chest_dirt_grass_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Death_A_bodyfall_hands_dirt_grass</zType>
+		<zAsset>Archer_Death_A_bodyfall_hands_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Death_A_mv_obj_arrowRattle</zType>
+		<zAsset>Archer_Death_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Archer_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Death_A_weapon_arrow_impact_dirt</zType>
+		<zAsset>Archer_Death_A_weapon_arrow_impact_dirt</zAsset>
+	</Entry>
+	<!-- /Archer_Death_A ************************************* -->
+	<!-- Archer_Death_B ************************************** -->
+	<Entry>
+		<zType>AUDIO_Archer_Death_B_bodyfall_2Hit_dirt_drag</zType>
+		<zAsset>Archer_Death_B_bodyfall_2Hit_dirt_drag</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Archer_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Death_B_weapon_arrow_drop_dirt_00_MSTR</zType>
+		<zAsset>Archer_Death_B_weapon_arrow_drop_dirt_00_MSTR</zAsset>
+	</Entry>
+	<!-- /Archer_Death_B ************************************* -->
+	<!-- Archer_Hit_A **************************************** -->
+	<Entry>
+		<zType>AUDIO_Archer_Hit_A_mv_obj_arrowRattle</zType>
+		<zAsset>Archer_Hit_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Archer_Hit_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_A_step_impactful</zType>
+		<zAsset>Archer_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_A_step_quick</zType>
+		<zAsset>Archer_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Archer_Hit_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Archer_Hit_A *************************************** -->
+	<!-- Archer_Hit_B **************************************** -->
+	<Entry>
+		<zType>AUDIO_Archer_Hit_B_foot_slide</zType>
+		<zAsset>Archer_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_B_mv_obj_arrowRattle</zType>
+		<zAsset>Archer_Hit_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_B_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Archer_Hit_B_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_B_step_quick</zType>
+		<zAsset>Archer_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Hit_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Archer_Hit_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Archer_Hit_B *************************************** -->
+	<!-- Archer_Run_A **************************************** -->
+	<Entry>
+		<zType>AUDIO_Archer_Run_A_mv_fs_leatherLightGravelMedium</zType>
+		<zAsset>Archer_Run_A_mv_fs_leatherLightGravelMedium</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Run_A_mv_obj_arrowRattle</zType>
+		<zAsset>Archer_Run_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Archer_Run_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Archer_Run_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<!-- /Archer_Run_A *************************************** -->
+	<!-- /Archer ************************************************************** -->
+	<!-- Axeman *************************************************************** -->
+	<!-- Axeman_Attack_A ********************************** -->
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_A_cmbt_impact</zType>
+		<zAsset>Axeman_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_A_foot_slide</zType>
+		<zAsset>Axeman_Attack_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Axeman_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_A_step_quick</zType>
+		<zAsset>Axeman_Attack_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Axeman_Attack_A ********************************* -->
+	<!-- Axeman_Attack_B ********************************** -->
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_B_cmbt_impact</zType>
+		<zAsset>Axeman_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Axeman_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_B_step_impactful</zType>
+		<zAsset>Axeman_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Attack_B_step_quick</zType>
+		<zAsset>Axeman_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Axeman_Attack_B ********************************* -->
+	<!-- Axeman_Death_A *********************************** -->
+	<Entry>
+		<zType>AUDIO_Axeman_Death_A_bodyfall_2Hit_metalArmor_dirt</zType>
+		<zAsset>Axeman_Death_A_bodyfall_2Hit_metalArmor_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_A_object_axe_drop_dirtGrass</zType>
+		<zAsset>Axeman_Death_A_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_A_object_axe_whoosh_light</zType>
+		<zAsset>Axeman_Death_A_object_axe_whoosh_light</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Axeman_Death_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_A_vocal_death_Male_C</zType>
+		<zAsset>Axeman_Death_A_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Axeman_Death_A ********************************** -->
+	<!-- Axeman_Death_B *********************************** -->
+	<Entry>
+		<zType>AUDIO_Axeman_Death_B_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Axeman_Death_B_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_B_knee_impact</zType>
+		<zAsset>Axeman_Death_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Axeman_Death_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Death_B_vocal_death_Male_C</zType>
+		<zAsset>Axeman_Death_B_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Axeman_Death_B ********************************** -->
+	<!-- Axeman_Hit_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_A_obj_armor_leather_move_short</zType>
+		<zAsset>Axeman_Hit_A_obj_armor_leather_move_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_A_step_quick</zType>
+		<zAsset>Axeman_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Axeman_Hit_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Axeman_Hit_A ************************************ -->
+	<!-- Axeman_Hit_B ************************************* -->
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_B_foot_slide</zType>
+		<zAsset>Axeman_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_B_knee_impact</zType>
+		<zAsset>Axeman_Hit_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_B_obj_armor_leather_move_short</zType>
+		<zAsset>Axeman_Hit_B_obj_armor_leather_move_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Axeman_Hit_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Axeman_Hit_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Axeman_Hit_B ************************************ -->
+	<!-- Axeman_Run_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Axeman_Run_A_Footstep</zType>
+		<zAsset>Axeman_Run_A_Footstep</zAsset>
+	</Entry>
+	<!-- /Axeman_Run_A ************************************ -->
+	<!-- /Axeman ************************************************************** -->
+
+	<!-- Ballista ************************************************************* -->
+	<!-- Ballista_Attack_A *********************************** -->
+	<Entry>
+		<zType>AUDIO_Ballista_Attack_A</zType>
+		<zAsset>Ballista_Attack_A</zAsset>
+	</Entry>
+	<!-- /Ballista_Attack_A ********************************** -->
+	<!-- Ballista_Death_A ************************************-->
+	<Entry>
+		<zType>AUDIO_Ballista_Death_A</zType>
+		<zAsset>Ballista_Death_A</zAsset>
+	</Entry>
+	<!-- /Ballista-Death_A ***********************************-->
+	<!-- Ballista_Hit_A ************************************** -->
+	<Entry>
+		<zType>AUDIO_Ballista_Hit_A</zType>
+		<zAsset>Ballista_Hit_A</zAsset>
+	</Entry>
+	<!-- /Ballista_Hit_A ************************************* -->
+	<!-- /Ballista ************************************************************ -->
+	
+	<!-- Barbarian_Raider ***************************************************** -->
+	<!-- Barbarian_Raider_Attack_A *************************** -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Attack_A_impact</zType>
+		<zAsset>Barbarian_Raider_Attack_A_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Attack_A_movement</zType>
+		<zAsset>Barbarian_Raider_Attack_A_movement</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Attack_A *********************** -->
+	<!-- Barbarian_Raider_Attack_B ************************ -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Attack_B_impact</zType>
+		<zAsset>Barbarian_Raider_Attack_B_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Attack_B_movement</zType>
+		<zAsset>Barbarian_Raider_Attack_B_movement</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Attack_B ************************** -->
+	<!-- Barbarian_Raider_Death_A **************************** -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_A_bodyfall_chest_wood_dirt</zType>
+		<zAsset>Barbarian_Raider_Death_A_bodyfall_chest_wood_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Barbarian_Raider_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_A_weapon_spear_drop_scrape</zType>
+		<zAsset>Barbarian_Raider_Death_A_weapon_spear_drop_scrape</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Death_A *************************** -->
+	<!-- Barbarian_Raider_Death_B **************************** -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_B_bodyfall_chest_dirt_grass_01</zType>
+		<zAsset>Barbarian_Raider_Death_B_bodyfall_chest_dirt_grass_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_B_object_axe_whoosh_light</zType>
+		<zAsset>Barbarian_Raider_Death_B_object_axe_whoosh_light</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_B_weapon_spear_impale_ground</zType>
+		<zAsset>Barbarian_Raider_Death_B_weapon_spear_impale_ground</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Death_B_grunt_hit_Male_A</zType>
+		<zAsset>Barbarian_Raider_Death_B_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Death_B *************************** -->
+	<!-- Barbarian_Raider_Hit_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Hit_A_grunt_hit_Male_A</zType>
+		<zAsset>Barbarian_Raider_Hit_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Hit_A_step_quick</zType>
+		<zAsset>Barbarian_Raider_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Hit_A ***************************** -->
+	<!-- Barbarian_Raider_Hit_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Hit_B_grunt_hit_Male_A</zType>
+		<zAsset>Barbarian_Raider_Hit_B_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Hit_B_knee_impact</zType>
+		<zAsset>Barbarian_Raider_Hit_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Hit_B_foot_slide</zType>
+		<zAsset>Barbarian_Raider_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Hit_B_step_quick</zType>
+		<zAsset>Barbarian_Raider_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Hit_B ***************************** -->
+	<!-- Barbarian_Raider_Run_A ******************************  -->
+	<Entry>
+		<zType>AUDIO_Barbarian_Raider_Run_A_Footstep</zType>
+		<zAsset>Barbarian_Raider_Run_A_Footstep</zAsset>
+	</Entry>
+	<!-- /Barbarian_Raider_Run_A ***************************** -->
+	<!-- /Barbarian_Raider **************************************************** -->
+	
+	<!-- Battering_Ram ******************************************************** -->
+	<!-- Battering_Ram_Attack_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Battering_Ram_Attack_A_move_whoosh</zType>
+		<zAsset>Battering_Ram_Attack_A_move_whoosh</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Battering_Ram_Attack_A_cmbt_impact</zType>
+		<zAsset>Battering_Ram_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<!-- /Battering_Ram_Attack_A ***************************** -->
+	<!-- Battering_Ram_Death_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Battering_Ram_Death_A</zType>
+		<zAsset>Battering_Ram_Death_A</zAsset>
+	</Entry>
+	<!-- /Battering_Ram_Death_A ******************************** -->
+	<!-- Battering_Ram_Hit_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Battering_Ram_Hit_A</zType>
+		<zAsset>Battering_Ram_Hit_A</zAsset>
+	</Entry>
+	<!-- /Battering_Ram_Hit_A ******************************** -->
+	<!-- /Battering_Ram ********************************************************** -->
+
+	<!-- Disciple ****************************************************** -->
+	<!-- Disciple_Death_A ************************** -->
+	<Entry>
+		<zType>AUDIO_Disciple_Death_A_bodyfall_hands_dirt_grass</zType>
+		<zAsset>Disciple_Death_A_bodyfall_hands_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Death_A_obj_book_heavy_drop</zType>
+		<zAsset>Disciple_Death_A_obj_book_heavy_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Death_A_obj_scroll_heavy_drop</zType>
+		<zAsset>Disciple_Death_A_obj_scroll_heavy_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Death_A_obj_staff_wood_small_drop</zType>
+		<zAsset>Disciple_Death_A_obj_staff_wood_small_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Death_A_step_quick</zType>
+		<zAsset>Disciple_Death_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Death_A_vocal_death_Male_C</zType>
+		<zAsset>Disciple_Death_A_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Disciple_Death_A ************************* -->
+	<!-- Disciple_Hit_A **************************** -->
+	<Entry>
+		<zType>AUDIO_Disciple_Hit_A_grunt_hit_Male_A</zType>
+		<zAsset>Disciple_Hit_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Hit_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Disciple_Hit_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Hit_A_step_quick</zType>
+		<zAsset>Disciple_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Disciple_Hit_A *************************** -->
+	<!-- Disciple_Run_A **************************** -->
+	<Entry>
+		<zType>AUDIO_Disciple_Run_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Disciple_Run_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Disciple_Run_A_step_quick</zType>
+		<zAsset>Disciple_Run_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Disciple_Run_A *************************** -->
+	<!-- Disciple_Spread_Religion_A **************** -->
+	<Entry>
+		<zType>AUDIO_unit_spread_relition</zType>
+		<zAsset>unit_spread_relition</zAsset>
+	</Entry>
+	<!-- /Disciple_Spread_Religion_A *************** -->
+	<!-- /Disciple ***************************************************** -->
+	
+	<!-- Clubthrower ************************************************************* -->
+	<!-- Clubthrower_Attack_A ******************************** -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Clubthrower_Attack_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_A_step_impactful</zType>
+		<zAsset>Clubthrower_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_A_step_quick</zType>
+		<zAsset>Clubthrower_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_A_vcl_grunt_attack_Male_D</zType>
+		<zAsset>Clubthrower_Attack_A_vcl_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_A_weapon_hammer_throw_whoosh</zType>
+		<zAsset>Clubthrower_Attack_A_weapon_hammer_throw_whoosh</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Attack_A ******************************* -->
+	<!-- Clubthrower_Attack_B ******************************** -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Clubthrower_Attack_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Clubthrower_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_B_step_impactful</zType>
+		<zAsset>Clubthrower_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_B_step_quick</zType>
+		<zAsset>Clubthrower_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Attack_B_weapon_hammer_throw_whoosh</zType>
+		<zAsset>Clubthrower_Attack_B_weapon_hammer_throw_whoosh</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Attack_B ******************************* -->
+	<!-- Clubthrower_Death_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Clubthrower_Death_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_A_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Clubthrower_Death_A_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_A_grunt_hit_Male_A</zType>
+		<zAsset>Clubthrower_Death_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_A_knee_impact</zType>
+		<zAsset>Clubthrower_Death_A_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_A_object_axe_drop_dirtGrass</zType>
+		<zAsset>Clubthrower_Death_A_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_A_step_quick</zType>
+		<zAsset>Clubthrower_Death_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Death_A ******************************** -->
+	<!-- Clubthrower_Death_B ********************************* -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Clubthrower_Death_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_B_bodyfall_2Hit_dirt_drag</zType>
+		<zAsset>Clubthrower_Death_B_bodyfall_2Hit_dirt_drag</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_B_object_axe_drop_dirtGrass</zType>
+		<zAsset>Clubthrower_Death_B_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Clubthrower_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Death_B_vocal_death_Male_F</zType>
+		<zAsset>Clubthrower_Death_B_vocal_death_Male_F</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Death_B ******************************** -->
+	<!-- Clubthrower_Hit_A *********************************** -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Clubthrower_Hit_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_A_foot_slide</zType>
+		<zAsset>Clubthrower_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_A_grunt_hit_Male_A</zType>
+		<zAsset>Clubthrower_Hit_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_A_step_quick</zType>
+		<zAsset>Clubthrower_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Hit_A ********************************** -->
+	<!-- Clubthrower_Hit_B *********************************** -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Clubthrower_Hit_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_B_object_axe_drop_dirtGrass</zType>
+		<zAsset>Clubthrower_Hit_B_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_B_step_impactful</zType>
+		<zAsset>Clubthrower_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_B_step_quick</zType>
+		<zAsset>Clubthrower_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Hit_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Clubthrower_Hit_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Hit_B ********************************** -->
+	<!-- Clubthrower_Run_A *********************************** -->
+	<Entry>
+		<zType>AUDIO_Clubthrower_Run_A_mv_obj_armourMetalSmall</zType>
+		<zAsset>Clubthrower_Run_A_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Clubthrower_Run_A_step_quick</zType>
+		<zAsset>Clubthrower_Run_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Clubthrower_Run_A ********************************** -->
+	<!-- /Clubthrower ************************************************************ -->
+
+	<!-- Elite_Clubthrower ******************************************************* -->
+	<!-- Elite_Clubthrower_Attack_A ************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Clubthrower_Attack_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_A_step_impactful</zType>
+		<zAsset>Elite_Clubthrower_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_A_step_quick</zType>
+		<zAsset>Elite_Clubthrower_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_A_vcl_grunt_attack_Male_D</zType>
+		<zAsset>Elite_Clubthrower_Attack_A_vcl_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_A_weapon_hammer_throw_whoosh</zType>
+		<zAsset>Elite_Clubthrower_Attack_A_weapon_hammer_throw_whoosh</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Attack_A ************************* -->
+	<!-- Elite_Clubthrower_Attack_B ************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Clubthrower_Attack_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Elite_Clubthrower_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_B_step_impactful</zType>
+		<zAsset>Elite_Clubthrower_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_B_step_quick</zType>
+		<zAsset>Elite_Clubthrower_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Attack_B_weapon_hammer_throw_whoosh</zType>
+		<zAsset>Elite_Clubthrower_Attack_B_weapon_hammer_throw_whoosh</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Attack_B ************************* -->
+	<!-- Elite_Clubthrower_Death_A *************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Clubthrower_Death_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_A_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Elite_Clubthrower_Death_A_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_A_grunt_hit_Male_A</zType>
+		<zAsset>Elite_Clubthrower_Death_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_A_knee_impact</zType>
+		<zAsset>Elite_Clubthrower_Death_A_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_A_object_axe_drop_dirtGrass</zType>
+		<zAsset>Elite_Clubthrower_Death_A_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_A_step_quick</zType>
+		<zAsset>Elite_Clubthrower_Death_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Death_A ************************** -->
+	<!-- Elite_Clubthrower_Death_B *************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Clubthrower_Death_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_B_bodyfall_2Hit_dirt_drag</zType>
+		<zAsset>Elite_Clubthrower_Death_B_bodyfall_2Hit_dirt_drag</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_B_object_axe_drop_dirtGrass</zType>
+		<zAsset>Elite_Clubthrower_Death_B_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Elite_Clubthrower_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Death_B_vocal_death_Male_F</zType>
+		<zAsset>Elite_Clubthrower_Death_B_vocal_death_Male_F</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Death_B ************************** -->
+	<!-- Elite_Clubthrower_Hit_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Clubthrower_Hit_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_A_foot_slide</zType>
+		<zAsset>Elite_Clubthrower_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_A_grunt_hit_Male_A</zType>
+		<zAsset>Elite_Clubthrower_Hit_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_A_step_quick</zType>
+		<zAsset>Elite_Clubthrower_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Hit_A **************************** -->
+	<!-- Elite_Clubthrower_Hit_B ***************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Clubthrower_Hit_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_B_object_axe_drop_dirtGrass</zType>
+		<zAsset>Elite_Clubthrower_Hit_B_object_axe_drop_dirtGrass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_B_step_impactful</zType>
+		<zAsset>Elite_Clubthrower_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_B_step_quick</zType>
+		<zAsset>Elite_Clubthrower_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Hit_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Elite_Clubthrower_Hit_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Hit_B **************************** -->
+	<!-- Elite_Clubthrower_Run_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Run_A_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Clubthrower_Run_A_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Clubthrower_Run_A_step_quick</zType>
+		<zAsset>Elite_Clubthrower_Run_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Clubthrower_Run_A **************************** -->
+	<!-- /Elite_Clubthrower ****************************************************** -->
+	
+	<!-- Elite_Gaesata *********************************************************** -->
+	<!-- Elite_Gaesata_Attack_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Gaesata_Attack_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Gaesata_Attack_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<!-- /Elite_Gaesata_Attack_A ***************************** -->
+	<!-- Elite_Gaesata_Attack_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Gaesata_Attack_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Gaesata_Attack_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<!-- /Elite_Gaesata_Attack_B ***************************** -->
+	<!-- Elite_Gaesata_Hit_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Gaesata_Hit_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Gaesata_Hit_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<!-- /Elite_Gaesata_Hit_A ******************************** -->
+	<!-- Elite_Gaesata_Hit_B ********************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Gaesata_Hit_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Gaesata_Hit_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<!-- /Elite_Gaesata_Hit_B ******************************** -->
+	<!-- Elite_Geasata_Run_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Geasata_Run_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Elite_Geasata_Run_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<!-- /Elite_Geasata_Run_A ******************************** -->
+	<!-- /Elite_Gaesata ********************************************************** -->
+	
+	<!-- Elite_Huscarl *********************************************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Attack_A_cmbt_impact</zType>
+		<zAsset>Elite_Huscarl_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Attack_B_cmbt_impact</zType>
+		<zAsset>Elite_Huscarl_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Attack_B_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Huscarl_Attack_B_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Death_A_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Huscarl_Death_A_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Death_B_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Huscarl_Death_B_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Hit_A_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Huscarl_Hit_A_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Huscarl_Hit_B_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Huscarl_Hit_B_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<!-- /Elite_Huscarl ********************************************************** -->
+	
+	<!-- Elite_Javelineer ******************************************************** -->
+	<!-- Elite_Javelineer_Attack_A *************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Elite_Javelineer_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_A_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Attack_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_A_step_impactful</zType>
+		<zAsset>Elite_Javelineer_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_A_step_quick</zType>
+		<zAsset>Elite_Javelineer_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_A_cmbt_whoosh_throw</zType>
+		<zAsset>Elite_Javelineer_Attack_A_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Attack_A ************************** -->
+	<!-- Elite_Javelineer_Attack_B *************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_B_cmbt_whoosh_throw</zType>
+		<zAsset>Elite_Javelineer_Attack_B_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_B_grunt_attack_Male_B</zType>
+		<zAsset>Elite_Javelineer_Attack_B_grunt_attack_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_B_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Attack_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Attack_B_step_quick</zType>
+		<zAsset>Elite_Javelineer_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Attack_B ************************** -->
+	<!-- Elite_Javelineer_Death_A **************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_A_bodyfall_body_hit_drag_dirt</zType>
+		<zAsset>Elite_Javelineer_Death_A_bodyfall_body_hit_drag_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_A_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Death_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Elite_Javelineer_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Death_A *************************** -->
+	<!-- Elite_Javelineer_Death_B **************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_B_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Elite_Javelineer_Death_B_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_B_grunt_hit_Male_B</zType>
+		<zAsset>Elite_Javelineer_Death_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_B_knee_impact</zType>
+		<zAsset>Elite_Javelineer_Death_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_B_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Death_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Death_B_step_quick</zType>
+		<zAsset>Elite_Javelineer_Death_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Death_B *************************** -->
+	<!-- Elite_Javelineer_Hit_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_A_foot_slide</zType>
+		<zAsset>Elite_Javelineer_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_A_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Hit_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_A_step_impactful</zType>
+		<zAsset>Elite_Javelineer_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_A_step_quick</zType>
+		<zAsset>Elite_Javelineer_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Elite_Javelineer_Hit_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Hit_A ***************************** -->
+	<!-- Elite_Javelineer_Hit_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_B_foot_slide</zType>
+		<zAsset>Elite_Javelineer_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Elite_Javelineer_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_B_knee_impact</zType>
+		<zAsset>Elite_Javelineer_Hit_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_B_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Hit_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Hit_B_step_quick</zType>
+		<zAsset>Elite_Javelineer_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Hit_B ***************************** -->
+	<!-- Elite_Javelineer_Run_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Run_A_step</zType>
+		<zAsset>Elite_Javelineer_Run_A_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Javelineer_Run_A_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Javelineer_Run_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<!-- /Elite_Javelineer_Run_A ***************************** -->
+	<!-- /Elite_Javelineer ******************************************************* -->
+	
+	<!-- Elite_Marauder ********************************************************** -->
+	<!-- Elite_Marauder_Attack_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_A_cmbt_impact</zType>
+		<zAsset>Elite_Marauder_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_A_obj_armor_chainMail_move_long</zType>
+		<zAsset>Elite_Marauder_Attack_A_obj_armor_chainMail_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_A_step_impactful</zType>
+		<zAsset>Elite_Marauder_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_A_step_quick</zType>
+		<zAsset>Elite_Marauder_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_A_vcl_grunt_attack_Male_E</zType>
+		<zAsset>Elite_Marauder_Attack_A_vcl_grunt_attack_Male_E</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Attack_A **************************** -->
+	<!-- Elite_Marauder_Attack_B ***************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_B_cmbt_impact</zType>
+		<zAsset>Elite_Marauder_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_B_obj_armor_chainMail_move_long</zType>
+		<zAsset>Elite_Marauder_Attack_B_obj_armor_chainMail_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_B_step_impactful</zType>
+		<zAsset>Elite_Marauder_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_B_step_quick</zType>
+		<zAsset>Elite_Marauder_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Attack_B_vcl_grunt_attack_Male_E</zType>
+		<zAsset>Elite_Marauder_Attack_B_vcl_grunt_attack_Male_E</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Attack_B **************************** -->
+	<!-- Elite_Marauder_Death_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_A_bodyfall_chainMail_hit_drag_dirt</zType>
+		<zAsset>Elite_Marauder_Death_A_bodyfall_chainMail_hit_drag_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_A_bodyfall_chest_wood_dirt</zType>
+		<zAsset>Elite_Marauder_Death_A_bodyfall_chest_wood_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_A_vcl_grunt_offBalance_Male_E</zType>
+		<zAsset>Elite_Marauder_Death_A_vcl_grunt_offBalance_Male_E</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_A_weapon_sword_drop</zType>
+		<zAsset>Elite_Marauder_Death_A_weapon_sword_drop</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Death_A ***************************** -->
+	<!-- Elite_Marauder_Death_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_B_bodyfall_body_hit_drag_dirt</zType>
+		<zAsset>Elite_Marauder_Death_B_bodyfall_body_hit_drag_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Elite_Marauder_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_B_weapon_shield_wood_drop</zType>
+		<zAsset>Elite_Marauder_Death_B_weapon_shield_wood_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Death_B_weapon_sword_drop</zType>
+		<zAsset>Elite_Marauder_Death_B_weapon_sword_drop</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Death_B ***************************** -->
+	<!-- Elite_Marauder_Hit_A ******************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_A_foot_slide</zType>
+		<zAsset>Elite_Marauder_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_A_obj_armor_chainMail_step</zType>
+		<zAsset>Elite_Marauder_Hit_A_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_A_step_quick</zType>
+		<zAsset>Elite_Marauder_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_A_vcl_grunt_offBalance_Male_E</zType>
+		<zAsset>Elite_Marauder_Hit_A_vcl_grunt_offBalance_Male_E</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Hit_A ******************************* -->
+	<!-- Elite_Marauder_Hit_B ******************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_B_obj_armor_chainMail_step</zType>
+		<zAsset>Elite_Marauder_Hit_B_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_B_step_quick</zType>
+		<zAsset>Elite_Marauder_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Hit_B_vcl_grunt_offBalance_Male_E</zType>
+		<zAsset>Elite_Marauder_Hit_B_vcl_grunt_offBalance_Male_E</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Hit_B ******************************* -->
+	<!-- Elite_Marauder_Run_A ******************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Run_A_obj_armor_chainMail_step</zType>
+		<zAsset>Elite_Marauder_Run_A_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Marauder_Run_A_step</zType>
+		<zAsset>Elite_Marauder_Run_A_step</zAsset>
+	</Entry>
+	<!-- /Elite_Marauder_Run_A ******************************* -->
+	<!-- /Elite_Marauder ********************************************************* -->
+
+	<!-- Elite_Peltast *********************************************************** -->
+	<!-- Elite_Peltast_Death_A ******************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Peltast_Death_A_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Peltast_Death_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<!-- /Elite_Peltast_Death_A ****************************** -->
+	<!-- Elite_Peltast_Death_B ******************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Peltast_Death_B_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Peltast_Death_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<!-- /Elite_Peltast_Death_B ****************************** -->
+	<!-- Elite_Peltast_Run_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Peltast_Run_A_mv_fs_leatherLightGravelMedium</zType>
+		<zAsset>Elite_Peltast_Run_A_mv_fs_leatherLightGravelMedium</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Peltast_Run_A_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Peltast_Run_A_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Peltast_Run_A_mv_obj_arrowRattle</zType>
+		<zAsset>Elite_Peltast_Run_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<!-- /Elite_Peltast_Run_A ***************************** -->
+	<!-- /Elite Peltast ******************************************************* -->
+
+	<!-- Elite_Warlord ******************************************************** -->
+	<!-- Elite_Warlord_Attack_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_A_cmbt_impact</zType>
+		<zAsset>Elite_Warlord_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_A_foot_slide</zType>
+		<zAsset>Elite_Warlord_Attack_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Elite_Warlord_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_A_step_impactful</zType>
+		<zAsset>Elite_Warlord_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<!-- /Elite_Warlord_Attack_A ********************************-->
+	<!-- Elite_Warlord_Attack_B ********************************* -->
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_B_cmbt_impact</zType>
+		<zAsset>Elite_Warlord_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Elite_Warlord_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_B_step_impactful</zType>
+		<zAsset>Elite_Warlord_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Attack_B_step_quick</zType>
+		<zAsset>Elite_Warlord_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Warlord_Attack_B ******************************** -->
+	<!-- Elite_Warlord_Hit_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_A_armor_leather_move_long</zType>
+		<zAsset>Elite_Warlord_Hit_A_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_A_cmbt_sword_whoosh</zType>
+		<zAsset>Elite_Warlord_Hit_A_cmbt_sword_whoosh</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_A_grunt_hit_Male_B</zType>
+		<zAsset>Elite_Warlord_Hit_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_A_step_impactful</zType>
+		<zAsset>Elite_Warlord_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_A_step_quick</zType>
+		<zAsset>Elite_Warlord_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Warlord_Hit_A *********************************** -->
+	<!-- Elite_Warlord_Hit_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_B_armor_leather_move_long</zType>
+		<zAsset>Elite_Warlord_Hit_B_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_B_foot_slide</zType>
+		<zAsset>Elite_Warlord_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Elite_Warlord_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Hit_B_step_quick</zType>
+		<zAsset>Elite_Warlord_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Elite_Warlord_Hit_B *********************************** -->
+	<!-- Elite_Warlord_Run_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Run_A_mv_fs_leatherLightGravelMedium</zType>
+		<zAsset>Elite_Warlord_Run_A_mv_fs_leatherLightGravelMedium</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elite_Warlord_Run_A_mv_obj_armourMetalSmall</zType>
+		<zAsset>Elite_Warlord_Run_A_mv_obj_armourMetalSmall</zAsset>
+	</Entry>
+	<!-- /Elite_Warlord_Run_A ***************************** -->
+	<!-- /Elite_Warlord ******************************************************* -->
+	
+	<!-- Gaesata ***************************************************************** -->
+	<!-- Gaesata_Attack_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_A_cmbt_impact</zType>
+		<zAsset>Gaesata_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_A_obj_armor_chainMail_move_long</zType>
+		<zAsset>Gaesata_Attack_A_obj_armor_chainMail_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_A_step_impactful</zType>
+		<zAsset>Gaesata_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_A_step_quick</zType>
+		<zAsset>Gaesata_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_A_vcl_grunt_attack_Male_E</zType>
+		<zAsset>Gaesata_Attack_A_vcl_grunt_attack_Male_E</zAsset>
+	</Entry>
+	<!-- /Gaesata_Attack_A *********************************** -->
+	<!-- Gaesata_Attack_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_B_cmbt_impact</zType>
+		<zAsset>Gaesata_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Gaesata_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_B_obj_armor_chainMail_move_long</zType>
+		<zAsset>Gaesata_Attack_B_obj_armor_chainMail_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_B_step_impactful</zType>
+		<zAsset>Gaesata_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Attack_B_step_quick</zType>
+		<zAsset>Gaesata_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Gaesata_Attack_B *********************************** -->
+	<!-- Gaesata_Death_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_A_armour_chainMail_drop</zType>
+		<zAsset>Gaesata_Death_A_armour_chainMail_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_A_bodyfall_chest_dirt_grass_01</zType>
+		<zAsset>Gaesata_Death_A_bodyfall_chest_dirt_grass_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Gaesata_Death_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_A_weapon_shield_wood_drop</zType>
+		<zAsset>Gaesata_Death_A_weapon_shield_wood_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_A_weapon_sword_drop</zType>
+		<zAsset>Gaesata_Death_A_weapon_sword_drop</zAsset>
+	</Entry>
+	<!-- /Gaesata_Death_A ************************************ -->
+	<!-- Gaesata_Death_B ************************************* -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_B_armour_chainMail_drop</zType>
+		<zAsset>Gaesata_Death_B_armour_chainMail_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_B_bodyfall_hipChest_dirt</zType>
+		<zAsset>Gaesata_Death_B_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Death_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Gaesata_Death_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Gaesata_Death_B ************************************ -->
+	<!-- Gaesata_Hit_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Gaesata_Hit_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_A_obj_armor_chainMail_move_long</zType>
+		<zAsset>Gaesata_Hit_A_obj_armor_chainMail_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_A_foot_slide</zType>
+		<zAsset>Gaesata_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_A_step_quick</zType>
+		<zAsset>Gaesata_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Gaesata_Hit_A ************************************** -->
+	<!-- Gaesata_Hit_B *************************************** -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_B_obj_armor_chainMail_move_long</zType>
+		<zAsset>Gaesata_Hit_B_obj_armor_chainMail_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_B_step_impactful</zType>
+		<zAsset>Gaesata_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_B_step_quick</zType>
+		<zAsset>Gaesata_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Hit_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Gaesata_Hit_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Gaesata_Hit_B ************************************** -->
+	<!-- Gaesata_Run_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Gaesata_Run_A_obj_armor_chainMail_step</zType>
+		<zAsset>Gaesata_Run_A_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Gaesata_Run_A_step</zType>
+		<zAsset>Gaesata_Run_A_step</zAsset>
+	</Entry>
+	<!-- /Gaesata_Run_A ************************************** -->
+	<!-- /Gaesata **************************************************************** -->
+	
+	<!-- Huscarl ***************************************************************** -->
+	<!-- Huscarl_Attack_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_A_armor_fullPlate_small_step_swipe</zType>
+		<zAsset>Huscarl_Attack_A_armor_fullPlate_small_step_swipe</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_A_armour_leather_step_swipe</zType>
+		<zAsset>Huscarl_Attack_A_armour_leather_step_swipe</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_A_cmbt_impact</zType>
+		<zAsset>Huscarl_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_A_step_quick</zType>
+		<zAsset>Huscarl_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_A_vcl_grunt_attack_Male_D</zType>
+		<zAsset>Huscarl_Attack_A_vcl_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<!-- /Huscarl_Attack_A *********************************** -->
+	<!-- Huscarl_Attack_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_B_armor_fullPlate_small_step_swipe</zType>
+		<zAsset>Huscarl_Attack_B_armor_fullPlate_small_step_swipe</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_B_armour_leather_step_swipe</zType>
+		<zAsset>Huscarl_Attack_B_armour_leather_step_swipe</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_B_cmbt_impact</zType>
+		<zAsset>Huscarl_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_B_step_quick</zType>
+		<zAsset>Huscarl_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Attack_B_vcl_grunt_attack_Male_D</zType>
+		<zAsset>Huscarl_Attack_B_vcl_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<!-- /Huscarl_Attack_B *********************************** -->
+	<!-- Huscarl_Death_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_A_armor_fullPlate_small_step_swipe</zType>
+		<zAsset>Huscarl_Death_A_armor_fullPlate_small_step_swipe</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_A_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Huscarl_Death_A_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_A_knee_impact</zType>
+		<zAsset>Huscarl_Death_A_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Huscarl_Death_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_A_weapon_shield_wood_drop</zType>
+		<zAsset>Huscarl_Death_A_weapon_shield_wood_drop</zAsset>
+	</Entry>
+	<!-- /Huscarl_Death_A ************************************ -->
+	<!-- Huscarl_Death_B ************************************* -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_B_bodyfall_hipChest_dirt</zType>
+		<zAsset>Huscarl_Death_B_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Huscarl_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_B_weapon_axe_drop</zType>
+		<zAsset>Huscarl_Death_B_weapon_axe_drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Death_B_weapon_shield_wood_drop</zType>
+		<zAsset>Huscarl_Death_B_weapon_shield_wood_drop</zAsset>
+	</Entry>
+	<!-- /Huscarl_Death_B ************************************ -->
+	<!-- Huscarl_Hit_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_A_knee_impact</zType>
+		<zAsset>Huscarl_Hit_A_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Huscarl_Hit_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Huscarl_Hit_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_A_step_quick</zType>
+		<zAsset>Huscarl_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Huscarl_Hit_A ************************************** -->
+	<!-- Huscarl_Hit_B *************************************** -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Huscarl_Hit_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_B_step_impactful</zType>
+		<zAsset>Huscarl_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_B_step_quick</zType>
+		<zAsset>Huscarl_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Hit_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Huscarl_Hit_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Huscarl_Hit_B ************************************** -->
+	<!-- Huscarl_Run_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Huscarl_Run_A_armor_fullPlate_small_step_swipe</zType>
+		<zAsset>Huscarl_Run_A_armor_fullPlate_small_step_swipe</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Run_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Huscarl_Run_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Huscarl_Run_A_step</zType>
+		<zAsset>Huscarl_Run_A_step</zAsset>
+	</Entry>
+	<!-- /Huscarl_Run_A ************************************** -->
+	<!-- /Huscarl **************************************************************** -->
+	
+	<!-- Javelineer *********************************************************** -->
+	<!-- Javelineer_Attack_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_A_cmbt_whoosh_throw</zType>
+		<zAsset>Javelineer_Attack_A_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Javelineer_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_A_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Attack_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_A_obj_armor_chainMail_step</zType>
+		<zAsset>Javelineer_Attack_A_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_A_step_impactful</zType>
+		<zAsset>Javelineer_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_A_step_quick</zType>
+		<zAsset>Javelineer_Attack_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Javelineer_Attack_A ******************************** -->
+	<!-- Javelineer_Attack_B ********************************* -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_B_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Attack_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_B_obj_armor_chainMail_step</zType>
+		<zAsset>Javelineer_Attack_B_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_B_grunt_attack_Male_B</zType>
+		<zAsset>Javelineer_Attack_B_grunt_attack_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_B_step_quick</zType>
+		<zAsset>Javelineer_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Attack_B_cmbt_whoosh_throw</zType>
+		<zAsset>Javelineer_Attack_B_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<!-- /Javelineer_Attack_B ******************************** -->
+	<!-- Javelinerr_Death_A ********************************** -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_A_bodyfall_body_hit_drag_dirt</zType>
+		<zAsset>Javelineer_Death_A_bodyfall_body_hit_drag_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_A_bodyfall_chainMail_hit_drag_dirt</zType>
+		<zAsset>Javelineer_Death_A_bodyfall_chainMail_hit_drag_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_A_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Death_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Javelineer_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Javelineer_Death_A ********************************* -->
+	<!-- Javelineer_Death_B ********************************** -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_B_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Javelineer_Death_B_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_B_knee_impact</zType>
+		<zAsset>Javelineer_Death_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_B_grunt_hit_Male_B</zType>
+		<zAsset>Javelineer_Death_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_B_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Death_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Death_B_step_quick</zType>
+		<zAsset>Javelineer_Death_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Javelineer_Death_B ********************************* -->
+	<!-- Javelineer_Hit_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_A_foot_slide</zType>
+		<zAsset>Javelineer_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_A_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Hit_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_A_step_impactful</zType>
+		<zAsset>Javelineer_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_A_step_quick</zType>
+		<zAsset>Javelineer_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Javelineer_Hit_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Javelineer_Hit_A *********************************** -->
+	<!-- Javelineer_Hit_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_B_foot_slide</zType>
+		<zAsset>Javelineer_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Javelineer_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_B_knee_impact</zType>
+		<zAsset>Javelineer_Hit_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_B_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Hit_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Hit_B_step_quick</zType>
+		<zAsset>Javelineer_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Javelineer_Hit_B *********************************** -->
+	<!-- Javelineer_Run_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Javelineer_Run_A_obj_armor_chainMail_step</zType>
+		<zAsset>Javelineer_Run_A_obj_armor_chainMail_step</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Run_A_mv_obj_arrowRattle</zType>
+		<zAsset>Javelineer_Run_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Javelineer_Run_A_mv_fs_leatherLightGravelMedium</zType>
+		<zAsset>Javelineer_Run_A_mv_fs_leatherLightGravelMedium</zAsset>
+	</Entry>
+	<!-- /Javelineer_Run_A *********************************** -->
+	<!-- /Javelineer ********************************************************** -->
+	
+	<!-- Mangonel ************************************************************* -->
+	<Entry>
+		<zType>AUDIO_Mangonel_Attack_A</zType>
+		<zAsset>Mangonel_Attack_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Mangonel_Death_A</zType>
+		<zAsset>Mangonel_Death_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Mangonel_Hit_A</zType>
+		<zAsset>Mangonel_Hit_A</zAsset>
+	</Entry>
+	<!-- /Mangonel ************************************************************ -->
+	
+	<!-- Militia ************************************************************** -->
+	<!-- Militia_Attack_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Militia_Attack_A_cmbt_impact</zType>
+		<zAsset>Militia_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Attack_A_cmbt_whoosh_sword_thrust</zType>
+		<zAsset>Militia_Attack_A_cmbt_whoosh_sword_thrust</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Attack_A_step_quick</zType>
+		<zAsset>Militia_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Attack_A_vcl_grunt_attack_Male_D</zType>
+		<zAsset>Militia_Attack_A_vcl_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<!-- /Militia_Attack_A *********************************** -->
+	<!-- Militia_Attack_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Militia_Attack_B_cmbt_impact</zType>
+		<zAsset>Militia_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Attack_B_step_impactful</zType>
+		<zAsset>Militia_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Attack_B_step_quick</zType>
+		<zAsset>Militia_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Attack_B_vcl_grunt_attack_Male_D</zType>
+		<zAsset>Militia_Attack_B_vcl_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<!-- /Militia_Attack_B *********************************** -->
+	<!-- Militia_Death_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Militia_Death_A_bodyfall_hipChest_dirt</zType>
+		<zAsset>Militia_Death_A_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Death_A_object_woodShield_drop_fall</zType>
+		<zAsset>Militia_Death_A_object_woodShield_drop_fall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Death_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Militia_Death_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Death_A_weapon_spear_wood_small_drop</zType>
+		<zAsset>Militia_Death_A_weapon_spear_wood_small_drop</zAsset>
+	</Entry>
+	<!-- /Militia_Death_A ************************************ -->
+	<!-- Militia_Death_B ************************************* -->
+	<Entry>
+		<zType>AUDIO_Militia_Death_B_bodyfall_chest_dirt_grass_01</zType>
+		<zAsset>Militia_Death_B_bodyfall_chest_dirt_grass_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Death_B_object_woodShield_drop_fall</zType>
+		<zAsset>Militia_Death_B_object_woodShield_drop_fall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Death_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Militia_Death_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Death_B_weapon_spear_wood_small_drop</zType>
+		<zAsset>Militia_Death_B_weapon_spear_wood_small_drop</zAsset>
+	</Entry>
+	<!-- /Militia_Death_B ************************************ -->
+	<!-- Militia_Hit_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Militia_Hit_A_step_quick</zType>
+		<zAsset>Militia_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Hit_A_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Militia_Hit_A_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Militia_Hit_A ************************************** -->
+	<!-- Militia_Hit_B *************************************** -->
+	<Entry>
+		<zType>AUDIO_Militia_Hit_B_step_impactful</zType>
+		<zAsset>Militia_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Hit_B_step_quick</zType>
+		<zAsset>Militia_Hit_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Hit_B_vcl_grunt_hit_Male_C</zType>
+		<zAsset>Militia_Hit_B_vcl_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<!-- /Militia_Hit_B ************************************** -->
+	<!-- Militia_Run_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Militia_Run_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Militia_Run_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Militia_Run_A_step</zType>
+		<zAsset>Militia_Run_A_step</zAsset>
+	</Entry>
+	<!-- /Militia_Run_A ************************************** -->
+	<!-- /Militia ************************************************************* -->
+
+	<!-- Nomad_Marauder ******************************************************* -->
+	<!-- Nomad_Marauder_Run_A ******************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_mv_hrs_hoof_switch</zType>
+		<zAsset>Nomad_Marauder_mv_hrs_hoof_switch</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_mv_obj_bridle_fast</zType>
+		<zAsset>Nomad_Marauder_mv_obj_bridle_fast</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_mv_obj_spearRattle</zType>
+		<zAsset>Nomad_Marauder_mv_obj_spearRattle</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Run_A ******************************* -->
+	<!-- Nomad_Marauder_Attack_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_A_cmbt_impact</zType>
+		<zAsset>Nomad_Marauder_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_A_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Marauder_Attack_A_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_A_vocal_grunt_attack_Male_D</zType>
+		<zAsset>Nomad_Marauder_Attack_A_vocal_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_A_vocal_hrs_attack</zType>
+		<zAsset>Nomad_Marauder_Attack_A_vocal_hrs_attack</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Attack_A **************************** -->
+	<!-- Nomad_Marauder_Attack_B ***************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_B_cmbt_impact</zType>
+		<zAsset>Nomad_Marauder_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_B_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Marauder_Attack_B_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Attack_B_vocal_grunt_attack_Male_D</zType>
+		<zAsset>Nomad_Marauder_Attack_B_vocal_grunt_attack_Male_D</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Attack_B **************************** -->
+	<!-- Nomad_Marauder_Death_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_A_body_boneBreak_snap_mush</zType>
+		<zAsset>Nomad_Marauder_Death_A_body_boneBreak_snap_mush</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_A_bodyfall_heavy_deep_dirt</zType>
+		<zAsset>Nomad_Marauder_Death_A_bodyfall_heavy_deep_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_A_bodyfall_secondary</zType>
+		<zAsset>Nomad_Marauder_Death_A_bodyfall_secondary</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_A_vcl_hrs_hit</zType>
+		<zAsset>Nomad_Marauder_Death_A_vcl_hrs_hit</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Death_A ***************************** -->
+	<!-- Nomad_Marauder_Death_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_B_body_boneBreak_snap_mush</zType>
+		<zAsset>Nomad_Marauder_Death_B_body_boneBreak_snap_mush</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_B_bodyfall_heavy_deep_dirt</zType>
+		<zAsset>Nomad_Marauder_Death_B_bodyfall_heavy_deep_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_B_bodyfall_secondary</zType>
+		<zAsset>Nomad_Marauder_Death_B_bodyfall_secondary</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_B_mv_obj_arrowRattle</zType>
+		<zAsset>Nomad_Marauder_Death_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Death_B_vcl_grunt_offBalance_Male_E</zType>
+		<zAsset>Nomad_Marauder_Death_B_vcl_grunt_offBalance_Male_E</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Death_B ***************************** -->
+	<!-- Nomad_Marauder_Hit_A ******************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_A_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Marauder_Hit_A_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_A_mv_obj_bridle_fast</zType>
+		<zAsset>Nomad_Marauder_Hit_A_mv_obj_bridle_fast</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_A_vcl_grunt_offBalance_Male_E</zType>
+		<zAsset>Nomad_Marauder_Hit_A_vcl_grunt_offBalance_Male_E</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_A_vcl_hrs_attack_snort</zType>
+		<zAsset>Nomad_Marauder_Hit_A_vcl_hrs_attack_snort</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_A_vcl_hrs_hit</zType>
+		<zAsset>Nomad_Marauder_Hit_A_vcl_hrs_hit</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Hit_A *******************************-->
+	<!-- Nomad_Marauder_Hit_B ******************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_B_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Marauder_Hit_B_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_B_mv_obj_bridle_fast</zType>
+		<zAsset>Nomad_Marauder_Hit_B_mv_obj_bridle_fast</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_B_vcl_hrs_attack_snort</zType>
+		<zAsset>Nomad_Marauder_Hit_B_vcl_hrs_attack_snort</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Marauder_Hit_B_vcl_hrs_snort_agitated</zType>
+		<zAsset>Nomad_Marauder_Hit_B_vcl_hrs_snort_agitated</zAsset>
+	</Entry>
+	<!-- /Nomad_Marauder_Hit_B ******************************* -->
+	<!-- /Nomad_Marauder ****************************************************** -->
+	
+	<!-- Nomad_Skirmisher ***************************************************** -->
+	<!-- Nomad_Skirmisher_Movement ****************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_mv_hrs_hoof_switch</zType>
+		<zAsset>Nomad_Skirmisher_mv_hrs_hoof_switch</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_mv_obj_bridle_fast</zType>
+		<zAsset>Nomad_Skirmisher_mv_obj_bridle_fast</zAsset>
+	</Entry>
+	<!-- /Nomad_Skirmisher_Movement ***************************** -->
+	<!-- Nomad_Skirmisher_Attack_A *************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_A_cmbt_whoosh_throw</zType>
+		<zAsset>Nomad_Skirmisher_Attack_A_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Nomad_Skirmisher_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_A_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Skirmisher_Attack_A_mv_hrs_hoof</zAsset>
+	</Entry>
+	<!-- /Nomad_Skirmisher_Attack_A ************************** -->
+	<!-- Nomad_Skirmisher_Attack_B *************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_B_cmbt_whoosh_throw</zType>
+		<zAsset>Nomad_Skirmisher_Attack_B_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Nomad_Skirmisher_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_B_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Skirmisher_Attack_B_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Attack_B_vcl_hrs_attack</zType>
+		<zAsset>Nomad_Skirmisher_Attack_B_vcl_hrs_attack</zAsset>
+	</Entry>
+	<!-- /Nomad_Skirmisher_Attack_B ************************** -->
+	<!-- Nomad_Skirmisher_Hit_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_A_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Skirmisher_Hit_A_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_A_mv_obj_bridle_fast</zType>
+		<zAsset>Nomad_Skirmisher_Hit_A_mv_obj_bridle_fast</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_A_vcl_grunt_offBalance_Male_E</zType>
+		<zAsset>Nomad_Skirmisher_Hit_A_vcl_grunt_offBalance_Male_E</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_A_vcl_hrs_attack_snort</zType>
+		<zAsset>Nomad_Skirmisher_Hit_A_vcl_hrs_attack_snort</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_A_vcl_hrs_hit</zType>
+		<zAsset>Nomad_Skirmisher_Hit_A_vcl_hrs_hit</zAsset>
+	</Entry>
+	<!-- /Nomad_Skirmisher_Hit_A ***************************** -->
+	<!-- Nomad_Skirmisher_Hit_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_B_mv_hrs_hoof</zType>
+		<zAsset>Nomad_Skirmisher_Hit_B_mv_hrs_hoof</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_B_mv_obj_bridle_fast</zType>
+		<zAsset>Nomad_Skirmisher_Hit_B_mv_obj_bridle_fast</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_B_vcl_hrs_attack_snort</zType>
+		<zAsset>Nomad_Skirmisher_Hit_B_vcl_hrs_attack_snort</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Nomad_Skirmisher_Hit_B_vcl_hrs_snort_agitated</zType>
+		<zAsset>Nomad_Skirmisher_Hit_B_vcl_hrs_snort_agitated</zAsset>
+	</Entry>
+	<!-- /Nomad_Skirmisher_Hit_B ***************************** -->
+	<!-- /Nomad_Skirmisher **************************************************** -->
+	
+	<!-- Onager *************************************************************** -->
+	<!-- Onager_Attack_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Onager_Attack_A</zType>
+		<zAsset>Onager_Attack_A</zAsset>
+	</Entry>
+	<!-- /Onager_Attack_A ************************************ -->
+	<!-- Onager_Death_A ************************************** -->
+	<Entry>
+		<zType>AUDIO_Onager_Death_A</zType>
+		<zAsset>Onager_Death_A</zAsset>
+	</Entry>
+	<!-- /Onager_Death_A ************************************* -->
+	<!-- Onager_Hit_A **************************************** -->
+	<Entry>
+		<zType>AUDIO_Onager_Hit_A</zType>
+		<zAsset>Onager_Hit_A</zAsset>
+	</Entry>
+	<!-- /Onager_Hit_A *************************************** -->
+	<!-- /Onager ************************************************************** -->
+
+	<!-- Peltast ************************************************************** -->
+	<!-- Peltast_Attack_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_A_armor_leather_metal_move_short</zType>
+		<zAsset>Peltast_Attack_A_armor_leather_metal_move_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_A_cmbt_whoosh_throw</zType>
+		<zAsset>Peltast_Attack_A_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_A_grunt_attack_Male_B</zType>
+		<zAsset>Peltast_Attack_A_grunt_attack_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_A_step_quick</zType>
+		<zAsset>Peltast_Attack_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Peltast_Attack_A *********************************** -->
+	<!-- Peltast_Attack_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_B_armor_leather_metal_move_short</zType>
+		<zAsset>Peltast_Attack_B_armor_leather_metal_move_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_B_cmbt_whoosh_throw</zType>
+		<zAsset>Peltast_Attack_B_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_B_grunt_attack_Male_B</zType>
+		<zAsset>Peltast_Attack_B_grunt_attack_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Attack_B_step_quick</zType>
+		<zAsset>Peltast_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Peltast_Attack_B *********************************** -->
+	<!-- Peltast_Death_A ************************************* -->
+	<Entry>
+		<zType>AUDIO_Peltast_Death_A_bodyfall_chest_dirt_grass_01</zType>
+		<zAsset>Peltast_Death_A_bodyfall_chest_dirt_grass_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Death_A_mv_obj_arrowRattle</zType>
+		<zAsset>Peltast_Death_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Peltast_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Death_A_vocal_death_Male_C</zType>
+		<zAsset>Peltast_Death_A_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Peltast_Death_A ************************************ -->
+	<!-- Peltast_Death_B ************************************* -->
+	<Entry>
+		<zType>AUDIO_Peltast_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Peltast_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Death_B_mv_obj_arrowRattle</zType>
+		<zAsset>Peltast_Death_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Death_B_bodyfall_hipChest_dirt</zType>
+		<zAsset>Peltast_Death_B_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Death_B_vocal_death_Male_C</zType>
+		<zAsset>Peltast_Death_B_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Peltast_Death_B ************************************ -->
+	<!-- Peltast_Hit_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_A_armor_leather_metal_move_short</zType>
+		<zAsset>Peltast_Hit_A_armor_leather_metal_move_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_A_grunt_hit_Male_B</zType>
+		<zAsset>Peltast_Hit_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_A_step_quick</zType>
+		<zAsset>Peltast_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Peltast_Hit_A ************************************** -->
+	<!-- Peltast_Hit_B *************************************** -->
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_B_armor_leather_metal_move_short</zType>
+		<zAsset>Peltast_Hit_B_armor_leather_metal_move_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_B_foot_slide</zType>
+		<zAsset>Peltast_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Peltast_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_B_step_impactful</zType>
+		<zAsset>Peltast_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Peltast_Hit_B_step_quick</zType>
+		<zAsset>Peltast_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Peltast_Hit_B ************************************** -->
+	<!-- Peltast_Run_A *************************************** -->
+	<Entry>
+		<zType>AUDIO_Peltast_Run_A_Footstep</zType>
+		<zAsset>Peltast_Run_A_Footstep</zAsset>
+	</Entry>
+	<!-- /Peltast_Run_A ************************************** -->
+	<!-- /Peltast ************************************************************* -->
+	
+	<!-- Scout **************************************************************** -->
+	<!-- Scout_Hit **************************************** -->
+	<Entry>
+		<zType>AUDIO_Scout_Hit_armor_leather_move_long</zType>
+		<zAsset>Scout_Hit_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Hit_grunt_hit_Male_A</zType>
+		<zAsset>Scout_Hit_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Hit_step_impactful</zType>
+		<zAsset>Scout_Hit_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Hit_step_quick</zType>
+		<zAsset>Scout_Hit_step_quick</zAsset>
+	</Entry>
+	<!-- /Scout_Hit *************************************** -->
+	<!-- Scout_Death ************************************** -->
+	<Entry>
+		<zType>AUDIO_Scout_Death_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Scout_Death_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Death_grunt_hit_Male_A</zType>
+		<zAsset>Scout_Death_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Death_impact_body_fall_chest_dirt_grass</zType>
+		<zAsset>Scout_Death_impact_body_fall_chest_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Death_step_quick</zType>
+		<zAsset>Scout_Death_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Scout_Death_vcl_death_Male_E</zType>
+		<zAsset>Scout_Death_vcl_death_Male_E</zAsset>
+	</Entry>
+	<!-- /Scout_Death ************************************* -->
+	<!-- Scout_Run_A ************************************** -->
+	<!--<Entry>
+		<zType>AUDIO_Scout_Run_A_Bag</zType>
+		<zAsset>Scout_Run_A_Bag</zAsset>
+	</Entry>-->
+	<Entry>
+		<zType>AUDIO_Scout_Run_A_Footstep</zType>
+		<zAsset>Scout_Run_A_Footstep</zAsset>
+	</Entry>
+	<!--<Entry>
+		<zType>AUDIO_Scout_Run_A_Hooks</zType>
+		<zAsset>Scout_Run_A_Hooks</zAsset>
+	</Entry>-->
+	<!-- /Scout_Run_A **************************************** -->
+	<!-- /Scout *************************************************************** -->
+	
+	<!-- Settler ************************************************************** -->
+	<!-- Settler_Death_A ********************************** -->
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_body_boneBreak_snap_mush</zType>
+		<zAsset>Settler_Death_A_body_boneBreak_snap_mush</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_bodyfall_2Hit_dirt_drag</zType>
+		<zAsset>Settler_Death_A_bodyfall_2Hit_dirt_drag</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_bodyfall_heavy_deep_dirt</zType>
+		<zAsset>Settler_Death_A_bodyfall_heavy_deep_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Settler_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_vocal_human_pain_death_grunt_Female_A</zType>
+		<zAsset>Settler_Death_A_vocal_human_pain_death_grunt_Female_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_vocal_ox_pain_death_exhale</zType>
+		<zAsset>Settler_Death_A_vocal_ox_pain_death_exhale</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Death_A_vocal_ox_pain_death_grunt</zType>
+		<zAsset>Settler_Death_A_vocal_ox_pain_death_grunt</zAsset>
+	</Entry>
+	<!-- /Settler_Death_A ********************************* -->
+	<!-- Settler_Fidget_Idle ****************************** -->
+	<Entry>
+		<zType>AUDIO_Settler_Fidget_Idle_obj_staff_impact_grass</zType>
+		<zAsset>Settler_Fidget_Idle_obj_staff_impact_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Fidget_Idle_vocal_anger_annoyance_Male_B</zType>
+		<zAsset>Settler_Fidget_Idle_vocal_anger_annoyance_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Fidget_Idle_vocal_anger_shout_Male_B</zType>
+		<zAsset>Settler_Fidget_Idle_vocal_anger_shout_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Fidget_Idle_vocal_ox_grunt_short</zType>
+		<zAsset>Settler_Fidget_Idle_vocal_ox_grunt_short</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Fidget_Idle_vocal_ox_grunt_START</zType>
+		<zAsset>Settler_Fidget_Idle_vocal_ox_grunt_START</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Fidget_Idle_vocal_ox_grunt_STOP</zType>
+		<zAsset>Settler_Fidget_Idle_vocal_ox_grunt_STOP</zAsset>
+	</Entry>
+	<!-- /Settler_Fidget_Idle ***************************** -->
+	<!-- Settler_Hit_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Settler_Hit_A_grunt_hit_Male_B</zType>
+		<zAsset>Settler_Hit_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Hit_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Settler_Hit_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Hit_A_mv_ox_hoof_grass</zType>
+		<zAsset>Settler_Hit_A_mv_ox_hoof_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Hit_A_step_quick</zType>
+		<zAsset>Settler_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Hit_A_vocal_human_pain_grunt_Female_A</zType>
+		<zAsset>Settler_Hit_A_vocal_human_pain_grunt_Female_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Hit_A_vocal_ox_pain_grunt</zType>
+		<zAsset>Settler_Hit_A_vocal_ox_pain_grunt</zAsset>
+	</Entry>
+	<!-- /Settler_Hit_A *********************************** -->
+	<!-- Settler_Run_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Settler_Run_A_mv_ox_hoof_grass</zType>
+		<zAsset>Settler_Run_A_mv_ox_hoof_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Run_A_mv_fs_leatherLightGravelMedium</zType>
+		<zAsset>Settler_Run_A_mv_fs_leatherLightGravelMedium</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Run_A_mv_obj_leatherBagShuffle</zType>
+		<zAsset>Settler_Run_A_mv_obj_leatherBagShuffle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Settler_Run_A_obj_chest_wood_movement_rattle</zType>
+		<zAsset>Settler_Run_A_obj_chest_wood_movement_rattle</zAsset>
+	</Entry>
+	<!-- /Settler_Run_A *********************************** -->
+	<!-- /Settler ************************************************************* -->
+	
+	<!-- Siege_Tower ********************************************************** -->
+	<!-- Siege_Tower_Attack_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_Siege_Tower_Attack_A</zType>
+		<zAsset>Siege_Tower_Attack_A</zAsset>
+	</Entry>
+	<!-- /Siege_Tower_Attack_A ********************************** -->
+	<!-- Siege_Tower_Death_A ***************************** -->
+	<Entry>
+		<zType>AUDIO_Siege_Tower_Death_A</zType>
+		<zAsset>Siege_Tower_Death_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Siege_Tower_Death_A_Drop</zType>
+		<zAsset>Siege_Tower_Death_A_Drop</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Siege_Tower_Death_A_Impact</zType>
+		<zAsset>Siege_Tower_Death_A_Impact</zAsset>
+	</Entry>
+	<!-- /Siege_Tower_Death_A ********************************** -->
+	<!-- Siege_Tower_Hit_A ******************************** -->
+	<Entry>
+		<zType>AUDIO_Siege_Tower_Hit_A</zType>
+		<zAsset>Siege_Tower_Hit_A</zAsset>
+	</Entry>
+	<!-- /Siege_Tower_Hit_A ******************************* -->
+	<!-- /Siege_Tower ********************************************************* -->
+	
+	<!-- Skirmisher *********************************************************** -->
+	<!-- Skirmisher_Attack_A ****************************** -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_A_cmbt_whoosh_throw</zType>
+		<zAsset>Skirmisher_Attack_A_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_A_foot_slide</zType>
+		<zAsset>Skirmisher_Attack_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Skirmisher_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_A_step_quick</zType>
+		<zAsset>Skirmisher_Attack_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Attack_A ***************************** -->
+	<!-- Skirmisher_Attack_B ****************************** -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_B_cmbt_whoosh_throw</zType>
+		<zAsset>Skirmisher_Attack_B_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Skirmisher_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Attack_B_step_quick</zType>
+		<zAsset>Skirmisher_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Attack_B ***************************** -->
+	<!-- Skirmisher_Death_A ******************************* -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Death_A_bodyfall_fromKnees_dirt</zType>
+		<zAsset>Skirmisher_Death_A_bodyfall_fromKnees_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Death_A_impact_body_fall_chest_dirt_grass</zType>
+		<zAsset>Skirmisher_Death_A_impact_body_fall_chest_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Skirmisher_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Death_A ****************************** -->
+	<!-- Skirmisher_Death_B ******************************* -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Death_B_bodyfall_2Hit_dirt_drag</zType>
+		<zAsset>Skirmisher_Death_B_bodyfall_2Hit_dirt_drag</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Skirmisher_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Death_B ****************************** -->
+	<!-- Skirmisher_Hit_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_A_grunt_hit_Male_B</zType>
+		<zAsset>Skirmisher_Hit_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_A_mv_obj_arrowRattle</zType>
+		<zAsset>Skirmisher_Hit_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_A_step_impactful</zType>
+		<zAsset>Skirmisher_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_A_step_quick</zType>
+		<zAsset>Skirmisher_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Hit_A ******************************** -->
+	<!-- Skirmisher_Hit_B ********************************* -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Skirmisher_Hit_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_B_mv_obj_arrowRattle</zType>
+		<zAsset>Skirmisher_Hit_B_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_B_step_impactful</zType>
+		<zAsset>Skirmisher_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Hit_B_step_quick</zType>
+		<zAsset>Skirmisher_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Hit_B ******************************** -->
+	<!-- Skirmisher_Run_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Skirmisher_Run_A_mv_fs_leatherLightGravelMedium</zType>
+		<zAsset>Skirmisher_Run_A_mv_fs_leatherLightGravelMedium</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Run_A_mv_obj_arrowRattle</zType>
+		<zAsset>Skirmisher_Run_A_mv_obj_arrowRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Skirmisher_Run_A_step</zType>
+		<zAsset>Skirmisher_Run_A_step</zAsset>
+	</Entry>
+	<!-- /Skirmisher_Run_A ******************************** -->
+	<!-- /Skirmisher ********************************************************** -->
+	
+	<!-- Slinger ************************************************************** -->
+	<!-- Slinger_Death_A ********************************** -->
+	<Entry>
+		<zType>AUDIO_Slinger_Death_A_bodyfall_hands_dirt_grass</zType>
+		<zAsset>Slinger_Death_A_bodyfall_hands_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_A_grunt_hit_Male_A</zType>
+		<zAsset>Slinger_Death_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_A_impact_body_fall_chest_dirt_grass</zType>
+		<zAsset>Slinger_Death_A_impact_body_fall_chest_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_A_mv_obj_rocksRattle</zType>
+		<zAsset>Slinger_Death_A_mv_obj_rocksRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_A_step_quick</zType>
+		<zAsset>Slinger_Death_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Slinger_Death_A ********************************* -->
+	<!-- Slinger_Death_B ********************************** -->
+	<Entry>
+		<zType>AUDIO_Slinger_Death_B_bodyfall_hands_dirt_grass</zType>
+		<zAsset>Slinger_Death_B_bodyfall_hands_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_B_grunt_hit_Male_A</zType>
+		<zAsset>Slinger_Death_B_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_B_impact_body_fall_chest_dirt_grass</zType>
+		<zAsset>Slinger_Death_B_impact_body_fall_chest_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_B_mv_obj_rocksRattle</zType>
+		<zAsset>Slinger_Death_B_mv_obj_rocksRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Death_B_step_quick</zType>
+		<zAsset>Slinger_Death_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Slinger_Death_B ********************************* -->
+	<!-- Slinger_Hit_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_A_foot_slide</zType>
+		<zAsset>Slinger_Hit_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_A_grunt_hit_Male_A</zType>
+		<zAsset>Slinger_Hit_A_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_A_mv_obj_rocksRattle</zType>
+		<zAsset>Slinger_Hit_A_mv_obj_rocksRattle</zAsset>
+	</Entry>
+	<!-- /Slinger_Hit_A *********************************** -->
+	<!-- Slinger_Hit_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_B_grunt_hit_Male_A</zType>
+		<zAsset>Slinger_Hit_B_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_B_mv_obj_rocksRattle</zType>
+		<zAsset>Slinger_Hit_B_mv_obj_rocksRattle</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_B_step_impactful</zType>
+		<zAsset>Slinger_Hit_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_B_step_quick</zType>
+		<zAsset>Slinger_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Slinger_Hit_B ***********************************	-->
+	<!-- /Slinger ************************************************************* -->
+	
+	<!-- Warlord **************************************************************-->
+	<!-- Warlord_Attack_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_A_cmbt_impact</zType>
+		<zAsset>Warlord_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_A_foot_slide</zType>
+		<zAsset>Warlord_Attack_A_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_A_grunt_attack_long_Male_B</zType>
+		<zAsset>Warlord_Attack_A_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_A_step_impactful</zType>
+		<zAsset>Warlord_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<!-- /Warlord_Attack_A ********************************-->
+	<!-- Warlord_Attack_B ********************************* -->
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_B_cmbt_impact</zType>
+		<zAsset>Warlord_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_B_grunt_attack_long_Male_B</zType>
+		<zAsset>Warlord_Attack_B_grunt_attack_long_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_B_step_impactful</zType>
+		<zAsset>Warlord_Attack_B_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Attack_B_step_quick</zType>
+		<zAsset>Warlord_Attack_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Warlord_Attack_B ******************************** -->
+	<!-- Warlord_Death_A ********************************** -->
+	<Entry>
+		<zType>AUDIO_Warlord_Death_A_armor_leather_metal_move_450ms</zType>
+		<zAsset>Warlord_Death_A_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_A_bodyfall_hipChest_dirt</zType>
+		<zAsset>Warlord_Death_A_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_A_object_woodShield_drop_fall</zType>
+		<zAsset>Warlord_Death_A_object_woodShield_drop_fall</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Warlord_Death_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_A_vocal_death_Male_C</zType>
+		<zAsset>Warlord_Death_A_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Warlord_Death_A ********************************* -->
+	<!-- Warlord_Death_B ********************************** -->
+	<Entry>
+		<zType>AUDIO_Warlord_Death_B_armor_leather_metal_move_450ms</zType>
+		<zAsset>Warlord_Death_B_armor_leather_metal_move_450ms</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_B_bodyfall_2Hit_dirt_drag</zType>
+		<zAsset>Warlord_Death_B_bodyfall_2Hit_dirt_drag</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Warlord_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Death_B_vocal_death_Male_C</zType>
+		<zAsset>Warlord_Death_B_vocal_death_Male_C</zAsset>
+	</Entry>
+	<!-- /Warlord_Death_B ********************************* -->
+	<!-- Warlord_Hit_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_A_armor_leather_move_long</zType>
+		<zAsset>Warlord_Hit_A_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_A_cmbt_sword_whoosh</zType>
+		<zAsset>Warlord_Hit_A_cmbt_sword_whoosh</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_A_grunt_hit_Male_B</zType>
+		<zAsset>Warlord_Hit_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_A_step_impactful</zType>
+		<zAsset>Warlord_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_A_step_quick</zType>
+		<zAsset>Warlord_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Warlord_Hit_A *********************************** -->
+	<!-- Warlord_Hit_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_B_armor_leather_move_long</zType>
+		<zAsset>Warlord_Hit_B_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_B_foot_slide</zType>
+		<zAsset>Warlord_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warlord_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Warlord_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>		
+		<zType>AUDIO_Warlord_Hit_B_step_quick</zType>
+		<zAsset>Warlord_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Warlord_Hit_B *********************************** -->
+	<!-- Warlord_Run_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Warlord_Run_A_Footstep</zType>
+		<zAsset>Warlord_Run_A_Footstep</zAsset>
+	</Entry>
+	<!-- /Warlord_Run_A *********************************** -->
+	<!-- /Warlord ************************************************************* -->
+	
+	<!-- Warrior ************************************************************** -->
+	<!-- Warrior_Attack_A ********************************* -->
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_A_cmbt_impact</zType>
+		<zAsset>Warrior_Attack_A_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_A_step_impactful</zType>
+		<zAsset>Warrior_Attack_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_A_step_quick</zType>
+		<zAsset>Warrior_Attack_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_A_vcl_grunt_attack_Male_E</zType>
+		<zAsset>Warrior_Attack_A_vcl_grunt_attack_Male_E</zAsset>
+	</Entry>
+	<!-- /Warrior_Attack_A ******************************** -->
+	<!-- Warrior_Attack_B ********************************* -->	
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_B_cmbt_impact</zType>
+		<zAsset>Warrior_Attack_B_cmbt_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_B_step_quick</zType>
+		<zAsset>Warrior_Attack_B_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Attack_B_vcl_grunt_attack_Male_E</zType>
+		<zAsset>Warrior_Attack_B_vcl_grunt_attack_Male_E</zAsset>
+	</Entry>
+	<!-- /Warrior_Attack_B ******************************** -->
+	<!-- Warrior_Death_A ********************************** -->
+	<Entry>
+		<zType>AUDIO_Warrior_Death_A_impact_body_boneBreak_blood</zType>
+		<zAsset>Warrior_Death_A_impact_body_boneBreak_blood</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_A_impact_body_fall_chest_dirt_grass</zType>
+		<zAsset>Warrior_Death_A_impact_body_fall_chest_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_A_grunt_hit_Male_B</zType>
+		<zAsset>Warrior_Death_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_A_impact_body_hit_hard_leather</zType>
+		<zAsset>Warrior_Death_A_impact_body_hit_hard_leather</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_A_impact_body_fall_hands_sword_dirt_grass</zType>
+		<zAsset>Warrior_Death_A_impact_body_fall_hands_sword_dirt_grass</zAsset>
+	</Entry>
+	<!-- /Warrior_Death_A ********************************* -->
+	<!-- Warrior_Death_B ********************************** -->
+	<Entry>
+		<zType>AUDIO_Warrior_Death_B_impact_body_fall_chest_dirt_grass</zType>
+		<zAsset>Warrior_Death_B_impact_body_fall_chest_dirt_grass</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_B_weapon_sword_scrape</zType>
+		<zAsset>Warrior_Death_B_weapon_sword_scrape</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_B_impact_body_boneBreak_blood</zType>
+		<zAsset>Warrior_Death_B_impact_body_boneBreak_blood</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_B_impact_body_hit_hard_leather</zType>
+		<zAsset>Warrior_Death_B_impact_body_hit_hard_leather</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_B_grunt_hit_Male_B</zType>
+		<zAsset>Warrior_Death_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Death_B_weapon_sword_drop</zType>
+		<zAsset>Warrior_Death_B_weapon_sword_drop</zAsset>
+	</Entry>
+	<!-- /Warrior_Death_B ********************************* -->
+	<!-- Warrior_Hit_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_A_armor_leather_move_long</zType>
+		<zAsset>Warrior_Hit_A_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_A_grunt_hit_Male_B</zType>
+		<zAsset>Warrior_Hit_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_A_step_quick</zType>
+		<zAsset>Warrior_Hit_A_step_quick</zAsset>
+	</Entry>
+	<!-- /Warrior_Hit_A *********************************** -->
+	<!-- Warrior_Hit_B ************************************ -->
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_B_armor_leather_move_long</zType>
+		<zAsset>Warrior_Hit_B_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_B_foot_slide</zType>
+		<zAsset>Warrior_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Warrior_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_B_knee_impact</zType>
+		<zAsset>Warrior_Hit_B_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Hit_B_step_quick</zType>
+		<zAsset>Warrior_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Warrior_Hit_B *********************************** -->
+	<!-- Warrior_Idle ************************************* -->
+	<!-- /Warrior_Idle ************************************ -->
+	<!-- Warrior_Run_A ************************************ -->
+	<Entry>
+		<zType>AUDIO_Warrior_Run_A_Footstep</zType>
+		<zAsset>Warrior_Run_A_Footstep</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Warrior_Run_A_Armour</zType>
+		<zAsset>Warrior_Run_A_Armour</zAsset>
+	</Entry>
+	<!-- /Warrior_Run_A *********************************** -->
+	<!-- /Warrior ************************************************************* -->
+	
+	<!-- Worker *************************************************************** -->
+	<!-- WORKER WORKING -->
+	<!-- MISC -->
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORK_WHOOSH</zType>
+		<zAsset>UNIT_WORKER_WORK_WHOOSH</zAsset>
+	</Entry>
+	<!-- CHOPPING -->
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORK_CHOPPING_CHOP</zType>
+		<zAsset>UNIT_WORKER_WORK_CHOPPING_CHOP</zAsset>
+	</Entry>
+	<!-- Worker_Building_A *********************************** -->
+	<Entry>
+		<zType>AUDIO_Worker_Building_A_hammerStone</zType>
+		<zAsset>Worker_Building_A_hammerStone</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Building_A_whoosh</zType>
+		<zAsset>Worker_Building_A_whoosh</zAsset>
+	</Entry>
+	<!-- /Worker_Building_A ********************************** -->
+
+	<!-- DIGGING -->
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORK_DIGGING_DIG</zType>
+		<zAsset>UNIT_WORKER_WORK_DIGGING_DIG</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORK_DIGGING_THROW</zType>
+		<zAsset>UNIT_WORKER_WORK_DIGGING_THROW</zAsset>
+	</Entry>
+	<!-- MINING -->
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORK_MINING_PICK</zType>
+		<zAsset>UNIT_WORKER_WORK_MINING_PICK</zAsset>
+	</Entry>
+	<!-- FARMING -->
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORK_FARMING_HO</zType>
+		<zAsset>UNIT_WORKER_WORK_FARMING_HO</zAsset>
+	</Entry>
+	<!-- WORKER MOVEMENT -->
+	<!-- Worker_Run_A **************************************** -->
+	<Entry>
+		<zType>AUDIO_Worker_Run_A_Footstep</zType>
+		<zAsset>Worker_Run_A_Footstep</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Run_A_Tools</zType>
+		<zAsset>Worker_Run_A_Tools</zAsset>
+	</Entry>
+	<!-- /Worker_Run_A *************************************** -->
+	<!-- Worker_Walk_Forward_A ******************************* -->
+	<Entry>
+		<zType>AUDIO_Worker_Walk_Forward_A_Footstep</zType>
+		<zAsset>Worker_Walk_Forward_A_Footstep</zAsset>
+	</Entry>
+	<!-- /Worker_Walk_Forward_A ****************************** -->
+
+	<!-- Worker_Death_A ************************************** -->
+	<Entry>
+		<zType>AUDIO_Worker_Death_A_bodyfall_hipChest_dirt</zType>
+		<zAsset>Worker_Death_A_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Death_A_grunt_hit_Male_B</zType>
+		<zAsset>Worker_Death_A_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Death_A_vocal_death_Male_F</zType>
+		<zAsset>Worker_Death_A_vocal_death_Male_F</zAsset>
+	</Entry>
+	<!-- /Worker_Death_A ************************************* -->
+	<!-- Worker_Death_B ************************************** -->
+	<Entry>
+		<zType>AUDIO_Worker_Death_B_bodyfall_hipChest_dirt</zType>
+		<zAsset>Worker_Death_B_bodyfall_hipChest_dirt</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Death_B_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Worker_Death_B_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Death_B_vocal_death_Male_F</zType>
+		<zAsset>Worker_Death_B_vocal_death_Male_F</zAsset>
+	</Entry>
+	<!-- /Worker_Death_B ************************************* -->
+	<!-- Worker_Hit_A **************************************** -->
+	<Entry>
+		<zType>AUDIO_Worker_Hit_A_step_impactful</zType>
+		<zAsset>Worker_Hit_A_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Hit_A_step_quick</zType>
+		<zAsset>Worker_Hit_A_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Hit_A_vcl_grunt_oof_Male_B</zType>
+		<zAsset>Worker_Hit_A_vcl_grunt_oof_Male_B</zAsset>
+	</Entry>
+	<!-- /Worker_Hit_A *************************************** -->
+	<!-- Worker_Hit_B **************************************** -->
+	<Entry>
+		<zType>AUDIO_Worker_Hit_B_foot_slide</zType>
+		<zAsset>Worker_Hit_B_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Hit_B_grunt_hit_Male_B</zType>
+		<zAsset>Worker_Hit_B_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Worker_Hit_B_step_quick</zType>
+		<zAsset>Worker_Hit_B_step_quick</zAsset>
+	</Entry>
+	<!-- /Worker_Hit_B *************************************** -->
+	
+	<!-- /Worker ************************************************************** -->
+
+	<!-- /Units *********************************************************************************** -->
+	
+	<!-- Resources ******************************************************************************** -->
+	<!-- Crab ***************************************************************** -->
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_A_mv_crab_steps_sand_water_00</zType>
+		<zAsset>Crab_Fidget_A_mv_crab_steps_sand_water_00</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_A_mv_crab_steps_sand_water_01</zType>
+		<zAsset>Crab_Fidget_A_mv_crab_steps_sand_water_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_A_mv_crab_steps_sand_water_02</zType>
+		<zAsset>Crab_Fidget_A_mv_crab_steps_sand_water_02</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_A_mv_crab_steps_sand_water_03</zType>
+		<zAsset>Crab_Fidget_A_mv_crab_steps_sand_water_03</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_A_mv_crab_steps_sand_water_04</zType>
+		<zAsset>Crab_Fidget_A_mv_crab_steps_sand_water_04</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_B_mv_crab_steps_sand_water_00</zType>
+		<zAsset>Crab_Fidget_B_mv_crab_steps_sand_water_00</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_B_mv_crab_steps_sand_water_01</zType>
+		<zAsset>Crab_Fidget_B_mv_crab_steps_sand_water_01</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_B_mv_crab_steps_sand_water_02</zType>
+		<zAsset>Crab_Fidget_B_mv_crab_steps_sand_water_02</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_B_mv_crab_steps_sand_water_03</zType>
+		<zAsset>Crab_Fidget_B_mv_crab_steps_sand_water_03</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_mv_crab_claw_snap_doube</zType>
+		<zAsset>Crab_Fidget_mv_crab_claw_snap_doube</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Crab_Fidget_mv_crab_claw_snap_single</zType>
+		<zAsset>Crab_Fidget_mv_crab_claw_snap_single</zAsset>
+	</Entry>
+	<!-- /Crab **************************************************************** -->
+	<!-- Elephant ************************************************************* -->
+	<Entry>
+		<zType>AUDIO_Elephant_Fidget_Idle_A_00</zType>
+		<zAsset>Elephant_Fidget_Idle_A_00</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elephant_Fidget_Idle_B_eating_grass_00</zType>
+		<zAsset>Elephant_Fidget_Idle_B_eating_grass_00</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Elephant_Fidget_Idle_elements</zType>
+		<zAsset>Elephant_Fidget_Idle_elements</zAsset>
+	</Entry>
+	<!-- /Elephant ************************************************************ -->
+	<!-- Horse **************************************************************** -->
+	<Entry>
+		<zType>AUDIO_Horse_Fidget_hoof_scrapes</zType>
+		<zAsset>Horse_Fidget_hoof_scrapes</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Horse_Fidget_vocal_nicker</zType>
+		<zAsset>Horse_Fidget_vocal_nicker</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Horse_Fidget_vocal_snorts</zType>
+		<zAsset>Horse_Fidget_vocal_snorts</zAsset>
+	</Entry>
+	<!-- /Horse *************************************************************** -->
+	<!-- Seagull ************************************************************** -->
+	<Entry>
+		<zType>AUDIO_Seagull_loop</zType>
+		<zAsset>Seagull_loop</zAsset>
+	</Entry>
+	<!-- /Seagull ************************************************************* -->
+	<!-- /Resources ******************************************************************************* -->
+
+	<!-- /Animation *************************************************************************************************** -->
+
+	<!-- UNIT ANIMATION -->
+
+	<!-- SLINGER MOVEMENT -->
+	<Entry>
+		<zType>AUDIO_Slinger_Run_A_Footstep</zType>
+		<zAsset>Slinger_Run_A_Footstep</zAsset>
+	</Entry>
+	<!-- SLINGER COMBAT -->
+	<Entry>
+		<zType>AUDIO_Slinger_Attack_A</zType>
+		<zAsset>Slinger_Attack_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_A</zType>
+		<zAsset>Slinger_Hit_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_Slinger_Hit_B</zType>
+		<zAsset>Slinger_Hit_B</zAsset>
+	</Entry>
+	
+	<!-- Animation Elements *********************************************************************** -->
+
+	<!-- Combat *************************************************************** -->
+	<!-- Whoosh ********************************************** -->
+	<Entry>
+		<zType>AUDIO_anim_elem_cmbt_whoosh_throw</zType>
+		<zAsset>anim_elem_cmbt_whoosh_throw</zAsset>
+	</Entry>
+	<!-- /Whoosh ********************************************* -->
+
+	<!-- Footsteps ************************************************************ -->
+	<Entry>
+		<zType>AUDIO_anim_elem_step_quick</zType>
+		<zAsset>anim_elem_step_quick</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_anim_elem_step_impactful</zType>
+		<zAsset>anim_elem_step_impactful</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_anim_elem_knee_impact</zType>
+		<zAsset>anim_elem_knee_impact</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_anim_elem_foot_slide</zType>
+		<zAsset>anim_elem_foot_slide</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_FOOTSTEP_GRAVEL_LIGHT_BOOT_DOWN_HEAVY</zType>
+		<zAsset>ANIM_ELEM_FOOTSTEP_GRAVEL_LIGHT_BOOT_DOWN_HEAVY</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_FOOTSTEP_GRAVEL_LIGHT_BOOT_DOWN_LIGHT</zType>
+		<zAsset>ANIM_ELEM_FOOTSTEP_GRAVEL_LIGHT_BOOT_DOWN_LIGHT</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_FOOTSTEP_GRAVEL_LIGHT_BOOT_UP</zType>
+		<zAsset>ANIM_ELEM_FOOTSTEP_GRAVEL_LIGHT_BOOT_UP</zAsset>
+	</Entry>
+	<!-- /Footsteps *********************************************************** -->
+	
+	<!--<Entry>
+		<zType>AUDIO_UNIT_MOVEMENT_STEP</zType>
+		<zAsset>UNIT_MOVEMENT_STEP</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_ATTACK_WHOOSH_SLINGER</zType>
+		<zAsset>UNIT_ATTACK_WHOOSH_SLINGER</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_HIT_SCOUT_HIT_A_FULL_CLIP</zType>
+		<zAsset>UNIT_HIT_SCOUT_HIT_A_FULL_CLIP</zAsset>
+	</Entry>-->
+	
+	<!-- Vocal **************************************************************** -->
+	<!-- Grunt Hit **************************************** -->
+	<Entry>
+		<zType>AUDIO_anim_elem_grunt_hit_Male_A</zType>
+		<zAsset>anim_elem_grunt_hit_Male_A</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_anim_elem_grunt_hit_Male_B</zType>
+		<zAsset>anim_elem_grunt_hit_Male_B</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_anim_elem_grunt_hit_Male_C</zType>
+		<zAsset>anim_elem_grunt_hit_Male_C</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_VOCAL_GRUNT_HIT</zType>
+		<zAsset>ANIM_ELEM_VOCAL_GRUNT_HIT</zAsset>
+	</Entry>
+	<!-- /Grunt Hit *************************************** -->
+	<!-- Grunt Attack ************************************* -->
+	<Entry>
+		<zType>AUDIO_anim_elem_grunt_attack_Male_B</zType>
+		<zAsset>anim_elem_grunt_attack_Male_B</zAsset>
+	</Entry>
+	<!-- /Grunt Attack ************************************ -->
+	<!--<Entry>
+		<zType>AUDIO_ANIM_ELEM_VOCAL_BREATH_RELIEF</zType>
+		<zAsset>ANIM_ELEM_VOCAL_BREATH_RELIEF</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_VOCAL_GRUNT_PAIN</zType>
+		<zAsset>ANIM_ELEM_VOCAL_GRUNT_PAIN</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_VOCAL_YELL_ATTACK_STRONG</zType>
+		<zAsset>ANIM_ELEM_VOCAL_YELL_ATTACK_STRONG</zAsset>
+	</Entry>-->
+	<!-- /Vocal *************************************************************** -->
+	
+	<!-- Objects ************************************************************** -->
+	<!-- Armor ******************************************** -->
+	<!-- Leather ******************************** -->
+	<Entry>
+		<zType>AUDIO_anim_elem_armor_leather_move_long</zType>
+		<zAsset>anim_elem_armor_leather_move_long</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_anim_elem_armor_leather_move_short</zType>
+		<zAsset>anim_elem_armor_leather_move_short</zAsset>
+	</Entry>
+	<!-- /Leather ******************************* -->
+	<!-- Leather-Metal ************************** -->
+	<Entry>
+		<zType>AUDIO_anim_elem_armor_leather_metal_move_short</zType>
+		<zAsset>anim_elem_armor_leather_metal_move_short</zAsset>
+	</Entry>
+	<!-- /Leather-Metal ************************* -->
+	<!-- /Armor ******************************************* -->
+	<!-- Clothes ***************************************** -->
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_OBJ_CLOTH_MOVE</zType>
+		<zAsset>ANIM_ELEM_OBJ_CLOTH_MOVE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_OBJ_CLOTHES_LEATHER_MOVE_LONG</zType>
+		<zAsset>ANIM_ELEM_OBJ_CLOTHES_LEATHER_MOVE_LONG</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_OBJ_CLOTHES_LEATHER_MOVE_SHORT</zType>
+		<zAsset>ANIM_ELEM_OBJ_CLOTHES_LEATHER_MOVE_SHORT</zAsset>
+	</Entry>
+	<!-- /Clothes ***************************************** -->
+	
+	<!-- Weapons ****************************************** -->
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_WEAPON_SWORD_SLICE</zType>
+		<zAsset>ANIM_ELEM_WEAPON_SWORD_SLICE</zAsset>
+	</Entry>
+	<!-- /Weapons ***************************************** -->
+
+	<!-- /Objects ************************************************************* -->
+	
+	<!-- Hits ***************************************************************** -->
+	<Entry>
+		<zType>AUDIO_ANIM_ELEM_HIT_BODY_BLUNT</zType>
+		<zAsset>ANIM_ELEM_HIT_BODY_BLUNT</zAsset>
+	</Entry>
+	<!-- /Hits ****************************************************************-->
+	
+	<!-- Animation Elements ************************************************************************** -->
+	<!-- UNIT MOVEMENT -->
+	<Entry>
+		<zType>AUDIO_UNIT_MOVEMENT_STARTED</zType>
+		<zAsset>UNIT_MOVEMENT_STARTED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_MOVEMENT_STOPPED</zType>
+		<zAsset>UNIT_MOVEMENT_STOPPED</zAsset>
+	</Entry>
+	<!-- UNIT COMBAT -->
+	<!--Units-->
+	<Entry>
+		<zType>AUDIO_UNIT_ON_COOLDOWN</zType>
+		<zAsset>UNIT_ON_COOLDOWN</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_FATIGUED</zType>
+		<zAsset>UNIT_FATIGUED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_HAS_NO_ORDERS_LEFT</zType>
+		<zAsset>UNIT_HAS_NO_ORDERS_LEFT</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_CREATED</zType>
+		<zAsset>UNIT_CREATED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_PROMOTED</zType>
+		<zAsset>UNIT_PROMOTED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_ATTACKS</zType>
+		<zAsset>UNIT_ATTACKS</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_KILLED</zType>
+		<zAsset>UNIT_KILLED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_WORKING_LOOP</zType>
+		<zAsset>UNIT_WORKER_WORKING_LOOP</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_REMOVES_VEGETATION_TREES</zType>
+		<zAsset>UNIT_WORKER_REMOVES_VEGETATION_TREES</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UNIT_WORKER_REMOVES_VEGETATION_SCRUB</zType>
+		<zAsset>UNIT_WORKER_REMOVES_VEGETATION_SCRUB</zAsset>
+	</Entry>
+	<!-- UI selection sounds (one-shot audio only)  -->
+	<Entry>
+		<zType>AUDIO_UI_SELECTION_STARTED__GENERIC</zType>
+		<zAsset>UI_SELECTION_STARTED__GENERIC</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_SELECTION_STARTED__UNIT</zType>
+		<zAsset>UI_SELECTION_STARTED__UNIT</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_SELECTION_STARTED__CITY</zType>
+		<zAsset>UI_SELECTION_STARTED__CITY</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_SELECTION_SWITCHED</zType>
+		<zAsset>UI_SELECTION_SWITCHED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_SELECTION_ENDED</zType>
+		<zAsset>UI_SELECTION_ENDED</zAsset>
+	</Entry>
+	<!--UI-->
+	<Entry>
+		<zType>AUDIO_UI_UNIT_CANT_MOVE_THERE</zType>
+		<zAsset>UI_UNIT_CANT_MOVE_THERE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_PING</zType>
+		<zAsset>UI_PING</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CHAT_PING__ALL</zType>
+		<zAsset>UI_CHAT_PING__ALL</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CHAT_PING__TEAM</zType>
+		<zAsset>UI_CHAT_PING__TEAM</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_MOUSE_CLICKED</zType>
+		<zAsset>UI_MOUSE_CLICKED</zAsset>
+		<bOnlyAllowOnePerFrame>1</bOnlyAllowOnePerFrame>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_MOUSE_DISABLED_CLICKED</zType>
+		<zAsset>UI_MOUSE_DISABLED_CLICKED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CYCLE_BUTTON_MOUSE_CLICKED</zType>
+		<zAsset>UI_CYCLE_BUTTON_MOUSE_CLICKED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_BIG_END_TURN_BUTTON_MOUSE_CLICKED</zType>
+		<zAsset>UI_BIG_END_TURN_BUTTON_MOUSE_CLICKED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_SMALL_END_TURN_BUTTON_MOUSE_CLICKED</zType>
+		<zAsset>UI_SMALL_END_TURN_BUTTON_MOUSE_CLICKED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_MOUSE_HOVERED</zType>
+		<zAsset>UI_MOUSE_HOVERED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_BUY_YIELD_FOOD</zType>
+		<zAsset>UI_CLICK_BUY_YIELD_FOOD</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_BUY_YIELD_IRON</zType>
+		<zAsset>UI_CLICK_BUY_YIELD_IRON</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_BUY_YIELD_STONE</zType>
+		<zAsset>UI_CLICK_BUY_YIELD_STONE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_BUY_YIELD_WOOD</zType>
+		<zAsset>UI_CLICK_BUY_YIELD_WOOD</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_SELL_YIELD_FOOD</zType>
+		<zAsset>UI_CLICK_SELL_YIELD_FOOD</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_SELL_YIELD_IRON</zType>
+		<zAsset>UI_CLICK_SELL_YIELD_IRON</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_SELL_YIELD_STONE</zType>
+		<zAsset>UI_CLICK_SELL_YIELD_STONE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICK_SELL_YIELD_WOOD</zType>
+		<zAsset>UI_CLICK_SELL_YIELD_WOOD</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICKED_BUY_GOOD</zType>
+		<zAsset>UI_CLICKED_BUY_GOOD</zAsset>
+		<bOnlyAllowOnePerFrame>1</bOnlyAllowOnePerFrame>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_CLICKED_SELL_GOOD</zType>
+		<zAsset>UI_CLICKED_SELL_GOOD</zAsset>
+		<bOnlyAllowOnePerFrame>1</bOnlyAllowOnePerFrame>
+	</Entry>
+	<Entry>
+		<!-- the big tech tree node -->
+		<zType>AUDIO_UI_FULLSCREEN_POPUP_TECH_TREE_HOVER__MAIN</zType>
+		<zAsset>UI_FULLSCREEN_POPUP_TECH_TREE_HOVER__MAIN</zAsset>
+	</Entry>
+	<Entry>
+		<!-- small icons in each tech tree node -->
+		<zType>AUDIO_UI_FULLSCREEN_POPUP_TECH_TREE_HOVER__SMALL</zType>
+		<zAsset>UI_FULLSCREEN_POPUP_TECH_TREE_HOVER__SMALL</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_RESEARCH_CARD_SELECTED</zType>
+		<zAsset>UI_RESEARCH_CARD_SELECTED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_IMPROVEMENT_REVEALED</zType>
+		<zAsset>IMPROVEMENT_REVEALED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_CUSTOM_MAP_OPTIONS_ACTIVATE</zType>
+		<zAsset>UI_POPUP_CUSTOM_MAP_OPTIONS_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_HELP_ACTIVATE</zType>
+		<zAsset>UI_POPUP_HELP_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_MAKE_DECISION_ACTIVATE</zType>
+		<zAsset>UI_POPUP_MAKE_DECISION_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_MAKE_CHARACTER_DECISION_ACTIVATE</zType>
+		<zAsset>UI_POPUP_MAKE_CHARACTER_DECISION_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_MP_SETUP_ADVANCED_ACTIVATE</zType>
+		<zAsset>UI_POPUP_MP_SETUP_ADVANCED_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_OPTIONS_ACTIVATE</zType>
+		<zAsset>UI_POPUP_OPTIONS_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_PINGS_ACTIVATE</zType>
+		<zAsset>UI_POPUP_PINGS_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_PLAYER_INFO_ACTIVATE</zType>
+		<zAsset>UI_POPUP_PLAYER_INFO_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_SCENARIO_SETUP_ACTIVATE</zType>
+		<zAsset>UI_POPUP_SCENARIO_SETUP_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_CUSTOM_MAP_OPTIONS_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_CUSTOM_MAP_OPTIONS_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_HELP_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_HELP_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_MAKE_DECISION_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_MAKE_DECISION_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_MAKE_CHARACTER_DECISION_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_MAKE_CHARACTER_DECISION_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_MP_SETUP_ADVANCED_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_MP_SETUP_ADVANCED_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_OPTIONS_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_OPTIONS_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_PINGS_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_PINGS_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_PLAYER_INFO_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_PLAYER_INFO_DEACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_POPUP_SCENARIO_SETUP_DEACTIVATE</zType>
+		<zAsset>UI_POPUP_SCENARIO_SETUP_DEACTIVATE</zAsset>
+	</Entry>
+
+	<Entry>
+		<zType>AUDIO_UI_LAWS_NEWLAW</zType>
+		<zAsset>UI_LAWS_NEWLAW</zAsset>
+	</Entry>
+	
+	<!-- Multiplayer Specific UI Events ****************************************** -->
+	<Entry>
+		<zType>AUDIO_UI_MP_TURN_TIMER_ALMOST_OVER</zType>
+		<zAsset>UI_MP_TURN_TIMER_ALMOST_OVER</zAsset>
+	</Entry>
+	<!-- /Multiplayer Specific UI Events ***************************************** -->
+	
+	<!-- Fullscreen UI tabs -->
+	<Entry>
+		<zType>AUDIO_UI_TAB_OVERLAY_ACTIVATE</zType>
+		<zAsset>UI_TAB_OVERLAY_ACTIVATE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_TAB_OVERLAY_DEACTIVATE</zType>
+		<zAsset>UI_TAB_OVERLAY_DEACTIVATE</zAsset>
+	</Entry>
+	<!-- EVENTS AND DECISIONS -->
+	<Entry>
+		<zType>AUDIO_UI_EVENT_TO_WAR</zType>
+		<zAsset>UI_EVENT_TO_WAR</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Vocals,Drums,FX</zInstrumentation>
+		<zTags>EventBrowser,Battle Cry,War Drums,Weapons</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_ANCIENT_ONLOOKERS</zType>
+		<zAsset>UI_EVENT_ANCIENT_ONLOOKERS</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Vocals,Percussives</zInstrumentation>
+		<zTags>EventBrowser,Vocals,Droneish,Airy,Atmospheric,Mystical</zTags>        
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_ANCIENT_TRIBE</zType>
+		<zAsset>UI_EVENT_ANCIENT_TRIBE</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Bell,Cymbal,Drum</zInstrumentation>
+		<zTags>Deep,Mystical,Tribal,Atonal</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_ENCOURAGING_SITES</zType>
+		<zAsset>UI_EVENT_ENCOURAGING_SITES</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Santoor (Plucked String),Tambur (Bowed String),Dumbek (Drum)</zInstrumentation>
+		<zTags>Deep,Musical,Grounding,Positive,Resolving,Rooted</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_FESTIVITIES</zType>
+		<zAsset>UI_EVENT_FESTIVITIES</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Guitar,Tambourine,Frame Drum,Shaker</zInstrumentation>
+		<zTags>Festive,Uplifting,Celebration</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_OMINOUS_ENCOUNTER</zType>
+		<zAsset>UI_EVENT_OMINOUS_ENCOUNTER</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Drum,Shaker,Bent Metal</zInstrumentation>
+		<zTags>Tribal,Atonal,Percussive,SHaker,Ominous,Foreboding</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_RITUAL_SPLENDOR</zType>
+		<zAsset>UI_EVENT_RITUAL_SPLENDOR</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Drum,Vocals,Strings</zInstrumentation>
+		<zTags>Vocals,Musical,Ethnic</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_SCATTERING_DUST</zType>
+		<zAsset>UI_EVENT_SCATTERING_DUST</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Drum,Shakers,Chimes</zInstrumentation>
+		<zTags>Percussive,Neutral,Shakers,Drum Taps</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_SHATTERING_PRESENCE</zType>
+		<zAsset>UI_EVENT_SHATTERING_PRESENCE</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Deep Drum,Bowed Cymbal,Wind Chimes</zInstrumentation>
+		<zTags>Mystical,Atonal,Percussive</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_SOLEMN_VICTORY</zType>
+		<zAsset>UI_EVENT_SOLEMN_VICTORY</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Bass Drum,A Duduk,Warm Pad</zInstrumentation>
+		<zTags>Solemn,Complete,Respectful</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_SUDDEN_CONFRONTATION</zType>
+		<zAsset>UI_EVENT_SUDDEN_CONFRONTATION</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Drum,Gong,Vocalization</zInstrumentation>
+		<zTags>Tribal,Drum,Percussive,Aggressive,Sharp,Vocalization,Atonal,Sudden</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_WEARY_TRAVELER</zType>
+		<zAsset>UI_EVENT_WEARY_TRAVELER</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Chimes,Bowed String,Drone</zInstrumentation>
+		<zTags>Droneish,Mystical,Slow Attack,Weary</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_OPEN_THE_TOMB</zType>
+		<zAsset>UI_EVENT_OPEN_THE_TOMB</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Horn,Tower Bells,Organ</zInstrumentation>
+		<zTags>Mourning,Despair,Funeral,Tomb</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_WEDDING_BELLS</zType>
+		<zAsset>UI_EVENT_WEDDING_BELLS</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Tower Bells,Percussion,Crowd</zInstrumentation>
+		<zTags>Crowd,Revelry,Celebration,Wedding,Cheering</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_FAR_AWAY_STORY</zType>
+		<zAsset>UI_EVENT_FAR_AWAY_STORY</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Voice,Duduk</zInstrumentation>
+		<zTags>Lyrical,Ethnic,Story,Narative</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_DESPAIR</zType>
+		<zAsset>UI_EVENT_DESPAIR</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Duduk, Guitar, Piano</zInstrumentation>
+		<zTags>Sadness, Despair</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_DARK_REFLECTIONS</zType>
+		<zAsset>UI_EVENT_DARK_REFLECTIONS</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Guitar,Flagelot,Strings</zInstrumentation>
+		<zTags>Washy,Deep,Eerie,Sad</zTags>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_UI_EVENT_INTRIGUE</zType>
+		<zAsset>UI_EVENT_INTRIGUE</zAsset>
+		<Creators>
+			<Creator>
+				<zCreatorName>Stephen R. Frank</zCreatorName>
+				<zPercentage>100</zPercentage>
+				<zAffiliation>BMI</zAffiliation>
+			</Creator>
+		</Creators>
+		<zInstrumentation>Guitar,Chimes,Bowed Strings,Esraj</zInstrumentation>
+		<zTags>Intrigue,Temptation,Passion</zTags>
+	</Entry>
+	<!-- NATION SPECIFIC EVENTS -->
+	<!-- RUINS -->
+	<Entry>
+		<zType>AUDIO_UI_EVENT_POP_RUIN_GENERIC</zType>
+		<zAsset>UI_EVENT_POP_RUIN_GENERIC</zAsset>
+	</Entry>
+	<!-- Ambience -->
+	<Entry>
+		<zType>AUDIO_AMBIENCE_RUINS_DISCOVERED</zType>
+		<zAsset>AMBIENCE_RUINS_DISCOVERED</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_AMBIENCE_THUNDER_FOW_EDGES</zType>
+		<zAsset>AMBIENCE_THUNDER_FOW_EDGES</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_AMBIENCE_RIG_NODE</zType>
+		<zAsset>AMBIENCE_RIG_NODE</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_AMBIENCE_RIG_CENTER</zType>
+		<zAsset>AMBIENCE_RIG_CENTER</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_AMBIENCE_MAP_RESOURCE_SOUND</zType>
+		<zAsset>AMBIENCE_MAP_RESOURCE_SOUND</zAsset>
+	</Entry>
+	<Entry>
+		<!-- disabled currently -->
+		<zType>AUDIO_AMBIENCE_GOD_LAYER</zType>
+		<zAsset>AMBIENCE_GOD_LAYER</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_AMBIENCE_CITY_ON_MAP</zType>
+		<zAsset>AMBIENCE_CITY_ON_MAP</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_AMBIENCE_REVEALED_FOG_OF_WAR</zType>
+		<zAsset>AMBIENCE_REVEALED_FOG_OF_WAR</zAsset>
+	</Entry>
+	<!-- Music -->
+	<Entry>
+		<zType>AUDIO_MUSIC_MAIN_MENU_START</zType>
+		<zAsset>MUSIC_MAIN_MENU_START</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_MUSIC_MAIN_MENU_FADEOUT</zType>
+		<zAsset>MUSIC_MAIN_MENU_FADEOUT</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_MUSIC_GAMEPLAY_STARTED</zType>
+		<zAsset>MUSIC_GAMEPLAY_STARTED</zAsset>
+	</Entry>
+	<!--<Entry>
+		<zType>AUDIO_MUSIC_UI_EVENT_BIRTH_SWEET</zType>
+		<zAsset>MUSIC_UI_EVENT_BIRTH_SWEET</zAsset>
+	</Entry>-->
+	<Entry>
+		<!-- kind of musical-ish -->
+		<zType>AUDIO_AMBIENCE_SELECTED_A_CITY</zType>
+		<zAsset>AMBIENCE_SELECTED_A_CITY</zAsset>
+	</Entry>
+	<Entry>
+		<!-- kind of musical-ish -->
+		<zType>AUDIO_AMBIENCE_DESELECTED_A_CITY</zType>
+		<zAsset>AMBIENCE_DESELECTED_A_CITY</zAsset>
+	</Entry>
+	<!-- debug/test stuff -->
+	<Entry>
+		<zType>AUDIO_DEBUG_3D_SOUND</zType>
+		<zAsset>DEBUG_3D_SOUND</zAsset>
+	</Entry>
+	<Entry>
+		<zType>AUDIO_DEBUG_FOOTSTEP_WARRIOR_MOVEMENT</zType>
+		<zAsset>DEBUG_FOOTSTEP_WARRIOR_MOVEMENT</zAsset>
+	</Entry>
+</Root>

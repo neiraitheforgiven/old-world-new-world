@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<iStartAge/>
+		<iEndAge/>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_AGE_GROUP_BABY</zType>
+		<iEndAge>2</iEndAge>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_AGE_GROUP_YOUTH</zType>
+		<iStartAge>3</iStartAge>
+		<iEndAge>8</iEndAge>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_AGE_GROUP_TEEN</zType>
+		<iStartAge>9</iStartAge>
+		<iEndAge>17</iEndAge>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_AGE_GROUP_ADULT</zType>
+		<iStartAge>17</iStartAge>
+		<iEndAge>59</iEndAge>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_AGE_GROUP_SENIOR</zType>
+		<iStartAge>60</iStartAge>
+	</Entry>
+</Root>

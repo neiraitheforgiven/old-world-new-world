@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType/>
+		<zName/>
+		<zDesc/>
+		<bGameplay/>
+		<bDebug/>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_NO_TUTORIAL</zType>
+		<zName>Disable Tutorial</zName>
+		<zDesc>Tutorial Events do not occur</zDesc>
+		<bGameplay>1</bGameplay>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_NO_REPLAY</zType>
+		<zName>Disable Full Replay</zName>
+		<zDesc>Replay support requires a larger amount of available system memory</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_INSTANT_UNIT_MOVEMENT</zType>
+		<zName>Instant Unit Movement</zName>
+		<zDesc>Don't animate Unit movement</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_NO_UNIT_CYCLING</zType>
+		<zName>No Unit Cycling</zName>
+		<zDesc>Never cycles to a new Unit</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_FATIGUE_CYCLING</zType>
+		<zName>Fatigued Unit Cycling</zName>
+		<zDesc>Fatigued Units included in selection cycling</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_MOVE_TO_FATIGUE</zType>
+		<zName>Move to Fatigue Limit</zName>
+		<zDesc>Clicking outside Fatigue limit does not queue up a multi-turn move</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_SHOW_ORDERS_COST</zType>
+		<zName>Show Orders Cost</zName>
+		<zDesc>Show Orders Cost instead of Orders left for each move</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_HIDE_MINIMAP</zType>
+		<zName>Hide Minimap</zName>
+		<zDesc>Hide the minimap in the interface</zDesc>
+	</Entry>
+    <Entry>
+        <zType>PLAYEROPTION_HIDE_COUNCIL</zType>
+        <zName>Hide Council</zName>
+        <zDesc>Hide the council panel in the interface</zDesc>
+    </Entry>
+	<Entry>
+		<zType>PLAYEROPTION_MINI_TECH_CARDS</zType>
+		<zName>Use Minimized Tech Cards</zName>
+		<zDesc>Always use mini tech card display instead of choose research popup</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_COMPACT_TECH_TREE</zType>
+		<zName>Show Compact Tech Tree</zName>
+		<zDesc>Show mini cards on Technology Tree instead of detailed technology information</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_SHOW_SYSTEM_TIME</zType>
+		<zName>Show System Time</zName>
+		<zDesc>Show system time in the interface</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_HIDE_LANDMARK_NAMES</zType>
+		<zName>Hide Landmark Names</zName>
+		<zDesc>Hide map element names (e.g. Mountains, Volcanoes, etc.)</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_FLIP_UNIT_COLORS</zType>
+		<zName>Flip Unit Colors</zName>
+		<zDesc>Flip unit primary and secondary colors</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_SHOW_RIVAL_FAMILY_COLORS</zType>
+		<zName>Show Foreign Family Colors</zName>
+		<zDesc>Show Family colors for Foreign Units</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_HIDE_UNIT_MOVEMENT_STEPS</zType>
+		<zName>Hide Unit Movement Steps</zName>
+		<zDesc>Hide the movement range for each step of the selected Unit</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_SHOW_GHOST_UNITS</zType>
+		<zName>Show Ghost Units</zName>
+		<zDesc>Show units recently visible</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_MUTE_AUDIO</zType>
+		<zName>Mute</zName>
+		<zDesc>Don't play any audio</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_AZERTY_KEYBOARD</zType>
+		<zName>AZERTY Keyboard</zName>
+		<zDesc>Map hotkeys to their locations in an AZERTY keyboard</zDesc>
+	</Entry>
+	<Entry>
+		<zType>PLAYEROPTION_DEBUG_HELP</zType>
+		<zName>Debug help</zName>
+		<zDesc>Enable tooltips for debugging</zDesc>
+		<bDebug>1</bDebug>
+	</Entry>
+</Root>
