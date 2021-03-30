@@ -92,34 +92,38 @@
 			<zValue>NAME_YODAGENT</zValue> <!--YO-DA-GENT-->
 		</aeFirstNamesFemale>
 		<aeCityNames>
-			<zValue>CITYNAME_ASSUR</zValue>
-			<zValue>CITYNAME_NINEVEH</zValue>
-			<zValue>CITYNAME_KALHU</zValue>
-			<zValue>CITYNAME_HALAB</zValue>
-			<zValue>CITYNAME_ARPAD</zValue>
-			<zValue>CITYNAME_KANESH</zValue>
-			<zValue>CITYNAME_DUR_SHARRUKIN</zValue>
-			<zValue>CITYNAME_QATNA</zValue>
-			<zValue>CITYNAME_HARRAN</zValue>
-			<zValue>CITYNAME_SAREISA</zValue>
-			<zValue>CITYNAME_ERBIL</zValue>
-			<zValue>CITYNAME_MARDAMAN</zValue>
-			<zValue>CITYNAME_EKALLATUM</zValue>
-			<zValue>CITYNAME_TUSHHAN</zValue>
-			<zValue>CITYNAME_MARDIN</zValue>
-			<zValue>CITYNAME_ARRAPHA</zValue>
-			<zValue>CITYNAME_CARCHEMISH</zValue>
-			<zValue>CITYNAME_KAHAT</zValue>
-			<zValue>CITYNAME_GOZAN</zValue>
-			<zValue>CITYNAME_NISIBIS</zValue>
-			<zValue>CITYNAME_TARSUS</zValue>
-			<zValue>CITYNAME_PTERIA</zValue>
-			<zValue>CITYNAME_RESEN</zValue>
-			<zValue>CITYNAME_KAR_SULMANU_ASAREDU</zValue>
-			<zValue>CITYNAME_MALIDIYA</zValue>
-			<zValue>CITYNAME_HAMAT</zValue>
-			<zValue>CITYNAME_QADESH</zValue>
-			<zValue>CITYNAME_MELIDDU</zValue>
+			<zValue>CITYNAME_GANONDAGAN</zValue>
+			<zValue>CITYNAME_NUNDAWAO</zValue>
+			<zValue>CITYNAME_GENUNDOWA</zValue>
+			<zValue>CITYNAME_KANAWAGAS</zValue>
+			<zValue>CITYNAME_CHENUSSIO</zValue>
+			<zValue>CITYNAME_KAYAHSUTOKE</zValue> <!--Kayahsuto'ke-->
+
+			<zValue>CITYNAME_OHIO</zValue> <!--Ohio'-->
+			<zValue>CITYNAME_KAOTO</zValue> <!--Kaoto'-->
+			<zValue>CITYNAME_THANONOKEO</zValue>
+			<zValue>CITYNAME_ONOTAKE</zValue> <!--Onota'ke-->
+			<zValue>CITYNAME_KATAEAEKESKEO</zValue> <!--Ka'taeaekeskeo-->
+			<zValue>CITYNAME_TOSYOWE</zValue>
+
+			<zValue>CITYNAME_THANOWOTE</zValue>
+			<zValue>CITYNAME_TKETSOA</zValue> <!--Tketsoa'-->
+			<zValue>CITYNAME_TYOETSESYO</zValue> <!--Tyoetse'syo'-->
+			<zValue>CITYNAME_SKANEHTATI</zValue>
+			<zValue>CITYNAME_WASTOKE</zValue> <!--Wasto'ke-->
+
+			<zValue>CITYNAME_KASTEEKO</zValue>
+			<zValue>CITYNAME_KANYEKE</zValue> <!--Kanye'ke-->
+			<zValue>CITYNAME_KANOWOKO</zValue>
+			<zValue>CITYNAME_TSYOKOWOTI</zValue>
+			<zValue>CITYNAME_SWEKE</zValue> <!--Sweke'-->
+
+			<zValue>CITYNAME_KAYAHAKE</zValue> <!--Kayaha'ke-->
+			<zValue>CITYNAME_TSYONESHIYO</zValue>
+			<zValue>CITYNAME_TYOSSKWAEAETASE</zValue> <!--Tyos'skwaeaetase-->
+			<zValue>CITYNAME_KANOKTIYOKE</zValue> <!--Kanoktiyo'ke-->
+			<zValue>CITYNAME_HEYOOKE</zValue>
+			<zValue>CITYNAME_TWASKO</zValue> <!--Twasko'-->
 		</aeCityNames>
 		<aeCharacterPortraits>
 			<zValue>CHARACTER_PORTRAIT_HAUDENOSAUNEE_LEADER_MALE_01</zValue>
