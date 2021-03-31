@@ -38,4 +38,39 @@
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_NATION_HAUDENOSAUNEE</zType>
+		<Name>TEXT_NATION_HAUDENOSAUNEE</Name>
+		<SourceNation>NATION_HAUDENOSAUNEE</SourceNation>
+		<aiYieldRateOpinion>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiYieldRateOpinion>
+		<aaiImprovementClassYield>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_HAMLET</zIndex>
+				<SubPair>
+					<zSubIndex>YIELD_CIVICS</zSubIndex>
+					<iValue>20</iValue>
+				</SubPair>
+				<SubPair>
+					<zSubIndex>YIELD_CULTURE</zSubIndex>
+					<iValue>20</iValue>
+				</SubPair>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_FARM</zIndex>
+				<SubPair>
+					<zSubIndex>YIELD_TRAINING</zSubIndex>
+					<iValue>10</iValue>
+				</SubPair>
+			</Pair>
+		</aaiImprovementClassYield>
+	</Entry>
 </Root>
