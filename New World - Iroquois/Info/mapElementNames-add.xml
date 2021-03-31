@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Entry>
+		<zType>MAP_ELEMENT_NAMES_FOR_HAUDENOSAUNEE</zType>
+		<azForestNames>
+			<zValue>Tkaronto</zValue>
+		</azForestNames>
+		<azIslandNames>
+			<zValue>Hah-nu-nah</zValue>
+		</azIslandNames>
+		<azLakeNames>
+			<zValue>Erielhonan</zValue>
+			<zValue>Keuka</zValue>
+			<zValue>Oniatare</zValue>
+			<zValue>Otsego</zValue>
+			<zValue>Skaneateles</zValue>
+		</azLakeNames>
+		<azPeakNames>
+			<zValue>Juniata</zValue>
+		</azPeakNames>
+		<azPlainsNames>
+			<zValue>Tymochtee</zValue>
+			<zValue>Unadilla</zValue>
+		</azPlainsNames>
+		<azRiverNames>
+			<zValue>Cayagaga</zValue>
+			<zValue>Dzoh-ah-guh</zValue>
+			<zValue>Keh-s-hoh-ney-g-wah</zValue>
+			<zValue>Muh-he-kun-ne-tuk</zValue>
+			<zValue>Ohiyo</zValue>
+			<zValue>Ongniaahra</zValue>
+			<zValue>Onyara</zValue>
+		</azRiverNames>
+		<azValleyNames>
+			<zValue>Je-nis-hi-yeh</zValue>
+			<zValue>Nunda</zValue>
+		</azValleyNames>
+	</Entry>
+</Root>
