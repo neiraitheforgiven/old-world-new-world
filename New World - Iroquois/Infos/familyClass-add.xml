@@ -12,7 +12,6 @@
 		<iCityDefendedOpinion>20</iCityDefendedOpinion>
 		<EffectCity>EFFECTCITY_FAMILYCLASS_WARCHIEFS</EffectCity>
 		<SeatEffectCity>EFFECTCITY_FAMILYCLASS_WARCHIEFS_SEAT</SeatEffectCity>
-		<SeatFoundBonus>BONUS_FAMILYCLASS_WARCHIEFS_SEAT</SeatFoundBonus>
 		<aiDowryYieldBase>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
