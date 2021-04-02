@@ -8,8 +8,8 @@
 		<Crest>CREST_FAMILYCLASS_WARCHIEFS</Crest>
 		<SeatCrest>CREST_FAMILYCLASS_WARCHIEFS_SEAT</SeatCrest>
 		<iCityDamagedOpinion>-40</iCityDamagedOpinion>
-		<iHostileUnitOpinion>-20</iHostileUnitOpinion>
 		<iCityDefendedOpinion>20</iCityDefendedOpinion>
+		<iHostileUnitOpinion>-20</iHostileUnitOpinion>
 		<EffectCity>EFFECTCITY_FAMILYCLASS_WARCHIEFS</EffectCity>
 		<SeatEffectCity>EFFECTCITY_FAMILYCLASS_WARCHIEFS_SEAT</SeatEffectCity>
 		<aiDowryYieldBase>
