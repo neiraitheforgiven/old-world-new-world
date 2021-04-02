@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_FAMILY_MOHAWK</zType>
+		<English>Mowhawk~Mowhawks~Mowhawk</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_FAMILY_CAYUGA</zType>
+		<English>Cayuga~Cayugas~Cayuga</English>
+	</Entry>
+    <Entry>
+		<zType>TEXT_FAMILY_ONONDAGA</zType>
+		<English>Onondaga~Onondagas~Onondaga</English>
+	</Entry>
+	   <Entry>
+		<zType>TEXT_FAMILY_SENECA</zType>
+		<English>Seneca~Senecas~Seneca</English>
+	</Entry>
+</Root>
