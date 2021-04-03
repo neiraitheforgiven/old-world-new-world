@@ -6,8 +6,8 @@
 		<SourceFamilyClass>FAMILYCLASS_WARCHIEFS</SourceFamilyClass>
 		<aiYieldRate>
 			<Pair>
-				<zIndex>YIELD_TRAINING</zIndex>
-				<iValue>20</iValue>
+				<zIndex>YIELD_ORDERS</zIndex>
+				<iValue>15</iValue>
 			</Pair>
 		</aiYieldRate>
 		<aeTraitPromotion>
@@ -28,8 +28,8 @@
 		<SourceFamilyClass>FAMILYCLASS_WARCHIEFS</SourceFamilyClass>
 		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>15</iValue>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>20</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
