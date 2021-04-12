@@ -277,7 +277,7 @@ At the moment, {CHARACTER-SHORT-0} is thriving!</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_BIREME_SELECTED</zType>
-		<English>The link(UNIT_BIREME) is a link(UNITTRAIT_SHIP) Unit and can attack other ships in melee range. link(UNITTRAIT_SHIP) Units can also link(CONCEPT_ANCHOR), creating a zone around the ship that Land Units can travel through.</English>
+		<English>The link(UNIT_BIREME) is a link(UNITTRAIT_SHIP) Unit and can attack other ships in melee range. link(CONCEPT_ANCHORED) link(UNITTRAIT_SHIP) Units create a zone around the ship that Land Units can travel through.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_SPEARMAN_SELECTED</zType>
@@ -385,7 +385,7 @@ Doing so would please the believers, but letting other families sponsor such rel
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_A_SCHOLAR_DENOUNCED</zType>
-		<English><![CDATA["I am concerned," a well-dressed <p.is_sub.S0=SUBJECT_ZOROASTRIANISM>Magus<p=SUBJECT_CHRISTIANITY>Bishop<p=SUBJECT_JUDAISM>Kohen<p=SUBJECT_MANICHAEISM>Elect<else>Priest<end> reads out a message from {CHARACTER-2}, "by the recent findings of the scholar {CHARACTER-1} at your court. Unchecked, these ideas could pose a threat to the spread of {RELIGION-0}. Denounce {G1:his:her} work and the rest of the court should follow."
+		<English><![CDATA["I am concerned," a well-dressed <p.is_sub.S0=SUBJECT_ZOROASTRIANISM>Magus<p=SUBJECT_CHRISTIANITY>Bishop<p=SUBJECT_JUDAISM>Kohen<p=SUBJECT_MANICHAEISM>Elect<else>Priest<end> reads out a message from {CHARACTER-2}, "by the recent findings of the godless scholar {CHARACTER-1} at your court. Unchecked, these ideas could pose a threat to the spread of {RELIGION-0}. Denounce {G1:his:her} work and the rest of the court should follow."
 
 The <p.is_sub.S0=SUBJECT_ZOROASTRIANISM>Magus<p=SUBJECT_CHRISTIANITY>Bishop<p=SUBJECT_JUDAISM>Kohen<p=SUBJECT_MANICHAEISM>Elect<else>Priest<end> is watching expectantly. How do you respond?]]></English>
 	</Entry>
@@ -467,9 +467,9 @@ The Magi are split and tensions are rising. Who do you side with? </English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_RIVER_REVELATION</zType>
-		<English>Following the recent {RELIGION-0,1} Spring festival of Maidhyoi-shema, rumours have been swirling around that {CHARACTER-2} has received a revelation through Ahura Mazda in the same way as Zoroaster himself.
+		<English>Following the recent {RELIGION-2,1} Spring festival of Maidhyoi-shema, rumors have been swirling around that {CHARACTER-0} has received a revelation through Ahura Mazda in the same way as Zoroaster himself. 
 
-Apparently {CHARACTER-SHORT-2} was fetching water from the river for the celebrations. As {G2:he:she} emerged purified from the river {G2:he:she} saw a vision of Vohu Manah as a being of light, who led {G2:him:her} to Ahura Mazda and the divine six.
+Apparently {CHARACTER-SHORT-0} was fetching water from the river for the celebrations. As {G0:he:she} emerged purified from the river {G0:he:she} saw a vision of Vohu Manah as a being of light, who led {G0:him:her} to Ahura Mazda and the divine six. 
 
 Could this be true?</English>
 	</Entry>
@@ -940,7 +940,7 @@ You look over at {CHARACTER-SHORT-2}, {G2:he:she} looks surprised but seems open
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_ASHERAH</zType>
-		<English>Your spouse {CHARACTER-1} has been talking to the Kohanim about the state of {RELIGION-0} in {PLAYER-2}. {G1:He:She} wants to encourage the worship of Asherah, the queen consort of the {RELIGION-0,1} God and goddess of motherhood and fertility.   
+		<English>Your spouse {CHARACTER-1} has been talking to the Kohanim about the state of {RELIGION-0} in {PLAYER-2}. {G1:He:She} wants to revive the worship of Asherah, the queen consort of the {RELIGION-0,1} God and a goddess of motherhood and fertility.   
 
 This move to encourage the worship of God’s consort is no doubt to strengthen {CHARACTER-SHORT-1}’s own position of power, but bringing Asherah back to the fore could also help to spread {RELIGION-0}. </English>
 	</Entry>
@@ -1026,7 +1026,9 @@ He looks pleased to see you on the throne and promises to serve faithfully if yo
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_PERSONAL_RELIGION</zType>
-		<English><![CDATA[The religion of {RELIGION-1} has been spreading through {PLAYER-0}. The <p.is_sub.S1=SUBJECT_ZOROASTRIANISM>Magi<p=SUBJECT_CHRISTIANITY>Bishops<p=SUBJECT_JUDAISM>Kohanim<p=SUBJECT_MANICHAEISM>Elect<else>Priests<end> have offered to teach you about their ways. Do you accept?]]></English>
+		<English><![CDATA[The religion of {RELIGION-1} has been growing in popularity and spreading through the lands of {PLAYER-0}. The <p.is_sub.S1=SUBJECT_ZOROASTRIANISM>Magi<p=SUBJECT_CHRISTIANITY>Bishops<p=SUBJECT_JUDAISM>Kohanim<p=SUBJECT_MANICHAEISM>Elect<else>Priests<end> send a message to your court, offering to teach you about their ways. 
+
+Do you accept the ways of {RELIGION-1}?]]></English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_RETURNING_THE_FAVOR_CHANCELLOR</zType>
@@ -1122,17 +1124,17 @@ Will you fund {G0:his:her} conversion efforts in {CITY-1}? ]]></English>
 		<zType>TEXT_EVENTSTORY_CONVERT_REJECTED</zType>
 		<English>{CHARACTER-0} is not impressed by your attempts to convert {G0:him:her} to {RELIGION-1}, finally sending a message calling out your attempt as hypocritical. “Why should I feel pressured to follow {RELIGION-1} when you yourself do not?”  
 
-There is still a chance of saving this attempt, what reason will you give for {CHARACTER-SHORT-0} to convert? </English>
+There is still a chance of saving this attempt, how will you convince {G0:him:her}? </English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_NEW_FRIEND</zType>
-		<English>Your attempts to convert {CHARACTER-0} to {RELIGION-1} have seen an unexpected side effect. While attending worship together and sending messages back and forth about different aspects of {RELIGION-1}, you have been surprised by the quality of your conversation. Perhaps {CHARACTER-SHORT-0} would make a good friend? 
+		<English>Your attempts to convert {CHARACTER-0} to {RELIGION-1} have seen an unexpected side effect. While sending messages back and forth about different aspects of {RELIGION-1}, you have been surprised by the quality of your conversation.
 
-{G0:He:She} surely seems to enjoy your conversation, sending through longer and longer theological letters that are increasingly eating up the time of you and your scribes. Will you maintain this correspondence? </English>
+However, your scribes soon approach you complaining that {CHARACTER-SHORT-0} is sending longer and longer theological letters that are increasingly obscure and difficult to translate. Will you maintain this correspondence? </English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_ZEAL</zType>
-		<English><![CDATA[{CHARACTER-0} has taken to {RELIGION-1} as a duck to water. If anything, {G0:his:her} zeal can come across too strongly at times, alienating some of the others in the court. {CHARACTER-SHORT-0} asks for your guidance, what is the best way for {G0:him:her} to support <p.is_sub.S0=SUBJECT_ZOROASTRIANISM>Ahura Mazda<p=SUBJECT_RELIGION_PAGAN>the gods<else>God<end>?]]></English>
+		<English><![CDATA[{CHARACTER-0} has taken to {RELIGION-1} as a duck to water. If anything, {G0:his:her} zeal can come across too strongly at times, alienating some of the others in the court. {CHARACTER-SHORT-0} asks for your guidance, what is the best way for {G0:him:her} to support <p.is_sub.S1=SUBJECT_ZOROASTRIANISM>Ahura Mazda<p=SUBJECT_RELIGION_PAGAN>the gods<else>God<end>?]]></English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_REFUSED</zType>
@@ -1142,11 +1144,13 @@ How will you respond? ]]></English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_BAD_BLOOD</zType>
-		<English>{CHARACTER-0} seems surprisingly open to adopting {RELIGION-2}, although there is a catch. “I understand that as a {PLAYER-3,1} it is my duty to support the link(CONCEPT_STATE_RELIGION). However, there is bad blood between myself and {CHARACTER-1}. As long as {G1:he:she} acts as the head of {RELIGION-2} then I refuse to accept it.” </English>
+		<English>{CHARACTER-0} seems surprisingly open to adopting {RELIGION-2}, although there is a catch. “I understand that as a {PLAYER-3,1} it is my duty to support the link(CONCEPT_STATE_RELIGION). However, there is bad blood between myself and {CHARACTER-1}. Sorry, but I cannot bring myself to accept {RELIGION-2} with {G1:him:her} as the head.” 
+
+Will you accept {CHARACTER-SHORT-0}’s decision to not convert, or will you press the matter? </English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_FOUNDING_AVESTAN</zType>
-		<English>Your servants bring news that a delegation from the {FAMILY-1} have arrived with {CHARACTER-2} at the palace to meet you. When you appear before them in full ritual splendor, you notice that they appear to avert their eyes with even more reverence than normal. 
+		<English>Your servants bring news that a delegation from the {FAMILY-1} family have arrived with {CHARACTER-2} at the palace to meet you. When you appear before them in full ritual splendor, you notice that they appear to avert their eyes with even more reverence than normal. 
 
 {CHARACTER-SHORT-2} answers your questioning gaze. {G2:He:She} explains that the ideals of {RELIGION-0,1} link(THEOLOGY_VENERATION) have led to the spreading belief that your ancestor was a descendant of Zoroaster, if not Zoroaster himself reborn. The {FAMILY-1} want to host a feast to celebrate your decent. </English>
 	</Entry>
@@ -1193,6 +1197,284 @@ Do you put yourself in debt to {CHARACTER-0}?</English>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_INFLUENCE_SPOUSE_DATE_NIGHT</zType>
 		<English>It is a genuine pleasure to spend time with your {G1:husband:wife}, and tonight you have time for a quiet meal together with all {G1:his:her} favorite foods, some wine, and a delicious dessert. Afterwards, who knows what might happen?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SACRIFICE</zType>
+		<English><![CDATA[{CHARACTER-1} has sent word that {G1:he:she} has managed to persuade {CHARACTER-0} of the quality of your character through extolling your piety. True or not, a gift of writing or prayers would convince {CHARACTER-SHORT-0} of your dedication to <p.is_sub.S3=SUBJECT_ZOROASTRIANISM>Ahura Mazda<p=SUBJECT_RELIGION_PAGAN>the gods<else>God<end> and fully endear {G0:him:her} to you. 
+
+Are you willing to go the extra distance to impress {CHARACTER-0}?  ]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_RELIGION_REJECTED</zType>
+		<English>{CHARACTER-SHORT-1}’s attempts to sway {CHARACTER-0} for you have gone wrong. Very, very wrong. After a shouting match that was heard across the city, rumors are quickly spreading about how {CHARACTER-SHORT-0} has threatened to deny all {RELIGION-3,1} rites and worship to {CHARACTER-SHORT-1}.
+
+{CHARACTER-SHORT-0} has retorted that {G0:he:she} intends to convert to {RELIGION-4} instead. It may be your turn to intercede before things get out of hand. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_FEAST</zType>
+		<English>The wine is flowing freely and everyone is in high spirits. {CHARACTER-1} has been interceding with {CHARACTER-0} on your behalf and this final step in {G1:his:her} plan seems to be working; you spend much of the evening with {CHARACTER-SHORT-0}, drinking and laughing together. 
+
+Or at least you are until, red-cheeked and slurring, {CHARACTER-SHORT-0} carelessly makes a series of slanderous remarks about you and your family. The laughter quickly dies from {G0:his:her} eyes as {G0:he:she} realizes what {G0:he:she} just said, and to who. 
+
+{CHARACTER-SHORT-0} is quick to apologize. Was the outburst an effect of the drink or revealing of {G0:his:her} true feelings?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_YOUNG_BOND</zType>
+		<English>While interceding on your behalf, {CHARACTER-SHORT-3} discovered that {CHARACTER-2} has a child a similar age to {CHARACTER-0}. {G3:He:She} suggests that encouraging a companionship between the two children could be an easy way to sway {CHARACTER-SHORT-2}.
+
+An invitation for the child, {CHARACTER-1}, to spend time at the palace would help your cause, but could be seen as beneath your station. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_RIVALS</zType>
+		<English>For every praise that {CHARACTER-1} has heaped upon you to {CHARACTER-0}, {CHARACTER-SHORT-0} has found a way to interpret it as a flaw. Every strength is called a weakness and every action is belittled and dismissed. 
+
+{CHARACTER-SHORT-1} returns to you at a loss. It seems that {CHARACTER-SHORT-0} is determined to build a rivalry between the two of you. How will you react? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_ELOPEMENT</zType>
+		<English>{CHARACTER-1} rushes to you with potentially disastrous news. In {G1:his:her} attempts to sway {CHARACTER-0} for you, {CHARACTER-SHORT-1} encouraged {CHARACTER-SHORT-0} to meet with your heir {CHARACTER-SHORT-2}. 
+
+What started as a diplomatic meeting evolved into something more and the two have been secretly meeting ever since. {CHARACTER-SHORT-1}’s agents have discovered that the young lovers are planning on eloping that very night and gives you the details of the meeting place. 
+
+You rush to reach it before them - what reception will they find there? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_NEW_LOVE</zType>
+		<English>{CHARACTER-1} meets you in your private chambers and informs you that {G1:his:her} attempts to intercede with {CHARACTER-0} have been a success. {G1:He:She} moves to leave, but hesitates by the door. 
+
+Turning back to you {CHARACTER-SHORT-1} starts speaking softly but urgently, confessing that while spending time convincing {CHARACTER-SHORT-0} of your qualities, {G1:he:she} has come to realize that {G1:he:she} loves you. 
+
+{CHARACTER-SHORT-1} draws close and tentatively places a hand over yours. Will you accept this declaration of love?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_FAMILY_UNITED</zType>
+		<English>Your Spymaster {CHARACTER-2} brings word that {CHARACTER-1}’s efforts to intercede with {CHARACTER-0} for you have been met with resistance. 
+
+Although {CHARACTER-SHORT-0} is acting receptive and jovial, in secret {G0:he:she} is undermining {CHARACTER-SHORT-1} and uniting the {FAMILY-4} family against the two of you using charisma and coercion. 
+
+{CHARACTER-SHORT-2} asks what message you would like to send to bring {CHARACTER-SHORT-0} and the {FAMILY-4,1} back in line. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_DUEL</zType>
+		<English><![CDATA[Your servants bring news of a brutal fight within the {FAMILY-2} family that has disgusted the capital.
+
+{CHARACTER-1} was speaking to {CHARACTER-0} on your behalf when {CHARACTER-SHORT-0} started mocking and criticizing you. Unable to let the slight pass, {CHARACTER-SHORT-1} demanded that they duel. In the fight {CHARACTER-SHORT-0}’s <p.is_sub.S0=SUBJECT_CORRUPT>corrupt<p=SUBJECT_PROUD>proud<p=SUBJECT_BLOODTHIRSTY>bloodthirsty<p=SUBJECT_RUTHLESS>ruthless<p=SUBJECT_GREEDY>greedy<else>cruel<end> nature was revealed as {G0:he:she} <p.is_sub.S0=SUBJECT_CORRUPT>bribed the guards to beat {CHARACTER-SHORT-1} to death before they could even fight<p=SUBJECT_PROUD>refused to back down from {G0:his:her} words, even if it meant killing {CHARACTER-SHORT-1}<p=SUBJECT_BLOODTHIRSTY>gave {CHARACTER-SHORT-1} no respite, gleefully hacking into {G1:him:her} and reveling in the slaughter<p=SUBJECT_RUTHLESS>struck {CHARACTER-SHORT-1} down even when {G1:he:she} was asking for mercy<p=SUBJECT_GREEDY>killed {CHARACTER-SHORT-1} in hopes of gaining some of the family’s fortune<else>killed {CHARACTER-SHORT-1}<end>.
+
+The other families are shocked at such violence within a noble house, but it could be a good chance to sway {CHARACTER-SHORT-0} if that is still your plan. {G0:He:She} is brought before you in chains, what will you decree? ]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_GREED</zType>
+		<English>{CHARACTER-SHORT-1}’s greed knows no bounds. The intercession went without a problem and {CHARACTER-0} has been swayed to appreciate you more. But now {CHARACTER-1} has started sending messages asking for more payment for {G1:his:her} service. 
+
+Will you indulge this wantonness? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_LOYALTY</zType>
+		<English>Since the intercession, {CHARACTER-0} has been almost unquestioningly loyal to you. When pressed, {CHARACTER-1} admits that {G1:he:she} said to {CHARACTER-SHORT-0} that you are a great fan of the epics, knowing that it was a good way to win {G0:him:her} over. 
+
+{CHARACTER-0} reveals that {G0:he:she} has been building a collection of rare stories and scrolls and offers you a gift of one of them. What will you ask for?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_ADOPTED_SUCCESSOR</zType>
+		<English>Your {RELATIVE-1} {CHARACTER-1} confronts you about the line of succession, arguing that {CHARACTER-0} should be excluded due to {G0:his:her} being adopted. 
+
+Adoption is not an uncommon practice in {PLAYER-2}, although clarity in ancestry is vital when it comes to succession. Is {CHARACTER-SHORT-1} pressing this for {G1:his:her} own gain or genuinely concerned for the {PLAYER-2,1} line?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_RIVAL_SUCCESSORS</zType>
+		<English>Battle lines are being drawn in the capital. Your {RELATIVE-1} {CHARACTER-1} has been loudly protesting that your heir {CHARACTER-0} is adopted, playing on people’s base fears and arguing that {G1:his:her} claim to the leadership of {PLAYER-4} is far stronger than {CHARACTER-SHORT-0}’s. 
+
+The {FAMILY-3} family has risen in support of {CHARACTER-SHORT-1}, while the {FAMILY-2} family remain loyal to {CHARACTER-SHORT-0}. Arguments over succession have been the end of many a nation, the fierce tension rising over your successor demands a swift response to resolve the matter. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_COMPULSION</zType>
+		<English><![CDATA[{CHARACTER-1} has returned to you with news of {G1:his:her} intercession. Although successful, {CHARACTER-SHORT-1} is worried that {G1:he:she} went too far to get the desired results, threatening {CHARACTER-0} with the wrath of <p.is_sub.S3=SUBJECT_ZOROASTRIANISM>Ahura Mazda<p=SUBJECT_RELIGION_PAGAN>the gods<else>God<end>. 
+
+The priests who were present have been spreading discontent amongst the {RELIGION-3,3}, worried about your influence on {CHARACTER-1}. ]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_DEBATE</zType>
+		<English><![CDATA[{CHARACTER-1} met with {CHARACTER-0} as planned, with the aim of swaying {G0:him:her} to your cause. However, things took a sideways turn when they started talking about {RELIGION-3} as the inquisitive {CHARACTER-SHORT-0} <p.is_sub.S0=TRAIT_SCHOLAR_ARCHETYPE>started questioning the sources and evidence behind {CHARACTER-SHORT-1}’s arguments<p=TRAIT_EDUCATED>quoted a series of lessons from {G0:his:her} education that {CHARACTER-SHORT-0} had clearly never heard of<else>asked thoughtful questions about the nature of the divine that {CHARACTER-SHORT-1} had no answer for<end>. {CHARACTER-SHORT-1} was left at a loss for words and was entirely unable to convince {CHARACTER-0} of anything, let alone of your greatness. {G1:He:She} returns to you in embarrassment. ]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_REPLACEMENT</zType>
+		<English>Your Spymaster {CHARACTER-SHORT-2} took the precaution of setting an agent to track the progress of {CHARACTER-SHORT-1}’s intercession. What was discovered is a much greater plot with implications for the entire Old World. 
+
+{CHARACTER-0} has been using all of {G0:his:her} support and contacts to maneuver to be able to take the position as Religion Head of {RELIGION-4}. It seems that {CHARACTER-SHORT-1} has no idea and is due to meet with {CHARACTER-SHORT-0} the following week, in what is most likely a trap. 
+
+This surprising information has put you in a position of power. What will you do with what you know? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_DONATION</zType>
+		<English><![CDATA[A message arrives from {CHARACTER-0}:
+
+“After the many kind words that {CHARACTER-1} has spoken of you, I am convinced that you are a just follower of {RELIGION-3}. Please allow me to send a gift to add to <p.is_sub.S3=SUBJECT_ZOROASTRIANISM>Ahura Mazda’s<p=SUBJECT_RELIGION_PAGAN>the gods’<else>God’s<end> glory in {PLAYER-2}.”
+
+A generous offer, what will you ask for? ]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_TRUCE</zType>
+		<English>A messenger arrives at your court from {CHARACTER-0}, praising your glory and devoutness. In front of the gathered nobels, {G0:he:she} states that after the words of {CHARACTER-1} on your behalf, {CHARACTER-SHORT-0} wants to unite the people of {PLAYER-0} and {PLAYER-3} under a truce of the {RELIGION-4} faithful. 
+
+There are murmurs of curiosity amongst those listening but the {FAMILY-2} family are quick to take the floor, decrying this attack on {PLAYER-3} values and independence.  </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SUSPICION</zType>
+		<English>Your Spymaster {CHARACTER-SHORT-2} urgently asks to speak with you. {G2:He:She} quickly relays that {G2:his:her} agents are suspicious that during their meetings {CHARACTER-0} has turned {CHARACTER-1} against you and that there is a planned attempt on your life.  
+
+A servant comes up to you and says that {CHARACTER-SHORT-1} is at the palace, asking to meet with you alone. {CHARACTER-SHORT-2} gives you a meaningful look. There is no time for proof, can {CHARACTER-1} be trusted?   </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SUSPICION_NO_CHANCES</zType>
+		<English>You meet alone in your rooms. {CHARACTER-SHORT-1}’s eyes dart around as {G1:he:she} enters. “Well met {CHARACTER-SHORT-3}! I have a message from {CHARACTER-SHORT-0}…” {CHARACTER-SHORT-1} takes half a step forwards and then stops, eyes bulging and a confused look upon {G1:his:her} face. 
+
+{CHARACTER-2} pulls the dagger out of {CHARACTER-SHORT-1}’s back. “You’re safe now, my {G3:king:queeen}.” 
+
+Was there really a plot on your life? A search of {CHARACTER-SHORT-1}’s body offers no clues and the dead tell no tales.  </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SUSPICION_SAFE</zType>
+		<English>You meet alone in your rooms. {CHARACTER-SHORT-1}’s eyes dart around as {G1:he:she} enters. “Well met {CHARACTER-SHORT-3}! I have a message from {CHARACTER-SHORT-0}…” {CHARACTER-SHORT-1} takes half a step forwards. “{G0:He:She} is happy to support you and wanted me to give you this personal donation for the {PLAYER-3} coffers.”
+
+{CHARACTER-SHORT-1} places the valuable jewels on the table for you and thanks you again before leaving. You think of the suspicions that {CHARACTER-SHORT-2} placed in your mind. Will you praise or punish your Spymaster’s actions?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SUSPICION_MURDER</zType>
+		<English>You meet alone in your rooms. {CHARACTER-SHORT-1}’s eyes dart around as {G1:he:she} enters. “Well met {CHARACTER-SHORT-3}! I have a message from {CHARACTER-SHORT-0}…” {CHARACTER-SHORT-1} takes half a step forwards. “{G0:He:She} is sorry that {G0:he:she} can’t be here for this.”
+
+The knife pierces your side with an intense pressure and an involuntary breath escapes your lips as the air is driven from your body. The shock winds you and {CHARACTER-SHORT-1}’s hands wrap around your throat before you have a chance to react.
+
+Moments separate you from death.  </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CHILDHOOD_FRIENDS</zType>
+		<English>[STUB]</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_CONFUSION</zType>
+		<English><![CDATA[{CHARACTER-2} comes to you in triumph. “Never fear, I have done as you asked and interceded with {CHARACTER-1} on your behalf!”
+
+…{CHARACTER-SHORT-1}? 
+
+{CHARACTER-SHORT-2} stops short, your questioning look briefly breaking through {G2:his:her} <p.is_sub.S0=SUBJECT_INSANE>insanity<else>foolishness<end>. {G2:He:She} sheepishly asks, “Oh no. It was supposed to be {CHARACTER-0} wasn’t it?”]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_PARRICIDE</zType>
+		<English>In a surprise visit, {CHARACTER-0} comes to you directly.
+
+“I know you sent {CHARACTER-1} to win me over but it won’t work. If you want my support then there is something that I want in return. The {FAMILY-4,1} are suffering under the leadership of {CHARACTER-1}. Were an accident to befall {G1:him:her}… I hope that you know that I would be a loyal subject of yours with my increased influence within the {FAMILY-4} family.”
+
+Your Spymaster {CHARACTER-2} stands at the ready. Will you aid this scheming family member? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_EXILE</zType>
+		<English>To say that the meeting between {CHARACTER-1} and {CHARACTER-2} did not go well would be an understatement. Their explosive relationship came to a head with {CHARACTER-SHORT-1} using {G1:his:her} power as the head of the {FAMILY-1,1} to tell {CHARACTER-SHORT-0} to leave and never return. 
+
+{CHARACTER-1} stands before you, well aware that {G1:he:she} failed in what you asked, but stubbornly blaming {CHARACTER-SHORT-0}’s character for their disagreements. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_THE_FINAL_FAVOR_PLAYER</zType>
+		<English>At the funeral of {CHARACTER-0}, you are approached by the new {G1:king:queen} {CHARACTER-1} with tears in {G1:his:her} eyes and steel in {G1:his:her} posture.
+
+"I shall not beat around the bush. {CHARACTER-SHORT-0} told me that he owed you a debt. I would see that debt repayed. Will you accept?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_THE_FINAL_FAVOR_PLAYER_HEIR</zType>
+		<English>At the funeral of {CHARACTER-0}, you are approached by the {CHARACTER-1}.
+
+"I owed a debt to {CHARACTER-SHORT-0}, and was not able to repay it. Allow me to repay you in {G0:his:her} honor instead. Will you accept?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CLEARING_FAMILY_DEBT</zType>
+		<English>{CHARACTER-0} approaches you about clearing {G0:his:her} debt that {G0:he:she} owes to you. {G0:He:She} understands that you were a great support in a time of need but now it is time to even the scales.
+
+		What gift shall we accept to resolve this matter?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CLEARING_RELIGION_DEBT</zType>
+		<English>{CHARACTER-0} approaches you about clearing {G0:his:her} debt that {G0:he:she} owes to you. {G0:He:She} understands that you were a great support in a time of need but now it is time to even the scales.
+
+		What gift shall we accept to resolve this matter?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_SUDDEN_SAVIOUR</zType>
+		<English>The battlefield is in chaos and you are in the center of the fray. Your shield is in tatters, hacked apart by the heavy blows of your enemy. Finally the shield can bear no longer and a heavily swung axe breaks through and bites into your arm. The adrenaline and the pain grip you in waves of intensity. Before you can sink to the floor, hands grab the back of your armor, pulling you away from the fray. 
+
+You later discover that upon seeing you surrounded, an officer rallied the men and led a sortie to save you. Will you reward this sudden savior? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_WOUNDED_GENERAL</zType>
+		<English>{CHARACTER-0} is brought back to you wounded and barely breathing, {G0:his:her} body covered in brutal wounds from the fighting. 
+
+The chances of recovery are slim, but will you intervene to attempt to save {CHARACTER-SHORT-0}’s life?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FLEE_THE_FIELD</zType>
+		<English>The battlefield is a slaughterhouse. Your bodyguard lay strew around you and suddenly you realize just how alone you are. Only a handful of men stand with you, mostly lesser members of the nation’s head families. Soldiers are starting to encircle you but it’s impossible to make out if they’re friend or foe from the blood and sweat running into your eyes. 
+
+“The battle is lost! Please, you must escape.” The soldier’s outstretched hand offers a horse’s bridle. The encircling troops are closing in. 
+
+It’s now or never.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTO_THE_MIST</zType>
+		<English>Most of the bodies have already been stripped clean of their valuables by the time your soldiers are able to return to the field of battle to retrieve the bodies of the fallen. But amongst the living or the dead, there is no sign of {CHARACTER-0}. 
+
+One soldier accounts that they last saw {G0:him:her} walking into a sudden mist that arose during the fighting. True or not, stories are soon spreading through your armies of the hero {CHARACTER-SHORT-0}, who will one day return to defend {PLAYER-2}. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_A_WHOLE_NEW_WORLD</zType>
+		<English>A surprising message arrives. {CHARACTER-SHORT-0} and {CHARACTER-SHORT-1} have been traveling the world during their elopement. But while {CHARACTER-SHORT-0} is eager to continue adventuring, it seems that {CHARACTER-SHORT-1} is tired of a life on the road and wants to take {G1:his:her} place at court.
+
+The message from {CHARACTER-SHORT-1} offers to inform you of their location if you will send people to collect them. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_A_SHORT_MARRIAGE</zType>
+		<English>{CHARACTER-0} returns from {G0:his:her} elopement in regret and shame. It turns out that the romance only lasted for three weeks before the two could no longer stand each other and went separate ways.
+
+Hanging {G0:his:her} head, {CHARACTER-SHORT-0} asks that you annul the marriage. Will you accept {G0:him:her} back? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_ELOPER_CAPTURED_TITLE</zType>
+		<English>Eloper Captured</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_SUDDEN_RETURN</zType>
+		<English>{CHARACTER-0} strolls into court like {G0:he:she} had never left. Loudly and publicly, {G0:he:she} demands a welcome for {G0:himself:herself} and {G0:his:her} new {G1:husband:wife}, {CHARACTER-SHORT-1}. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_FURY</zType>
+		<English>The people of {PLAYER-0} are furious at your demand for tribute. They threateningly ask your link(COUNCIL_AMBASSADOR) {CHARACTER-SHORT-2}, why should they pay tribute to a weaker nation than their own?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_MERCY</zType>
+		<English>Your link(COUNCIL_AMBASSADOR), {CHARACTER-SHORT-2}, has pressed the {PLAYER-0,1} with demands for tribute. The weak nation begs for mercy, claiming that they are already short on resources. 
+
+Will you take mercy on {PLAYER-0}?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_INSULT</zType>
+		<English>Upon demanding tribute your link(COUNCIL_AMBASSADOR), {CHARACTER-SHORT-2}, was laughed out of the room. 
+
+“We have no reason to send you anything. {PLAYER-1} is half a world away. What are you going to do about it?”</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_COUNTER_OFFER</zType>
+		<English>The leaders of {PLAYER-0} have given an interesting counter-offer to your demand for tribute. Their agents have a way of freeing {CHARACTER-2} from captivity if we are willing to let the tribute slide. 
+
+What will you demand? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_OFFERING</zType>
+		<English>The people of {PLAYER-0} are claiming that they are unable to give tribute, with their supply lines disrupted by the attacks of their enemies, the {PLAYER-3,3}. Instead, they offer a gift of gold as a sign of their friendship. 
+
+Will you accept this offering? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_REVERSAL</zType>
+		<English>Your link(COUNCIL_AMBASSADOR), {CHARACTER-SHORT-2}, returns in shame. {G2:He:She} brings a message from {CHARACTER-0}:
+
+“You certainly have confidence, but you misunderstand your place here. You will pay {PLAYER-0} a tribute of gold, or it will be war.”</English>
 	</Entry>
 	<Entry beginGroup="Exploration">
 		<zType>TEXT_EVENTSTORY_RUINS_SURVIVORS</zType>
@@ -1564,7 +1846,7 @@ Afterwards, these friendly gatherers have expressed an interest in migrating to 
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_HARVEST_GREAT_POTENTIAL</zType>
-		<English>Examining the latest salt harvest, scientists and merchants recognize the potential for large-scale salt production for food preservation and nutrition. {CHARACTER-3}, governor of {CITY-2}, requests that we provide funds from the treasury to develop this process for {G3:his:her} city.</English>
+		<English>Examining the latest salt harvest, scientists and merchants recognize the potential for large-scale salt production for food preservation and nutrition. {CHARACTER-2}, governor of {CITY-3}, requests that we provide funds from the treasury to develop this process for {G2:his:her} city.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_HARVEST_SHIP_SICKNESS</zType>
@@ -1661,6 +1943,12 @@ What do you seek for {PLAYER-0} and for yourself?</English>
 		<English>From modest beginnings, {PLAYER-0} grows. After several busy days spent overseeing the affairs of your newest city, you take a moment to reflect on your progress.
 
 Where will your ambition carry you next?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS</zType>
+		<English>Following the completion of {PLAYER-0}’s latest urban improvement, you take a moment to reflect upon your accomplishment. 
+
+As our cities begin to take shape, you know there is much work to be done. How will you prioritize {PLAYER-0}’s urban expansion?</English>
 	</Entry>
 	<Entry beginGroup="Contact">
 		<zType>TEXT_EVENTSTORY_TRIBE_CONTACT_CALM_EMISSARY</zType>
@@ -2868,6 +3156,18 @@ Yet it might still be possible to avert this war by paying tribute and placating
 {TEXT_EVENTSTORY_WAR_OFFER_CLOSING}</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_REFUSE</zType>
+		<English>The envoy hurriedly reads out the message from your link(COUNCIL_AMBASSADOR), {CHARACTER-SHORT-2}. {G2:He:She} sends word that the court of {PLAYER-0} have completely refused your demand for tribute.
+
+Will you press the matter with force or accept their decision and lose face? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_GIVE</zType>
+		<English>A message arrives from your link(COUNCIL_AMBASSADOR), {CHARACTER-SHORT-2}, proudly informing you that {PLAYER-0} has recognized your might and accepted your demand for tribute.
+
+ {CHARACTER-SHORT-2} has evaluated the finest of their supplies, which will you take? </English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_TRADE_MISSION_GOOD</zType>
 		<English>Our link(COUNCIL_AMBASSADOR), {CHARACTER-SHORT-2}, successfully completed {G2:his:her} mission to establish a trade network with {PLAYER-0}. How shall each side benefit from the free flow of trade?</English>
 	</Entry>
@@ -3879,7 +4179,7 @@ What shall we do?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TRIBE_CULT_OF_FLAME</zType>
-		<English>Scholars at the site of the {TRIBE-0,3} defeat discover shrines, carvings, and statues depicting the worship of fire. They believe these treasures are associated with the Cult of Flame, an ancient tribal religion still practiced by many of our subjects.
+		<English>Scholars at the site of the {TRIBE-0,3}' defeat discover shrines, carvings, and statues depicting the worship of fire. They believe these treasures are associated with the Cult of Flame, an ancient tribal religion still practiced by many of our subjects.
 
 The cult's icons are sacred to its followers, so we should proceed with caution.</English>
 	</Entry>
@@ -4173,6 +4473,66 @@ This goes on for some time, minor wounds inflicted by both parties. As your stri
 		<English>Arrows thunk into your shield as your officers look to you for guidance in battle! The {PLAYER-1,1} soldiers have proven remarkably ferocious, driving your men back towards you and your standard. To be captured in battle is unacceptable.
 
 		How shall we turn the tide?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HONORED_ENEMY</zType>
+		<English>The sombre procession arrives at your court. The cold body of {CHARACTER-0} is accompanied by a message from your enemy {CHARACTER-SHORT-1}, surprisingly humble in tone. 
+
+“Although {G0:he:she} was our enemy, {CHARACTER-SHORT-0} was an honorable foe and always treated us with respect. We return the body, so that you may honor {G0:him:her}.”</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_GENERAL_DUEL</zType>
+		<English>{CHARACTER-0} and {CHARACTER-1} clash with the sharp sound of metal on metal. Their blows fall heavy and fast, while soldiers from both sides watch in awe. Even as the tiredness seeps into their muscles, each blow is precise, each one intended to kill. 
+
+A small stumble provides a moment of opening for {CHARACTER-SHORT-0} and {G0:his:her} blade punctures {CHARACTER-SHORT-1}’s side, slipping between {G1:his:her} armor under the arm. It is done, or so {CHARACTER-SHORT-0} thinks. As {G0:he:she} steps forwards for the killing blow {CHARACTER-SHORT-1} swings wildly, catching {CHARACTER-SHORT-0} across the face. 
+
+A hush descends as the generals lay still. The opposing armies quietly draw back, each to honor their own. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HEROIC_STAND</zType>
+		<English>Forced to retreat, {CHARACTER-SHORT-0} and a handful of volunteers from amongst {G0:his:her} troops held off the pursuing {PLAYER-3,1} forces for three days and three nights while the tattered remainder of {G0:his:her} army escaped. 
+
+The tale of their sacrifice has swept {CITY-1} with fervor, and some of the returning troops have rallied the people in a militia of those inspired by {CHARACTER-SHORT-0}. How will you honor the fallen heroes?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_OWN_SWORD</zType>
+		<English>Seeing the defeat of {G0:his:her} forces, {CHARACTER-0} decided to fall upon {G0:his:her} own sword rather than returning to {PLAYER-2} in disgrace. 
+
+Upon hearing the news, {CHARACTER-3} and {CHARACTER-4} strike up a debate on the nature of a good Roman death. {CHARACTER-SHORT-3} suggests that it was a noble act, while {CHARACTER-SHORT-4} claims that {CHARACTER-SHORT-0} would have served {PLAYER-2} better by living to fight another day. 
+
+Will you side with {CHARACTER-SHORT-3} or {CHARACTER-SHORT-4}?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AMBUSHED_GENERAL</zType>
+		<English>With {G0:his:her} forces dwindling, {CHARACTER-0} made a deal with a local guide to lead {G0:his:her} troops around the enemy. It was a trap. Beset on all sides, the last of {CHARACTER-SHORT-0}’s forces quickly crumbled. 
+
+Now a messenger has arrived from {PLAYER-1}, informing us that along with the slaughter of {G0:his:her} troops, {CHARACTER-SHORT-0} has been captured and is to be held indefinitely. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_LOVER_LOST</zType>
+		<English>You know the news before the messenger tells you. An emptiness in your heart whispers that your love, {CHARACTER-0}, has been slain in battle. The messenger’s words sound distant and you barely register when he leaves the room. 
+
+Your love is lost, all you can do is decide how to respond to this cruel act of fate. </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CEASE_FIRE_TRAGEDY</zType>
+		<English>A lone soldier returns from the recent fighting, battered and bloody. The haunted look in his eyes speaks of tragedy before his mouth even opens. 
+
+After days of fighting, the troops under {CHARACTER-SHORT-0}’s command were at breaking point. Finally {CHARACTER-SHORT-0} agreed to meet with the {PLAYER-1,1} leader, taking a small cohort of officers and guards into the enemy camp. They never got a chance to talk. A young {FAMILY-3} officer-in-training was spooked by the idea of a trap and suddenly grabbed the bridle of {CHARACTER-SHORT-0}’s horse. The ensuing massacre was swift and violent, with only one soldier left alive to tell the tale. 
+
+Upon hearing the news the devastated {FAMILY-2} blame the {FAMILY-3} boy for the death of {CHARACTER-SHORT-0}. How will you intervene? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_MUTINY_IN_THE_RANKS</zType>
+		<English>Mutiny is afoot. A message arrives at night from a young officer in {CHARACTER-SHORT-0}’s army, warning that the troops are on the verge of rising up against {G0:him:her} after their continued losses. {CHARACTER-SHORT-0} has refused to listen to the danger and drives the soldiers harder and harder. 
+
+Time is short. Will you warn {CHARACTER-SHORT-0} of the danger that {G0:he:she} is in, despite upsetting the troops? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TRAPPED_GENERAL</zType>
+		<English>A soldier rushes into your presence, carrying news from {CHARACTER-SHORT-0}. The general has fallen back after the recent loss, retreating with {G0:his:her} remaining soldiers to a nearby ruin. However, after the {PLAYER-1} army advanced they are now trapped and unable to move, surrounded by enemy forces. It is only a matter of time before they are found and killed. 
+
+A small team of local guides and select soldiers may be able to get {G0:him:her} back to safety, but doing so would be no easy feat. Will you send help for {CHARACTER-SHORT-0}? </English>
 	</Entry>
 	<Entry beginGroup="Marriage">
 		<zType>TEXT_EVENTSTORY_MARRIAGE_OFFER</zType>
@@ -6480,7 +6840,7 @@ However, {CHARACTER-SHORT-1} would not wake in the morning and seems to have die
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_A_NEW_GENERAL</zType>
-		<English>{CHARACTER-3} comes to you, declaring that as {CHARACTER-4} is now an adult, {G2:he:she} should lead one of your armies, paving the way to the throne after you are gone.</English>
+		<English>{CHARACTER-3} comes to you, declaring that as {CHARACTER-4} is now an adult, {G4:he:she} should lead one of your armies, paving the way to the throne after you are gone.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONFIRMATION</zType>
@@ -6746,7 +7106,7 @@ According to {G0:her:him}, {CHARACTER-1}, {G1:King:Queen} of {PLAYER-2}, has ord
 		<zType>TEXT_EVENTSTORY_TRAIT_PUSHED_TOO_FAR</zType>
 		<English>In a shocking development, {CHARACTER-1} is brought before you in shackles by a squad of soldiers. The officer in charge accuses {G1:him:her} of conspiring to sabotage the military training grounds in {CITY-2}. Troops discovered {G1:him:her} near the water supply with a flask of poison.
 
-{CHARACTER-SHORT-0} confesses that it was your animosity towards others on the court that sent {G1:him:her} on the path to ruin.</English>
+{CHARACTER-SHORT-1} confesses that it was your animosity towards others on the court that sent {G1:him:her} on the path to ruin.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TRAIT_ROLE_MODEL</zType>
@@ -7144,7 +7504,7 @@ Several members of the court believe it would be in our best interests to addres
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DAY_IN_THE_SUN</zType>
-		<English>After years imprisoned in the {CITY-1} jail, {CHARACTER-0} has sent a humble request. "My {G3:King:Queen}, I have suffered many hours in the dark and despair of this fortress of penance, and I inhabit a realm of regret. I believe that a day in the open, touched by the wind and remembered by the sun, would further my redemption. Of this, your servant begs of you."
+		<English>After years imprisoned in the {CITY-1} jail, {CHARACTER-0} has sent a humble request. "My {G2:King:Queen}, I have suffered many hours in the dark and despair of this fortress of penance, and I inhabit a realm of regret. I believe that a day in the open, touched by the wind and remembered by the sun, would further my redemption. Of this, your servant begs of you."
 
 The court is split on this request.</English>
 	</Entry>
@@ -7716,7 +8076,7 @@ The sword in your hand drips red with the blood of your lover and {G0:wife:husba
 How shall these incestuous matters be handled?</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_PLOTTING_COURTIERS</zType>
+		<zType>TEXT_EVENTSTORY_PLOTTING_NOBLES</zType>
 		<English>Overhearing {CHARACTER-1} and {CHARACTER-2}, you are certain that they are plotting to kill you. As you leave the court, you are stopped by {CHARACTER-SHORT-1}, who wears a sword. {G1:He:She} will surely kill you unless you act. They know you know, which means you cannot be left alive.
 
 If you kill {G1:him:her} now, then you will have one less enemy.
@@ -7765,7 +8125,7 @@ You worry where this obsession with {G1:his:her} monkey might lead. </English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_STUDY_DELICATE_MATTER</zType>
-		<English>Reports arrive from the academy that {RELATIVE-1} {CHARACTER-1} shows a willful disregard for {G1:his:her} studies and, instead, is becoming known for {G1:his:her} flagrant sexual escapades. Other parents are growing frustrated, leaving you in a rather delicate situation.
+		<English>Reports arrive from the academy that {RELATIVE-1} {CHARACTER-1} shows a willful disregard for {G1:his:her} studies and, instead, is becoming known for {G1:his:her} flagrant romantic escapades. The other parents are growing frustrated, leaving you in a rather delicate situation.
 
 How shall we proceed? </English>
 	</Entry>
@@ -8098,7 +8458,7 @@ How shall we resolve this delicate issue? </English>
 
 "I received your messages and..." {CHARACTER-SHORT-2} drums {G2:his:her} thumb on the gold chalice in {G2:his:her} hand. "I will support you on one condition - the Governorship of {CITY-0}."
 
-This will upset the current link(CONCEPT_GOVERNOR), {CHARACTER-2}. How shall we respond?</English>
+This will upset the current link(CONCEPT_GOVERNOR), {CHARACTER-3}. How shall we respond?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_REJECTION_OF_INFLUENCE</zType>
@@ -8635,7 +8995,7 @@ What shall we do about this matter?</English>
 		<zType>TEXT_EVENTSTORY_STUDY_INSPIRED_BY_NATURE</zType>
 		<English>{CHARACTER-0} has been sneaking off into the wild after class each day and has been inspired by nature.
 
-		What advice should we give {G0:his:her} budding soul?</English>
+What advice should we give {G0:his:her} budding soul?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_INFLUENCE_OF_TERROR</zType>
@@ -8920,6 +9280,471 @@ Now you find yourself wishing to learn the finer arts of the court.<p=SUBJECT_CH
 It is time to strengthen yourself in military matters.<p=SUBJECT_CHARACTER_ARCHETYPE_COVERT>The back-alleys ways of palace intrigue has always attracted your notice; the subtle whiff of poisons; the laughter of an assassin with a concealed blade; the negotiations in shadowy establishments with unseen powers. 
 
 One must always be able to learn another skill set in this business.<else>It's all so very dull. [CONTACT ZORBAZ ON DISCORD IF YOU SEE THIS! SOMETHING IN THIS EVENT HAS GONE WRONG!<end>]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_DEBAUCHED_PARTY</zType>
+		<English>The party is in full swing, the orgy is reaching its climax, and the wine fountain has run dry and been refilled twice already. You are contemplating calling for {random_R0:another tank of live eels:a second donkey:a squad of the Royal guard:those odd mushrooms:several yards of rope:another barrel of oil:the dwarf wrestling teams:a basin of fig pudding:half a dozen eggs:your leather hood:your best whip} when {CHARACTER-SHORT-1} approaches you, {random_R1:stripped to the waist:covered in whip marks:covered in bite marks:entirely naked:barely able to walk:drunk as a lord:looking half-dead from exhaustion:carried in the arms of an extremely large man:with a wonderfully buxom woman riding on {G1:his:her} back}.
+
+“I say, {CHARACTER-SHORT-0},” {G1:he:she} exclaims, “this is the best party I’ve been to in years! Thanks ever so much!”
+
+You grin in reply, “Think nothing of it!” and return to your contemplation. 
+
+Before you can reach any conclusion you are distracted by the sight of {CHARACTER-SHORT-2} {random_R2:swimming in the wine fountain:entirely covered in honey:attempting to wrestle an extremely fit young man:tied to a post and being fed grapes by several beautiful women:pretending to be a chair:downing cup after cup of wine with single-minded determination:juggling a set of large knives, a skill you are reasonably sure they have never before practiced:in a heated argument with someone only {G2:he:she} can see:drunkenly attempting to climb the decorative pillars}. Since {G2:he:she} looks to be having so much fun, you decide to join {G2:him:her}.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SPOILED_WINE</zType>
+		<English>The state banquet hosted by {CHARACTER-1} is proceeding passably well when you are suddenly served the most unacceptable wine. It is entirely the wrong shade of red, a mere deep burgundy, not the dark ruby that you prefer.
+
+Despite protests by {CHARACTER-SHORT-1} is that it’s a rare vintage imported at great cost, you declare it swill not fit for pigs and order the entire supply thrown out! {G1:He:She} seems rather upset with you.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SPOILED_WINE_TWO</zType>
+		<English>Shortly after the unacceptable wine was taken away there is some kind of commotion with the serving staff. It seems that a number of them decided to sample the rare vintage instead of throwing it out, and have now dropped dead. The wine was poisoned! 
+
+{CHARACTER-SHORT-1} is very embarrassed by {G1:his:her} earlier reaction and begs that you can forgive {G1:him:her}.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_ONE</zType>
+		<English>You are sound asleep when suddenly one of your advisors bursts into your chambers shouting something about a predicted flood which is likely to sweep much of {CITY-0} away. They urgently request that you authorize the city labor force to dig some emergency ditches and construct a series of dykes. 
+
+It sounds dreadfully bothersome, but can’t they see you are otherwise engaged?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_TWO</zType>
+		<English>It seems as if you’ve barely shut your eyes again when another advisor bursts in screaming annoyingly about an unknown invasion force appearing without warning. They want you to rally the army and launch an attack before they can fortify their position, but honestly, you are very cosy where you are and it seems like a lot of effort.
+
+You threaten them with dire consequences until they leave.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_THREE</zType>
+		<English>Once again your rest is disturbed by a frantic advisor thundering into your chambers. This time they are making a huge fuss about a massive fire engulfing the city. You are too drowsy to really pay attention, but you gather they want the city guard to tear down a vast swath of buildings to prevent the fire from spreading. 
+
+Quite vexed now, you shout that the next person to disturb your sleep will be skinned alive.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_FOUR</zType>
+		<English>You finally awaken on your own, feeling rested and refreshed. Eventually it occurs to you to enquire about last night’s commotion.
+
+As it turns out, the flood wasn’t quite as bad as predicted, serving only to drown the unidentified invaders in their secure camp shortly after they settled down for the night, and put out most of the fire before much damage could be done.  
+
+Had you not stayed in bed things could have gone very badly indeed!</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_AFFABLE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over the numerous meals spent talking together and meeting {G1:his:her} many companions that there might be something to {G1:his:her} lifestyle. Having such a cheerful number of friends has a certain charm to it.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_ELOQUENT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over the numerous times spent debating matters of state and listening to the speeches {G1:he:she} gives that there might be something to {G1:his:her} lifestyle. The clarity of instruction, and {G1:his:her} skills with words leaves you wishing you were half as skilled.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_WARLIKE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over the numerous times spent reviewing military doctrine and planning campaigns that there might be something to {G1:his:her} lifestyle. There is a certain glory and strength in martial matters that draws the eye and stirs the heart. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_INSPIRING</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over the numerous times spent resolving national matters that there might be something to {G1:his:her} lifestyle. {G1:He:She} some how manages to make every obstacle a joy, while steering a seemingly effortless course through the most dire of situations.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_INTELLIGENT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over the numerous times spent watching {G1:him:her} disect a problem and resolve it with a keen solution that there might be something to {G1:his:her} lifestyle. {G1:He:She} some how manages to resolve even the most knotted of problems in an insightful manner.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_PROSPEROUS</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've been flabbergasted more times then you would care to admit at {G1:his:her} sheer wealth. Profitable ventures are launched at a breath taking rate and those few that do fail are eclipsed by the returns from {G1:his:her} successes. 
+
+Shall you pursue this matter and place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_FRUGAL</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized as you've watched {G1:him:her} squeeze money from places you'd never considered that there might be something to {G1:his:her} lifestyle. Finding expenditures to be cut, and reducing corruption never seemed so exciting before!   
+
+Shall you pursue this matter and place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_RIGHTEOUS</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over the numerous times spent handling matters of state and hearing the concerns of {G1:his:her} people that there might be something to {G1:his:her} lifestyle. The people truly know that {CHARACTER-1} has their best interest at heart, and not only that but {G1:he:she} truly does what is right.
+
+Shall you pursue this matter and place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_CRUEL</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many meetings spent discussing rebellions and torture techniques that there might be something to {G1:his:her} lifestyle. Having such a cheerful disregard for the numbers of the dead has a certain charm to it.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_INTOLERANT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many meetings spent ranting about the place of servants and the wasting away of national morals that there might be something to {G1:his:her} lifestyle. Having a keen sense of the familiar and abolishing anything foreign will undoubtedly serve your nation well.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_SLOTHFUL</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many meetings spent relaxing about the palace and sipping on various exotic drinks that there might be something to {G1:his:her} lifestyle. Nothing is quite like being fanned by beautiful servants and having each day pass in luxurious languor.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_UNCOUTH</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many meetings spent yelling about stupidity of fools and cursing the folly of love that there might be something to {G1:his:her} lifestyle. There is a certain freedom in saying what you wish without considering the opinions of others, after all you are the {G0:king:queen}.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?
+</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_FOOLISH</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many evenings spent dancing in your undergarments together and yelling at the help that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't get what they want, then what is the point? Oh, honey drizzled muffins! I must have one of these!
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_EXTRAVAGANT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many parties spent drinking exotic wines, wearing priceless garments and watching dancing tigers that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't spend money on what they want then what is the point?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_CORRUPT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many business exchanges that there always seems to be money to make under the table and that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't earn a bit of money on the side then what is the point of this position?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_DEBAUCHED</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many parties spent cavorting amongst exotic furs, sleeping with priceless courtesans and watching displays that might shame the goddess of love that there might be something to this lifestyle. After all if the {G0:king:queen} can't spend money on what they want then what is the point?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_ROBUST</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many hikes through the land that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} is sick and weak you can't very well expect them to lead armies and negotiate from dawn till dusk.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_VIGILANT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many late night hunts that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't see a bear to save {G0:his:her} life you can't very well expect them to lead armies and negotiate a fair deal.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_STRICT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many stern morning meetings over gruel and cold water that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't control {G0:his:her} temper, then how can a {G0:king:queen} control an empire?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_EQUESTRIAN</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've ridden hundreds of times and can clearly tell a stallion, mare, filly or colt. It seems that there might be something to this horse based lifestyle. After all if the {G0:king:queen} can't keep {G0:his:her} seat, then how can a {G0:king:queen} stay seated on the throne?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_CARPENTER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many mornings spent carving wood together that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't shape a bit of wood to fit {G1:his:her} fancy, then how can they carve out an empire?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_PATHFINDER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many journeys into the depths of the forest and across the seas that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay alive in a forest then how can they expect to survive courtly intrigues? At least a lion has the decency to tell you, before it stabs you in the back.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_CULTIVATOR</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent together toiling in the soil that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't learn what feeds their people, then how can they expect to know when the grain is being skimmed?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_NATURALIST</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent exploring the forests and seas, and pursuing rare animals that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay alive in a forest then how can they expect to survive courtly intrigues?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_DELVER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent in the depths of the earth lit by flickering candle light that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay alive in a black pit then how can they expect to survive that abyss called the court?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_DEALMAKER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during the weeks spent watching {G1:him:her} haggle the fur off a cat that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't cut an advantageous deal then how can they expect to not be that poor skinned cat?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_TRACKER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many journeys into the depths of the forest and across the seas that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't track man or beast in a forest then how can they expect to survive the intrigues at court?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_SWIFT</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your daily runs together that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't run, well then... Best expect that dagger in the back. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_BESIEGER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so eager to knock down walls, like a kid with wooden blocks. You can't help but feel that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't take a measly city than maybe they'd best get out of the game.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_TOUGH</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so tough as nails, like a pit-bull with one eye and a bone. You can't help but admire that tenacity and wonder if there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't hold on to their throne there isn't much point to the parties and smiles.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_BLOODTHIRSTY</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so eager to spill blood, painting the space around {G1:him:her} in fifty shades of red. You've even been splattered yourself a few times, and perhaps their might have been a thrill. You can't help but feel that there might be something to {G1:his:her} lifestyle.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_HECKLER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so eager to bellow profanities, painting the air around {G1:him:her} in fifty shades of sailor and whore. Picking up far far more swear words then you'd ever hoped to learn you can't help but feel a thrill knowing that there might be a pink courtier you can knock down a peg or two if needs be.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_STEADFAST</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so stout and ready at all times, calming the space around them no matter how dire. You can't help but feel that there might be something to {G1:his:her} lifestyle, the solemnity and willingness to see it through to the end. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_HERBALIST</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many evening studies over herbs and remedies that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't control the four humors, then how can a {G0:king:queen} control an empire?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_HIGHLANDER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent exploring the glory of the mountains and hills that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay alive on a mountain then how can they expect to survive the court?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_RANGER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent exploring the glory of the forests that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay alive in a forest then how can they expect to survive the court?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_BRAVE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so brave, boldly daring to go where few other dare to go. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to over come fear and to see it through to the end. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_SHIELDBEARER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized that this {G1:man:woman} knows their shields and armor: Peltē, Hoplon, Scutum, shields you don't even know what they mean a year later! You can't help but feel that there might be something to {G1:his:her} lifestyle and the ability to protect one's self in battle and live another day.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_FIERCE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so fearsome and full of life, painting the space around {G1:him:her} in energy and action. You have felt a thrill each time you train with them. You can't help but feel that there might be something to {G1:his:her} lifestyle.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_HORSEBANE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so effective at killing beasts, painting the space around {G1:him:her} in fifty shades of red. You've even been splattered yourself a few times, and perhaps their might have been a thrill. You can't help but feel that there might be something to {G1:his:her} lifestyle, it is no small feat to kill an elephant with only a spear.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_ENGINEER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} who was such a tinkerer, measuring angles, applying mathematics, calculating ranges and thicknesses. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to over come problems that would leave most people shaking their heads. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_LOYAL</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent managing business together that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't remain loyal to {G0:his:her} followers, then you can't very well expect them to be loyal either.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_CUNNING</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent plotting your latest schemes together that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay one step ahead of the game, then you can't expect to win.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_BOLD</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so bold, fearlessly going where none have gone before. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to over come fear and to see it through to the end. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_COWARDLY</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} who so throughly understands that discretion is the better part of valor. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to retreat from every impossible situation could prove valuable. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_GRACIOUS</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so caring, going out each day with a cheerful heart and a smile. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to see the best in people and connect with them as brothers and sisters. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_GREEDY</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} who so throughly understand that money is the best thing in the world - ever. You can't help but feel that there might be something to {G1:his:her} lifestyle and the ability to pay for every want or need. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_ROMANTIC</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so enamored with love in all it's forms, going out each day with an eye for love. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to see the love in people and follow it to happily ever after. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_BITTER</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} who so throughly understands that love is a lie and happiness is a myth. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to see people for what they are, love crazed monkeys with pea brains. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_EDUCATED</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so ethralled by their tomes and scrolls, staring at the writings of others and finding wisdom. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to see things they have never seen and learn things they never knew. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_SUPERSTITIOUS</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so in tune with the gods and fates, fickle as they are. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to see the signs of the times and know the spirit of the gods. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_COMPASSIONATE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so caring, going out each day with a cheerful heart and a smile. You can't help but feel that there might be something to {G1:his:her} lifestyle, the ability to see the best in people and connect with them as brothers and sisters. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_RUTHLESS</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many days spent plotting your latest schemes together that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't stay one step ahead of the game, then you can't expect to win.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_PIOUS</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} so in tune with god, trying as best they can to live a holy and pure life. You can't help but feel that there might be something to {G1:his:her} lifestyle, the connection with something larger than one's self, a sense of purpose. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_WANTON</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many parties spent cavorting amongst exotic furs, sleeping with priceless courtesans and watching displays that might shame the goddess of love that there might be something to this lifestyle. After all if the {G0:king:queen} can't spend money on what they want then what is the point?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_HUMBLE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} who turns down rewards, trying to live in humility and without vanity. You can't help but feel that there might be something to {G1:his:her} lifestyle, the connection with something larger than one's self, a sense of serving a greater good. 
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_PROUD</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've never seen a {G1:man:woman} who basks in the accolades, soaking it all up as {G1:his:her} rightful due. You can't help but feel that there might be something to {G1:his:her} lifestyle, the total focus on making yourself the final measure and the only thing that matters. It is the stuff {G0:kings:queens} are born for.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_EXOTIC</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many parties spent drinking exotic wines and wearing priceless garments that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't spend money on what they want then what is the point?
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_SPOILED</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many evenings spent dancing in your undergarments together and yelling at the help that there might be something to {G1:his:her} lifestyle. After all if the {G0:king:queen} can't get what they want, then what is the point? Oh, honey drizzled muffins! I must have one of these!
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_WITTY</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized over numerous times spent debating matters of state and listening to the speeches {G1:he:she} gives that there might be something to {G1:his:her} lifestyle. The clarity of instruction, and {G1:his:her} skill with words leaves you wishing you were half as skilled.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_DRUNK</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many binges spent drinking wine by the gallon and falling into oblivion together afterwards that there might be something to {G1:his:her} lifestyle. Having such a wonderful way to get some sleep and give yourself that cheerful buzz has a certain charm to it.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_INSANE</zType>
+		<English>In your efforts to woo {CHARACTER-1}, you've realized during your many meetings spent jibbering in ape and sniffing pillows that there might be a method to {G1:his:her} madness. Having such a cheerful disregard for all matters has a certain charm to it.
+
+Shall you pursue this matter and also place {CHARACTER-1} in your debt?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_YOU_OWE_ME_FAMILY</zType>
+		<English>{CHARACTER-1} stops you outside of your chambers with a frazzled look in {G1:his:her} eyes. "You have no idea what I had to do to get {CHARACTER-2} to support you. I spent days! Days at {G2:his:her} side bringing {G2:him:her} around." {CHARACTER-1} shoves a finger into your chest. "You owe me for this. You owe me big."
+
+How shall you respond?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_YOU_OWE_ME_RELIGION</zType>
+		<English>{CHARACTER-1} stops you outside of your chambers with a frazzled look in {G1:his:her} eyes. "You have no idea what I had to do to get {CHARACTER-2} to support you. I spent days! Days at {G2:his:her} side bringing {G2:him:her} around." {CHARACTER-1} shoves a finger into your chest. "You owe me for this. You owe me big."
+
+How shall you respond?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_QUID_PRO_QUO</zType>
+		<English>{CHARACTER-1} stops you outside the palace walls, late on evening in the guardens. 
+
+"I shall be brief for it is a small matter," {G1:he:she} says in a somber tone. " I have need of that favor I once lended you..."
+
+How shall we respond?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FAUX_PAS_REGAL</zType>
+		<English><![CDATA[After a meeting of the court, you find yourself caught in an indecent situation with a member of the palace staff. {CHARACTER-1} stumbles upon you and gives you a knowing glance. 
+
+"My lips are sealed for an understanding between us," {G1:he:she} says as the servant leaves. 
+
+You wonder if {CHARACTER-1} orchestrated the whole business with this <p.is_sub.S0=SUBJECT_DEBAUCHED>libertine revelry.<p=SUBJECT_WANTON>shameless servant.<p=SUBJECT_DRUNK>unmixed wine.<p=SUBJECT_ROMANTIC>exotic interest.<else>setup.<end>]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FAUX_PAS_MARTIAL</zType>
+		<English><![CDATA[At a gathering of your generals, you find yourself in an untenable position. Your generals take offense at every plan you suggest, until {CHARACTER-1} provides an alternative solution that satisfied everyone. 
+
+After the meeting {CHARACTER-1} stops you. "Your highness, I saved you plan back there. You owe me."
+
+You wonder if {CHARACTER-1} orchestrated the whole business with this <p.is_sub.S0=SUBJECT_COWARDLY>eagerness to die stupidly.<p=SUBJECT_SPOILED>unwillingness to bring my favorite pastries<p=SUBJECT_INSANE>unwillingness to measure the spears of your generals.<p=SUBJECT_FOOLISH>unwillingness to consult the frogs before battle.<else>setup.<end>]]></English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FAUX_PAS_COVERT</zType>
+		<English><![CDATA[In one of your hideouts, you find yourself in a deadly situation. <p.is_sub.S0=SUBJECT_CORRUPT>Your latest shipment of illicit goods has arrived, but you were discovered by {CHARACTER-1}.<p=SUBJECT_GREEDY>While you were skimming a bit of money from the caravan taxes, you were discovered by {CHARACTER-1}.<p=SUBJECT_BLOODTHIRSTY>While you were torturing a suspected enemy agent, you were discovered by {CHARACTER-1}.<p=SUBJECT_RUTHLESS>While you were interrogating a suspected enemy agent, you were discovered by {CHARACTER-1}.<else>After visiting the black market to find a new diversion, you were discovered by {CHARACTER-1}.<end>
+
+"I do wonder what the people would think if they heard about this," {G1:he:she} says with a knowing smile. "How about we come to an arrangement over this dirty little secret?"
+
+You can't help but wonder if {CHARACTER-1} orchestrated the whole business to put you in this predicament.]]></English>
 	</Entry>
 	<Entry beginGroup="City">
 		<zType>TEXT_EVENTSTORY_HAPPINESS_IMMIGRANTS</zType>
@@ -9823,7 +10648,7 @@ A skull is held in {G2:his:her} hands. "See the fate of all {G3:men:women}, my {
 		<zType>TEXT_EVENTSTORY_DEDICATION_OF_NEITH</zType>
 		<English>Acolytes garbed in hunting leathers arrive at the court, carrying bows and quivers. {CHARACTER-1} marshals the unruly mob into a semblance of order. They bow in unison to the throne.
 
-"{CHARACTER-1}, may your hunts be blessed." {CHARACTER-SHORT-1} straightens, so do {G2:his:her} followers. "We humbly bid your majesty to come to {CITY-2} and attend the dedication of the link(IMPROVEMENT_SHRINE_NEITH."</English>
+"{CHARACTER-1}, may your hunts be blessed." {CHARACTER-SHORT-1} straightens, so do {G2:his:her} followers. "We humbly bid your majesty to come to {CITY-2} and attend the dedication of the link(IMPROVEMENT_SHRINE_NEITH)."</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DISPLEASURE_OF_NEITH</zType>
@@ -10013,7 +10838,7 @@ Truly, this party has been one for the ages, and surely there is no harm in cont
 		<zType>TEXT_EVENTSTORY_RULE_OF_LAW</zType>
 		<English>Under your rule, the people both nobles and commoners are at peace with each other and unified in their pursuit of justice. There has never been such a time of success and harmony in all of the history of {PLAYER-0}. Surely people will look back upon this time as a golden age for the Rule of Law.
 
-Two of your courtiers are especially loved for their virtues, {CHARACTER-3} and {CHARACTER-4}, Shall we reward them with governorships and set an example for future governors?</English>
+Two nobles are especially loved for their virtues, {CHARACTER-3} and {CHARACTER-4}. Shall we reward them with governorships and set an example for future governors?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_REIGN_OF_TERROR</zType>
@@ -10047,7 +10872,7 @@ What shall be our stance on this matter?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_RULE_BY_GODS_WILL</zType>
-		<English>Monestaries and temples cover the land, built in mighty cities to spread the creed of {RELIGION-2}. The faithful rejoice across the land for surely you are doing the work of God, and they have taken to calling you the Defender of the Faith!
+		<English>Monasteries and temples cover the land, built in mighty cities to spread the creed of {RELIGION-2}. The faithful rejoice across the land for surely you are doing the work of God, and they have taken to calling you the Defender of the Faith!
 
 How might we benefit from this?</English>
 	</Entry>
@@ -10192,10 +11017,10 @@ Do we support link(LAW_PILGRIMAGE) or the tenets of link(LAW_HOLY_WAR)?</English
 It is time to choose between link(LAW_GUILDS) and link(LAW_ELITES).</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_ISOLATIONISM_TRADE_LEAGUE</zType>
+		<zType>TEXT_EVENTSTORY_AUTARKY_TRADE_LEAGUE</zType>
 		<English>As {PLAYER-0} grows, so does the world surrounding us. It is time for the court to define its views on what lies beyond our borders.
 
-Shall we institute policies of strict link(LAW_ISOLATIONISM) or should we begin the formation of a link(LAW_TRADE_LEAGUE)?</English>
+Shall we institute policies of strict link(LAW_AUTARKY) or should we begin the formation of a link(LAW_TRADE_LEAGUE)?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_COIN_DEBASEMENT_MONETARY_REFORM</zType>
@@ -12490,6 +13315,58 @@ It would be a shame to let such bounty spoil, but there are only so many laborer
 
 "The officers and fighting men wield the power in {PLAYER-3}, and for too long we have obeyed the whims of corrupt politicians and ruling elites. It is time for the sword to have a place at the table."</English>
 	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HIGH_SYNOD_MONEY</zType>
+		<English>{CHARACTER-1} has visited the High Synod of {RELIGION-0}, offering to favor their Religion. The {RELIGION-0,1} Council is pleased that we have finally shown them some respect, but they are not content with mere flattery. The faith is in need of funds, and the {RELIGION-0,1} elders expect financial support in exchange for their blessings.
+
+Shall we make a donation to {RELIGION-0}?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HIGH_SYNOD_PEACE_AMONG_THE_FAITHFUL</zType>
+		<English>{CHARACTER-2} has visited the High Synod of {RELIGION-0}, but the {RELIGION-0,1} Council is less than pleased with us. The {RELIGION-0,1} elders want there to be peace among the faithful, and yet we are not on the friendliest terms with the {PLAYER-1,3}.
+
+In fact, the {RELIGION-0,1} elders are demanding that we at least attempt to come to terms with the {PLAYER-1,3}, and reach out to them with a link(MISSION_PLAYER_PEACE).</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_EVENTSTORY_ORIGINAL_OWNER_UPSET</zType>
+		<English>The original {PLAYER-2,1} citizens of {CITY-0} are unhappy living under a foreign yolk. They resent everything about {PLAYER-1,1} rule, and openly deride our government. Their link(YIELD_DISCONTENT) is threatening to get out of control, and may soon lead to rebellions. 
+
+We could mollify the anger of the {PLAYER-2,1} citizens with gifts of gold, or exile them and be rid of this menace. How will you resolve this issue with your new subjects?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_EVENTSTORY_ORIGINAL_OWNER_PROSPERING</zType>
+		<English>The original {PLAYER-2,1} citizens of {CITY-0} are prospering wonderfully under your rule! They have made great strides in culture since falling under your administration. 
+
+Should we celebrate our mutual understanding and prosperity with a feast?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_TRAINING_IMPROVEMENT</zType>
+		<English>You've built your first link(IMPROVEMENT_BARRACKS)! link(UNITTRAIT_MELEE) Units that remain idle on a link(IMPROVEMENT_BARRACKS) will earn link(CONCEPT_XP). There is a similar bonus for idle link(UNITTRAIT_RANGED) Units on a link(IMPROVEMENT_RANGE).
+
+Unit link(CONCEPT_PROMOTION,2) are cheaper for Units with more link(CONCEPT_XP,1), so make sure to train your Units while not at war to keep them sharp!</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_TRADE_NETWORK</zType>
+		<English>You've built your first link(IMPROVEMENT_HAMLET)! A link(IMPROVEMENT_HAMLET), and its upgrades link(IMPROVEMENT_VILLAGE) and link(IMPROVEMENT_TOWN), if brought into your link(CONCEPT_TRADE_NETWORK), will produce extra link(YIELD_MONEY)icon(YIELD_MONEY)! Bringing a City into your link(CONCEPT_TRADE_NETWORK) will reduce link(YIELD_DISCONTENT)icon(YIELD_DISCONTENT) there.
+
+The link(CONCEPT_TRADE_NETWORK) consists of all Tiles connected to your link(CONCEPT_CAPITAL) City. Cities and link(IMPROVEMENT_HAMLET,2) can be connected with one another over link(CONCEPT_ROAD,2), rivers, and even open water if they are on the coast. A City which is not on the coast requires a connected link(IMPROVEMENT_HARBOR) to reach other Cities over open water. You can connect a City to its link(IMPROVEMENT_HARBOR) with a link(CONCEPT_ROAD). You can check the link(CONCEPT_TRADE_NETWORK) overlay with the icon(MAP_OVERLAY_NETWORK) button below the mini-map, or the hotkey(HOTKEY_SHOW_TRADE_NETWORK) key, and verify that a City is connected by checking that the  icon(CONNECTED) icon is displayed under its City banner.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_MERCENARIES</zType>
+		<English>As link(NATION_CARTHAGE), you can hire Tribal Units as link(CONCEPT_MERCENARY,2) in exchange for link(YIELD_MONEY)icon(YIELD_MONEY) from link(CONCEPT_TRIBE,2) like the {TRIBE-0}. You may not hire link(TRIBE_RAIDERS).
+
+link(CONCEPT_MERCENARY,2) have no associated link(CONCEPT_FAMILY), and int(CONSUMPTION_MERCENARY_MODIFIER)% higher consumption costs. They cannot receive link(CONCEPT_PROMOTION,2), but they can occasionally link(CONCEPT_UPGRADE) themselves. They may only be led by link(CONCEPT_GENERAL,1) from their own Ethnicity.
+
+To hire a link(CONCEPT_MERCENARY) Unit, simply select a Tribal Unit that is not garrisoning a Tribal Site, and click the Hire link(CONCEPT_MERCENARY)icon(HIRE_MERCENARY) button in the Unit Panel on the left.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_MERCENARIES_RECRUIT</zType>
+		<English>You have an link(TRAIT_ORATOR_ARCHETYPE) Leader, and you've already met your first link(CONCEPT_TRIBE), the {TRIBE-0}. Any Nation with an link(TRAIT_ORATOR_ARCHETYPE) Leader may recruit Tribal link(CONCEPT_MERCENARY,2) at the cost of some link(CONCEPT_LEGITIMACY)icon(YIELD_LEGITIMACY). You may not hire link(TRIBE_RAIDERS).
+
+link(CONCEPT_MERCENARY,2) have no associated link(CONCEPT_FAMILY), and int(CONSUMPTION_MERCENARY_MODIFIER)% higher consumption costs. They cannot receive link(CONCEPT_PROMOTION,2), but they can occasionally link(CONCEPT_UPGRADE) themselves. They may only be led by link(CONCEPT_GENERAL,1) from their own Ethnicity.
+
+To recruit a link(CONCEPT_MERCENARY) Unit, simply select a Tribal Unit that is not garrisoning a Tribal Site, and click the Recruit link(CONCEPT_MERCENARY)  icon(RECRUIT_MERCENARY) button in the Unit Panel on the left.</English>
+	</Entry>
 	<Entry beginGroup="Tutorial">
 		<zType>TEXT_EVENTSTORY_VICTORY_POINTS</zType>
 		<English>(Points Victory)
@@ -12614,7 +13491,7 @@ The locals have left a large cache of link(YIELD_FOOD) behind. You can use this 
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_CULTURE</zType>
-		<English>{CITY-0} has reached link(CULTURE_DEVELOPING), a new link(YIELD_CULTURE)icon(YIELD_CULTURE) level! Higher tiers of link(YIELD_CULTURE)icon(YIELD_CULTURE)  unlock additional Improvements and Wonders for your Cities. Each new tier will also trigger a positive event for the City.
+		<English>{CITY-0} has reached a new link(YIELD_CULTURE)icon(YIELD_CULTURE) level! Higher tiers of link(YIELD_CULTURE)icon(YIELD_CULTURE) unlock additional Improvements and Wonders for your Cities. Each new tier will also trigger a positive event for the City.
 
 Today, a group of laborers has decided to join your workforce, granting you a new link(UNIT_WORKER).</English>
 	</Entry>
@@ -12711,8 +13588,8 @@ Higher link(CONCEPT_LEGITIMACY)icon(YIELD_LEGITIMACY) grants you additional link
 If you die without an Heir, the game will end!</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_TUTORIAL_PROMOTION</zType>
-		<English>Our {UNIT-0} unit has been hard at work training for battle, and they are ready to take orders. Will you take the role of link(CONCEPT_GENERAL) and lead them?</English>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_GENERAL</zType>
+		<English>Our {UNIT-0} unit has been hard at work training for battle, and they are ready for leadership. Will you take the role of link(CONCEPT_GENERAL) and lead them?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_AXEMAN_SELECTED</zType>
@@ -12853,19 +13730,19 @@ If you do this, we will be greatly pleased with you.	</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_HIGH_SYNOD_TRIBE_CONVERTED</zType>
-		<English>We are greatly pleased that you have brought the previously godless {TRIBE-3} into the fold of {RELIGION-1}. 
+		<English>We are greatly pleased that you have brought the formerly pagan {TRIBE-3} into the fold of {RELIGION-1}. 
 
 The flock grows ever greater!	</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DEVOTED_FAMILY</zType>
-		<English>The High Synod of {RELIGION-0} is pleased that you have reached out to the faith. They have sent a delegation to your court. During their visit, they propose that we show special favor to the {FAMILY-2,1}, as they are devout adherents of {RELIGION-0}.
+		<English>The High Synod of {RELIGION-0} is pleased that you have reached out to the faith. They have sent a delegation to your court. During their visit, they proposed that we show special favor to the {FAMILY-2,1}, as they are devout adherents of {RELIGION-0}.
 
 Diverting funds to the {FAMILY-2,1} would show the followers of {RELIGION-0} that the throne means to support them.	</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CHANCELLOR_PACIFY_CITY_MISSION</zType>
-		<English>The link(YIELD_DISCONTENT)icon(YIELD_DISCONTENT) in {CITY-0} is less than ideal. {CHARACTER-1} believes that we can quell any unrest in {CITY-0} through a link(MISSION_PACIFY_CITY) mission.
+		<English>The link(YIELD_DISCONTENT)icon(YIELD_DISCONTENT) in {CITY-0} may soon get out of hand. {CHARACTER-1} believes that we can quell any unrest in {CITY-0} through a link(MISSION_PACIFY_CITY) mission.
 		Shall we send {CHARACTER-1} to hear the grievances of {CITY-0,1}?	</English>
 	</Entry>
 	<Entry>
@@ -12979,7 +13856,7 @@ They recover the goods, set fire to your tent, and leave you and your men dying 
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_RIOTS_AT_THE_RACES</zType>
-		<English>A riot broke out today at the coliseum of {CITY-0} during the chariot races between the supporters of the Blue, Green, Red, and White teams.  The ringleaders have been rounded up.  What should we do with them?</English>
+		<English>A riot broke out today at the circus of {CITY-0} during the chariot races between the supporters of the Blue, Green, Red, and White teams.  The ringleaders have been rounded up.  What should we do with them?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_THE_RISK_OF_CHARM</zType>

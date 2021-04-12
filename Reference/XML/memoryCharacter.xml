@@ -87,10 +87,6 @@
 		<MemoryLevel>MEMORYLEVEL_NEG_LOW_SHORT</MemoryLevel>
 	</Entry>
 	<Entry>
-		<zType>MEMORYCHARACTER_PROVIDED_FAVOR</zType>
-		<zText>Provided a favor</zText>
-	</Entry>
-	<Entry>
 		<zType>MEMORYCHARACTER_LOST_CONSORT</zType>
 		<zText>Took away my consort</zText>
 		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_SHORT</MemoryLevel>
@@ -627,11 +623,6 @@
 		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_SHORT</MemoryLevel>
 	</Entry>
 	<Entry>
-		<zType>MEMORYCHARACTER_PLAYER_WAR_AT_TRUCE_INCIDENT_WAR</zType>
-		<zText>[STUB] We are eager to right the wrongs you have done to us</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_LOW_SHORT</MemoryLevel>
-	</Entry>
-	<Entry>
 		<zType>MEMORYCHARACTER_PLAYER_WAR_OFFER_TRIBUTE_PAID</zType>
 		<zText>Paid us Tribute to avoid a War</zText>
 		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_SHORT</MemoryLevel>
@@ -913,6 +904,13 @@
 		<iTurns>15</iTurns>
 		<bName>1</bName>
 	</Entry>
+	<Entry>
+		<zType>MEMORYCHARACTER_GREAT_PARTY</zType>
+		<zText>Hosted a wonderful party!</zText>
+		<iValue>30</iValue>
+		<iTurns>10</iTurns>
+		<bName>1</bName>
+	</Entry>
 	<Entry beginGroup="Character">
 		<zType>MEMORYCHARACTER_MARRIAGE_OF_STATE</zType>
 		<zText>Married me for politics</zText>
@@ -1153,7 +1151,7 @@
 	<Entry>
 		<zType>MEMORYCHARACTER_DENIED_BARRACKS_ASSIGNMENT</zType>
 		<zText>Denied our request to teach at the Barracks</zText>
-		<MemoryLevel>MEMORYLEVEL_NEG_LOW_SHORT</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_SHORT</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYCHARACTER_COMMENDED_FIELD_LEADERSHIP</zType>

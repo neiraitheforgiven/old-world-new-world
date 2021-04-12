@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2020 (x64) (http://www.altova.com) by Andrew Auseon (Private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
 		<zName/>
+		<zNameVerb/>
 		<iOpinion/>
 		<iMinAgeUs/>
 		<iMinAgeThem/>
@@ -12,6 +13,7 @@
 	<Entry>
 		<zType>RELATIONSHIP_LOVER_OF</zType>
 		<zName>Lover of</zName>
+		<zNameVerb>Becomes Lover of</zNameVerb>
 		<iOpinion>160</iOpinion>
 		<iMinAgeUs>15</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
@@ -19,6 +21,7 @@
 	<Entry>
 		<zType>RELATIONSHIP_ALLIED_WITH</zType>
 		<zName>Allied with</zName>
+		<zNameVerb>Becomes Allied with</zNameVerb>
 		<iOpinion>120</iOpinion>
 		<iMinAgeUs>15</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
@@ -26,6 +29,7 @@
 	<Entry>
 		<zType>RELATIONSHIP_IN_LOVE_WITH</zType>
 		<zName>In Love with</zName>
+		<zNameVerb>Is In Love with</zNameVerb>
 		<iOpinion>160</iOpinion>
 		<iMinAgeUs>15</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
@@ -40,18 +44,19 @@
 	<Entry>
 		<zType>RELATIONSHIP_TERRIFIED_OF</zType>
 		<zName>Terrified of</zName>
+		<zNameVerb>Becomes Terrified of</zNameVerb>
 		<iOpinion>120</iOpinion>
 		<iMinAgeUs>10</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
 		<aeInvalidateRelationship>
 			<zValue>RELATIONSHIP_IN_LOVE_WITH</zValue>
 			<zValue>RELATIONSHIP_ENDEARED_TO</zValue>
-			<zValue>RELATIONSHIP_OBLIGED_TO</zValue>
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_ENDEARED_TO</zType>
 		<zName>Endeared to</zName>
+		<zNameVerb>Becomes Endeared to</zNameVerb>
 		<iOpinion>80</iOpinion>
 		<iMinAgeUs>10</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
@@ -63,57 +68,72 @@
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
-		<zType>RELATIONSHIP_OBLIGED_TO</zType>
-		<zName>Obliged to</zName>
-		<iOpinion>40</iOpinion>
-		<iMinAgeUs>10</iMinAgeUs>
-		<iMinAgeThem>15</iMinAgeThem>
-		<aeInvalidateRelationship>
-			<zValue>RELATIONSHIP_DISAPPOINTED_WITH</zValue>
-			<zValue>RELATIONSHIP_ESTRANGED_FROM</zValue>
-			<zValue>RELATIONSHIP_VENGEFUL_AGAINST</zValue>
-			<zValue>RELATIONSHIP_PLOTTING_AGAINST</zValue>
-		</aeInvalidateRelationship>
-	</Entry>
-	<Entry>
-		<zType>RELATIONSHIP_INFLUENCED_BY</zType>
-		<zName>Influenced by</zName>
-		<iOpinion>40</iOpinion>
-		<iMinAgeUs>10</iMinAgeUs>
-		<iMinAgeThem>15</iMinAgeThem>
-	</Entry>
-	<Entry>
 		<zType>RELATIONSHIP_INTERCESSED_FOR</zType>
 		<zName>Intercessed for</zName>
+		<zNameVerb>Is Intercessed for</zNameVerb>
 		<iOpinion>60</iOpinion>
 		<iMinAgeUs>10</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
 	</Entry>
 	<Entry>
+		<zType>RELATIONSHIP_INFLUENCED_BY</zType>
+		<zName>Influenced by</zName>
+		<zNameVerb>Becomes Influenced by</zNameVerb>
+		<iOpinion>40</iOpinion>
+		<iMinAgeUs>10</iMinAgeUs>
+		<iMinAgeThem>15</iMinAgeThem>
+	</Entry>
+	<Entry>
+		<zType>RELATIONSHIP_OWES_FAVOR_TO</zType>
+		<zName>Owes Favor to</zName>
+		<zNameVerb>Now Owes Favor to</zNameVerb>
+		<iOpinion>20</iOpinion>
+		<iMinAgeUs>15</iMinAgeUs>
+		<iMinAgeThem>15</iMinAgeThem>
+		<aeInvalidateRelationship>
+			<zValue>RELATIONSHIP_HOLDS_FAVOR_FROM</zValue>
+		</aeInvalidateRelationship>
+	</Entry>
+	<Entry>
+		<zType>RELATIONSHIP_HOLDS_FAVOR_FROM</zType>
+		<zName>Holds Favor from</zName>
+		<zNameVerb>Now Holds Favor from</zNameVerb>
+		<iOpinion>-20</iOpinion>
+		<iMinAgeUs>15</iMinAgeUs>
+		<iMinAgeThem>15</iMinAgeThem>
+		<aeInvalidateRelationship>
+			<zValue>RELATIONSHIP_OWES_FAVOR_TO</zValue>
+		</aeInvalidateRelationship>
+	</Entry>
+	<Entry>
 		<zType>RELATIONSHIP_JEALOUS_ABOUT</zType>
 		<zName>Jealous about</zName>
+		<zNameVerb>Becomes Jealous about</zNameVerb>
 		<iOpinion>-40</iOpinion>
 		<iMinAgeUs>15</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
 		<aeInvalidateRelationship>
-			<zValue>RELATIONSHIP_OBLIGED_TO</zValue>
+			<zValue>RELATIONSHIP_INFLUENCED_BY</zValue>
 			<zValue>RELATIONSHIP_ENDEARED_TO</zValue>
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_SUSPICIOUS_OF</zType>
 		<zName>Suspicious of</zName>
-		<iOpinion>-40</iOpinion>
+		<zNameVerb>Becomes Suspicious of</zNameVerb>
+		<iOpinion>-60</iOpinion>
 		<iMinAgeUs>10</iMinAgeUs>
 		<iMinAgeThem>10</iMinAgeThem>
 		<aeInvalidateRelationship>
 			<zValue>RELATIONSHIP_IN_LOVE_WITH</zValue>
 			<zValue>RELATIONSHIP_LOVER_OF</zValue>
+			<zValue>RELATIONSHIP_INFLUENCED_BY</zValue>
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_DISAPPOINTED_WITH</zType>
 		<zName>Disappointed with</zName>
+		<zNameVerb>Becomes Disappointed with</zNameVerb>
 		<iOpinion>-80</iOpinion>
 		<iMinAgeUs>10</iMinAgeUs>
 		<iMinAgeThem>10</iMinAgeThem>
@@ -121,12 +141,12 @@
 			<zValue>RELATIONSHIP_IN_LOVE_WITH</zValue>
 			<zValue>RELATIONSHIP_LOVER_OF</zValue>
 			<zValue>RELATIONSHIP_ENDEARED_TO</zValue>
-			<zValue>RELATIONSHIP_OBLIGED_TO</zValue>
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_ESTRANGED_FROM</zType>
 		<zName>Estranged from</zName>
+		<zNameVerb>Becomes Estranged from</zNameVerb>
 		<iOpinion>-120</iOpinion>
 		<iMinAgeUs>10</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
@@ -135,12 +155,12 @@
 			<zValue>RELATIONSHIP_LOVER_OF</zValue>
 			<zValue>RELATIONSHIP_ALLIED_WITH</zValue>
 			<zValue>RELATIONSHIP_ENDEARED_TO</zValue>
-			<zValue>RELATIONSHIP_OBLIGED_TO</zValue>
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_VENGEFUL_AGAINST</zType>
 		<zName>Vengeful against</zName>
+		<zNameVerb>Becomes Vengeful against</zNameVerb>
 		<iOpinion>-160</iOpinion>
 		<iMinAgeUs>15</iMinAgeUs>
 		<iMinAgeThem>15</iMinAgeThem>
@@ -149,13 +169,13 @@
 			<zValue>RELATIONSHIP_LOVER_OF</zValue>
 			<zValue>RELATIONSHIP_ALLIED_WITH</zValue>
 			<zValue>RELATIONSHIP_ENDEARED_TO</zValue>
-			<zValue>RELATIONSHIP_OBLIGED_TO</zValue>
 			<zValue>RELATIONSHIP_ESTRANGED_FROM</zValue>
 		</aeInvalidateRelationship>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_PLOTTING_AGAINST</zType>
 		<zName>Plotting against</zName>
+		<zNameVerb>Starts Plotting against</zNameVerb>
 		<iOpinion>-200</iOpinion>
 		<iMinAgeUs>15</iMinAgeUs>
 		<iMinAgeThem>10</iMinAgeThem>
@@ -164,7 +184,6 @@
 			<zValue>RELATIONSHIP_LOVER_OF</zValue>
 			<zValue>RELATIONSHIP_ALLIED_WITH</zValue>
 			<zValue>RELATIONSHIP_ENDEARED_TO</zValue>
-			<zValue>RELATIONSHIP_OBLIGED_TO</zValue>
 			<zValue>RELATIONSHIP_ESTRANGED_FROM</zValue>
 			<zValue>RELATIONSHIP_VENGEFUL_AGAINST</zValue>
 		</aeInvalidateRelationship>
@@ -172,11 +191,13 @@
 	<Entry>
 		<zType>RELATIONSHIP_BYPASSED_BY</zType>
 		<zName>Bypassed by</zName>
+		<zNameVerb>Is Bypassed by</zNameVerb>
 		<iOpinion>-40</iOpinion>
 	</Entry>
 	<Entry>
 		<zType>RELATIONSHIP_DIVORCED_BY</zType>
 		<zName>Divorced by</zName>
+		<zNameVerb>Is Divorced by</zNameVerb>
 		<iOpinion>-80</iOpinion>
 	</Entry>
 </Root>

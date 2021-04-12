@@ -40,8 +40,8 @@
 		<English>Player Alliance</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_CONCEPT_ANCHOR</zType>
-		<English>Anchor</English>
+		<zType>TEXT_CONCEPT_ANCHORED</zType>
+		<English>Anchored</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_CONCEPT_BUY_TILE</zType>
@@ -216,6 +216,10 @@
 		<English>Undo</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_CONCEPT_UNLIMBERED</zType>
+		<English>Unlimbered</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_CONCEPT_UPGRADE</zType>
 		<English>Upgrade~an Upgrades~Upgrades~Upgraded</English>
 	</Entry>
@@ -378,8 +382,8 @@
 		<English>Enact link(LAW_ELITES)</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_GOAL_ISOLATIONISM</zType>
-		<English>Enact link(LAW_ISOLATIONISM)</English>
+		<zType>TEXT_GOAL_AUTARKY</zType>
+		<English>Enact link(LAW_AUTARKY)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_TRADE_LEAGUE</zType>
@@ -447,7 +451,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_TEN_CITIES</zType>
-		<English>Control Ten Cities</English>
+		<English>Control 10 Cities</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_THREE_CONNECTED_CITIES</zType>
@@ -558,16 +562,16 @@
 		<English>Control Six link(IMPROVEMENT_FARM,2)</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_GOAL_SIX_LUMBERMILLS</zType>
-		<English>Control Six link(IMPROVEMENT_LUMBERMILL,2)</English>
+		<zType>TEXT_GOAL_SIX_MINES</zType>
+		<English>Control Six link(IMPROVEMENT_MINE,2)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_SIX_QUARRIES</zType>
 		<English>Control Six link(IMPROVEMENT_QUARRY,2)</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_GOAL_SIX_MINES</zType>
-		<English>Control Six link(IMPROVEMENT_MINE,2)</English>
+		<zType>TEXT_GOAL_SIX_LUMBERMILLS</zType>
+		<English>Control Six link(IMPROVEMENT_LUMBERMILL,2)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_SIX_PASTURES</zType>
@@ -690,8 +694,8 @@
 		<English>Control Three Legendary Cities</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_GOAL_FIVE_LEGENDARY</zType>
-		<English>Control Five Legendary Cities</English>
+		<zType>TEXT_GOAL_SIX_LEGENDARY</zType>
+		<English>Control Six Legendary Cities</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_TWO_WONDERS</zType>
@@ -758,8 +762,12 @@
 		<English>Control Two link(SPECIALIST_PHILOSOPHER_3,2)</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_GOAL_THREE_SPECIALISTS</zType>
+		<English>Control Three Specialists</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_GOAL_10_SPECIALISTS</zType>
-		<English>Control Ten Specialists</English>
+		<English>Control 10 Specialists</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_20_SPECIALISTS</zType>
@@ -771,7 +779,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_10_ELDER_SPECIALISTS</zType>
-		<English>Control Ten Elder Specialists</English>
+		<English>Control 10 Elder Specialists</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_SIX_WALLS</zType>
@@ -907,7 +915,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_10_KILLS</zType>
-		<English>Kill Ten Military Units</English>
+		<English>Kill 10 Military Units</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_15_KILLS</zType>
@@ -923,7 +931,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_10_KILLS_GENERAL</zType>
-		<English>Kill Ten Military Units with Leader as link(CONCEPT_GENERAL)</English>
+		<English>Kill 10 Military Units with Leader as link(CONCEPT_GENERAL)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_FIVE_PROMOTIONS</zType>
@@ -931,7 +939,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_TEN_PROMOTIONS</zType>
-		<English>Ten Unit Promotions</English>
+		<English>10 Unit Promotions</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_TWO_MAX_LEVEL_UNIT</zType>
@@ -1111,7 +1119,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_TEN_POPULATION</zType>
-		<English>Control Ten Population</English>
+		<English>Control 10 Population</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_30_POPULATION</zType>
@@ -1331,6 +1339,14 @@
 		<English>Text Debug</English>
 	</Entry>
 	<!--InfoNation-->
+	<Entry>
+		<zType>TEXT_NATION_PICK_LATER</zType>
+		<English>Pick Later</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NATION_RANDOM</zType>
+		<English>Random</English>
+	</Entry>
 	<Entry>
 		<zType>TEXT_NATION_ASSYRIA_STORY</zType>
 		<English>      I am Ashurbanipal, king of the universe, descendants of great kings. I was the fourth in line for the succession, but my father, Esarhaddon, picked me to rule Assyria because of my bravery and intelligence while sending an older brother to rule a distant kingdom. Unrest comes from his land, and I need to show him how to be the greatest king of them all.
@@ -2105,19 +2121,19 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_VICTORY_EPIC</zType>
-		<English>Epic~an Epic</English>
+		<English>Epic Victory~an Epic Victory</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_VICTORY_GOLD</zType>
-		<English>Gold~a Gold</English>
+		<English>Gold Victory~a Gold Victory</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_VICTORY_SILVER</zType>
-		<English>Silver~a Silver</English>
+		<English>Silver Victory~a Silver Victory</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_VICTORY_BRONZE</zType>
-		<English>Bronze~a Bronze</English>
+		<English>Bronze Victory~a Bronze Victory</English>
 	</Entry>
 	<!--InfoYield-->
 	<Entry>
@@ -2362,14 +2378,6 @@
 		<English>the Engineer</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_TRAIT_LOYAL_NICKNAME</zType>
-		<English>the Loyal</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_TRAIT_CUNNING_NICKNAME</zType>
-		<English>the Cunning</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_TRAIT_BOLD_NICKNAME</zType>
 		<English>the Bold</English>
 	</Entry>
@@ -2418,6 +2426,14 @@
 		<English>the Wanton</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_TRAIT_LOYAL_NICKNAME</zType>
+		<English>the Loyal</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_CUNNING_NICKNAME</zType>
+		<English>the Cunning</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_TRAIT_HUMBLE_NICKNAME</zType>
 		<English>the Humble</English>
 	</Entry>
@@ -2426,16 +2442,12 @@
 		<English>the Proud</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_TRAIT_EXOTIC_NICKNAME</zType>
-		<English>the Exotic</English>
+		<zType>TEXT_TRAIT_WITTY_NICKNAME</zType>
+		<English>the Witty</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_TRAIT_SPOILED_NICKNAME</zType>
 		<English>the Spoiled</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_TRAIT_WITTY_NICKNAME</zType>
-		<English>the Witty</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_TRAIT_DRUNK_NICKNAME</zType>
@@ -2444,6 +2456,10 @@
 	<Entry>
 		<zType>TEXT_TRAIT_INSANE_NICKNAME</zType>
 		<English>the Insane</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_EXOTIC_NICKNAME</zType>
+		<English>the Exotic</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_TRAIT_BLESSED_NICKNAME</zType>

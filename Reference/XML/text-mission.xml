@@ -319,6 +319,18 @@
 		<English>Insurrection in</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_MISSION_DEMAND_TRIBUTE</zType>
+		<English>Demand Tribute</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_MISSION_DEMAND_TRIBUTE_TARGET</zType>
+		<English>Demand Tribute from</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_MISSION_DEMAND_TRIBUTE_CHARACTER</zType>
+		<English>Demand Tribute via</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_MISSION_TRADE_MISSION</zType>
 		<English>Trade Mission</English>
 	</Entry>

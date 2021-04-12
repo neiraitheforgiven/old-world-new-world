@@ -118,4 +118,8 @@
 		<zType>TEXT_MAP_OPTION_CONTINENTS</zType>
 		<English>Continents</English>
 	</Entry>
+	<Entry>
+		<zType>TEXT_MAP_OPTION_KING_OF_THE_HILL</zType>
+		<English>King of the Hill</English>
+	</Entry>
 </Root>

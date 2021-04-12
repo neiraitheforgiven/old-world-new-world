@@ -192,7 +192,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_MAINTENANCE</zIndex>
-				<iValue>40</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -737,7 +737,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>20</iValue>
+				<iValue>40</iValue>
 			</Pair>
 		</aiYieldRate>
 		<aiImprovementModifier>
@@ -1361,7 +1361,7 @@
 		<zType>EFFECTCITY_IMPROVEMENT_GREAT_ZIGGURAT_ALL</zType>
 		<Name>TEXT_IMPROVEMENT_GREAT_ZIGGURAT</Name>
 		<SourceImprovement>IMPROVEMENT_GREAT_ZIGGURAT</SourceImprovement>
-		<iImprovementCostModifier>-10</iImprovementCostModifier>
+		<iImprovementCostModifier>-20</iImprovementCostModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_ORACLE</zType>
@@ -1404,8 +1404,8 @@
 			<Pair>
 				<zIndex>EFFECTCITY_IMPROVEMENTCLASS_TEMPLE</zIndex>
 				<SubPair>
-					<zSubIndex>YIELD_CULTURE</zSubIndex>
-					<iValue>20</iValue>
+					<zSubIndex>YIELD_DISCONTENT</zSubIndex>
+					<iValue>-10</iValue>
 				</SubPair>
 			</Pair>
 		</aaiEffectCityYieldRate>
@@ -1428,7 +1428,7 @@
 		<aiYieldRateSpecialist>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>20</iValue>
+				<iValue>50</iValue>
 			</Pair>
 		</aiYieldRateSpecialist>
 	</Entry>
@@ -1444,16 +1444,15 @@
 		</aiYieldModifier>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_IMPROVEMENT_APADANA_STATE</zType>
+		<zType>EFFECTCITY_IMPROVEMENT_APADANA_ALL</zType>
 		<Name>TEXT_IMPROVEMENT_APADANA</Name>
-		<Source>TEXT_EFFECTCITY_STATE_RELIGION_SOURCE</Source>
 		<SourceImprovement>IMPROVEMENT_APADANA</SourceImprovement>
-		<aiYieldRate>
+		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>5</iValue>
+				<zIndex>YIELD_MAINTENANCE</zIndex>
+				<iValue>-50</iValue>
 			</Pair>
-		</aiYieldRate>
+		</aiYieldModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_ACROPOLIS</zType>
@@ -1495,7 +1494,7 @@
 				<zIndex>EFFECTCITY_CONNECTED</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_CIVICS</zSubIndex>
-					<iValue>40</iValue>
+					<iValue>20</iValue>
 				</SubPair>
 			</Pair>
 		</aaiEffectCityYieldRate>
@@ -1504,12 +1503,12 @@
 		<zType>EFFECTCITY_IMPROVEMENT_MUSAEUM</zType>
 		<Name>TEXT_IMPROVEMENT_MUSAEUM</Name>
 		<SourceImprovement>IMPROVEMENT_MUSAEUM</SourceImprovement>
-		<aiYieldRateCulture>
+		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
-				<iValue>20</iValue>
+				<iValue>50</iValue>
 			</Pair>
-		</aiYieldRateCulture>
+		</aiYieldModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_MUSAEUM_ALL</zType>
@@ -1537,7 +1536,7 @@
 		</aeTraitPromotion>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_IMPROVEMENT_MAUSOLEUM_ALL</zType>
+		<zType>EFFECTCITY_IMPROVEMENT_MAUSOLEUM</zType>
 		<Name>TEXT_IMPROVEMENT_MAUSOLEUM</Name>
 		<SourceImprovement>IMPROVEMENT_MAUSOLEUM</SourceImprovement>
 		<aeFreePromotion>
@@ -1545,15 +1544,15 @@
 		</aeFreePromotion>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_IMPROVEMENT_PANTHEON</zType>
-		<Name>TEXT_IMPROVEMENT_PANTHEON</Name>
-		<SourceImprovement>IMPROVEMENT_PANTHEON</SourceImprovement>
-		<aiYieldRateReligion>
+		<zType>EFFECTCITY_IMPROVEMENT_MAUSOLEUM_ALL</zType>
+		<Name>TEXT_IMPROVEMENT_MAUSOLEUM</Name>
+		<SourceImprovement>IMPROVEMENT_MAUSOLEUM</SourceImprovement>
+		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>10</iValue>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>40</iValue>
 			</Pair>
-		</aiYieldRateReligion>
+		</aiYieldModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_PANTHEON_STATE</zType>
@@ -1571,12 +1570,12 @@
 		<zType>EFFECTCITY_IMPROVEMENT_HAGIA_SOPHIA_ALL</zType>
 		<Name>TEXT_IMPROVEMENT_HAGIA_SOPHIA</Name>
 		<SourceImprovement>IMPROVEMENT_HAGIA_SOPHIA</SourceImprovement>
-		<aiYieldModifier>
+		<aiYieldRate>
 			<Pair>
-				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>50</iValue>
+				<zIndex>YIELD_DISCONTENT</zIndex>
+				<iValue>-20</iValue>
 			</Pair>
-		</aiYieldModifier>
+		</aiYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_VIA_RECTA_SOUK</zType>
@@ -1730,7 +1729,7 @@
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>50</iValue>
+				<iValue>40</iValue>
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
@@ -1942,7 +1941,7 @@
 		<zType>EFFECTCITY_LAW_PHILOSOPHY</zType>
 		<Name>TEXT_EFFECTCITY_LAW_PHILOSOPHY</Name>
 		<SourceLaw>LAW_PHILOSOPHY</SourceLaw>
-		<iSpecialistUrbanTrainTimeModifier>-25</iSpecialistUrbanTrainTimeModifier>
+		<iSpecialistUrbanTrainTimeModifier>-20</iSpecialistUrbanTrainTimeModifier>
 		<aaiEffectCityYieldRate>
 			<Pair>
 				<zIndex>EFFECTCITY_PROJECT_FORUM</zIndex>
@@ -2025,20 +2024,28 @@
 		</aaiEffectCityYieldRate>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_LAW_ISOLATIONISM</zType>
-		<Name>TEXT_EFFECTCITY_LAW_ISOLATIONISM</Name>
-		<SourceLaw>LAW_ISOLATIONISM</SourceLaw>
+		<zType>EFFECTCITY_LAW_AUTARKY</zType>
+		<Name>TEXT_EFFECTCITY_LAW_AUTARKY</Name>
+		<SourceLaw>LAW_AUTARKY</SourceLaw>
+		<aiImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_MINE</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_QUARRY</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_LUMBERMILL</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiImprovementModifier>
 		<aeFreeUnitEffectCity>
 			<zValue>EFFECTCITY_RESOURCE_HORSE</zValue>
 			<zValue>EFFECTCITY_RESOURCE_CAMEL</zValue>
 			<zValue>EFFECTCITY_RESOURCE_ELEPHANT</zValue>
 		</aeFreeUnitEffectCity>
-		<aeTraitPromotion>
-			<Pair>
-				<zIndex>UNITTRAIT_INFANTRY</zIndex>
-				<zValue>PROMOTION_GARRISON</zValue>
-			</Pair>
-		</aeTraitPromotion>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_LAW_PILGRIMAGE</zType>
@@ -2207,11 +2214,15 @@
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-20</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_MAINTENANCE</zIndex>
+				<iValue>50</iValue>
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
@@ -2223,11 +2234,15 @@
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
-				<iValue>-20</iValue>
+				<iValue>-10</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
-				<iValue>-20</iValue>
+				<iValue>-10</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_MAINTENANCE</zIndex>
+				<iValue>20</iValue>
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
@@ -2237,12 +2252,8 @@
 		<SourceOpinionFamily>OPINIONFAMILY_UPSET</SourceOpinionFamily>
 		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_CIVICS</zIndex>
-				<iValue>-10</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>YIELD_TRAINING</zIndex>
-				<iValue>-10</iValue>
+				<zIndex>YIELD_MAINTENANCE</zIndex>
+				<iValue>10</iValue>
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
@@ -3262,8 +3273,12 @@
 		<SourceProject>PROJECT_PUBLIC_MURAL</SourceProject>
 		<aiYieldRate>
 			<Pair>
+				<zIndex>YIELD_DISCONTENT</zIndex>
+				<iValue>-10</iValue>
+			</Pair>
+			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>50</iValue>
+				<iValue>20</iValue>
 			</Pair>
 		</aiYieldRate>
 	</Entry>
@@ -3378,7 +3393,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>10</iValue>
+				<iValue>20</iValue>
 			</Pair>
 		</aiYieldRate>
 	</Entry>
@@ -3607,12 +3622,12 @@
 		<zType>EFFECTCITY_PROJECT_CASE_HARDENING</zType>
 		<Name>TEXT_PROJECT_CASE_HARDENING</Name>
 		<SourceProject>PROJECT_CASE_HARDENING</SourceProject>
-		<aiYieldModifier>
+		<aiImprovementClassModifier>
 			<Pair>
-				<zIndex>YIELD_IRON</zIndex>
+				<zIndex>IMPROVEMENTCLASS_MINE</zIndex>
 				<iValue>10</iValue>
 			</Pair>
-		</aiYieldModifier>
+		</aiImprovementClassModifier>
 		<aeFreePromotion>
 			<zValue>PROMOTION_HERBALIST</zValue>
 		</aeFreePromotion>
@@ -3849,20 +3864,14 @@
 		<zType>EFFECTCITY_PROJECT_SALT_PRODUCTION</zType>
 		<Name>TEXT_PROJECT_SALT_PRODUCTION</Name>
 		<SourceProject>PROJECT_SALT_PRODUCTION</SourceProject>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>-10</iValue>
-			</Pair>
-		</aiYieldRate>
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>YIELD_FOOD</zIndex>
-				<iValue>20</iValue>
+				<zIndex>YIELD_MAINTENANCE</zIndex>
+				<iValue>10</iValue>
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
@@ -4043,11 +4052,13 @@
 				<zIndex>YIELD_WOOD</zIndex>
 				<iValue>-20</iValue>
 			</Pair>
+		</aiYieldModifier>
+		<aiImprovementClassModifier>
 			<Pair>
-				<zIndex>YIELD_IRON</zIndex>
+				<zIndex>IMPROVEMENTCLASS_MINE</zIndex>
 				<iValue>20</iValue>
 			</Pair>
-		</aiYieldModifier>
+		</aiImprovementClassModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_PROJECT_PAGAN_CULT_WISDOM</zType>
@@ -4085,14 +4096,16 @@
 		<SourceProject>PROJECT_PAGAN_CULT_WATER</SourceProject>
 		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_FOOD</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>YIELD_STONE</zIndex>
 				<iValue>-20</iValue>
 			</Pair>
 		</aiYieldModifier>
+		<aiImprovementClassModifier>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_FARM</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiImprovementClassModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_PROJECT_PAGAN_CULT_LOVE</zType>
@@ -4138,14 +4151,16 @@
 		<SourceProject>PROJECT_PAGAN_CULT_HEALING</SourceProject>
 		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_FOOD</zIndex>
-				<iValue>-20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 		</aiYieldModifier>
+		<aiImprovementClassModifier>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_FARM</zIndex>
+				<iValue>-20</iValue>
+			</Pair>
+		</aiImprovementClassModifier>
 		<aeFreePromotion>
 			<zValue>PROMOTION_HERBALIST</zValue>
 		</aeFreePromotion>
@@ -4188,14 +4203,16 @@
 		<SourceProject>PROJECT_PAGAN_CULT_HUNTING</SourceProject>
 		<aiYieldModifier>
 			<Pair>
-				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>-20</iValue>
 			</Pair>
 		</aiYieldModifier>
+		<aiImprovementClassModifier>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_LUMBERMILL</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiImprovementClassModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_RELIGION_PAGAN_STATE</zType>
@@ -4540,12 +4557,12 @@
 		</aiYieldRate>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_SPECIALIST_WOODCUTTER</zType>
-		<Name>TEXT_SPECIALIST_WOODCUTTER</Name>
-		<SourceSpecialist>SPECIALIST_WOODCUTTER</SourceSpecialist>
+		<zType>EFFECTCITY_SPECIALIST_MINER</zType>
+		<Name>TEXT_SPECIALIST_MINER</Name>
+		<SourceSpecialist>SPECIALIST_MINER</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
-				<zIndex>YIELD_SCIENCE</zIndex>
+				<zIndex>YIELD_TRAINING</zIndex>
 				<iValue>10</iValue>
 			</Pair>
 		</aiYieldRate>
@@ -4562,12 +4579,12 @@
 		</aiYieldRate>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_SPECIALIST_MINER</zType>
-		<Name>TEXT_SPECIALIST_MINER</Name>
-		<SourceSpecialist>SPECIALIST_MINER</SourceSpecialist>
+		<zType>EFFECTCITY_SPECIALIST_WOODCUTTER</zType>
+		<Name>TEXT_SPECIALIST_WOODCUTTER</Name>
+		<SourceSpecialist>SPECIALIST_WOODCUTTER</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
-				<zIndex>YIELD_TRAINING</zIndex>
+				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>10</iValue>
 			</Pair>
 		</aiYieldRate>
@@ -5851,12 +5868,12 @@
 		<zType>EFFECTCITY_TRAIT_DROUGHT_STRICKEN_ALL</zType>
 		<Name>TEXT_TRAIT_DROUGHT_STRICKEN</Name>
 		<SourceTrait>TRAIT_DROUGHT_STRICKEN</SourceTrait>
-		<aiYieldModifier>
+		<aiImprovementClassModifier>
 			<Pair>
-				<zIndex>YIELD_FOOD</zIndex>
-				<iValue>-10</iValue>
+				<zIndex>IMPROVEMENTCLASS_FARM</zIndex>
+				<iValue>-20</iValue>
 			</Pair>
-		</aiYieldModifier>
+		</aiImprovementClassModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_UNIT_CARAVAN</zType>

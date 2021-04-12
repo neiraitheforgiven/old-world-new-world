@@ -12,14 +12,6 @@
 		<Name>TEXT_SPECIALISTCLASS_FARMER</Name>
 	</Entry>
 	<Entry>
-		<zType>SPECIALISTCLASS_WOODCUTTER</zType>
-		<Name>TEXT_SPECIALISTCLASS_WOODCUTTER</Name>
-	</Entry>
-	<Entry>
-		<zType>SPECIALISTCLASS_STONECUTTER</zType>
-		<Name>TEXT_SPECIALISTCLASS_STONECUTTER</Name>
-	</Entry>
-	<Entry>
 		<zType>SPECIALISTCLASS_MINER</zType>
 		<Name>TEXT_SPECIALISTCLASS_MINER</Name>
 		<aeResourceCityEffect>
@@ -32,6 +24,14 @@
 				<zValue>EFFECTCITY_RESOURCE_GEM_LUXURY</zValue>
 			</Pair>
 		</aeResourceCityEffect>
+	</Entry>
+	<Entry>
+		<zType>SPECIALISTCLASS_STONECUTTER</zType>
+		<Name>TEXT_SPECIALISTCLASS_STONECUTTER</Name>
+	</Entry>
+	<Entry>
+		<zType>SPECIALISTCLASS_WOODCUTTER</zType>
+		<Name>TEXT_SPECIALISTCLASS_WOODCUTTER</Name>
 	</Entry>
 	<Entry>
 		<zType>SPECIALISTCLASS_RANCHER</zType>

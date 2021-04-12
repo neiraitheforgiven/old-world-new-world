@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2020 (x64) (http://www.altova.com) by Andrew Auseon (Private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -34,7 +34,6 @@
 		<EndLaw comment="Law cancelled"/>
 		<FreeLaw comment="Law enacted for free (i.e. no Civics cost)"/>
 		<FoundReligion comment="Religion founded"/>
-		<AdoptReligion comment="Religion adopted as your state Religion"/>
 		<FreeTheology comment="Theology added to your state Religion (if any)"/>
 		<Quest comment="A Quest given to the Player (similar to Ambitions)"/>
 		<QuestForce comment="A Quest given to the Player (similar to Ambitions), but does not check if the Quest is close to complete"/>
@@ -120,6 +119,7 @@
 		<bRemoveVegetation comment="Removes Vegetation from the Tile"/>
 		<bTribeRaid comment="Starts a raid from the Barbarian settlement on the Tile"/>
 		<aiCityYields comment="List of Yields (Money, Science, etc.) gained in the City Subject"/>
+		<aiGlobalYields comment="List of Yields (Money, Science, etc.) gained by the Player. Unlike the other Global Yield values, this is unmodified by inflation."/>
 		<aiGlobalYieldsBase comment="List of Yields (Money, Science, etc.) gained by the Player. This is distinct from aicityYields in that it is added directly to the national stockpile, not to any particular City"/>
 		<aiGlobalYieldsPer comment="List of Yields per City gained by the Player. For example, if this is 20 Money, and the Player has 3 cities, the Player will gain 60 Money"/>
 		<aiOtherYieldsBase comment="List of Yields (Money, Science, etc.) gained by the Player"/>
@@ -195,7 +195,6 @@
 		<EndLaw/>
 		<FreeLaw/>
 		<FoundReligion/>
-		<AdoptReligion/>
 		<FreeTheology/>
 		<Quest/>
 		<QuestForce/>
@@ -281,8 +280,11 @@
 		<bRemoveVegetation/>
 		<bTribeRaid/>
 		<aiCityYields/>
+		<aiGlobalYields/>
 		<aiGlobalYieldsBase/>
 		<aiGlobalYieldsPer/>
+		<aiOtherYieldsBase/>
+		<aiOtherYieldsPer/>
 		<aiYieldsSendBase/>
 		<aiYieldsSendPerUs/>
 		<aiYieldsSendPerThem/>
@@ -334,11 +336,6 @@
 		<iCitizens>1</iCitizens>
 	</Entry>
 	<Entry>
-		<zType>BONUS_TRIBE_FOUND</zType>
-		<zName>Founded at Tribal Site</zName>
-		<iLegitimacy>-4</iLegitimacy>
-	</Entry>
-	<Entry>
 		<zType>BONUS_DISCOVERED_LANDMARK</zType>
 		<zName>Landmark Discovered</zName>
 		<iLegitimacy>1</iLegitimacy>
@@ -359,9 +356,14 @@
 		<iLegitimacy>5</iLegitimacy>
 	</Entry>
 	<Entry>
+		<zType>BONUS_ABANDONED_AMBITION</zType>
+		<zName>Abandoned Ambition(s)</zName>
+		<iLegitimacy>-5</iLegitimacy>
+	</Entry>
+	<Entry>
 		<zType>BONUS_FAILED_LEGACY</zType>
 		<zName>Failed Legac(ies)</zName>
-		<iLegitimacy>-4</iLegitimacy>
+		<iLegitimacy>-5</iLegitimacy>
 	</Entry>
 	<Entry>
 		<zType>BONUS_FINISHED_QUEST</zType>
@@ -392,12 +394,12 @@
 		<zType>BONUS_CONVERT_LEGITIMACY</zType>
 		<zName>Used for {YIELD_ORDERS}</zName>
 		<iLegitimacy>-1</iLegitimacy>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>4</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_ADOPTS</zType>
@@ -599,12 +601,12 @@
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>BONUS_PLAYER_OFFER</zType>
-		<MemoryPlayer>MEMORYPLAYER_OFFER</MemoryPlayer>
+		<zType>BONUS_PLAYER_DEMAND_TRIBUTE</zType>
+		<MemoryPlayer>MEMORYPLAYER_DEMANDED_TRIBUTE</MemoryPlayer>
 	</Entry>
 	<Entry>
-		<zType>BONUS_PLAYER_GAVE_FAVOR</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<zType>BONUS_PLAYER_OFFER</zType>
+		<MemoryPlayer>MEMORYPLAYER_OFFER</MemoryPlayer>
 	</Entry>
 	<Entry>
 		<zType>BONUS_FAMILY_PURSUED_AMBITION</zType>
@@ -626,12 +628,12 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_STATESMEN_SEAT</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>400</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_PATRONS_SEAT</zType>
@@ -679,7 +681,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_HUNTERS_SEAT</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>
 				<iValue>50</iValue>
@@ -692,7 +694,7 @@
 				<zIndex>YIELD_IRON</zIndex>
 				<iValue>50</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EFFECTCITY_FAMILYCLASS_PATRONS_SEAT</zType>
@@ -857,82 +859,28 @@
 		<bRandomTech>1</bRandomTech>
 	</Entry>
 	<Entry>
-		<zType>BONUS_YIELD_ORDERS</zType>
-		<aiGlobalYieldsBase>
-			<Pair>
-				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>5</iValue>
-			</Pair>
-		</aiGlobalYieldsBase>
-	</Entry>
-	<Entry>
-		<zType>BONUS_YIELD_FOOD</zType>
-		<aiGlobalYieldsBase>
-			<Pair>
-				<zIndex>YIELD_FOOD</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-		</aiGlobalYieldsBase>
-	</Entry>
-	<Entry>
-		<zType>BONUS_YIELD_WOOD</zType>
-		<aiGlobalYieldsBase>
-			<Pair>
-				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-		</aiGlobalYieldsBase>
-	</Entry>
-	<Entry>
-		<zType>BONUS_YIELD_STONE</zType>
-		<aiGlobalYieldsBase>
-			<Pair>
-				<zIndex>YIELD_STONE</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-		</aiGlobalYieldsBase>
-	</Entry>
-	<Entry>
-		<zType>BONUS_YIELD_IRON</zType>
-		<aiGlobalYieldsBase>
-			<Pair>
-				<zIndex>YIELD_IRON</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-		</aiGlobalYieldsBase>
-	</Entry>
-	<Entry>
 		<zType>BONUS_IMPROVEMENT_ISHTAR_GATE</zType>
 		<aiCityYields>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>200</iValue>
+				<iValue>100</iValue>
 			</Pair>
 		</aiCityYields>
-	</Entry>
-	<Entry>
-		<zType>BONUS_IMPROVEMENT_PANTHEON</zType>
-		<AddCourtierForce>
-			<Pair>
-				<zIndex>COURTIER_MERCHANT</zIndex>
-				<zValue>NONE</zValue>
-			</Pair>
-		</AddCourtierForce>
 	</Entry>
 	<Entry>
 		<zType>BONUS_IMPROVEMENT_ORACLE</zType>
 		<bHolyCityAgents>1</bHolyCityAgents>
 	</Entry>
 	<Entry>
-		<zType>BONUS_MISSIONRESULT_AMBASSADOR</zType>
+		<zType>BONUS_MAKE_AMBASSADOR</zType>
 		<Council>COUNCIL_AMBASSADOR</Council>
 	</Entry>
 	<Entry>
-		<zType>BONUS_MISSIONRESULT_CHANCELLOR</zType>
+		<zType>BONUS_MAKE_CHANCELLOR</zType>
 		<Council>COUNCIL_CHANCELLOR</Council>
 	</Entry>
 	<Entry>
-		<zType>BONUS_MISSIONRESULT_SPYMASTER</zType>
+		<zType>BONUS_MAKE_SPYMASTER</zType>
 		<Council>COUNCIL_SPYMASTER</Council>
 	</Entry>
 	<Entry>
@@ -953,9 +901,9 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_MISSIONRESULT_ABDICATE</zType>
-		<zName>Abdication</zName>
-		<iLegitimacy>-10</iLegitimacy>
-		<bAbdicate>1</bAbdicate>
+		<aeBonuses>
+			<zValue>BONUS_ABDICATE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_MISSIONRESULT_CONVERT_RELIGION</zType>
@@ -1048,17 +996,19 @@
 	<Entry>
 		<zType>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zType>
 		<zName>Assassinate (Kill, Exposed)</zName>
-		<MemoryPlayerOther>MEMORYPLAYER_ASSASSINATION_EXPOSED</MemoryPlayerOther>
-		<MemoryFamily>MEMORYFAMILY_ASSASSINATION_EXPOSED</MemoryFamily>
 		<iLegitimacy>-2</iLegitimacy>
 		<bKillCharacter>1</bKillCharacter>
+		<aeBonuses>
+			<zValue>BONUS_ASSASSINATION_EXPOSED</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_MISSIONRESULT_ASSASSINATE_FAIL_EXPOSED</zType>
 		<zName>Assassinate (Fail, Exposed)</zName>
-		<MemoryPlayerOther>MEMORYPLAYER_ASSASSINATION_EXPOSED</MemoryPlayerOther>
-		<MemoryFamily>MEMORYFAMILY_ASSASSINATION_EXPOSED</MemoryFamily>
 		<iLegitimacy>-2</iLegitimacy>
+		<aeBonuses>
+			<zValue>BONUS_ASSASSINATION_EXPOSED</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_MISSIONRESULT_TREACHERY_SUCCESS</zType>
@@ -1116,12 +1066,12 @@
 		<zType>BONUS_MISSIONRESULT_IMPRISON_JUST</zType>
 		<zName>Imprison (Just)</zName>
 		<MemoryFamily>MEMORYFAMILY_MEMBER_IMPRISONED</MemoryFamily>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>500</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 		<aeAddTraits>
 			<zValue>TRAIT_IMPRISONED</zValue>
 		</aeAddTraits>
@@ -1131,12 +1081,12 @@
 		<zName>Imprison (Unjust)</zName>
 		<MemoryFamily>MEMORYFAMILY_MEMBER_IMPRISONED</MemoryFamily>
 		<iLegitimacy>-2</iLegitimacy>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>500</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 		<aeAddTraits>
 			<zValue>TRAIT_IMPRISONED</zValue>
 		</aeAddTraits>
@@ -1145,12 +1095,12 @@
 		<zType>BONUS_MISSIONRESULT_IMPRISON_ESCAPE</zType>
 		<zName>Imprison (Escape)</zName>
 		<iLegitimacy>-2</iLegitimacy>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>500</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 		<aeAddTraits>
 			<zValue>TRAIT_SLIGHTED</zValue>
 			<zValue>TRAIT_FUGITIVE</zValue>
@@ -1225,165 +1175,165 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_NATION_CARTHAGE</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>200</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_NATION_EGYPT</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_STONE</zIndex>
 				<iValue>400</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_TREASURY_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>100</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_TREASURY_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>150</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_TREASURY_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>250</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_TREASURY_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>400</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_FORUM_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>20</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_FORUM_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>30</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_FORUM_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>50</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_FORUM_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>80</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_ARCHIVE_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>10</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_ARCHIVE_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>15</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_ARCHIVE_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>25</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_ARCHIVE_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>40</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_DECREE_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>6</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_DECREE_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>8</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_DECREE_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>10</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_DECREE_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>12</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_FESTIVAL_1</zType>
@@ -1439,115 +1389,115 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_INQUIRY_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>40</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_INQUIRY_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>80</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_INQUIRY_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>120</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_INQUIRY_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
 				<iValue>160</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_HUNT_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
 				<iValue>50</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_HUNT_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
 				<iValue>100</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_HUNT_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
 				<iValue>150</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_HUNT_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
 				<iValue>200</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_OLYMPICS_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
 				<iValue>40</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_OLYMPICS_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
 				<iValue>80</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_OLYMPICS_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
 				<iValue>120</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_OLYMPICS_4</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
 				<iValue>160</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_CONVOY_1</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>100</iValue>
@@ -1556,11 +1506,11 @@
 				<zIndex>YIELD_DISCONTENT</zIndex>
 				<iValue>-40</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_CONVOY_2</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>200</iValue>
@@ -1569,11 +1519,11 @@
 				<zIndex>YIELD_DISCONTENT</zIndex>
 				<iValue>-60</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_CONVOY_3</zType>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>300</iValue>
@@ -1582,17 +1532,17 @@
 				<zIndex>YIELD_DISCONTENT</zIndex>
 				<iValue>-80</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_PROJECT_CONVOY_4</zType>
 		<iDiscontentLevels>-1</iDiscontentLevels>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>400</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_IRONWORKING</zType>
@@ -1627,22 +1577,22 @@
 	<Entry>
 		<zType>BONUS_TECH_STONECUTTING_BONUS_STONE</zType>
 		<zName>Stone Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_STONE</zIndex>
 				<iValue>200</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_HUSBANDRY_BONUS_FOOD</zType>
 		<zName>Food Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
 				<iValue>200</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_POLIS_BONUS_SETTLER</zType>
@@ -1738,22 +1688,22 @@
 	<Entry>
 		<zType>BONUS_TECH_DOCTRINE_BONUS_ORDERS</zType>
 		<zName>Orders Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>20</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_COINAGE_BONUS_MONEY</zType>
 		<zName>Money Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>2000</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_SCHOLARSHIP_BONUS_SCIENTIST</zType>
@@ -1798,17 +1748,17 @@
 	<Entry>
 		<zType>BONUS_TECH_ARCHITECTURE_BONUS_CIVICS</zType>
 		<zName>Civics Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_MANOR_BONUS_GOODS</zType>
 		<zName>Goods Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_IRON</zIndex>
 				<iValue>200</iValue>
@@ -1821,7 +1771,7 @@
 				<zIndex>YIELD_WOOD</zIndex>
 				<iValue>200</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_MACHINERY_BONUS_ONAGER</zType>
@@ -1856,12 +1806,12 @@
 	<Entry>
 		<zType>BONUS_TECH_BODKIN_ARROW_BONUS_TRAINING</zType>
 		<zName>Training Boost</zName>
-		<aiGlobalYieldsBase>
+		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
-		</aiGlobalYieldsBase>
+		</aiGlobalYields>
 	</Entry>
 	<Entry>
 		<zType>BONUS_TECH_COHORTS_BONUS_SOLDIER</zType>
@@ -2076,6 +2026,51 @@
 		</aiUnits>
 	</Entry>
 	<Entry>
+		<zType>BONUS_YIELD_ORDERS</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_ORDERS</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
+		<zType>BONUS_YIELD_FOOD</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
+		<zType>BONUS_YIELD_WOOD</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
+		<zType>BONUS_YIELD_STONE</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_STONE</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
+		<zType>BONUS_YIELD_IRON</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
 		<zType>BONUS_YIELD_MONEY</zType>
 		<aiGlobalYieldsBase>
 			<Pair>
@@ -2195,6 +2190,24 @@
 	<Entry>
 		<zType>BONUS_KILL_CHARACTER</zType>
 		<bKillCharacter>1</bKillCharacter>
+	</Entry>
+	<Entry>
+		<zType>BONUS_KILL_CHARACTER_EXPOSED</zType>
+		<bKillCharacter>1</bKillCharacter>
+		<aeBonuses>
+			<zValue>BONUS_ASSASSINATION_EXPOSED</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_ASSASSINATION_EXPOSED</zType>
+		<MemoryPlayerOther>MEMORYPLAYER_ASSASSINATION_EXPOSED</MemoryPlayerOther>
+		<MemoryFamily>MEMORYFAMILY_ASSASSINATION_EXPOSED</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_ABDICATE</zType>
+		<zName>Abdication</zName>
+		<iLegitimacy>-10</iLegitimacy>
+		<bAbdicate>1</bAbdicate>
 	</Entry>
 	<Entry>
 		<zType>BONUS_HAVE_BASTARD</zType>
@@ -2512,7 +2525,7 @@
 		<aiGlobalYieldsBase>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>5</iValue>
+				<iValue>6</iValue>
 			</Pair>
 		</aiGlobalYieldsBase>
 	</Entry>
@@ -2521,7 +2534,7 @@
 		<aiGlobalYieldsBase>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>7</iValue>
+				<iValue>8</iValue>
 			</Pair>
 		</aiGlobalYieldsBase>
 	</Entry>
@@ -2530,7 +2543,7 @@
 		<aiGlobalYieldsBase>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>10</iValue>
+				<iValue>12</iValue>
 			</Pair>
 		</aiGlobalYieldsBase>
 	</Entry>
@@ -2539,7 +2552,7 @@
 		<aiGlobalYieldsBase>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
-				<iValue>15</iValue>
+				<iValue>16</iValue>
 			</Pair>
 		</aiGlobalYieldsBase>
 	</Entry>
@@ -6473,16 +6486,20 @@
 		<AddLeaderRelationship>RELATIONSHIP_TERRIFIED_OF</AddLeaderRelationship>
 	</Entry>
 	<Entry>
-		<zType>BONUS_LEADER_OBLIGED_TO</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
-	</Entry>
-	<Entry>
 		<zType>BONUS_LEADER_INFLUENCED_BY</zType>
 		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_INTERCESSED_FOR</zType>
 		<AddLeaderRelationship>RELATIONSHIP_INTERCESSED_FOR</AddLeaderRelationship>
+	</Entry>
+	<Entry>
+		<zType>BONUS_LEADER_HOLDS_FAVOR_FROM</zType>
+		<AddLeaderRelationship>RELATIONSHIP_HOLDS_FAVOR_FROM</AddLeaderRelationship>
+	</Entry>
+	<Entry>
+		<zType>BONUS_LEADER_OWES_FAVOR_TO</zType>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_JEALOUS_ABOUT</zType>
@@ -6521,20 +6538,12 @@
 		<RemoveLeaderRelationship>RELATIONSHIP_IN_LOVE_WITH</RemoveLeaderRelationship>
 	</Entry>
 	<Entry>
-		<zType>BONUS_LEADER_IN_LOVE_WITH_REMOVE_COPY</zType>
-		<RemoveLeaderRelationship>RELATIONSHIP_IN_LOVE_WITH</RemoveLeaderRelationship>
-	</Entry>
-	<Entry>
 		<zType>BONUS_LEADER_ALLIED_WITH_REMOVE</zType>
 		<RemoveLeaderRelationship>RELATIONSHIP_ALLIED_WITH</RemoveLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_LOVER_OF_REMOVE</zType>
 		<RemoveLeaderRelationship>RELATIONSHIP_LOVER_OF</RemoveLeaderRelationship>
-	</Entry>
-	<Entry>
-		<zType>BONUS_LEADER_LOVER_OF_COPY</zType>
-		<AddLeaderRelationship>RELATIONSHIP_LOVER_OF</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_ENDEARED_TO_REMOVE</zType>
@@ -6545,16 +6554,20 @@
 		<RemoveLeaderRelationship>RELATIONSHIP_TERRIFIED_OF</RemoveLeaderRelationship>
 	</Entry>
 	<Entry>
-		<zType>BONUS_LEADER_OBLIGED_TO_REMOVE</zType>
-		<RemoveLeaderRelationship>RELATIONSHIP_OBLIGED_TO</RemoveLeaderRelationship>
-	</Entry>
-	<Entry>
 		<zType>BONUS_LEADER_INFLUENCED_BY_REMOVE</zType>
 		<RemoveLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</RemoveLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_INTERCESSED_FOR_REMOVE</zType>
 		<RemoveLeaderRelationship>RELATIONSHIP_INTERCESSED_FOR</RemoveLeaderRelationship>
+	</Entry>
+	<Entry>
+		<zType>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zType>
+		<RemoveLeaderRelationship>RELATIONSHIP_HOLDS_FAVOR_FROM</RemoveLeaderRelationship>
+	</Entry>
+	<Entry>
+		<zType>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zType>
+		<RemoveLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</RemoveLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_LEADER_JEALOUS_ABOUT_REMOVE</zType>
@@ -6865,12 +6878,6 @@
 		</aeAddTraits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_GIVE_TRAIT_CUNNING</zType>
-		<aeAddTraits>
-			<zValue>TRAIT_CUNNING</zValue>
-		</aeAddTraits>
-	</Entry>
-	<Entry>
 		<zType>BONUS_GIVE_TRAIT_ROMANTIC</zType>
 		<aeAddTraits>
 			<zValue>TRAIT_ROMANTIC</zValue>
@@ -6907,12 +6914,6 @@
 		</aeAddTraits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_GIVE_TRAIT_LOYAL</zType>
-		<aeAddTraits>
-			<zValue>TRAIT_LOYAL</zValue>
-		</aeAddTraits>
-	</Entry>
-	<Entry>
 		<zType>BONUS_GIVE_TRAIT_PIOUS</zType>
 		<aeAddTraits>
 			<zValue>TRAIT_PIOUS</zValue>
@@ -6922,6 +6923,18 @@
 		<zType>BONUS_GIVE_TRAIT_WANTON</zType>
 		<aeAddTraits>
 			<zValue>TRAIT_WANTON</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_GIVE_TRAIT_LOYAL</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_LOYAL</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_GIVE_TRAIT_CUNNING</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_CUNNING</zValue>
 		</aeAddTraits>
 	</Entry>
 	<Entry>
@@ -6937,15 +6950,15 @@
 		</aeAddTraits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_GIVE_TRAIT_SPOILED</zType>
-		<aeAddTraits>
-			<zValue>TRAIT_SPOILED</zValue>
-		</aeAddTraits>
-	</Entry>
-	<Entry>
 		<zType>BONUS_GIVE_TRAIT_WITTY</zType>
 		<aeAddTraits>
 			<zValue>TRAIT_WITTY</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_GIVE_TRAIT_SPOILED</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_SPOILED</zValue>
 		</aeAddTraits>
 	</Entry>
 	<Entry>
@@ -6988,6 +7001,12 @@
 		<zType>BONUS_GIVE_TRAIT_EXPLORING</zType>
 		<aeAddTraits>
 			<zValue>TRAIT_EXPLORING</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_GIVE_TRAIT_EXOTIC</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_EXOTIC</zValue>
 		</aeAddTraits>
 	</Entry>
 	<Entry>
@@ -7225,12 +7244,6 @@
 		</aeAddTraits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_GIVE_TRAIT_EXOTIC</zType>
-		<aeAddTraits>
-			<zValue>TRAIT_EXOTIC</zValue>
-		</aeAddTraits>
-	</Entry>
-	<Entry>
 		<zType>BONUS_GIVE_TRAIT_EXCLUDED</zType>
 		<aeAddTraits>
 			<zValue>TRAIT_EXCLUDED</zValue>
@@ -7349,14 +7362,6 @@
 	<Entry>
 		<zType>BONUS_RELEASE_AGENT</zType>
 		<bReleaseAgent>1</bReleaseAgent>
-	</Entry>
-	<Entry>
-		<zType>BONUS_CHARACTER_PROVIDED_FAVOR</zType>
-		<MemoryCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</MemoryCharacter>
-	</Entry>
-	<Entry>
-		<zType>BONUS_CHARACTER_FORGET_FAVOR</zType>
-		<ForgetCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</ForgetCharacter>
 	</Entry>
 	<Entry>
 		<zType>BONUS_ACHIEVEMENT_100_YEARS</zType>

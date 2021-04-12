@@ -10,9 +10,9 @@
         <aeSpriteSheets>
             <zValue>ASSET_SPRITE_SHEET_HUD_ICONS</zValue>        
             <zValue>ASSET_SPRITE_SHEET_TOOL_ICONS</zValue>
-            <zValue>ASSET_SPRITE_SHEET_SHINE_ATLAS</zValue>         
-            <zValue>ASSET_SPRITE_SHEET_HUD_ATLAS_2</zValue>          
-        </aeSpriteSheets>
+            <zValue>ASSET_SPRITE_SHEET_SHINE_ATLAS</zValue>
+			<zValue>ASSET_SPRITE_SHEET_HUD_ATLAS_2</zValue>
+		</aeSpriteSheets>
 	</Entry>
 	<Entry>
 		<zType>SPRITE_GROUP_CULTURE_ICONS</zType>
@@ -134,6 +134,7 @@
         <zType>SPRITE_GROUP_LAW_ICONS</zType>
         <aeSpriteSheets>
             <zValue>ASSET_SPRITE_SHEET_LAWS</zValue>
+			<zValue>ASSET_SPRITE_SHEET_CRESTS</zValue>
         </aeSpriteSheets>
     </Entry>
     <Entry>
@@ -167,7 +168,6 @@
             <zValue>ASSET_SPRITE_SHEET_PROJECTS</zValue>
             <zValue>ASSET_SPRITE_SHEET_LAWS</zValue>
             <zValue>ASSET_SPRITE_SHEET_YIELD</zValue>
-            <zValue>ASSET_SPRITE_SHEET_HUD_ATLAS_2</zValue>
         </aeSpriteSheets>
     </Entry>
     <Entry>
@@ -192,7 +192,6 @@
         <zType>SPRITE_GROUP_EFFECTUNIT_ICONS</zType>
         <aeSpriteSheets>
             <zValue>ASSET_SPRITE_SHEET_UNIT_EFFECTS</zValue>
-            <zValue>ASSET_SPRITE_SHEET_UNIT_EFFECTS</zValue>
         </aeSpriteSheets>
     </Entry>
     <Entry>
@@ -203,14 +202,14 @@
             <zValue>ASSET_SPRITE_SHEET_HUD_ATLAS</zValue>
             <zValue>ASSET_SPRITE_SHEET_HUD_ATLAS_2</zValue>
             <zValue>ASSET_SPRITE_SHEET_HUD_SPRITE_ATLAS</zValue>
-            <zValue>ASSET_SPRITE_SHEET_HUD_SPRITE_ATLAS_FILTERED</zValue>          
+            <zValue>ASSET_SPRITE_SHEET_HUD_SPRITE_ATLAS_FILTERED</zValue>
+			<zValue>ASSET_SPRITE_SHEET_EVENT_FRAMES</zValue>        
         </aeSpriteSheets>
     </Entry>
     <Entry>
         <zType>SPRITE_GROUP_COOLDOWN_ICONS</zType>
         <aeSpriteSheets>
             <zValue>ASSET_SPRITE_SHEET_COOLDOWNS</zValue>
-            <zValue>ASSET_SPRITE_SHEET_WIDGETS</zValue>
         </aeSpriteSheets>
     </Entry>
     <Entry>

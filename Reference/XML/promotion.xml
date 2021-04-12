@@ -93,13 +93,6 @@
 		<bUpgrade>1</bUpgrade>
 	</Entry>
 	<Entry>
-		<zType>PROMOTION_HARDY</zType>
-		<zName>Hardy</zName>
-		<PromotionPrereq>PROMOTION_TRACKER</PromotionPrereq>
-		<EffectUnit>EFFECTUNIT_HARDY</EffectUnit>
-		<bUpgrade>1</bUpgrade>
-	</Entry>
-	<Entry>
 		<zType>PROMOTION_EAGLE_EYE</zType>
 		<zName>Eagle Eye</zName>
 		<EffectUnit>EFFECTUNIT_EAGLE_EYE</EffectUnit>

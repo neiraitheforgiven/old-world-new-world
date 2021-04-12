@@ -352,8 +352,8 @@
 		<English>Elites</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EFFECTCITY_LAW_ISOLATIONISM</zType>
-		<English>Isolationism</English>
+		<zType>TEXT_EFFECTCITY_LAW_AUTARKY</zType>
+		<English>Autarky</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EFFECTCITY_LAW_COIN_DEBASEMENT</zType>
@@ -613,11 +613,11 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_EFFECTCITY_RESOURCE_CROP</zType>
-		<English>Crop</English>
+		<English>Crop Resouce</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EFFECTCITY_RESOURCE_BULLION</zType>
-		<English>Bullion</English>
+		<English>Bullion Resouce</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EFFECTCITY_SPECIALIST_RURAL</zType>

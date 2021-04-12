@@ -60,12 +60,12 @@
 		<English>Mine~a Mine~Mines</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_IMPROVEMENT_LUMBERMILL</zType>
-		<English>Lumbermill~a Lumbermill~Lumbermills</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_IMPROVEMENT_QUARRY</zType>
 		<English>Quarry~a Quarry~Quarries</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENT_LUMBERMILL</zType>
+		<English>Lumbermill~a Lumbermill~Lumbermills</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_IMPROVEMENT_PASTURE</zType>

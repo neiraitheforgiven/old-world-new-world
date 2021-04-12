@@ -22,10 +22,13 @@
 		<bDisabled/>
 		<aiStartUnit/>
 		<aiCityUnit/>
-		<aiStartYield/>
 		<aiNationOpinion/>
 		<aeStartingTech/>
 		<aeStartingLaw/>
+		<aeImprovementNotValid/>
+		<aeProjectNotValid/>
+		<aeTechNotValid/>
+		<aeUnitNotValid/>
 		<aeFirstNamesMale/>
 		<aeFirstNamesFemale/>
 		<aeCityNames/>
@@ -67,7 +70,7 @@
 		<aiNationOpinion>
 			<Pair>
 				<zIndex>NATION_BABYLONIA</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 		</aiNationOpinion>
 		<aeStartingTech>
@@ -260,7 +263,7 @@
 		<aiNationOpinion>
 			<Pair>
 				<zIndex>NATION_ASSYRIA</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 		</aiNationOpinion>
 		<aeStartingTech>
@@ -446,7 +449,7 @@
 		<aiNationOpinion>
 			<Pair>
 				<zIndex>NATION_ROME</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 		</aiNationOpinion>
 		<aeStartingTech>
@@ -891,7 +894,7 @@
 		<aiNationOpinion>
 			<Pair>
 				<zIndex>NATION_PERSIA</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 		</aiNationOpinion>
 		<aeStartingTech>
@@ -1145,7 +1148,7 @@
 		<aiNationOpinion>
 			<Pair>
 				<zIndex>NATION_GREECE</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 		</aiNationOpinion>
 		<aeStartingTech>
@@ -1342,16 +1345,10 @@
 				<iValue>1</iValue>
 			</Pair>
 		</aiCityUnit>
-		<aiStartYield>
-			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>200</iValue>
-			</Pair>
-		</aiStartYield>
 		<aiNationOpinion>
 			<Pair>
 				<zIndex>NATION_CARTHAGE</zIndex>
-				<iValue>-50</iValue>
+				<iValue>-40</iValue>
 			</Pair>
 		</aiNationOpinion>
 		<aeStartingTech>

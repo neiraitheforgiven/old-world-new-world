@@ -20,8 +20,6 @@
 		<iPerLegitimacy/>
 		<iHurryModifier/>
 		<iDiscontentModifier/>
-		<iDiscontentMultiplier/>
-		<iValueAI/>
 		<iPrice/>
 		<iMinPrice/>
 		<iMaxPrice/>
@@ -38,6 +36,7 @@
 		<bStockpile/>
 		<bNoDamage/>
 		<bNoAssimilate/>
+		<bWarning/>
 		<bNegative/>
 		<bFloor/>
 		<bShortfall/>
@@ -60,7 +59,6 @@
 		<iLeaderGovernor>20</iLeaderGovernor>
 		<iHurryModifier>50</iHurryModifier>
 		<iDiscontentModifier>-5</iDiscontentModifier>
-		<iValueAI>75</iValueAI>
 		<bFloor>1</bFloor>
 		<aiOpinionCharacterRate>
 			<Pair>
@@ -80,7 +78,6 @@
 		<Help>TEXT_YIELD_CIVICS_HELP</Help>
 		<zIconName>YIELD_CIVICS</zIconName>
 		<iMinimum>10</iMinimum>
-		<iValueAI>50</iValueAI>
 		<iGovernorCost>100</iGovernorCost>
 		<iUIPosition>6</iUIPosition>
 		<bGlobal>1</bGlobal>
@@ -94,9 +91,8 @@
 		<Help>TEXT_YIELD_TRAINING_HELP</Help>
 		<zIconName>YIELD_TRAINING</zIconName>
 		<iMinimum>10</iMinimum>
-		<iValueAI>50</iValueAI>
 		<iGeneralCost>100</iGeneralCost>
-		<iOffensiveCost>600</iOffensiveCost>
+		<iOffensiveCost>400</iOffensiveCost>
 		<iUIPosition>7</iUIPosition>
 		<bGlobal>1</bGlobal>
 		<bStockpile>1</bStockpile>
@@ -108,7 +104,6 @@
 		<Color>COLOR_YIELD_CULTURE</Color>
 		<Help>TEXT_YIELD_CULTURE_HELP</Help>
 		<zIconName>YIELD_CULTURE</zIconName>
-		<iValueAI>75</iValueAI>
 		<bFloor>1</bFloor>
 	</Entry>
 	<Entry>
@@ -120,10 +115,9 @@
 		<iForeignPopulation>20</iForeignPopulation>
 		<iPerMissingFamily>20</iPerMissingFamily>
 		<iPerUrbanTile>1</iPerUrbanTile>
-		<iValueAI>-100</iValueAI>
 		<bNoDamage>1</bNoDamage>
 		<bNoAssimilate>1</bNoAssimilate>
-		<bNegative>1</bNegative>
+		<bWarning>1</bWarning>
 		<aiOpinionCharacterRate>
 			<Pair>
 				<zIndex>OPINIONCHARACTER_FURIOUS</zIndex>
@@ -146,7 +140,6 @@
 		<Help>TEXT_YIELD_SCIENCE_HELP</Help>
 		<zIconName>YIELD_SCIENCE</zIconName>
 		<iDiscontentModifier>-5</iDiscontentModifier>
-		<iValueAI>400</iValueAI>
 		<iUIPosition>5</iUIPosition>
 		<bGlobal>1</bGlobal>
 		<bFloor>1</bFloor>
@@ -160,7 +153,6 @@
 		<iPerConnectedForeign>10</iPerConnectedForeign>
 		<iPerLivingRoyal>-20</iPerLivingRoyal>
 		<iPerLivingCourtier>-50</iPerLivingCourtier>
-		<iValueAI>10</iValueAI>
 		<iHireMercenaryCost>10</iHireMercenaryCost>
 		<iDowryYieldBase>2000</iDowryYieldBase>
 		<iDowryYieldPer>-200</iDowryYieldPer>
@@ -174,13 +166,13 @@
 		<Color>COLOR_YIELD_MAINTENANCE</Color>
 		<Help>TEXT_YIELD_MAINTENANCE_HELP</Help>
 		<zIconName>YIELD_MAINTENANCE</zIconName>
-		<iPerEmptyImprovement>20</iPerEmptyImprovement>
-		<iPerCapitalDist>10</iPerCapitalDist>
+		<iPerEmptyImprovement>-20</iPerEmptyImprovement>
+		<iPerCapitalDist>-10</iPerCapitalDist>
 		<iDiscontentModifier>5</iDiscontentModifier>
-		<iValueAI>-10</iValueAI>
 		<bGlobal>1</bGlobal>
 		<bNoDamage>1</bNoDamage>
 		<bNoAssimilate>1</bNoAssimilate>
+		<bWarning>1</bWarning>
 		<bNegative>1</bNegative>
 		<AddToYield>YIELD_MONEY</AddToYield>
 	</Entry>
@@ -191,7 +183,6 @@
 		<Help>TEXT_YIELD_ORDERS_HELP</Help>
 		<zIconName>YIELD_ORDERS</zIconName>
 		<iPerLegitimacy>1</iPerLegitimacy>
-		<iValueAI>200</iValueAI>
 		<iPrice>20</iPrice>
 		<iMinPrice>10</iMinPrice>
 		<iMaxPrice>1000</iMaxPrice>
@@ -209,7 +200,6 @@
 		<Name>TEXT_YIELD_FOOD</Name>
 		<Color>COLOR_YIELD_FOOD</Color>
 		<zIconName>YIELD_FOOD</zIconName>
-		<iValueAI>40</iValueAI>
 		<iPrice>4</iPrice>
 		<iMinPrice>2</iMinPrice>
 		<iMaxPrice>100</iMaxPrice>
@@ -227,7 +217,6 @@
 		<Name>TEXT_YIELD_IRON</Name>
 		<Color>COLOR_YIELD_IRON</Color>
 		<zIconName>YIELD_IRON</zIconName>
-		<iValueAI>40</iValueAI>
 		<iPrice>4</iPrice>
 		<iMinPrice>2</iMinPrice>
 		<iMaxPrice>100</iMaxPrice>
@@ -245,7 +234,6 @@
 		<Name>TEXT_YIELD_STONE</Name>
 		<Color>COLOR_YIELD_STONE</Color>
 		<zIconName>YIELD_STONE</zIconName>
-		<iValueAI>40</iValueAI>
 		<iPrice>4</iPrice>
 		<iMinPrice>2</iMinPrice>
 		<iMaxPrice>100</iMaxPrice>
@@ -283,7 +271,6 @@
 		<Name>TEXT_YIELD_WOOD</Name>
 		<Color>COLOR_YIELD_WOOD</Color>
 		<zIconName>YIELD_WOOD</zIconName>
-		<iValueAI>60</iValueAI>
 		<iPrice>4</iPrice>
 		<iMinPrice>2</iMinPrice>
 		<iMaxPrice>100</iMaxPrice>

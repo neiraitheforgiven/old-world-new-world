@@ -58,7 +58,7 @@
 	<Entry>
 		<zType>MEMORYTRIBE_PLAYER_TRIBE_WAR</zType>
 		<zText>Convinced a Nation to declare on us</zText>
-		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_LONG</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_LONG</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYTRIBE_ATTACKED_UNIT</zType>

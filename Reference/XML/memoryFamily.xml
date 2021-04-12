@@ -657,7 +657,7 @@
 	<Entry>
 		<zType>MEMORYFAMILY_FAMILY_GAMES</zType>
 		<zText>Hosted games in our honor</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_SHORT</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYFAMILY_RADICAL_PHILOSOPHER_RID_FAMILY</zType>
@@ -1674,5 +1674,60 @@
 		<zType>MEMORYFAMILY_PRAISED_CHEF</zType>
 		<zText>Praised our chef</zText>
 		<MemoryLevel>MEMORYLEVEL_POS_LOW_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_SUPPORTED_HEIR_CANDIDATE_YES</zType>
+		<zText>Endorsed our favored successor</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_LOW_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_SUPPORTED_HEIR_CANDIDATE_NO</zType>
+		<zText>Endorsed a dispised successor</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_LOW_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_ACCEPTED_TRUCE</zType>
+		<zText>Accepted a foreign truce</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_REFUSED_TRUCE</zType>
+		<zText>Refused a foreign truce</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_HIGH_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_UNITED_AGAINST_LEADER</zType>
+		<zText>United against leader</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_LONG</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_DUEL_EXECUTION</zType>
+		<zText>Executed kin-slayer</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_HIGH_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_DUEL_EXILE</zType>
+		<zText>Exiled kin-slayer</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_DUEL_PARDON</zType>
+		<zText>Released kin-slayer</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_FAMILY_GENERAL_TRAGEDY_SUPPORTED</zType>
+		<zText>Supported us after general's death</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_FAMILY_GENERAL_TRAGEDY_OPPOSED</zType>
+		<zText>Sided against us after general's death</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYFAMILY_FLED_BATTLE</zType>
+		<zText>Fled the field of battle</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_LOW_NORMAL</MemoryLevel>
 	</Entry>
 </Root>

@@ -503,6 +503,10 @@
 		<English>Insurrection Event</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_MISSIONRESULT_DEMAND_TRIBUTE_EVENT</zType>
+		<English>Demand Tribute Event</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_MISSIONRESULT_TRADE_MISSION_EVENT</zType>
 		<English>Trade Mission Event</English>
 	</Entry>

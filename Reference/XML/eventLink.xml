@@ -287,6 +287,7 @@
 	</Entry>
 	<Entry>
 		<zType>EVENTLINK_ATTACKED_BY_A_BEAR_AID</zType>
+		<iTurnLimit>5</iTurnLimit>
 		<aeSubjectClasses>
 			<zValue>SUBJECTCLASS_PLAYER</zValue>
 			<zValue>SUBJECTCLASS_TILE</zValue>
@@ -295,6 +296,7 @@
 	</Entry>
 	<Entry>
 		<zType>EVENTLINK_ATTACKED_BY_A_BEAR_NOTIFY</zType>
+		<iTurnLimit>5</iTurnLimit>
 		<aeSubjectClasses>
 			<zValue>SUBJECTCLASS_PLAYER</zValue>
 			<zValue>SUBJECTCLASS_TILE</zValue>
@@ -1057,6 +1059,48 @@
 			<zValue>SUBJECTCLASS_CHARACTER</zValue>
 		</aeSubjectClasses>
 	</Entry>
+	<Entry>
+		<zType>EVENTLINK_CHILDHOOD_FRIENDS</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+		</aeSubjectClasses>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_SUSPICIOUS_HEAD_NO_CHANCES</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+		</aeSubjectClasses>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_SUSPICIOUS_MEET_ALONE</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+		</aeSubjectClasses>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_SPOILED_WINE</zType>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_FLAWS_SLOTHFUL_ONE</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+		</aeSubjectClasses>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_FLAWS_SLOTHFUL_TWO</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+		</aeSubjectClasses>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_FLAWS_SLOTHFUL_THREE</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_CHARACTER</zValue>
+		</aeSubjectClasses>
+	</Entry>
 	<Entry beginGroup="City">
 		<zType>EVENTLINK_HAPPINESS_IMMIGRANTS_YES</zType>
 		<aeSubjectClasses>
@@ -1102,6 +1146,13 @@
 			<zValue>SUBJECTCLASS_CITY</zValue>
 			<zValue>SUBJECTCLASS_CHARACTER</zValue>
 			<zValue>SUBJECTCLASS_PLAYER</zValue>
+		</aeSubjectClasses>
+	</Entry>
+	<Entry>
+		<zType>EVENTLINK_TRIBE_CONTACT</zType>
+		<aeSubjectClasses>
+			<zValue>SUBJECTCLASS_TRIBE</zValue>
+			<zValue>SUBJECTCLASS_TILE</zValue>
 		</aeSubjectClasses>
 	</Entry>
 	<Entry>
@@ -1575,7 +1626,7 @@
 			<zValue>SUBJECTCLASS_PLAYER</zValue>
 			<zValue>SUBJECTCLASS_RELIGION</zValue>
 			<zValue>SUBJECTCLASS_CHARACTER</zValue>
-			<zValue>SUBJECTCLASS_TRIBE</zValue>			
+			<zValue>SUBJECTCLASS_TRIBE</zValue>
 		</aeSubjectClasses>
 	</Entry>
 	<Entry beginGroup="Community">

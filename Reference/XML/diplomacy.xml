@@ -29,9 +29,9 @@
 		<zIconName>DIPLOMACY_PEACE</zIconName>
 		<zColor>COLOR_DIPLOMACY_PEACE</zColor>
 		<zInactiveColor>COLOR_DIPLOMACY_INACTIVE</zInactiveColor>
-		<iOpinionEnemy>-20</iOpinionEnemy>
-		<iOpinionEthnicity>40</iOpinionEthnicity>
-		<iOpinionReligion>20</iOpinionReligion>
+		<iOpinionEnemy>-40</iOpinionEnemy>
+		<iOpinionEthnicity>20</iOpinionEthnicity>
+		<iOpinionReligion>10</iOpinionReligion>
 		<bPeace>1</bPeace>
 	</Entry>
 	<Entry>

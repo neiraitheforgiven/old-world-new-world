@@ -206,6 +206,14 @@
 		<iValue>100</iValue>
 	</Entry>
 	<Entry>
+		<zType>FOUND_CITY_TRIBE_COST_BASE</zType>
+		<iValue>1000</iValue>
+	</Entry>
+	<Entry>
+		<zType>FOUND_CITY_TRIBE_COST_PER</zType>
+		<iValue>500</iValue>
+	</Entry>
+	<Entry>
 		<zType>CARAVAN_TARGET_PERCENT</zType>
 		<iValue>25</iValue>
 	</Entry>
@@ -431,7 +439,7 @@
 	</Entry>
 	<Entry>
 		<zType>SAME_FAMILY_MODIFIER</zType>
-		<iValue>-25</iValue>
+		<iValue>-10</iValue>
 	</Entry>
 	<Entry>
 		<zType>FAMILY_TERRITORY_MODIFIER</zType>
@@ -459,10 +467,6 @@
 	</Entry>
 	<Entry>
 		<zType>INJURY_PROB</zType>
-		<iValue>4</iValue>
-	</Entry>
-	<Entry>
-		<zType>OFFENSIVE_UNITS</zType>
 		<iValue>4</iValue>
 	</Entry>
 	<Entry>
@@ -530,12 +534,76 @@
 		<iValue>20</iValue>
 	</Entry>
 	<Entry>
-		<zType>MAX_ADJECTIVES</zType>
-		<iValue>5</iValue>
+		<zType>MAX_STRENGTHS</zType>
+		<iValue>3</iValue>
+	</Entry>
+	<Entry>
+		<zType>MAX_WEAKNESSES</zType>
+		<iValue>2</iValue>
+	</Entry>
+	<Entry>
+		<zType>ADOPT_HEIR_AGE</zType>
+		<iValue>50</iValue>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_NEW_AMBITION_PROB</zType>
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>MARRIAGE_PROPOSAL_INTERVAL</zType>
+		<iValue>3</iValue>
+	</Entry>
+	<Entry>
+		<zType>NON_LEADER_MARRIAGE_PROB</zType>
+		<iValue>20</iValue>
+	</Entry>
+	<Entry>
+		<zType>SUITOR_MAX_YEARS_FROM_FERTILE</zType>
+		<iValue>10</iValue>
 	</Entry>
 	<Entry>
 		<zType>INFERTILE_PROB</zType>
 		<iValue>10</iValue>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_RELIGION_PROB</zType>
+		<iValue>10</iValue>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_RELIGION_DELAY_TURNS</zType>
+		<iValue>10</iValue>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_ROYAL_RATING_CHANGE_PROB</zType>
+		<iValue>5</iValue>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_NICKNAME_PROB</zType>
+		<iValue>20</iValue>
+	</Entry>
+	<Entry>
+		<zType>DOOMED_DIE_PROB</zType>
+		<iValue>80</iValue>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_INIT_TURNS</zType>
+		<iValue>20</iValue>
+	</Entry>
+	<Entry>
+		<zType>LEADER_NO_HEIR_SAFE_MIN_AGE</zType>
+		<iValue>60</iValue>
+	</Entry>
+	<Entry>
+		<zType>LEADER_NO_HEIR_SAFE_MAX_AGE</zType>
+		<iValue>70</iValue>
+	</Entry>
+	<Entry>
+		<zType>SOLE_HEIR_SAFE_MIN_AGE</zType>
+		<iValue>40</iValue>
+	</Entry>
+	<Entry>
+		<zType>SOLE_HEIR_SAFE_MAX_AGE</zType>
+		<iValue>50</iValue>
 	</Entry>
 	<Entry>
 		<zType>COMBAT_BASE_XP</zType>
@@ -547,7 +615,7 @@
 	</Entry>
 	<Entry>
 		<zType>UPGRADES_AVAILABLE</zType>
-		<iValue>2</iValue>
+		<iValue>3</iValue>
 	</Entry>
 	<Entry>
 		<zType>MIN_SICK_TURNS</zType>
@@ -595,7 +663,7 @@
 	</Entry>
 	<Entry>
 		<zType>COUNCIL_ETHNICITY_OPINION_TRIBE</zType>
-		<iValue>40</iValue>
+		<iValue>80</iValue>
 	</Entry>
 	<Entry>
 		<zType>LEADER_OPINION_TRIBE</zType>
@@ -619,7 +687,7 @@
 	</Entry>
 	<Entry>
 		<zType>DESCENDANT_SPOUSE_OPINION_TRIBE</zType>
-		<iValue>20</iValue>
+		<iValue>40</iValue>
 	</Entry>
 	<Entry>
 		<zType>LEADER_OR_HEIR_OPINION_FAMILY</zType>
@@ -647,27 +715,27 @@
 	</Entry>
 	<Entry>
 		<zType>COUNCIL_ETHNICITY_OPINION_PLAYER</zType>
-		<iValue>40</iValue>
+		<iValue>20</iValue>
 	</Entry>
 	<Entry>
 		<zType>LEADER_OPINION_PLAYER</zType>
-		<iValue>80</iValue>
+		<iValue>40</iValue>
 	</Entry>
 	<Entry>
 		<zType>LEADER_SPOUSE_OPINION_PLAYER</zType>
-		<iValue>40</iValue>
+		<iValue>20</iValue>
 	</Entry>
 	<Entry>
 		<zType>HEIR_OPINION_PLAYER</zType>
-		<iValue>40</iValue>
+		<iValue>20</iValue>
 	</Entry>
 	<Entry>
 		<zType>HEIR_SPOUSE_OPINION_PLAYER</zType>
-		<iValue>20</iValue>
+		<iValue>10</iValue>
 	</Entry>
 	<Entry>
 		<zType>DESCENDANT_OPINION_PLAYER</zType>
-		<iValue>20</iValue>
+		<iValue>10</iValue>
 	</Entry>
 	<Entry>
 		<zType>DESCENDANT_SPOUSE_OPINION_PLAYER</zType>
@@ -678,16 +746,20 @@
 		<iValue>40</iValue>
 	</Entry>
 	<Entry>
-		<zType>PLAY_TO_WIN_NEAR_OPINION_PLAYER</zType>
+		<zType>PLAY_TO_WIN_OPINION_PLAYER_50</zType>
 		<iValue>-40</iValue>
 	</Entry>
 	<Entry>
-		<zType>PLAY_TO_WIN_CLOSE_OPINION_PLAYER</zType>
+		<zType>PLAY_TO_WIN_OPINION_PLAYER_40</zType>
 		<iValue>-80</iValue>
 	</Entry>
 	<Entry>
-		<zType>PLAY_TO_WIN_VERY_CLOSE_OPINION_PLAYER</zType>
+		<zType>PLAY_TO_WIN_OPINION_PLAYER_30</zType>
 		<iValue>-120</iValue>
+	</Entry>
+	<Entry>
+		<zType>PLAY_TO_WIN_OPINION_PLAYER_20</zType>
+		<iValue>-160</iValue>
 	</Entry>
 	<Entry>
 		<zType>NO_COUNCIL_OPINION</zType>

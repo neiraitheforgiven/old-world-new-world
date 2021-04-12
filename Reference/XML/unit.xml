@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2020 sp1 (x64) (http://www.altova.com) by Stephen Frank (AudioTank) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -705,8 +705,8 @@
 		<zPortraitName>UNIT_SPEARMAN</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
 		<zAudioSelectionType>SPEAR</zAudioSelectionType>
-		<zAudioMovementType>INFANTRY_METAL_LIGHT</zAudioMovementType>
-		<zAudioAttackType>MELEE_SPEAR</zAudioAttackType>
+		<zAudioMovementType>ANIMATED</zAudioMovementType>
+		<zAudioAttackType>ANIMATED</zAudioAttackType>
 		<aeFormations>
 			<zValue>FORMATION_SPEARMAN</zValue>
 			<zValue>FORMATION_DEFAULT_WATER</zValue>
@@ -784,8 +784,8 @@
 		<zPortraitName>UNIT_MACEMAN</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
 		<zAudioSelectionType>AXE</zAudioSelectionType>
-		<zAudioMovementType>INFANTRY_METAL_HEAVY</zAudioMovementType>
-		<zAudioAttackType>GENERIC</zAudioAttackType>
+		<zAudioMovementType>ANIMATED</zAudioMovementType>
+		<zAudioAttackType>ANIMATED</zAudioAttackType>
 		<aeFormations>
 			<zValue>FORMATION_MACEMAN</zValue>
 			<zValue>FORMATION_DEFAULT_WATER</zValue>
@@ -1159,8 +1159,8 @@
 		<zPortraitName>UNIT_CROSSBOWMAN</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
 		<zAudioSelectionType>CROSSBOW</zAudioSelectionType>
-		<zAudioMovementType>INFANTRY_METAL_LIGHT</zAudioMovementType>
-		<zAudioAttackType>RANGED_CROSSBOW</zAudioAttackType>
+		<zAudioMovementType>ANIMATED</zAudioMovementType>
+		<zAudioAttackType>ANIMATED</zAudioAttackType>
 		<aeFormations>
 			<zValue>FORMATION_CROSSBOWMAN</zValue>
 			<zValue>FORMATION_DEFAULT_WATER</zValue>
@@ -1585,13 +1585,13 @@
 		<iStrength>60</iStrength>
 		<iHPMax>20</iHPMax>
 		<iProduction>120</iProduction>
-    <fAttackDuration>2.5</fAttackDuration>
-    <fAnimNormalMoveDuration>2.5</fAnimNormalMoveDuration>
-    <fAnimNormalMoveSpeed>2</fAnimNormalMoveSpeed>
-    <fAnimIntermediateMoveDuration>2</fAnimIntermediateMoveDuration>
-    <fAnimIntermediateMoveSpeed>2.7</fAnimIntermediateMoveSpeed>
-    <fAnimFastMoveDuration>.75</fAnimFastMoveDuration>
-    <fAnimFastMoveSpeed>4</fAnimFastMoveSpeed>
+		<fAttackDuration>2.5</fAttackDuration>
+		<fAnimNormalMoveDuration>2.5</fAnimNormalMoveDuration>
+		<fAnimNormalMoveSpeed>2</fAnimNormalMoveSpeed>
+		<fAnimIntermediateMoveDuration>2</fAnimIntermediateMoveDuration>
+		<fAnimIntermediateMoveSpeed>2.7</fAnimIntermediateMoveSpeed>
+		<fAnimFastMoveDuration>.75</fAnimFastMoveDuration>
+		<fAnimFastMoveSpeed>4</fAnimFastMoveSpeed>
 		<bMelee>1</bMelee>
 		<bOutsideOpinion>1</bOutsideOpinion>
 		<bBlocks>1</bBlocks>
@@ -2435,12 +2435,12 @@
 		<iHPMax>20</iHPMax>
 		<iProduction>140</iProduction>
 		<fAttackDuration>2.5</fAttackDuration>
-    <fAnimNormalMoveDuration>2.5</fAnimNormalMoveDuration>
-    <fAnimNormalMoveSpeed>2</fAnimNormalMoveSpeed>
-    <fAnimIntermediateMoveDuration>2</fAnimIntermediateMoveDuration>
-    <fAnimIntermediateMoveSpeed>2.7</fAnimIntermediateMoveSpeed>
-    <fAnimFastMoveDuration>.75</fAnimFastMoveDuration>
-    <fAnimFastMoveSpeed>4</fAnimFastMoveSpeed>
+		<fAnimNormalMoveDuration>2.5</fAnimNormalMoveDuration>
+		<fAnimNormalMoveSpeed>2</fAnimNormalMoveSpeed>
+		<fAnimIntermediateMoveDuration>2</fAnimIntermediateMoveDuration>
+		<fAnimIntermediateMoveSpeed>2.7</fAnimIntermediateMoveSpeed>
+		<fAnimFastMoveDuration>.75</fAnimFastMoveDuration>
+		<fAnimFastMoveSpeed>4</fAnimFastMoveSpeed>
 		<bMelee>1</bMelee>
 		<bOutsideOpinion>1</bOutsideOpinion>
 		<bBlocks>1</bBlocks>
@@ -2518,13 +2518,13 @@
 		<iStrength>80</iStrength>
 		<iHPMax>20</iHPMax>
 		<iProduction>160</iProduction>
-    <fAttackDuration>2.5</fAttackDuration>
-    <fAnimNormalMoveDuration>2.5</fAnimNormalMoveDuration>
-    <fAnimNormalMoveSpeed>2</fAnimNormalMoveSpeed>
-    <fAnimIntermediateMoveDuration>2</fAnimIntermediateMoveDuration>
-    <fAnimIntermediateMoveSpeed>2.7</fAnimIntermediateMoveSpeed>
-    <fAnimFastMoveDuration>.75</fAnimFastMoveDuration>
-    <fAnimFastMoveSpeed>4</fAnimFastMoveSpeed>
+		<fAttackDuration>2.5</fAttackDuration>
+		<fAnimNormalMoveDuration>2.5</fAnimNormalMoveDuration>
+		<fAnimNormalMoveSpeed>2</fAnimNormalMoveSpeed>
+		<fAnimIntermediateMoveDuration>2</fAnimIntermediateMoveDuration>
+		<fAnimIntermediateMoveSpeed>2.7</fAnimIntermediateMoveSpeed>
+		<fAnimFastMoveDuration>.75</fAnimFastMoveDuration>
+		<fAnimFastMoveSpeed>4</fAnimFastMoveSpeed>
 		<bMelee>1</bMelee>
 		<bOutsideOpinion>1</bOutsideOpinion>
 		<bBlocks>1</bBlocks>
@@ -2699,8 +2699,8 @@
 		<zPortraitName>UNIT_HOPLITE</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
 		<zAudioSelectionType>HOPLITE</zAudioSelectionType>
-		<zAudioMovementType>GENERIC</zAudioMovementType>
-		<zAudioAttackType>GENERIC</zAudioAttackType>
+		<zAudioMovementType>ANIMATED</zAudioMovementType>
+		<zAudioAttackType>ANIMATED</zAudioAttackType>
 		<aeFormations>
 			<zValue>FORMATION_HOPLITE</zValue>
 			<zValue>FORMATION_DEFAULT_WATER</zValue>
@@ -2984,7 +2984,7 @@
 		<zIconName>UNIT_HASTATUS</zIconName>
 		<zPortraitName>UNIT_HASTATUS</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
-		<zAudioSelectionType>GENERIC</zAudioSelectionType>
+		<zAudioSelectionType>HASTATUS</zAudioSelectionType>
 		<zAudioMovementType>GENERIC</zAudioMovementType>
 		<zAudioAttackType>GENERIC</zAudioAttackType>
 		<aeFormations>
@@ -3046,7 +3046,7 @@
 		<zIconName>UNIT_LEGIONARY</zIconName>
 		<zPortraitName>UNIT_LEGIONARY</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
-		<zAudioSelectionType>GENERIC</zAudioSelectionType>
+		<zAudioSelectionType>LEGIONARY</zAudioSelectionType>
 		<zAudioMovementType>GENERIC</zAudioMovementType>
 		<zAudioAttackType>GENERIC</zAudioAttackType>
 		<aeFormations>
@@ -3150,6 +3150,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_MARAUDER_2</zValue>
 		</aeUpgradeUnit>
@@ -3205,6 +3206,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_SKIRMISHER_2</zValue>
 		</aeUpgradeUnit>
@@ -3254,6 +3256,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_NOMAD_MARAUDER_2</zValue>
 		</aeUpgradeUnit>
@@ -3304,6 +3307,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_NOMAD_SKIRMISHER_2</zValue>
 		</aeUpgradeUnit>
@@ -3360,6 +3364,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_MELEE</zValue>
 			<zValue>UNITTRAIT_INFANTRY</zValue>
@@ -3412,6 +3417,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_INFANTRY</zValue>
@@ -3458,6 +3464,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_NOMAD_WARLORD_1</zValue>
 		</aeUpgradeUnit>
@@ -3508,6 +3515,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_MOUNTED</zValue>
@@ -3549,6 +3557,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_WARLORD_2</zValue>
 		</aeUpgradeUnit>
@@ -3592,6 +3601,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_JAVELINEER_2</zValue>
 		</aeUpgradeUnit>
@@ -3635,6 +3645,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_NOMAD_WARLORD_2</zValue>
 		</aeUpgradeUnit>
@@ -3675,6 +3686,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aiAttackValue>
 			<Pair>
 				<zIndex>ATTACK_FORWARD</zIndex>
@@ -3729,6 +3741,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aiAttackValue>
 			<Pair>
 				<zIndex>ATTACK_ARC</zIndex>
@@ -3784,6 +3797,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_CLUBTHROWER_2</zValue>
 		</aeUpgradeUnit>
@@ -3826,6 +3840,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_PELTAST_2</zValue>
 		</aeUpgradeUnit>
@@ -3844,8 +3859,8 @@
 		<zPortraitName>UNIT_AMAZON_CAVALRY</zPortraitName>
 		<zBackgroundName>GenericUnitAttackBackground</zBackgroundName>
 		<zAudioSelectionType>AMAZON_CAVALRY</zAudioSelectionType>
-		<zAudioMovementType>GENERIC</zAudioMovementType>
-		<zAudioAttackType>GENERIC</zAudioAttackType>
+		<zAudioMovementType>ANIMATED</zAudioMovementType>
+		<zAudioAttackType>ANIMATED</zAudioAttackType>
 		<azBarbarianPortraitName>
 			<Pair>
 				<zIndex>TRIBE_SCYTHIANS</zIndex>
@@ -3874,6 +3889,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_AMAZON_CAVALRY_2</zValue>
 		</aeUpgradeUnit>
@@ -3923,6 +3939,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUpgradeUnit>
 			<zValue>UNIT_LIBYAN_CAVALRY_2</zValue>
 		</aeUpgradeUnit>
@@ -3970,6 +3987,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_MELEE</zValue>
 			<zValue>UNITTRAIT_INFANTRY</zValue>
@@ -4010,6 +4028,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_INFANTRY</zValue>
@@ -4050,6 +4069,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_MELEE</zValue>
 			<zValue>UNITTRAIT_MOUNTED</zValue>
@@ -4088,6 +4108,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aiAttackValue>
 			<Pair>
 				<zIndex>ATTACK_FORWARD</zIndex>
@@ -4139,6 +4160,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aiAttackValue>
 			<Pair>
 				<zIndex>ATTACK_ARC</zIndex>
@@ -4191,6 +4213,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_INFANTRY</zValue>
@@ -4230,6 +4253,7 @@
 		<bZOC>1</bZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_INFANTRY</zValue>
@@ -4275,6 +4299,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_MOUNTED</zValue>
@@ -4315,6 +4340,7 @@
 		<bIgnoreZOC>1</bIgnoreZOC>
 		<bBlocks>1</bBlocks>
 		<bPillage>1</bPillage>
+		<bGeneral>1</bGeneral>
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_RANGED</zValue>
 			<zValue>UNITTRAIT_MOUNTED</zValue>

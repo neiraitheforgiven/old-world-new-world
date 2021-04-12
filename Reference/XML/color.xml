@@ -886,7 +886,7 @@
 		<zType>COLOR_BARBARIANS</zType>
 		<zName>Tribes</zName>
 		<ColorClass>COLORCLASS_TRIBES</ColorClass>
-		<zHexValue>#4c4c4c</zHexValue>
+		<zHexValue>#323030</zHexValue>
 	</Entry>
 	<Entry>
 		<zType>COLOR_BARBARIANS_SECONDARY</zType>

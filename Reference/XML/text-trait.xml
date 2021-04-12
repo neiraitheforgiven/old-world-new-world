@@ -191,10 +191,6 @@
 		<English>Ranger</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_TRAIT_EXPLORING</zType>
-		<English>Exploring</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_TRAIT_BRAVE</zType>
 		<English>Brave</English>
 	</Entry>
@@ -231,14 +227,6 @@
 		<English>Greedy</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_TRAIT_LOYAL</zType>
-		<English>Loyal</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_TRAIT_CUNNING</zType>
-		<English>Cunning</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_TRAIT_ROMANTIC</zType>
 		<English>Romantic</English>
 	</Entry>
@@ -271,6 +259,14 @@
 		<English>Wanton</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_TRAIT_LOYAL</zType>
+		<English>Loyal</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_CUNNING</zType>
+		<English>Cunning</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_TRAIT_HUMBLE</zType>
 		<English>Humble</English>
 	</Entry>
@@ -279,12 +275,12 @@
 		<English>Proud</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_TRAIT_SPOILED</zType>
-		<English>Spoiled</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_TRAIT_WITTY</zType>
 		<English>Witty</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_SPOILED</zType>
+		<English>Spoiled</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_TRAIT_STUDY_PHILOSOPHY</zType>
@@ -301,6 +297,14 @@
 	<Entry>
 		<zType>TEXT_TRAIT_STUDY_COMMERCE</zType>
 		<English>Commerce Student</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_EXPLORING</zType>
+		<English>Exploring</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_EXOTIC</zType>
+		<English>Exotic</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_TRAIT_BLESSED</zType>
@@ -439,10 +443,6 @@
 		<English>Rightful Heir</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_TRAIT_EXOTIC</zType>
-		<English>Exotic</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_TRAIT_EXCLUDED</zType>
 		<English>Excluded from Succession</English>
 	</Entry>
@@ -553,5 +553,13 @@
     <Entry>
         <zType>TEXT_TRAIT_SAOSHYANT</zType>
         <English>Saoshyant</English>
+    </Entry>
+    <Entry>
+        <zType>TEXT_TRAIT_WOUNDED</zType>
+        <English>Wounded</English>
+    </Entry>
+    <Entry>
+        <zType>TEXT_TRAIT_SEVERELY_WOUNDED</zType>
+        <English>Severely Wounded</English>
     </Entry>
 </Root>

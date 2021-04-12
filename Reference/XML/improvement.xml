@@ -257,15 +257,15 @@
 		<UnitDefend>UNIT_SKIRMISHER_1</UnitDefend>
 		<aiBonusDie>
 			<Pair>
-				<zIndex>BONUS_YIELD_WOOD</zIndex>
-				<iValue>1</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>BONUS_YIELD_STONE</zIndex>
+				<zIndex>BONUS_YIELD_FOOD</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>BONUS_YIELD_IRON</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>BONUS_YIELD_STONE</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 		</aiBonusDie>
@@ -381,11 +381,11 @@
 		<UnitDefend>UNIT_SKIRMISHER_2</UnitDefend>
 		<aiBonusDie>
 			<Pair>
-				<zIndex>BONUS_YIELD_MONEY</zIndex>
+				<zIndex>BONUS_YIELD_FOOD</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>BONUS_YIELD_WOOD</zIndex>
+				<zIndex>BONUS_YIELD_IRON</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
@@ -393,7 +393,7 @@
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>BONUS_YIELD_IRON</zIndex>
+				<zIndex>BONUS_YIELD_WOOD</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 		</aiBonusDie>
@@ -509,15 +509,11 @@
 		<UnitDefend>UNIT_JAVELINEER_1</UnitDefend>
 		<aiBonusDie>
 			<Pair>
-				<zIndex>BONUS_YIELD_MONEY</zIndex>
+				<zIndex>BONUS_YIELD_FOOD</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>BONUS_YIELD_ORDERS</zIndex>
-				<iValue>1</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>BONUS_YIELD_WOOD</zIndex>
+				<zIndex>BONUS_YIELD_IRON</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
@@ -525,7 +521,11 @@
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>BONUS_YIELD_IRON</zIndex>
+				<zIndex>BONUS_YIELD_WOOD</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>BONUS_YIELD_MONEY</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 		</aiBonusDie>
@@ -646,19 +646,11 @@
 		<UnitDefend>UNIT_JAVELINEER_2</UnitDefend>
 		<aiBonusDie>
 			<Pair>
-				<zIndex>BONUS_YIELD_MONEY</zIndex>
-				<iValue>1</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>BONUS_YIELD_ORDERS</zIndex>
-				<iValue>1</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>BONUS_YIELD_FOOD</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>BONUS_YIELD_WOOD</zIndex>
+				<zIndex>BONUS_YIELD_IRON</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
@@ -666,7 +658,15 @@
 				<iValue>1</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>BONUS_YIELD_IRON</zIndex>
+				<zIndex>BONUS_YIELD_WOOD</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>BONUS_YIELD_MONEY</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>BONUS_YIELD_ORDERS</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 		</aiBonusDie>
@@ -1022,55 +1022,6 @@
 		</aaiHeightYieldModifier>
 	</Entry>
 	<Entry>
-		<zType>IMPROVEMENT_LUMBERMILL</zType>
-		<Name>TEXT_IMPROVEMENT_LUMBERMILL</Name>
-		<Class>IMPROVEMENTCLASS_LUMBERMILL</Class>
-		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_LUMBERMILL</AssetVariation>
-		<zIconName>IMPROVEMENT_LUMBERMILL</zIconName>
-		<iBuildTurns>3</iBuildTurns>
-		<iBuildCost>1</iBuildCost>
-		<iPillageTurns>10</iPillageTurns>
-		<bBuild>1</bBuild>
-		<bTerritoryOnly>1</bTerritoryOnly>
-		<bNoAnalytics>1</bNoAnalytics>
-		<aiYieldCost>
-			<Pair>
-				<zIndex>YIELD_IRON</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-		</aiYieldCost>
-		<aiYieldOutput>
-			<Pair>
-				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-		</aiYieldOutput>
-		<aiYieldPillage>
-			<Pair>
-				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-		</aiYieldPillage>
-		<aiYieldRiverModifier>
-			<Pair>
-				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>60</iValue>
-			</Pair>
-		</aiYieldRiverModifier>
-		<aiAdjacentImprovementModifier>
-			<Pair>
-				<zIndex>IMPROVEMENT_LUMBERMILL</zIndex>
-				<iValue>10</iValue>
-			</Pair>
-		</aiAdjacentImprovementModifier>
-		<abVegetationValid>
-			<Pair>
-				<zIndex>VEGETATION_TREES</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-		</abVegetationValid>
-	</Entry>
-	<Entry>
 		<zType>IMPROVEMENT_QUARRY</zType>
 		<Name>TEXT_IMPROVEMENT_QUARRY</Name>
 		<Class>IMPROVEMENTCLASS_QUARRY</Class>
@@ -1168,6 +1119,55 @@
 				</SubPair>
 			</Pair>
 		</aaiAdjacentHeightYieldModifier>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_LUMBERMILL</zType>
+		<Name>TEXT_IMPROVEMENT_LUMBERMILL</Name>
+		<Class>IMPROVEMENTCLASS_LUMBERMILL</Class>
+		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_LUMBERMILL</AssetVariation>
+		<zIconName>IMPROVEMENT_LUMBERMILL</zIconName>
+		<iBuildTurns>3</iBuildTurns>
+		<iBuildCost>1</iBuildCost>
+		<iPillageTurns>10</iPillageTurns>
+		<bBuild>1</bBuild>
+		<bTerritoryOnly>1</bTerritoryOnly>
+		<bNoAnalytics>1</bNoAnalytics>
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiYieldCost>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiYieldOutput>
+		<aiYieldPillage>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiYieldPillage>
+		<aiYieldRiverModifier>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>60</iValue>
+			</Pair>
+		</aiYieldRiverModifier>
+		<aiAdjacentImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_LUMBERMILL</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiAdjacentImprovementModifier>
+		<abVegetationValid>
+			<Pair>
+				<zIndex>VEGETATION_TREES</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abVegetationValid>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_PASTURE</zType>
@@ -3918,6 +3918,24 @@
 				<iValue>20</iValue>
 			</Pair>
 		</aiAdjacentImprovementModifier>
+		<abTerrainValid>
+			<Pair>
+				<zIndex>TERRAIN_URBAN</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_LUSH</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_TEMPERATE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_ARID</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTerrainValid>
 		<abTerrainInvalid>
 			<Pair>
 				<zIndex>TERRAIN_WATER</zIndex>
@@ -3987,6 +4005,24 @@
 				<iValue>20</iValue>
 			</Pair>
 		</aiAdjacentImprovementModifier>
+		<abTerrainValid>
+			<Pair>
+				<zIndex>TERRAIN_URBAN</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_LUSH</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_TEMPERATE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_ARID</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTerrainValid>
 		<abTerrainInvalid>
 			<Pair>
 				<zIndex>TERRAIN_WATER</zIndex>
@@ -4056,6 +4092,24 @@
 				<iValue>20</iValue>
 			</Pair>
 		</aiAdjacentImprovementModifier>
+		<abTerrainValid>
+			<Pair>
+				<zIndex>TERRAIN_URBAN</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_LUSH</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_TEMPERATE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_ARID</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTerrainValid>
 		<abTerrainInvalid>
 			<Pair>
 				<zIndex>TERRAIN_WATER</zIndex>
@@ -5174,8 +5228,8 @@
 		<zType>IMPROVEMENT_CATHEDRAL_JUDAISM</zType>
 		<Name>TEXT_IMPROVEMENT_CATHEDRAL_JUDAISM</Name>
 		<Class>IMPROVEMENTCLASS_CATHEDRAL</Class>
-		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_CATHEDRAL_1</AssetVariation>
-		<zIconName>IMPROVEMENT_CATHEDRAL</zIconName>
+		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_CATHEDRAL_3</AssetVariation>
+		<zIconName>IMPROVEMENT_JUDAISM_CATHEDRAL</zIconName>
 		<iBuildTurns>6</iBuildTurns>
 		<iBuildCost>1</iBuildCost>
 		<iPillageTurns>20</iPillageTurns>
@@ -5233,8 +5287,8 @@
 		<zType>IMPROVEMENT_CATHEDRAL_CHRISTIANITY</zType>
 		<Name>TEXT_IMPROVEMENT_CATHEDRAL_CHRISTIANITY</Name>
 		<Class>IMPROVEMENTCLASS_CATHEDRAL</Class>
-		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_CATHEDRAL_1</AssetVariation>
-		<zIconName>IMPROVEMENT_CATHEDRAL</zIconName>
+		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_CATHEDRAL_4</AssetVariation>
+		<zIconName>IMPROVEMENT_CHRISTIANITY_CATHEDRAL</zIconName>
 		<iBuildTurns>6</iBuildTurns>
 		<iBuildCost>1</iBuildCost>
 		<iPillageTurns>20</iPillageTurns>
@@ -5864,6 +5918,7 @@
 		<zType>IMPROVEMENT_LIGHTHOUSE</zType>
 		<Name>TEXT_IMPROVEMENT_LIGHTHOUSE</Name>
 		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_LIGHTHOUSE</AssetVariation>
+		<AssetConstruction>ASSET_CONSTRUCTION_IMPROVEMENT_LIGHTHOUSE</AssetConstruction>
 		<zIconName>IMPROVEMENT_LIGHTHOUSE</zIconName>
 		<iBuildTurns>12</iBuildTurns>
 		<iBuildCost>1</iBuildCost>
@@ -5935,10 +5990,6 @@
 		</aiYieldCost>
 		<aiYieldOutput>
 			<Pair>
-				<zIndex>YIELD_CIVICS</zIndex>
-				<iValue>40</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
 				<iValue>60</iValue>
 			</Pair>
@@ -5968,6 +6019,7 @@
 		<bPause>1</bPause>
 		<Achievement>ACHIEVEMENT_IMPROVEMENT_MAUSOLEUM</Achievement>
 		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
+		<EffectCity>EFFECTCITY_IMPROVEMENT_MAUSOLEUM</EffectCity>
 		<EffectPlayer>EFFECTPLAYER_IMPROVEMENT_MAUSOLEUM</EffectPlayer>
 		<aiYieldCost>
 			<Pair>
@@ -5982,7 +6034,7 @@
 		<aiYieldOutput>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
-				<iValue>200</iValue>
+				<iValue>80</iValue>
 			</Pair>
 		</aiYieldOutput>
 		<abHeightValid>
@@ -6040,6 +6092,7 @@
 		<zType>IMPROVEMENT_COLOSSUS</zType>
 		<Name>TEXT_IMPROVEMENT_COLOSSUS</Name>
 		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_COLOSSUS</AssetVariation>
+		<AssetConstruction>ASSET_CONSTRUCTION_IMPROVEMENT_COLOSSUS</AssetConstruction>
 		<zIconName>IMPROVEMENT_COLOSSUS</zIconName>
 		<iBuildTurns>14</iBuildTurns>
 		<iBuildCost>1</iBuildCost>
@@ -6162,10 +6215,6 @@
 		</aiYieldCost>
 		<aiYieldOutput>
 			<Pair>
-				<zIndex>YIELD_TRAINING</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
 				<iValue>100</iValue>
 			</Pair>
@@ -6202,9 +6251,7 @@
 		<bPause>1</bPause>
 		<Achievement>ACHIEVEMENT_IMPROVEMENT_PANTHEON</Achievement>
 		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>
-		<EffectCity>EFFECTCITY_IMPROVEMENT_PANTHEON</EffectCity>
 		<EffectPlayer>EFFECTPLAYER_IMPROVEMENT_PANTHEON</EffectPlayer>
-		<Bonus>BONUS_IMPROVEMENT_PANTHEON</Bonus>
 		<aiYieldCost>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -6262,10 +6309,6 @@
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
 				<iValue>100</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>-20</iValue>
 			</Pair>
 		</aiYieldOutput>
 		<abTerrainInvalid>

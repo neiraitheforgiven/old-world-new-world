@@ -190,12 +190,6 @@
 		</aaiResourceYieldOutput>
 	</Entry>
 	<Entry>
-		<zType>IMPROVEMENTCLASS_LUMBERMILL</zType>
-		<Name>TEXT_IMPROVEMENTCLASS_LUMBERMILL</Name>
-		<TechPrereq>TECH_FORESTRY</TechPrereq>
-		<SpecialistClass>SPECIALISTCLASS_WOODCUTTER</SpecialistClass>
-	</Entry>
-	<Entry>
 		<zType>IMPROVEMENTCLASS_QUARRY</zType>
 		<Name>TEXT_IMPROVEMENTCLASS_QUARRY</Name>
 		<TechPrereq>TECH_STONECUTTING</TechPrereq>
@@ -225,6 +219,12 @@
 				</SubPair>
 			</Pair>
 		</aaiResourceYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENTCLASS_LUMBERMILL</zType>
+		<Name>TEXT_IMPROVEMENTCLASS_LUMBERMILL</Name>
+		<TechPrereq>TECH_FORESTRY</TechPrereq>
+		<SpecialistClass>SPECIALISTCLASS_WOODCUTTER</SpecialistClass>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENTCLASS_PASTURE</zType>
@@ -651,11 +651,11 @@
 				<iValue>60</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>IMPROVEMENTCLASS_LUMBERMILL</zIndex>
+				<zIndex>IMPROVEMENTCLASS_QUARRY</zIndex>
 				<iValue>60</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>IMPROVEMENTCLASS_QUARRY</zIndex>
+				<zIndex>IMPROVEMENTCLASS_LUMBERMILL</zIndex>
 				<iValue>60</iValue>
 			</Pair>
 		</aiAdjacentImprovementClassModifier>

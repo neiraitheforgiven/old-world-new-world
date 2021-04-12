@@ -592,10 +592,6 @@
 		<English>Has an Illegitimate Child</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_GAME_DO_BONUS_RELATIONSHIP_ADD</zType>
-		<English>Is {0_relationship} {1_character}</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_GAME_DO_BONUS_RELATIONSHIP_ADD_REMOVE</zType>
 		<English>{0} (Removes {1_list})</English>
 	</Entry>
@@ -634,10 +630,6 @@
 	<Entry>
 		<zType>TEXT_GAME_DO_BONUS_TRIBE_RAID</zType>
 		<English>Raid from {0,1_barbarian} {1_improvement} from {2_tile}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_GAME_DO_BONUS_PLAYER_ADOPT_RELIGION</zType>
-		<English>{0_player}: Adopt {1_religion} as link(CONCEPT_STATE_RELIGION)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GAME_DO_BONUS_PLAYER_FREE_THEOLOGY</zType>

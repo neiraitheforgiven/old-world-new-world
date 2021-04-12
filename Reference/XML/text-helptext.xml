@@ -432,7 +432,7 @@
 		<English>Holy City~a Holy City~Holy Cities</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_LINK_FAMILY_CITIES</zType>
+		<zType>TEXT_HELPTEXT_LINK_CITIES</zType>
 		<English>Cities</English>
 	</Entry>
 	<Entry>
@@ -693,12 +693,20 @@
 		<English><![CDATA[{0} Age: <= {1}]]></English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_EVENT_REQUIRES_MIN_DISCONTENT</zType>
+		<English><![CDATA[{0}: >= {1} {2} Level]]></English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_EVENT_REQUIREMENT_MARRIED</zType>
 		<English>Married</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_EVENT_REQUIREMENT_SINGLE</zType>
 		<English>Single</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_EVENT_REQUIREMENT_DESCENDANT_OF</zType>
+		<English>Descendant of {0}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_EVENTOPTION_ADDS_LINK</zType>
@@ -759,7 +767,7 @@
 	<!--City Money Summary Text-->
 	<Entry>
 		<zType>TEXT_HELPTEXT_CITY_MONEY_SUMMARY_TEXT</zType>
-		<English><![CDATA[{0_moneyGain} (Income)<br>-{1_moneyLoss} (link(YIELD_MAINTENANCE))<br>= {2_yield} (Net)]]></English>
+		<English><![CDATA[{0_moneyGain} (Income)<br>{1_moneyLoss} (link(YIELD_MAINTENANCE))<br>= {2_yield} (Net)]]></English>
 	</Entry>
 	<!---->
 	<Entry>
@@ -1282,6 +1290,18 @@
 		<English>{0_cycleLink} ({1_number})</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_WIDGET_PLAYER_STATUS_DISCONNECTED</zType>
+		<English>Disconnected</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_WIDGET_PLAYER_STATUS_TURN_ENDED</zType>
+		<English>Turn Ended</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_WIDGET_PLAYER_STATUS_PLAYING</zType>
+		<English>Playing Turn</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_PLAYER_NATION_SELECT</zType>
 		<English>Click to select the {0_capital}</English>
 	</Entry>
@@ -1310,24 +1330,16 @@
 		<English>No candidates available</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_WIDGET_CANDIDATES_TEXT</zType>
+		<zType>TEXT_HELPTEXT_WIDGET_CANDIDATES</zType>
 		<English>Candidate(s) available</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_WIDGET_CANDIDATES</zType>
-		<English>Candidate(s) available:</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_CANDIDATES_JOBS</zType>
-		<English>Candidate(s) available (with Jobs):</English>
+		<English>Candidate(s) available (with Jobs)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_COUNCIL_CHARACTER</zType>
 		<English>{0_character} serves as {1_unit}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_WIDGET_UNIT_GENERAL</zType>
-		<English>{0_character} leads the {1_unit}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_ADD_GENERAL</zType>
@@ -1339,7 +1351,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_ADD_GENERAL_PREREQS</zType>
-		<English>Must be younger than {0} and not of a different Family</English>
+		<English>Must be younger than {0} and not of a different Family (or Tribe)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_RELEASE_GENERAL</zType>
@@ -1360,6 +1372,14 @@
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_START_MISSION_CHARACTER_REQUIRES</zType>
 		<English>Requires {0_character}: {1_subject}</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_WIDGET_START_MISSION_CONFLICT_TURNS</zType>
+		<English>({0} Turn(s) since last link(DIPLOMACY_WAR))</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_WIDGET_ABANDON_AMBITION</zType>
+		<English>Abandon {true_0:link(CONCEPT_LEGACY):link(CONCEPT_AMBITION)}: {1_goal}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_DELAY_DECISION</zType>
@@ -1485,11 +1505,11 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_UNLIMBER_HELP</zType>
-		<English>Cannot attack until a {0_turnScale} after the Unit has Unlimbered</English>
+		<English>A Unit cannot attack until the turn after it Unlimbered</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_ANCHOR</zType>
-		<English>link(CONCEPT_ANCHOR)</English>
+		<English>Anchor</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_ANCHOR_HELP</zType>
@@ -1559,10 +1579,6 @@
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_FOUND_CITY_FOUND_COST</zType>
 		<English>Cost {0_money}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_WIDGET_TRIBE_FOUND_BONUS</zType>
-		<English>Barbarian Site: {LIST}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_FAMILY_FOUND_BONUS</zType>
@@ -1770,7 +1786,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_LAUNCH_OFFENSIVE</zType>
-		<English><![CDATA[Reduces the Cooldown of the closest {singular_0:Unit:{0_number} Units}<br>and gives {1_yield} for each one]]></English>
+		<English>Reduces the Cooldown of Adjacent Units and gives {0_yield} for each one</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_LAUNCH_OFFENSIVE_NOT_YOUR_TURN</zType>
@@ -2047,6 +2063,10 @@
 		<English>{0_yield}: Foreign Population ({1_nation})</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_CITY_DEFENDING</zType>
+		<English>{0_yield}: Defending {true_1:Family }Unit</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_CITY_MISSING_FAMILY</zType>
 		<English>{0_yield}: Not Enough link(CONCEPT_FAMILY_SEAT,2)</English>
 	</Entry>
@@ -2096,7 +2116,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_CLEAR</zType>
-		<English>link(CONCEPT_CLEAR)</English>
+		<English>link(CONCEPT_CLEAR) Tiles have no Vegetation</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_CLEAR_DEFENDING</zType>
@@ -2109,7 +2129,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_CRITICAL_HIT</zType>
-		<English>Critical Hits deal double damage. Critical Hit chance is improved with the Focus link(CONCEPT_PROMOTION,2), and by some link(CONCEPT_GENERAL,1).</English>
+		<English>Critical Hits deal double damage. Critical Hit chance is improved with the Focus link(CONCEPT_PROMOTION,2), and by some link(CONCEPT_GENERAL,2).</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_CULTURE_EVENT</zType>
@@ -2121,7 +2141,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_DISTANCE_MODIFIER</zType>
-		<English>int(DISTANCE_MODIFIER)% per Tile for link(UNITTRAIT_RANGED) Units</English>
+		<English>int(DISTANCE_MODIFIER)% per Tile for link(UNITTRAIT_RANGED) Units.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_DEFENSE</zType>
@@ -2169,7 +2189,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_ENVY</zType>
-		<English>Families with fewer Cities than others will be more link(CONCEPT_ENVY,1), and have a lower Opinion of your Leader.</English>
+		<English>Families with fewer Cities than others will be more envious, and have a lower Opinion of your Leader.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_SEAT</zType>
@@ -2186,6 +2206,22 @@
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_CITIES</zType>
 		<English>{0_family} Cities:</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_LAW_OPINION</zType>
+		<English>{0_family} Opinion from {1_law}</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_LAW_OPINION_HEAD</zType>
+		<English>{0}: Family Head {1_character} ({2_trait})</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_LAW_OPINION_RELIGION_HEAD</zType>
+		<English>{0}: {1,1_religion} Head {2_character} ({3_trait})</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_LAW_OPINION_RELIGION_THEOLOGY</zType>
+		<English>{0}: {1,1_religion} {2_theology} ({3_trait})</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_FAMILY_MEMBERS</zType>
@@ -2229,7 +2265,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_MARCH</zType>
-		<English>A Forced March permits a Unit to continue moving this turn when out of Moves, at the cost of int(UNIT_MARCH_COST) Training, and twice as many link(YIELD_ORDERS) per additional Move.</English>
+		<English>A Forced March permits a Unit to continue moving this turn when out of Moves, at the cost of int(UNIT_MARCH_COST) link(YIELD_TRAINING)icon(YIELD_TRAINING), and twice as many link(YIELD_ORDERS)icon(YIELD_ORDERS) per additional Move.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_FATIGUE</zType>
@@ -2237,7 +2273,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_FLANKING</zType>
-		<English>Flanking occurs when attacking an enemy Unit with a friendly Unit on the opposite side. (If attacking from a tile to the West of the target, then your other Unit must be to the East.)</English>
+		<English>Flanking occurs when attacking an enemy Unit with a friendly Unit on the opposite side. For example, if you are attacking from the West of a target, you must have another Unit to its East.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_AMBITION</zType>
@@ -2252,6 +2288,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_HELP_TRIBE</zType>
 		<English>Tribes can engage in limited diplomacy, but generally won't be coordinated the way opposing Nations are.</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_HEIGHT</zType>
+		<English>{0} Height</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_HEIGHT_BUILD</zType>
@@ -2295,7 +2335,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_IGNORES_ZOC</zType>
-		<English>Ignores the ZOC of enemy Units.</English>
+		<English>Ignores the Zone-of-Control of enemy Units.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_IMPROVEMENT_KEY</zType>
@@ -2311,7 +2351,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
   <Entry>
     <zType>TEXT_HELPTEXT_LINK_HELP_STATE_RELIGION</zType>
-    <English>Adopting a link(CONCEPT_STATE_RELIGION) improves its Opinion of your Nation and also reduces link(YIELD_DISCONTENT) and enables the recruitment of link(CONCEPT_DISCIPLE,2) in your Cities of that Religion.</English>
+    <English>Adopting a link(CONCEPT_STATE_RELIGION) improves that Religion's opinion of your Nation, and also both reduces link(YIELD_DISCONTENT) and enables the recruitment of link(CONCEPT_DISCIPLE,2) in your Cities of that Religion.</English>
   </Entry>
   <Entry>
     <zType>TEXT_HELPTEXT_LINK_HELP_COGNOMEN</zType>
@@ -2458,6 +2498,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>Team {0_num}: {LIST}</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TERRAIN</zType>
+		<English>{0} Terrain</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TERRAIN_NO_ROADS</zType>
 		<English>Cannot have a {0_link}</English>
 	</Entry>
@@ -2536,6 +2580,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_URBAN_DEFENSE_MODIFIER</zType>
 		<English>{0_trait} Defending: {1}</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_VEGETATION</zType>
+		<English>{0} Vegetation</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_VEGETATION_DEFEND</zType>
@@ -2657,7 +2705,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_YIELD_NET_CITY_SUBTRACT_LIST_ITEM</zType>
-		<English> (-{0_yield})</English>
+		<English> ({0_yield})</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_YIELD_NET_TRADE_TO_PLAYER</zType>
@@ -2760,7 +2808,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_IMPROVEMENT_REQUIRES_NO_VEGETATION</zType>
-		<English>Does not remove Vegetation</English>
+		<English>Location where a City can be founded by a link(UNIT_SETTLER). Can be occupied by a Tribe Site. Does not remove Vegetation</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_IMPROVEMENT_REQUIRES_TECH</zType>
@@ -3217,6 +3265,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English><![CDATA[<true_1>Land/Water Attacks: {0_value}<false>{0_value} Land/Water Attacks<end>]]></English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_EFFECT_UNIT_HELP_HOME_MODIFIER</zType>
+		<English><![CDATA[<true_1>Home Territory: {0_value}<false>{0_value} in Home Territory<end>]]></English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_UNIT_HELP_ATTACK_INTO</zType>
 		<English><![CDATA[<true_2>Into {0_tileLink}: {1_value}<false>{1_value} Into {0_tileLink}<end>]]></English>
 	</Entry>
@@ -3390,6 +3442,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>{0_value} Disciple Construction Time</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_EFFECT_CITY_HELP_NO_YIELDS_HURRY_DISCONTENT_NONE</zType>
+		<English>No icon(YIELD_DISCONTENT) from Hurrying</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_CITY_HELP_NO_YIELDS_HURRY_DISCONTENT</zType>
 		<English>{0_value} icon(YIELD_DISCONTENT) from Hurrying</English>
 	</Entry>
@@ -3544,7 +3600,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_CITY_HELP_YIELD_RATE_PER_CULTURE_LEVEL</zType>
-		<English>{0_yield}/{1_turnScale} per link(YIELD_CULTURE) Level{true_2: ({2_cityYield})}</English>
+		<English>{0_yield}/{1_turnScale} per link(YIELD_CULTURE) Level/Step{true_2: ({2_cityYield})}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_CITY_HELP_YIELD_RATE_PER_FAMILY_OPINION</zType>
@@ -3984,7 +4040,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_PLAYER_HELP_YIELD_RATE</zType>
-		<English>{0_yield} per {1_turnScale}</English>
+		<English>{true_0:[Global] }{1_yield} per {2_turnScale}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_PLAYER_HELP_YIELD_UPKEEP</zType>
@@ -4042,10 +4098,6 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_FAMILYCLASS_CHARACTER_COMMON_TRAITS</zType>
 		<English>Common Traits:</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_TRAIT_COMMON_FAMILYCLASS</zType>
-		<English>Common in Families:</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_FAMILYCLASS_OPINION_LEADER_HEIR</zType>
@@ -4804,22 +4856,6 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>{0_value} Opinion if more Trades with another Nation than with us</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_TRAIT_ADJECTIVE_COUNT</zType>
-		<English>Adjective ({0}/int(MAX_ADJECTIVES))</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_TRAIT_ADJECTIVE</zType>
-		<English>Adjective (Max: int(MAX_ADJECTIVES))</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_TRAIT_INCLUDED_IN</zType>
-		<English>Included in: {LIST}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_TRAIT_EXCUDED_FROM</zType>
-		<English>Excluded from: {LIST}</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_HELPTEXT_TRAIT_BIRTH_CHANCE</zType>
 		<English>{0_value}% Chance to have Children</English>
 	</Entry>
@@ -4830,6 +4866,42 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_TRAIT_OTHER_TRAIT_OPINION</zType>
 		<English>{0_value} Opinion of {1_trait} Characters</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_LAW_OPINION</zType>
+		<English>{0_value} Opinion of {1_law}</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_STRENGTH_COUNT</zType>
+		<English>Strength ({0}/int(MAX_STRENGTHS))</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_STRENGTH</zType>
+		<English>Strength (Max: int(MAX_STRENGTHS))</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_WEAKNESS_COUNT</zType>
+		<English>Weakness ({0}/int(MAX_WEAKNESSES))</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_WEAKNESS</zType>
+		<English>Weakness (Max: int(MAX_WEAKNESSES))</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_INCLUDED_IN</zType>
+		<English>Included in: {LIST}</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_EXCUDED_FROM</zType>
+		<English>Excluded from: {LIST}</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_COMMON_FAMILYCLASS</zType>
+		<English>Common in Families:</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_NOTABLE_CHARACTERS</zType>
+		<English>Notable Characters:</English>
 	</Entry>
 	<!--Player Help-->
 	<Entry>
@@ -4893,20 +4965,20 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>{0_opinion}: {1_diplomacy} with Our {2_link}</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_PLAYER_OPINION_PLAY_TO_WIN_NEAR</zType>
-		<English>{0_opinion}: You could end up winning</English>
+		<zType>TEXT_HELPTEXT_PLAYER_OPINION_PLAY_TO_WIN_VERY_CLOSE</zType>
+		<English>{0_opinion}: You are very close to winning</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_PLAYER_OPINION_PLAY_TO_WIN_CLOSE</zType>
 		<English>{0_opinion}: You are close to winning</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_PLAYER_OPINION_PLAY_TO_WIN_VERY_CLOSE</zType>
-		<English>{0_opinion}: You are very close to winning</English>
+		<zType>TEXT_HELPTEXT_PLAYER_OPINION_PLAY_TO_WIN_NEAR</zType>
+		<English>{0_opinion}: You could end up winning</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_PLAYER_OPINION_PLAY_TO_WIN</zType>
-		<English>{0_opinion}: You are winning...</English>
+		<English>{0_opinion}: You are starting to win</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_OPINION_LUXURIES</zType>
@@ -5180,10 +5252,6 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>Choose City Family: {0_city}</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_DECISION_NAME_CITY_GOVERNOR</zType>
-		<English>Choose City link(CONCEPT_GOVERNOR): {0_city}</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_HELPTEXT_DECISION_NAME_OFFER_PEACE_TRIBE</zType>
 		<English>Make link(DIPLOMACY_PEACE)</English>
 	</Entry>
@@ -5246,7 +5314,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TILE_ANCHOR_BUTTON</zType>
-		<English>link(CONCEPT_ANCHOR)</English>
+		<English>Anchor</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TILE_PILLAGE_BUTTON</zType>
@@ -5477,6 +5545,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>{0_value} Religion Opinion</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_SPECIALIST_OPINION_RELIGION_X</zType>
+		<English>{0_value} {1_religion} Opinion</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_SPECIALIST_COSTS_SINGLE</zType>
 		<English>Costs {0,1}</English>
 	</Entry>
@@ -5609,6 +5681,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_UNIT_EFFECT_HAS_PROMOTION</zType>
 		<English>(Unit already has this Promotion)</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_MAKE_GENERAL</zType>
+		<English>{true_0:Keep:Make} {1} link(CONCEPT_GENERAL) of {2}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_MAKE_GENERAL_MOVEMENT</zType>
@@ -5749,7 +5825,11 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_CHARACTER_OPINION_TRAIT_DIFF</zType>
-		<English>{0}: We are different ({1_trait} vs. {2_trait}) </English>
+		<English>{0}: We are different ({1_trait} vs. {2_trait})</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_CHARACTER_OPINION_LAW</zType>
+		<English>{0}: Your Law, {1_law} (as {2_trait})</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_CHARACTER_OPINION_OF_PLAYER_IS_LEADER_SPOUSE</zType>
@@ -5833,11 +5913,11 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_CHARACTER_RATING_TRAIT_GOVERNOR</zType>
-		<English> (As link(CONCEPT_GOVERNOR), {0})</English>
+		<English> (As link(CONCEPT_GOVERNOR),{0})</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_CHARACTER_RATING_TRAIT_GENERAL</zType>
-		<English> (As link(CONCEPT_GENERAL), {0})</English>
+		<English> (As link(CONCEPT_GENERAL),{0})</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LEADER_COLON_SPACE</zType>
@@ -6107,6 +6187,10 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_POPUP_CANCEL_IMPROVEMENT_PROMPT_TITLE</zType>
 		<English>Cancel {0_improvement}?</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_POPUP_ABANDON_AMBITION_PROMPT_TITLE</zType>
+		<English>Abandon {0_ambition} ambition?</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_POPUP_DECLARE_WAR_TRIBE_DESC</zType>
@@ -6408,14 +6492,6 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 		<English>Choose {0_city} Family:</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_HELPTEXT_POPUP_DECISION_CHOOSE_CITY_GOVERNOR_TITLE</zType>
-		<English>Choose link(CONCEPT_GOVERNOR) for {0_city}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_POPUP_DECISION_CHOOSE_CITY_GOVERNOR_CANDIDATES</zType>
-		<English>Candidate(s):</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_HELPTEXT_POPUP_DECISION_DIPLOMACY_TITLE</zType>
 		<English>Make {0_diplomacy} with {1} for {2_money}?</English>
 	</Entry>
@@ -6659,7 +6735,7 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_GOAL_VICTORY_ELIGIBLE</zType>
-		<English>(Will never become link(CONCEPT_LEGACY,1))</English>
+		<English>(Crowning Ambition: will never become link(CONCEPT_LEGACY,1))</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_GOAL_HELP_MIN_TIER</zType>
@@ -6677,14 +6753,6 @@ Complete ten link(CONCEPT_AMBITION,2) and Legacies, and you win link(VICTORY_AMB
 	<Entry>
 		<zType>TEXT_HELPTEXT_LAW_HELP_EFFECT_UPKEEP</zType>
 		<English>Upkeep: {0}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_LAW_HELP_THEOLOGY_OPINION</zType>
-		<English>{0_theology} Opinion: {1}</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_HELPTEXT_LAW_HELP_FAMILY_OPINION</zType>
-		<English>{0_family} Opinion: {1}</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LAW_HELP_COST</zType>

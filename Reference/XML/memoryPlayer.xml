@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -33,7 +33,7 @@
 	<Entry>
 		<zType>MEMORYPLAYER_CHOSE_AMBITION</zType>
 		<zText>Chose an Ambition</zText>
-		<iTurns>5</iTurns>
+		<iTurns>20</iTurns>
 	</Entry>
 	<Entry>
 		<zType>MEMORYPLAYER_TRUCE</zType>
@@ -91,6 +91,12 @@
 		<iTurns>20</iTurns>
 	</Entry>
 	<Entry>
+		<zType>MEMORYPLAYER_CARAVAN_ARRIVED</zType>
+		<zText>Caravan Arrived</zText>
+		<iValue>40</iValue>
+		<iTurns>20</iTurns>
+	</Entry>
+	<Entry>
 		<zType>MEMORYPLAYER_GIFTED_CITY</zType>
 		<zText>Gifted City</zText>
 		<iValue>20</iValue>
@@ -112,12 +118,6 @@
 		<bName>1</bName>
 	</Entry>
 	<Entry>
-		<zType>MEMORYPLAYER_GAVE_FAVOR</zType>
-		<zText>Gave Favor</zText>
-		<iValue>20</iValue>
-		<bName>1</bName>
-	</Entry>
-	<Entry>
 		<zType>MEMORYPLAYER_HOLD_HOSTAGE</zType>
 		<zText>Held a noble hostage</zText>
 		<iValue>-40</iValue>
@@ -128,12 +128,6 @@
 		<zText>Killed a noble hostage</zText>
 		<iValue>-80</iValue>
 		<iTurns>40</iTurns>
-	</Entry>
-	<Entry>
-		<zType>MEMORYPLAYER_NOBLE_DEFECT</zType>
-		<zText>Convinced a noble to defect</zText>
-		<iValue>-40</iValue>
-		<iTurns>20</iTurns>
 	</Entry>
 	<Entry>
 		<zType>MEMORYPLAYER_BROKE_PEACE</zType>
@@ -172,6 +166,32 @@
 		<iTurns>20</iTurns>
 	</Entry>
 	<Entry>
+		<zType>MEMORYPLAYER_DEMANDED_TRIBUTE</zType>
+		<zText>Demanded Tribute</zText>
+		<iValue>-40</iValue>
+		<iTurns>20</iTurns>
+	</Entry>
+	<Entry>
+		<zType>MEMORYPLAYER_NOBLE_DEFECT</zType>
+		<zText>Convinced a noble to defect</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYPLAYER_FEAST_EXILED_PEOPLE</zType>
+		<zText>Exiled People</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYPLAYER_FEAST_ACCEPTED_CITY</zType>
+		<zText>Accepted inter-cultural feast</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_LOW_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYPLAYER_FEAST_REJECTED_CITY</zType>
+		<zText>Rejected inter-cultural feast</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_LOW_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
 		<zType>MEMORYPLAYER_SLANDER</zType>
 		<zText>Publicly Slandered</zText>
 		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_NORMAL</MemoryLevel>
@@ -194,7 +214,7 @@
 	<Entry>
 		<zType>MEMORYPLAYER_PLAYER_PLAYER_WAR</zType>
 		<zText>Convinced a Nation to declare on us</zText>
-		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_LONG</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_LONG</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYPLAYER_PEACEMAKER_BAD</zType>
@@ -716,7 +736,7 @@
 		<zText>Refused entry to our peaceful pilgrims</zText>
 		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
-		<Entry>
+	<Entry>
 		<zType>MEMORYPLAYER_RELEASED_PRISONERS</zType>
 		<zText>Returned our people despite their crimes</zText>
 		<MemoryLevel>MEMORYLEVEL_POS_HIGH_SHORT</MemoryLevel>
@@ -725,6 +745,11 @@
 		<zType>MEMORYPLAYER_JUDGED_PRISONERS</zType>
 		<zText>Captured our people for their crimes</zText>
 		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_SHORT</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYPLAYER_HAD_MERCY</zType>
+		<zText>Gave us mercy</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_SHORT</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYPLAYER_REJECTED_DESTINY_CHILD</zType>

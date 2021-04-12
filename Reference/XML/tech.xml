@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -23,7 +23,7 @@
 		<zType>TECH_IRONWORKING</zType>
 		<Name>TEXT_TECH_IRONWORKING</Name>
 		<zIconName>TECH_IRONWORKING</zIconName>
-		<iCost>100</iCost>
+		<iCost>80</iCost>
 		<iColumn>0</iColumn>
 		<iRow>2</iRow>
 		<bValidAll>1</bValidAll>
@@ -32,7 +32,7 @@
 		<zType>TECH_STONECUTTING</zType>
 		<Name>TEXT_TECH_STONECUTTING</Name>
 		<zIconName>TECH_STONECUTTING</zIconName>
-		<iCost>100</iCost>
+		<iCost>80</iCost>
 		<iColumn>0</iColumn>
 		<iRow>5</iRow>
 		<bValidAll>1</bValidAll>
@@ -42,7 +42,7 @@
 		<Name>TEXT_TECH_STONECUTTING_BONUS_STONE</Name>
 		<zIconName>BOOST_STONE</zIconName>
 		<BonusDiscover>BONUS_TECH_STONECUTTING_BONUS_STONE</BonusDiscover>
-		<iCost>50</iCost>
+		<iCost>40</iCost>
 		<bHide>1</bHide>
 		<bTrash>1</bTrash>
 		<bNoFree>1</bNoFree>
@@ -58,7 +58,7 @@
 		<zType>TECH_TRAPPING</zType>
 		<Name>TEXT_TECH_TRAPPING</Name>
 		<zIconName>TECH_TRAPPING</zIconName>
-		<iCost>100</iCost>
+		<iCost>80</iCost>
 		<iColumn>0</iColumn>
 		<iRow>7</iRow>
 		<bValidAll>1</bValidAll>
@@ -67,7 +67,7 @@
 		<zType>TECH_DIVINATION</zType>
 		<Name>TEXT_TECH_DIVINATION</Name>
 		<zIconName>TECH_DIVINATION</zIconName>
-		<iCost>100</iCost>
+		<iCost>80</iCost>
 		<iColumn>0</iColumn>
 		<iRow>8</iRow>
 		<bValidAll>1</bValidAll>
@@ -76,7 +76,7 @@
 		<zType>TECH_ADMINISTRATION</zType>
 		<Name>TEXT_TECH_ADMINISTRATION</Name>
 		<zIconName>TECH_ADMINISTRATION</zIconName>
-		<iCost>100</iCost>
+		<iCost>80</iCost>
 		<iColumn>0</iColumn>
 		<iRow>10</iRow>
 		<bValidAll>1</bValidAll>
@@ -86,7 +86,7 @@
 		<Name>TEXT_TECH_LABOR_FORCE</Name>
 		<zIconName>TECH_LABOR_FORCE</zIconName>
 		<EffectPlayer>EFFECTPLAYER_TECH_LABOR_FORCE</EffectPlayer>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>1</iRow>
 		<bValidAll>1</bValidAll>
@@ -101,7 +101,7 @@
 		<zType>TECH_HUSBANDRY</zType>
 		<Name>TEXT_TECH_HUSBANDRY</Name>
 		<zIconName>TECH_HUSBANDRY</zIconName>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>3</iRow>
 		<bValidAll>1</bValidAll>
@@ -117,7 +117,7 @@
 		<Name>TEXT_TECH_HUSBANDRY_BONUS_FOOD</Name>
 		<zIconName>BONUS_FOOD</zIconName>
 		<BonusDiscover>BONUS_TECH_HUSBANDRY_BONUS_FOOD</BonusDiscover>
-		<iCost>100</iCost>
+		<iCost>60</iCost>
 		<bHide>1</bHide>
 		<bTrash>1</bTrash>
 		<bNoFree>1</bNoFree>
@@ -134,7 +134,7 @@
 		<Name>TEXT_TECH_DRAMA</Name>
 		<zIconName>TECH_DRAMA</zIconName>
 		<EffectPlayer>EFFECTPLAYER_TECH_DRAMA</EffectPlayer>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>4</iRow>
 		<bValidAll>1</bValidAll>
@@ -149,7 +149,7 @@
 		<zType>TECH_POLIS</zType>
 		<Name>TEXT_TECH_POLIS</Name>
 		<zIconName>TECH_POLIS</zIconName>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>6</iRow>
 		<bValidAll>1</bValidAll>
@@ -169,7 +169,7 @@
 		<Name>TEXT_TECH_POLIS_BONUS_SETTLER</Name>
 		<zIconName>BONUS_SETTLER</zIconName>
 		<BonusDiscover>BONUS_TECH_POLIS_BONUS_SETTLER</BonusDiscover>
-		<iCost>100</iCost>
+		<iCost>60</iCost>
 		<bHide>1</bHide>
 		<bTrash>1</bTrash>
 		<bNoFree>1</bNoFree>
@@ -185,7 +185,7 @@
 		<zType>TECH_MILITARY_DRILL</zType>
 		<Name>TEXT_TECH_MILITARY_DRILL</Name>
 		<zIconName>TECH_MILITARY_DRILL</zIconName>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>7</iRow>
 		<bValidAll>1</bValidAll>
@@ -200,7 +200,7 @@
 		<zType>TECH_ARISTOCRACY</zType>
 		<Name>TEXT_TECH_ARISTOCRACY</Name>
 		<zIconName>TECH_ARISTOCRACY</zIconName>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>8</iRow>
 		<bValidAll>1</bValidAll>
@@ -216,7 +216,7 @@
 		<Name>TEXT_TECH_ARISTOCRACY_BONUS_BORDERS</Name>
 		<zIconName>BOOST_BORDER</zIconName>
 		<BonusDiscover>BONUS_TECH_ARISTOCRACY_BONUS_BORDERS</BonusDiscover>
-		<iCost>100</iCost>
+		<iCost>60</iCost>
 		<bHide>1</bHide>
 		<bTrash>1</bTrash>
 		<bNoFree>1</bNoFree>
@@ -232,7 +232,7 @@
 		<zType>TECH_SOVEREIGNTY</zType>
 		<Name>TEXT_TECH_SOVEREIGNTY</Name>
 		<zIconName>TECH_SOVEREIGNTY</zIconName>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>9</iRow>
 		<bValidAll>1</bValidAll>
@@ -251,7 +251,7 @@
 		<zType>TECH_RHETORIC</zType>
 		<Name>TEXT_TECH_RHETORIC</Name>
 		<zIconName>TECH_RHETORIC</zIconName>
-		<iCost>100</iCost>
+		<iCost>120</iCost>
 		<iColumn>1</iColumn>
 		<iRow>10</iRow>
 		<bValidAll>1</bValidAll>
@@ -1557,7 +1557,7 @@
 	<Entry>
 		<zType>TECH_HASTATUS_BONUS</zType>
 		<Name>TEXT_TECH_HASTATUS_BONUS</Name>
-		<zIconName>UNIT_HASTATUS</zIconName>
+		<zIconName>BONUS_HASTATUS</zIconName>
 		<BonusDiscover>BONUS_TECH_HASTATUS_UNIT</BonusDiscover>
 		<iCost>200</iCost>
 		<bHide>1</bHide>
@@ -1579,7 +1579,7 @@
 	<Entry>
 		<zType>TECH_LEGIONARY_BONUS</zType>
 		<Name>TEXT_TECH_LEGIONARY_BONUS</Name>
-		<zIconName>UNIT_LEGIONARY</zIconName>
+		<zIconName>BONUS_LEGIONARY</zIconName>
 		<BonusDiscover>BONUS_TECH_LEGIONARY_UNIT</BonusDiscover>
 		<iCost>800</iCost>
 		<bHide>1</bHide>

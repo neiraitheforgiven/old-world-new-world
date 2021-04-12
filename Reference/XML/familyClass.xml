@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -8,8 +8,6 @@
 		<zCharacterPortraitBackground/>
 		<Crest/>
 		<SeatCrest/>
-		<iFoundCostBase/>
-		<iFoundCostPer/>
 		<iLeaderHeirOpinion/>
 		<iLeaderSpouseOpinion/>
 		<iHeirSpouseOpinion/>
@@ -85,24 +83,10 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_COLONIZATION</zIndex>
+				<zIndex>LAW_SERFDOM</zIndex>
 				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_COIN_DEBASEMENT</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_CENTRALIZATION</zIndex>
-				<iValue>-20</iValue>
 			</Pair>
 		</aiLawOpinion>
-		<aiTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_ENLIGHTENMENT</zIndex>
-				<iValue>10</iValue>
-			</Pair>
-		</aiTheologyOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -192,16 +176,8 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_ENGINEERING</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>LAW_VOLUNTEERS</zIndex>
 				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_TYRANNY</zIndex>
-				<iValue>-20</iValue>
 			</Pair>
 		</aiLawOpinion>
 		<aiTraitDie>
@@ -295,23 +271,9 @@
 		<aiLawOpinion>
 			<Pair>
 				<zIndex>LAW_CONSTITUTION</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_ELITES</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_POLYTHEISM</zIndex>
-				<iValue>-20</iValue>
+				<iValue>10</iValue>
 			</Pair>
 		</aiLawOpinion>
-		<aiStateTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_LEGALISM</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-		</aiStateTheologyOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -401,24 +363,10 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_VASSALAGE</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_ICONOGRAPHY</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_MONETARY_REFORM</zIndex>
-				<iValue>-20</iValue>
+				<zIndex>LAW_CALLIGRAPHY</zIndex>
+				<iValue>40</iValue>
 			</Pair>
 		</aiLawOpinion>
-		<aiTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_VENERATION</zIndex>
-				<iValue>10</iValue>
-			</Pair>
-		</aiTheologyOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -508,20 +456,8 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_MONOTHEISM</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_HOLY_WAR</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>LAW_DIVINE_RULE</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_LEGAL_CODE</zIndex>
-				<iValue>-20</iValue>
+				<iValue>30</iValue>
 			</Pair>
 		</aiLawOpinion>
 		<aiTraitDie>
@@ -613,28 +549,10 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_PHILOSOPHY</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_LEGAL_CODE</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_TOLERANCE</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_ORTHODOXY</zIndex>
-				<iValue>-20</iValue>
+				<zIndex>LAW_FREEDOM</zIndex>
+				<iValue>10</iValue>
 			</Pair>
 		</aiLawOpinion>
-		<aiStateTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_DUALISM</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-		</aiStateTheologyOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -725,24 +643,14 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_PILGRIMAGE</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>LAW_TRADE_LEAGUE</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>LAW_SERFDOM</zIndex>
-				<iValue>-20</iValue>
-			</Pair>
-		</aiLawOpinion>
-		<aiStateTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_REDEMPTION</zIndex>
+				<zIndex>LAW_MONETARY_REFORM</zIndex>
 				<iValue>20</iValue>
 			</Pair>
-		</aiStateTheologyOpinion>
+		</aiLawOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -831,24 +739,10 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_EPICS</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_CALLIGRAPHY</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_ISOLATIONISM</zIndex>
-				<iValue>-20</iValue>
+				<zIndex>LAW_GUILDS</zIndex>
+				<iValue>50</iValue>
 			</Pair>
 		</aiLawOpinion>
-		<aiTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_MYTHOLOGY</zIndex>
-				<iValue>10</iValue>
-			</Pair>
-		</aiTheologyOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -939,20 +833,10 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_PROFESSIONAL_ARMY</zIndex>
+				<zIndex>LAW_VASSALAGE</zIndex>
 				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_GUILDS</zIndex>
-				<iValue>-20</iValue>
 			</Pair>
 		</aiLawOpinion>
-		<aiStateTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_REVELATION</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-		</aiStateTheologyOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
@@ -1042,24 +926,10 @@
 		</aiLuxuryMissingOpinion>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_FREEDOM</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>LAW_EXPLORATION</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>LAW_SLAVERY</zIndex>
-				<iValue>-20</iValue>
-			</Pair>
-		</aiLawOpinion>
-		<aiTheologyOpinion>
-			<Pair>
-				<zIndex>THEOLOGY_GNOSTICISM</zIndex>
 				<iValue>10</iValue>
 			</Pair>
-		</aiTheologyOpinion>
+		</aiLawOpinion>
 		<aiTraitDie>
 			<Pair>
 				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>

@@ -7,6 +7,7 @@
 		<bMasculine/>
 		<iMaxFertile/>
 		<iMaxSpouseAgeDifference/>
+		<iMarriageDelayTurns/>
 		<GeneralFormation/>
 		<zLeaderTitle/>
 	</Entry>
@@ -14,8 +15,9 @@
 		<zType>GENDER_FEMALE</zType>
 		<zName>Female</zName>
 		<bMasculine>0</bMasculine>
-		<iMaxFertile>36</iMaxFertile>
+		<iMaxFertile>38</iMaxFertile>
 		<iMaxSpouseAgeDifference>5</iMaxSpouseAgeDifference>
+		<iMarriageDelayTurns>2</iMarriageDelayTurns>
 		<GeneralFormation>FORMATION_GENERAL_FEMALE</GeneralFormation>
 		<zLeaderTitle>Queen</zLeaderTitle>
 	</Entry>
@@ -25,6 +27,7 @@
 		<bMasculine>1</bMasculine>
 		<iMaxFertile>70</iMaxFertile>
 		<iMaxSpouseAgeDifference>25</iMaxSpouseAgeDifference>
+		<iMarriageDelayTurns>4</iMarriageDelayTurns>
 		<GeneralFormation>FORMATION_GENERAL_MALE</GeneralFormation>
 		<zLeaderTitle>King</zLeaderTitle>
 	</Entry>

@@ -13,11 +13,11 @@
 	<Entry>
 		<zType>CHARACTER_AGE_GROUP_YOUTH</zType>
 		<iStartAge>3</iStartAge>
-		<iEndAge>8</iEndAge>
+		<iEndAge>10</iEndAge>
 	</Entry>
 	<Entry>
 		<zType>CHARACTER_AGE_GROUP_TEEN</zType>
-		<iStartAge>9</iStartAge>
+		<iStartAge>11</iStartAge>
 		<iEndAge>17</iEndAge>
 	</Entry>
 	<Entry>

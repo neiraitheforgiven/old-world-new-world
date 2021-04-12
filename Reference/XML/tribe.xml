@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -8,6 +8,7 @@
 		<iLatitude/>
 		<bTribe/>
 		<bMercenary/>
+		<bPersistent/>
 		<Crest/>
 		<Diplomacy/>
 		<aeFirstNamesMale/>
@@ -21,6 +22,7 @@
 		<zType>TRIBE_REBELS</zType>
 		<Name>TEXT_TRIBE_REBELS</Name>
 		<TeamColor>TEAMCOLOR_TRIBE_REBELS</TeamColor>
+		<bPersistent>1</bPersistent>
 		<Crest>CREST_TRIBE_REBELS</Crest>
 		<Diplomacy>DIPLOMACY_WAR</Diplomacy>
 		<zPortraitBackground>GenericBarbarianAttackBackground</zPortraitBackground>
@@ -29,6 +31,7 @@
 		<zType>TRIBE_ANARCHY</zType>
 		<Name>TEXT_TRIBE_ANARCHY</Name>
 		<TeamColor>TEAMCOLOR_TRIBE_ANARCHY</TeamColor>
+		<bPersistent>1</bPersistent>
 		<Crest>CREST_TRIBE_ANARCHY</Crest>
 		<Diplomacy>DIPLOMACY_WAR</Diplomacy>
 		<zPortraitBackground>GenericBarbarianAttackBackground</zPortraitBackground>
@@ -37,6 +40,7 @@
 		<zType>TRIBE_RAIDERS</zType>
 		<Name>TEXT_TRIBE_RAIDERS</Name>
 		<TeamColor>TEAMCOLOR_TRIBE_RAIDERS</TeamColor>
+		<bPersistent>1</bPersistent>
 		<Crest>CREST_TRIBE_RAIDERS</Crest>
 		<Diplomacy>DIPLOMACY_WAR</Diplomacy>
 		<zPortraitBackground>GenericBarbarianAttackBackground</zPortraitBackground>
@@ -46,6 +50,7 @@
 		<Name>TEXT_TRIBE_BARBARIANS</Name>
 		<TeamColor>TEAMCOLOR_TRIBE_BARBARIANS</TeamColor>
 		<bMercenary>1</bMercenary>
+		<bPersistent>1</bPersistent>
 		<Crest>CREST_TRIBE_GENERIC</Crest>
 		<Diplomacy>DIPLOMACY_WAR</Diplomacy>
 		<zPortraitBackground>GenericBarbarianAttackBackground</zPortraitBackground>

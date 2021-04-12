@@ -34,7 +34,6 @@
 		<EndLaw/>
 		<FreeLaw/>
 		<FoundReligion/>
-		<AdoptReligion/>
 		<FreeTheology/>
 		<Quest/>
 		<QuestForce/>
@@ -120,6 +119,7 @@
 		<bRemoveVegetation/>
 		<bTribeRaid/>
 		<aiCityYields/>
+		<aiGlobalYields/>
 		<aiGlobalYieldsBase/>
 		<aiGlobalYieldsPer/>
 		<aiOtherYieldsBase/>
@@ -390,6 +390,18 @@
 			<zValue>BONUS_ADD_CITIZEN_1</zValue>
 			<zValue>BONUS_CULTURE_GAIN_AVERAGE</zValue>
 		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_PLAYER_FEAST_EXILED_PEOPLE</zType>
+		<MemoryPlayer>MEMORYPLAYER_FEAST_EXILED_PEOPLE</MemoryPlayer>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_PLAYER_FEAST_ACCEPTED_CITY_MEMORY</zType>
+		<MemoryPlayer>MEMORYPLAYER_FEAST_ACCEPTED_CITY</MemoryPlayer>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_PLAYER_FEAST_REJECTED_CITY_MEMORY</zType>
+		<MemoryPlayer>MEMORYPLAYER_FEAST_REJECTED_CITY</MemoryPlayer>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_ORACLE_NO_OFFERING</zType>
@@ -933,7 +945,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_FAMILY_TARNISHED_OPTION_1_CHARACTER</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeRemoveTraits>
 			<zValue>TRAIT_IMPRISONED</zValue>
 		</aeRemoveTraits>
@@ -1203,6 +1215,15 @@
 		<zType>BONUS_ADD_MEMORY_TRYING_THEIR_BEST</zType>
 		<MemoryCharacter>MEMORYCHARACTER_OVERCOMING_NATURE</MemoryCharacter>
 	</Entry>
+	<Entry>
+		<zType>ADD_MEMORY_GREAT_PARTY</zType>
+		<MemoryCharacter>MEMORYCHARACTER_GREAT_PARTY</MemoryCharacter>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_CLEARING_THEIR_DEBT_OPTION_3_CHARACTER_0</zType>
+		<AddLeaderRelationship>RELATIONSHIP_ALLIED_WITH</AddLeaderRelationship>
+		<RemoveLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</RemoveLeaderRelationship>
+	</Entry>
 	<Entry beginGroup="Exploration">
 		<zType>BONUS_EVENTOPTION_RUINS_SURVIVORS_INVITE</zType>
 		<aiUnits>
@@ -1316,7 +1337,7 @@
 		<zType>BONUS_EVENTOPTION_RUINS_FRIGHTENED_FAMILIES_GUARD</zType>
 		<aePromotions>
 			<zValue>PROMOTION_GUARD1</zValue>
-			<zValue>PROMOTION_HARDY</zValue>
+			<zValue>PROMOTION_TOUGH</zValue>
 		</aePromotions>
 	</Entry>
 	<Entry>
@@ -2623,6 +2644,43 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_FOUR_CITIES_OPTION_NO</zType>
+		<zName>Followed my own path</zName>
+		<iLegitimacy>2</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_TILES</zType>
+		<Ambition>GOAL_20_URBAN_TILES</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_IMPROVEMENTS</zType>
+		<Ambition>GOAL_20_URBAN_IMPROVEMENTS</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_LEGAL_CODE</zType>
+		<Ambition>GOAL_LEGAL_CODE</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_LAWS</zType>
+		<Ambition>GOAL_FOUR_LAWS</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_ENGINEERING</zType>
+		<Ambition>GOAL_ENGINEERING</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_STONECUTTERS</zType>
+		<Ambition>GOAL_FOUR_STONECUTTERS</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_STONE_800</zType>
+		<Ambition>GOAL_STONE_800</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_50_GOODS_TURN</zType>
+		<Ambition>GOAL_50_GOODS_TURN</Ambition>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_NO</zType>
 		<zName>Followed my own path</zName>
 		<iLegitimacy>2</iLegitimacy>
 	</Entry>
@@ -4962,7 +5020,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TECH_FAVOR_YES_PLAYER_0</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TECH_FAVOR_YES_TECH_0</zType>
@@ -5044,18 +5102,18 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_A_FRIEND_IN_NEED_YES</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aeTechs>
 			<zValue>TECH_CARTOGRAPHY</zValue>
 		</aeTechs>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_A_FRIEND_IN_NEED_NO</zType>
-		<MemoryCharacter>MEMORYCHARACTER_NO_TRADE_TECH</MemoryCharacter>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_ROAD_TO_HEAVEN_YES</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aeTechs>
 			<zValue>TECH_MONASTICISM</zValue>
 		</aeTechs>
@@ -5129,10 +5187,6 @@
 		<MemoryCharacter>MEMORYCHARACTER_NO_TRADE_TECH</MemoryCharacter>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zType>
-		<ForgetPlayer>MEMORYPLAYER_GAVE_FAVOR</ForgetPlayer>
-	</Entry>
-	<Entry>
 		<zType>BONUS_EVENTOPTION_AT_PEACE_HUNTING_GROUNDS_DISPUTE_OPTION_0</zType>
 		<MemoryCharacter>MEMORYCHARACTER_HONORED_OUR_SOVEREIGNTY</MemoryCharacter>
 	</Entry>
@@ -5150,8 +5204,8 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_AT_PEACE_HUNTING_GROUNDS_DISPUTE_OPTION_2</zType>
-		<ForgetPlayer>MEMORYPLAYER_GAVE_FAVOR</ForgetPlayer>
 		<MemoryCharacter>MEMORYCHARACTER_HONORED_OUR_SOVEREIGNTY</MemoryCharacter>
+		<RemoveLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</RemoveLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_AT_PEACE_HUNTING_GROUNDS_DISPUTE_OPTION_2_PLAYER_1</zType>
@@ -5367,13 +5421,6 @@
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_PLAYER_WAR_AT_TRUCE_INCIDENT_WAR</zType>
-		<MemoryCharacter>MEMORYCHARACTER_PLAYER_WAR_AT_TRUCE_INCIDENT_WAR</MemoryCharacter>
-		<aeBonuses>
-			<zValue>BONUS_DECLARE_WAR_PLAYER</zValue>
-		</aeBonuses>
-	</Entry>
-	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYER_WAR_OFFER_TRAIT_TACTICIAN_ARCHETYPE_UPSET_OPTION_0_PLAYER_0</zType>
 		<MemoryCharacter>MEMORYCHARACTER_PLAYER_WAR_OFFER_TRIBUTE_PAID</MemoryCharacter>
 		<aeBonuses>
@@ -5534,6 +5581,25 @@
 			<zValue>BONUS_PLAYER_PEACE</zValue>
 			<zValue>BONUS_TRIBUTE_RECEIVE_MONEY_LARGE</zValue>
 		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_DEMAND_TRIBUTE_REFUSE_LEGITIMACY</zType>
+		<zName>Backed down after link(MISSION_DEMAND_TRIBUTE) Mission</zName>
+		<iLegitimacy>-10</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_DEMAND_TRIBUTE_CIVICS</zType>
+		<MemoryPlayer>MEMORYPLAYER_TRADE_DEAL</MemoryPlayer>
+		<aiYieldsTradeBase>
+			<Pair>
+				<zIndex>YIELD_MONEY</zIndex>
+				<iValue>500</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>-60</iValue>
+			</Pair>
+		</aiYieldsTradeBase>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TRADE_MISSION_YES_MONEY_ORDERS_GOOD</zType>
@@ -7503,10 +7569,6 @@
 		<Ambition>GOAL_20_KILLS</Ambition>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_PLAYER_WAR_DECLARE_GAVE_FAVOR</zType>
-		<ForgetPlayer>MEMORYPLAYER_GAVE_FAVOR</ForgetPlayer>
-	</Entry>
-	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYER_WAR_DECLARE_HOLD_HOSTAGE</zType>
 		<ForgetPlayer>MEMORYPLAYER_HOLD_HOSTAGE</ForgetPlayer>
 	</Entry>
@@ -7550,7 +7612,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_CIVICS</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -7566,7 +7628,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_TRAINING</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
@@ -7582,7 +7644,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_MONEY</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -7598,7 +7660,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_ORDERS</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
@@ -7614,7 +7676,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_FOOD</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -7630,7 +7692,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_IRON</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_IRON</zIndex>
@@ -7646,11 +7708,11 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_WOOD</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>1000</iValue>
+				<iValue>100</iValue>
 			</Pair>
 		</aiYieldsSendBase>
 		<aiYieldsSendPerUs>
@@ -7662,7 +7724,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_DIPLO_OFFER_ASK_FAVOR_YES_STONE</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 		<aiYieldsSendBase>
 			<Pair>
 				<zIndex>YIELD_STONE</zIndex>
@@ -7672,7 +7734,7 @@
 		<aiYieldsSendPerUs>
 			<Pair>
 				<zIndex>YIELD_STONE</zIndex>
-				<iValue>200</iValue>
+				<iValue>20</iValue>
 			</Pair>
 		</aiYieldsSendPerUs>
 	</Entry>
@@ -8093,70 +8155,70 @@
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_MONEY_FIRST</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_MONEY_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_FOOD_FIRST</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_FOOD_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_IRON_FIRST</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_IRON_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_WOOD_FIRST</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_WOOD_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_STONE_FIRST</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_STONE_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_ORDERS_SECOND</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_ORDERS_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_CIVICS_SECOND</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_CIVICS_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_TRAINING_SECOND</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_TRAINING_SEND_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_SCIENCE_SECOND</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_SCIENCE_GAIN_LARGE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PLAYERS_POSITIVE_OPINION_CULTURE_SECOND</zType>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>BONUS_CULTURE_GAIN_LARGE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -8253,6 +8315,24 @@
 			<zValue>BONUS_XP_CHARACTER_LARGE</zValue>
 			<zValue>BONUS_WOOD_LOSS_HUGE</zValue>
 		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_DEMAND_TRIBUTE_MERCY_AGREE</zType>
+		<zName>Backed out of demanding tribute</zName>
+		<iLegitimacy>-5</iLegitimacy>
+		<aeAddTraits>
+			<zValue>TRAIT_GRACIOUS</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_DEMAND_TRIBUTE_COUNTER_OFFER</zType>
+		<aeRemoveTraits>
+			<zValue>TRAIT_CAPTURED</zValue>
+		</aeRemoveTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_DEMAND_TRIBUTE_MERCY_AGREE_PLAYER</zType>
+		<MemoryPlayer>MEMORYPLAYER_HAD_MERCY</MemoryPlayer>
 	</Entry>
 	<Entry beginGroup="Combat">
 		<zType>BONUS_EVENTOPTION_LEADER_SMITING_FOES_STATUE</zType>
@@ -8973,6 +9053,86 @@
 		<zName>Died in battle after refusing to retreat</zName>
 		<iLegitimacy>10</iLegitimacy>
 	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CEASE_FIRE_TRAGEDY_NEG</zType>
+		<MemoryFamily>MEMORYFAMILY_FAMILY_GENERAL_TRAGEDY_OPPOSED</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CEASE_FIRE_TRAGEDY_POS</zType>
+		<MemoryFamily>MEMORYFAMILY_FAMILY_GENERAL_TRAGEDY_SUPPORTED</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBUSHED_GENERAL_THREATEN</zType>
+		<MemoryPlayer></MemoryPlayer>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_GENERAL_DUEL</zType>
+		<zName>Erected statue of famous duel</zName>
+		<iLegitimacy>3</iLegitimacy>
+		<aeBonuses>
+			<zValue>BONUS_STONE_LOSS_SMALL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_HONORED_ENEMY_LEG_NEG</zType>
+		<zName>General honored by enemy</zName>
+		<iLegitimacy>-3</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_HONORED_ENEMY_LEG_POS</zType>
+		<zName>General honored by enemy</zName>
+		<iLegitimacy>3</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_HONORED_ENEMY_MEM_POS</zType>
+		<MemoryPlayer>MEMORYPLAYER_COMPLIMENTED_GENERAL</MemoryPlayer>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_HONORED_ENEMY_MEM_NEG</zType>
+		<MemoryPlayer>MEMORYPLAYER_DENIED_OUR_GENERAL</MemoryPlayer>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_MUTINY_IN_THE_RANKS</zType>
+		<MemoryCharacter>MEMORYCHARACTER_FIRED_FROM_COURT</MemoryCharacter>
+		<bReleaseGeneral>1</bReleaseGeneral>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_SCARRED_AND_WOUNDED</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_SEVERELY_WOUNDED</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_FLREE_THE_FIELD_FLEE</zType>
+		<MemoryAllFamilies>MEMORYFAMILY_FLED_BATTLE</MemoryAllFamilies>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTO_THE_MIST_RELIGION</zType>
+		<FreeTheology>THEOLOGY_MYTHOLOGY</FreeTheology>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTO_THE_MIST_PLAYER</zType>
+		<aeBonuses>
+			<zValue>BONUS_CIVICS_LOSS_AVERAGE</zValue>
+			<zValue>BONUS_CULTURE_GAIN_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTO_THE_MIST_FAMILY</zType>
+		<MemoryFamily>MEMORYFAMILY_FAMILY_GENERAL_TRAGEDY_SUPPORTED</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_WOUNDED</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_WOUNDED</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_SEVERELY_WOUNDED</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_SEVERELY_WOUNDED</zValue>
+		</aeAddTraits>
+	</Entry>
 	<Entry beginGroup="Marriage">
 		<zType>BONUS_EVENTOPTION_MARRIAGE_OFFER_YES</zType>
 		<iMarrySubject>0</iMarrySubject>
@@ -9035,6 +9195,56 @@
 	<Entry>
 		<zType>BONUS_EVENTOPTION_MARRIAGE_POLY_YES</zType>
 		<iPolyMarrySubject>0</iPolyMarrySubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_A_WHOLE_NEW_WORLD</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_EXPLORING</zValue>
+		</aeAddTraits>
+		<aeRemoveTraits>
+			<zValue>TRAIT_ELOPED</zValue>
+		</aeRemoveTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_THREE_WEEKS_0</zType>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_THREE_WEEKS_1</zType>
+		<iDivorcedBySubject>0</iDivorcedBySubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_THREE_WEEKS_2</zType>
+		<zName>Heir returned from elopement in disgrace</zName>
+		<iLegitimacy>-4</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_THREE_WEEKS_3</zType>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_THREE_WEEKS_4</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_EXILED</zValue>
+		</aeAddTraits>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_REMOVE_TRAIT_ELOPED</zType>
+		<aeRemoveTraits>
+			<zValue>TRAIT_ELOPED</zValue>
+		</aeRemoveTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_SUDDEN_RETURN_WELCOME</zType>
+		<zName>Welcomed back eloper</zName>
+		<iLegitimacy>-4</iLegitimacy>
 	</Entry>
 	<Entry beginGroup="Family">
 		<zType>BONUS_EVENTOPTION_FAMILY_GIFT_YES</zType>
@@ -10734,6 +10944,18 @@
 				<zValue>PROJECT_INQUIRY_4</zValue>
 			</Pair>
 		</aeCultureProject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_SCHEMER_SUCCESSION_OPTION_1_ASSASSINATE</zType>
+		<Mission>MISSION_ASSASSINATE</Mission>
+		<iMissionSubject>0</iMissionSubject>
+		<bMissionFree>1</bMissionFree>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_SCHEMER_SUCCESSION_SPOUSE_OPTION_1_ASSASSINATE</zType>
+		<Mission>MISSION_ASSASSINATE</Mission>
+		<iMissionSubject>2</iMissionSubject>
+		<bMissionFree>1</bMissionFree>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_MASTER_OF_WHISPERS_FRIENDS</zType>
@@ -12447,10 +12669,8 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_LEADER_BLOODLESS_REBELLION_OPTION_0</zType>
-		<zName>Forced to abdicate</zName>
-		<iLegitimacy>-4</iLegitimacy>
-		<bAbdicate>1</bAbdicate>
 		<aeBonuses>
+			<zValue>BONUS_ABDICATE</zValue>
 			<zValue>BONUS_DISCONTENT_LOSS_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -13536,7 +13756,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_CHARACTER_WICKED_CHARGES_OPTION_2_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeAddTraits>
 			<zValue>TRAIT_FOOLISH</zValue>
 		</aeAddTraits>
@@ -13691,7 +13911,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_CHARACTER_AUDITED_OPTION_2_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<MakeCourtier>COURTIER_MERCHANT</MakeCourtier>
 	</Entry>
 	<Entry>
@@ -13983,7 +14203,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_A_CALL_FOR_HELP_OPTION_1_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aiBonusUnits>
 			<Pair>
 				<zIndex>BONUSUNITCLASS_HEAVY_INFANTRY</zIndex>
@@ -14190,14 +14410,14 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_AT_DEATHS_DOOR_OPTION_0_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeAddSpecialistClasses>
 			<zValue>SPECIALISTCLASS_DOCTOR</zValue>
 		</aeAddSpecialistClasses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_AT_DEATHS_DOOR_OPTION_1_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeBonuses>
 			<zValue>BONUS_SCIENCE_GAIN_SMALL</zValue>
 		</aeBonuses>
@@ -14380,7 +14600,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_STUDY_EAGER_FOR_COMBAT_OPTION_2_CHARACTER_1</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeAddTraits>
 			<zValue>TRAIT_SOLDIER</zValue>
 		</aeAddTraits>
@@ -14842,7 +15062,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TRAIT_AMNESTY_OPTION_0_CHARACTER_1</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeRemoveTraits>
 			<zValue>TRAIT_IMPRISONED</zValue>
 		</aeRemoveTraits>
@@ -15525,6 +15745,10 @@
 		</aeBonuses>
 	</Entry>
 	<Entry>
+		<zType>BONUS_OWE_FAVOR_TO_LEADER</zType>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
+	</Entry>
+	<Entry>
 		<zType>BONUS_REMOVE_CORRUPT</zType>
 		<aeRemoveTraits>
 			<zValue>TRAIT_CORRUPT</zValue>
@@ -15867,9 +16091,6 @@
 			<zValue>TRAIT_CRUEL</zValue>
 			<zValue>TRAIT_BLOODTHIRSTY</zValue>
 		</aeAddTraits>
-		<aeBonuses>
-			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
-		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_LOYAL_COMPANION_OPTION_0_CHARACTER</zType>
@@ -16222,6 +16443,10 @@
 		<Council>COUNCIL_AMBASSADOR</Council>
 	</Entry>
 	<Entry>
+		<zType>BONUS_EVENTOPTION_COUNCIL_SWAP_OPTION_2_FAMILY_0</zType>
+		<MemoryFamily>MEMORYFAMILY_FAMILY_GIFTS</MemoryFamily>
+	</Entry>
+	<Entry>
 		<zType>BONUS_EVENTOPTION_INTERFERENCE_OPTION_0_CHARACTER_1</zType>
 		<aeBonuses>
 			<zValue>BONUS_MONEY_GAIN_SMALL</zValue>
@@ -16382,7 +16607,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TRAIT_TAKING_ITS_TOLL_OPTION_2_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeAddTraits>
 			<zValue>TRAIT_ILL</zValue>
 		</aeAddTraits>
@@ -16421,6 +16646,11 @@
 		<zType>BONUS_EVENTOPTION_TRAIT_FIGHTING_FOR_NATION_OPTION_2_CHARACTER_3</zType>
 		<Mission>MISSION_ASSASSINATE</Mission>
 		<iMissionSubject>0</iMissionSubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_PLOTTING_NOBLES_OPTION_1</zType>
+		<zName>Imprisoned nobles unjustly</zName>
+		<iLegitimacy>-2</iLegitimacy>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_INSANE_LOVE_0</zType>
@@ -16545,7 +16775,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TRAIT_LONELINESS_ABROAD_OPTION_0_PLAYER</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeRemoveTraits>
 			<zValue>TRAIT_EXPLORING</zValue>
 		</aeRemoveTraits>
@@ -16556,7 +16786,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_TRAIT_LONELINESS_ABROAD_OPTION_1_PLAYER</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeRemoveTraits>
 			<zValue>TRAIT_EXPLORING</zValue>
 		</aeRemoveTraits>
@@ -16973,13 +17203,17 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_INFLUENCE_OF_GOVERNORS_OPTION_0_CHARACTER_1</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<iGovernorOfSubject>0</iGovernorOfSubject>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_LEGITIMIZE_BASTARDS_BODY_RELEASE</zType>
 		<zName>We did not prosecute the murder of a royal bastard.</zName>
 		<iLegitimacy>-4</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_LEGITIMIZE_THREE_FAMILIES_CONCERN</zType>
+		<MemoryFamily>MEMORYFAMILY_FAMILY_GIFTS</MemoryFamily>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_STUDY_AIRY_AND_MENDACIOUS_STYLE</zType>
@@ -17125,6 +17359,10 @@
 		<iMissionSubject>0</iMissionSubject>
 	</Entry>
 	<Entry>
+		<zType>BONUS_EVENTOPTION_MISSING_ADVENTURE_PREGNANT</zType>
+		<iMarrySubject>0</iMarrySubject>
+	</Entry>
+	<Entry>
 		<zType>BONUS_SCHEMING_HEIR_ONE_LIVE</zType>
 		<MemoryPlayer>NONE</MemoryPlayer>
 		<MemoryCharacter>MEMORYCHARACTER_SCHEMING_HEIR_ONE_LIVE</MemoryCharacter>
@@ -17189,36 +17427,38 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RETURNING_THE_FAVOR_REFUSE</zType>
-		<ForgetCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</ForgetCharacter>
 		<aeBonuses>
 			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RETURNING_THE_FAVOR_CHANCELLOR</zType>
-		<ForgetCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</ForgetCharacter>
 		<aeBonuses>
-			<zValue>BONUS_MISSIONRESULT_CHANCELLOR</zValue>
+			<zValue>BONUS_MAKE_CHANCELLOR</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RETURNING_THE_FAVOR_AMBASSADOR</zType>
-		<ForgetCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</ForgetCharacter>
 		<aeBonuses>
-			<zValue>BONUS_MISSIONRESULT_AMBASSADOR</zValue>
+			<zValue>BONUS_MAKE_AMBASSADOR</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RETURNING_THE_FAVOR_SPYMASTER</zType>
-		<ForgetCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</ForgetCharacter>
 		<aeBonuses>
-			<zValue>BONUS_MISSIONRESULT_SPYMASTER</zValue>
+			<zValue>BONUS_MAKE_SPYMASTER</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RETURNING_THE_FAVOR_GOVERNOR</zType>
-		<ForgetCharacter>MEMORYCHARACTER_PROVIDED_FAVOR</ForgetCharacter>
 		<iGovernorOfSubject>0</iGovernorOfSubject>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_SPRING_EQUINOX_AMBITION_PYRAMIDS</zType>
@@ -17389,8 +17629,8 @@
 		<Ambition>GOAL_ELITES</Ambition>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_WINTER_SOLSTICE_AMBITION_ISOLATIONISM</zType>
-		<Ambition>GOAL_ISOLATIONISM</Ambition>
+		<zType>BONUS_EVENTOPTION_WINTER_SOLSTICE_AMBITION_AUTARKY</zType>
+		<Ambition>GOAL_AUTARKY</Ambition>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_WINTER_SOLSTICE_AMBITION_TRADE_LEAGUE</zType>
@@ -17408,6 +17648,168 @@
 		<zType>BONUS_ADD_MEMORY_CARES_ABOUT_INTERESTS</zType>
 		<MemoryReligion>NONE</MemoryReligion>
 		<MemoryCharacter>MEMORYCHARACTER_CARES_ABOUT_INTERESTS</MemoryCharacter>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_ADOPTED_SUCCESSOR</zType>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EXCLUDED</zValue>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_RIVAL_SUCCESSORS_FAMILY_POS</zType>
+		<MemoryFamily>MEMORYFAMILY_SUPPORTED_HEIR_CANDIDATE_YES</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_RIVAL_SUCCESSORS_FAMILY_NEG</zType>
+		<MemoryFamily>MEMORYFAMILY_SUPPORTED_HEIR_CANDIDATE_NO</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_YOUNG_BOND</zType>
+		<zName>Heir bonded with nobles</zName>
+		<iLegitimacy>-2</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_ELOPEMENT_LOVE</zType>
+		<AddRelationshipSubjects>
+			<Pair>
+				<First>RELATIONSHIP_IN_LOVE_WITH</First>
+				<Second>0</Second>
+			</Pair>
+		</AddRelationshipSubjects>
+		<AddRelationshipReverse>
+			<Pair>
+				<First>RELATIONSHIP_IN_LOVE_WITH</First>
+				<Second>0</Second>
+			</Pair>
+		</AddRelationshipReverse>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_ELOPEMENT_MARRIAGE</zType>
+		<iMarrySubject>0</iMarrySubject>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_ELOPEMENT_LEGITIMACY</zType>
+		<zName>Heir had scandelous marriage</zName>
+		<iLegitimacy>-3</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_COMPULSION_POS</zType>
+		<MemoryReligion>MEMORYRELIGION_CENSORED_HEAD_YES</MemoryReligion>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_COMPULSION_NEG</zType>
+		<MemoryReligion>MEMORYRELIGION_CENSORED_HEAD_NO</MemoryReligion>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_COMPULSION_POS_ALT</zType>
+		<MemoryReligion>MEMORYRELIGION_KEPT_THE_PEACE</MemoryReligion>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_REPLACEMENT</zType>
+		<iHeadReligionSubject>0</iHeadReligionSubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_REPLACEMENT_ASSASSIN</zType>
+		<Mission>MISSION_ASSASSINATE</Mission>
+		<iMissionSubject>0</iMissionSubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_DONATION</zType>
+		<iSpreadUnits>1</iSpreadUnits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_TRUCE_YES</zType>
+		<MemoryFamily>MEMORYFAMILY_ACCEPTED_TRUCE</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_TRUCE_NO</zType>
+		<MemoryFamily>MEMORYFAMILY_REFUSED_TRUCE</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_SUSPICION_NO_CHANCES</zType>
+		<aeBonuses>
+			<zValue>BONUS_MISSIONRESULT_IMPRISON_JUST</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_FEAST_IGNORE</zType>
+		<zName>Ignored family slandor</zName>
+		<iLegitimacy>-2</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_FEAST_ACCEPT</zType>
+		<zName>Accepted drunken apology</zName>
+		<iLegitimacy>-4</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_NEW_LOVE</zType>
+		<AddRelationshipSubjects>
+			<Pair>
+				<First>RELATIONSHIP_IN_LOVE_WITH</First>
+				<Second>1</Second>
+			</Pair>
+		</AddRelationshipSubjects>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_LEG_NEG</zType>
+		<zName>Interfered in family affairs</zName>
+		<iLegitimacy>-2</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_LEG_POS</zType>
+		<zName>Above family affairs</zName>
+		<iLegitimacy>2</iLegitimacy>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_MEM</zType>
+		<MemoryFamily>MEMORYFAMILY_UNITED_AGAINST_LEADER</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_DUEL_DEATH</zType>
+		<MemoryAllFamilies>MEMORYFAMILY_DUEL_EXECUTION</MemoryAllFamilies>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_DUEL_EXILE</zType>
+		<MemoryAllFamilies>MEMORYFAMILY_DUEL_EXILE</MemoryAllFamilies>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_DUEL_PARDON</zType>
+		<MemoryAllFamilies>MEMORYFAMILY_DUEL_PARDON</MemoryAllFamilies>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_GREED_PAY</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_MONEY</zIndex>
+				<iValue>-100</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_GREED_REFUSE</zType>
+		<aiGlobalYieldsBase>
+			<Pair>
+				<zIndex>YIELD_MONEY</zIndex>
+				<iValue>200</iValue>
+			</Pair>
+		</aiGlobalYieldsBase>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_INTERCESSION_PARRICIDE</zType>
+		<Mission>MISSION_ASSASSINATE</Mission>
+		<iMissionSubject>1</iMissionSubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_XP_AND_ORDERS</zType>
+		<aeBonuses>
+			<zValue>BONUS_ORDERS_GAIN_LARGE</zValue>
+			<zValue>BONUS_XP_CHARACTER_LARGE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry beginGroup="City">
 		<zType>BONUS_EVENTOPTION_HAPPINESS_IMMIGRANTS_SCOUTS</zType>
@@ -18081,7 +18483,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_SUPPORTING_THE_FAITH_OPTION_REFUSE</zType>
-		<zName>Refused charitable donation</zName>
+		<zName>Refused to support faith</zName>
 		<iLegitimacy>2</iLegitimacy>
 	</Entry>
 	<Entry>
@@ -18238,7 +18640,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_CHARITY_OF_AHURA_MAZDA_PLAYER</zType>
-		<MemoryPlayer>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayer>
+		<AddLeaderRelationship>RELATIONSHIP_OWES_FAVOR_TO</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_BEATING_THE_POETS_IMPRESSED</zType>
@@ -18437,7 +18839,7 @@
 	<Entry>
 		<zType>BONUS_EVENTOPTIONS_THE_WEIGHT_OF_DEBT_0</zType>
 		<aeBonuses>
-			<zValue>BONUS_CHARACTER_FORGET_FAVOR</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 		</aeBonuses>
 	</Entry>
@@ -18497,12 +18899,25 @@
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_THE_WORLD_MADE_WHOLE_0</zType>
+		<zType>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_FAMILY_0</zType>
 		<MemoryFamily>MEMORYFAMILY_DISHONORED_OUR_DEAD</MemoryFamily>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_THE_WORLD_MADE_WHOLE_1</zType>
+		<zType>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_FAMILY_1</zType>
 		<MemoryFamily>MEMORYFAMILY_HONORED_OUR_DEAD</MemoryFamily>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_LEG_0</zType>
+		<zName>Got final vengence on rival</zName>
+		<iLegitimacy>4</iLegitimacy>
+		<aeAddTraits>
+			<zValue>TRAIT_CRUEL</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_LEG_1</zType>
+		<zName>Forgave rival after death</zName>
+		<iLegitimacy>2</iLegitimacy>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_WORLD_OF_THOUGHT</zType>
@@ -18702,6 +19117,10 @@
 	<Entry>
 		<zType>BONUS_EVENTSTORY_CONVERT_PERSONAL_RELIGION</zType>
 		<iConvertReligionSubject>0</iConvertReligionSubject>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_CONVERT_RELIGION_S1</zType>
+		<iConvertReligionSubject>1</iConvertReligionSubject>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_WEALTH_OF_DAVID</zType>
@@ -19081,7 +19500,7 @@
 		<zType>BONUS_EVENTOPTION_LAW_IDLE_HANDS_OPTION_2</zType>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_ISOLATIONISM</zIndex>
+				<zIndex>LAW_AUTARKY</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 		</aiLawOpinion>
@@ -19270,15 +19689,6 @@
 		<FreeLaw>LAW_DIVINE_RULE</FreeLaw>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_REIGN_BY_WHIPS_AND_CHAINS_OPTION_0_CHARACTER_1</zType>
-		<iGovernorOfSubject>1</iGovernorOfSubject>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_REIGN_BY_WHIPS_AND_CHAINS_OPTION_0_CHARACTER_2</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
-		<iGovernorOfSubject>2</iGovernorOfSubject>
-	</Entry>
-	<Entry>
 		<zType>BONUS_EVENTOPTION_REIGN_BY_WHIPS_AND_CHAINS_OPTION_1_PLAYER</zType>
 		<EndLaw>LAW_SLAVERY</EndLaw>
 		<FreeLaw>LAW_FREEDOM</FreeLaw>
@@ -19287,26 +19697,22 @@
 		<zType>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_1</zType>
 		<AddLeaderRelationship>RELATIONSHIP_LOVER_OF</AddLeaderRelationship>
 		<aeAddTraits>
-			<zValue>TRAIT_WANTON</zValue>
+			<zValue>TRAIT_GAY</zValue>
 		</aeAddTraits>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_2</zType>
-		<AddLeaderRelationship>RELATIONSHIP_LOVER_OF</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_IN_LOVE_WITH</AddLeaderRelationship>
 		<iPolyMarrySubject>0</iPolyMarrySubject>
+		<aeAddTraits>
+			<zValue>TRAIT_EXTRAVAGANT</zValue>
+		</aeAddTraits>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_3</zType>
 		<AddLeaderRelationship>RELATIONSHIP_LOVER_OF</AddLeaderRelationship>
 		<aeAddTraits>
-			<zValue>TRAIT_DRUNK</zValue>
-		</aeAddTraits>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_4</zType>
-		<AddLeaderRelationship>RELATIONSHIP_LOVER_OF</AddLeaderRelationship>
-		<aeAddTraits>
-			<zValue>TRAIT_EXTRAVAGANT</zValue>
+			<zValue>TRAIT_DEBAUCHED</zValue>
 		</aeAddTraits>
 	</Entry>
 	<Entry>
@@ -19334,6 +19740,11 @@
 		<iDiscontentLevels>-1</iDiscontentLevels>
 	</Entry>
 	<Entry>
+		<zType>BONUS_EVENTOPTION_ORIGINAL_OWNER_0</zType>
+		<iCitizens>-1</iCitizens>
+		<iDiscontentLevels>-3</iDiscontentLevels>
+	</Entry>
+	<Entry>
 		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_1</zType>
 		<iCitizens>-1</iCitizens>
 		<iBorderGrowth>5</iBorderGrowth>
@@ -19346,19 +19757,7 @@
 		<iDiscontentLevels>-1</iDiscontentLevels>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_3</zType>
-		<iCitizens>-1</iCitizens>
-		<iBorderGrowth>5</iBorderGrowth>
-		<iDiscontentLevels>-1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_4</zType>
-		<iCitizens>-1</iCitizens>
-		<iBorderGrowth>5</iBorderGrowth>
-		<iDiscontentLevels>-1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_0</zType>
+		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1_CITY_0</zType>
 		<iCitizens>-1</iCitizens>
 		<aiBonusUnits>
 			<Pair>
@@ -19368,27 +19767,7 @@
 		</aiBonusUnits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_1</zType>
-		<iCitizens>-1</iCitizens>
-		<aiBonusUnits>
-			<Pair>
-				<zIndex>BONUSUNITCLASS_HEAVY_INFANTRY</zIndex>
-				<iValue>1</iValue>
-			</Pair>
-		</aiBonusUnits>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_2</zType>
-		<iCitizens>-1</iCitizens>
-		<aiBonusUnits>
-			<Pair>
-				<zIndex>BONUSUNITCLASS_HEAVY_INFANTRY</zIndex>
-				<iValue>1</iValue>
-			</Pair>
-		</aiBonusUnits>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_3</zType>
+		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1_CITY_1</zType>
 		<iCitizens>-1</iCitizens>
 		<aiBonusUnits>
 			<Pair>
@@ -19398,7 +19777,7 @@
 		</aiBonusUnits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_4</zType>
+		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1_CITY_2</zType>
 		<iCitizens>-1</iCitizens>
 		<aiBonusUnits>
 			<Pair>
@@ -19406,39 +19785,6 @@
 				<iValue>1</iValue>
 			</Pair>
 		</aiBonusUnits>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_0</zType>
-		<iCitizens>2</iCitizens>
-		<iDiscontentLevels>1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_1</zType>
-		<iCitizens>2</iCitizens>
-		<iDiscontentLevels>1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_2</zType>
-		<iCitizens>2</iCitizens>
-		<iDiscontentLevels>1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_3</zType>
-		<iCitizens>2</iCitizens>
-		<iDiscontentLevels>1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_4</zType>
-		<iCitizens>2</iCitizens>
-		<iDiscontentLevels>1</iDiscontentLevels>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_ERA_OF_NOBILITY_OPTION_0</zType>
-		<aeBonuses>
-			<zValue>BONUS_GIVE_TRAIT_CRUEL</zValue>
-			<zValue>BONUS_FOOD_GAIN_GIGANTIC</zValue>
-			<zValue>BONUS_MONEY_GAIN_GIGANTIC</zValue>
-		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RULE_BY_GODS_WILL_OPTION_0_PLAYER</zType>
@@ -19447,7 +19793,6 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RULE_BY_GODS_WILL_OPTION_2_CITY</zType>
-		<iCitizens>-1</iCitizens>
 		<aiUnits>
 			<Pair>
 				<zIndex>UNIT_WORKER</zIndex>
@@ -19455,6 +19800,10 @@
 			</Pair>
 		</aiUnits>
 		<aiBonusUnits>
+			<Pair>
+				<zIndex>BONUSUNITCLASS_HEAVY_INFANTRY</zIndex>
+				<iValue>1</iValue>
+			</Pair>
 			<Pair>
 				<zIndex>BONUSUNITCLASS_RANGED_INFANTRY</zIndex>
 				<iValue>1</iValue>
@@ -20637,6 +20986,13 @@
 		<Council>COUNCIL_CHANCELLOR</Council>
 	</Entry>
 	<Entry>
+		<zType>BONUS_EVENTOPTION_THE_LITERATE_CITIZEN</zType>
+		<aeBonuses>
+			<zValue>BONUS_ADD_CITIZEN_1</zValue>
+			<zValue>BONUS_STONE_GAIN_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
 		<zType>BONUS_EVENTOPTION_THE_LITERATE_THE_LITERATE</zType>
 		<AddCourtier>
 			<Pair>
@@ -21810,6 +22166,8 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_SEDITIOUS_MEETINGS_OPTION_2_CHARACTER_1</zType>
+		<zName>Bowed to pressure for political reform</zName>
+		<iLegitimacy>-2</iLegitimacy>
 		<aeTechs>
 			<zValue>TECH_JURISPRUDENCE</zValue>
 		</aeTechs>
@@ -21891,8 +22249,8 @@
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_IN_YOUR_DEBT_OPTION_0_CITY</zType>
 		<aeBonuses>
-			<zValue>BONUS_GROWTH_GAIN_MINIMAL</zValue>
-			<zValue>BONUS_DISCONTENT_LOSS_MINIMAL</zValue>
+			<zValue>BONUS_GROWTH_GAIN_SMALL</zValue>
+			<zValue>BONUS_DISCONTENT_LOSS_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -22698,7 +23056,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_IN_THE_BLOOD_OPTION_0_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<bRandomTech>1</bRandomTech>
 	</Entry>
 	<Entry>
@@ -22835,12 +23193,12 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_PROOF_OF_FRIENDSHIP_OPTION_2_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<iBorderGrowth>2</iBorderGrowth>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RELATIONSHIP_PROOF_OF_FRIENDSHIP_OPTION_3_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aiBonusUnits>
 			<Pair>
 				<zIndex>BONUSUNITCLASS_HEAVY_INFANTRY</zIndex>
@@ -22955,7 +23313,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_STRANGER_AT_THE_DOOR_OPTION_0_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeAddTraits>
 			<zValue>TRAIT_GRACIOUS</zValue>
 		</aeAddTraits>
@@ -23516,7 +23874,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_SUPPLY_CHAIN_WOES_OPTION_2_CHARACTER_1</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_A_SUPERIOR_SYSTEM_OPTION_0_CHARACTER_0</zType>
@@ -23617,14 +23975,14 @@
 		<zType>BONUS_EVENTOPTION_INWARD_GAZE_OPTION_2_CHARACTER_1</zType>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_ISOLATIONISM</zIndex>
+				<zIndex>LAW_AUTARKY</zIndex>
 				<iValue>40</iValue>
 			</Pair>
 		</aiLawOpinion>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_IRREPARABLE_DAMAGE_OPTION_0_CHARACTER_0</zType>
-		<FreeLaw>LAW_ISOLATIONISM</FreeLaw>
+		<FreeLaw>LAW_AUTARKY</FreeLaw>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_IRREPARABLE_DAMAGE_OPTION_1_CHARACTER_1</zType>
@@ -23674,7 +24032,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_SMALL_MINDEDNESS_OPTION_1_CHARACTER_1</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_EXTREMIST_LAWS_OPTION_0_CHARACTER</zType>
@@ -23864,7 +24222,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_STRANGLED_OPTION_1_CHARACTER_2</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTSTORY_LAST_KISS_CHARACTER_0</zType>
@@ -24220,7 +24578,8 @@
 		</AddCourtier>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTSTORY_A_GIFT_OF_LABOR_CITY</zType>
+		<zType>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_0_CITY</zType>
+		<AddImprovement>IMPROVEMENT_FARM</AddImprovement>
 		<aiUnits>
 			<Pair>
 				<zIndex>UNIT_WORKER</zIndex>
@@ -24229,16 +24588,24 @@
 		</aiUnits>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_0_CITY</zType>
-		<AddImprovement>IMPROVEMENT_FARM</AddImprovement>
-	</Entry>
-	<Entry>
 		<zType>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_1_CITY</zType>
 		<AddImprovement>IMPROVEMENT_MINE</AddImprovement>
+		<aiUnits>
+			<Pair>
+				<zIndex>UNIT_WORKER</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+		</aiUnits>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_2_CITY</zType>
 		<AddImprovement>IMPROVEMENT_QUARRY</AddImprovement>
+		<aiUnits>
+			<Pair>
+				<zIndex>UNIT_WORKER</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+		</aiUnits>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_PACIFY_SEND_HIM_OUT_OPTION_0_PLAYER</zType>
@@ -24310,7 +24677,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RESTORED_OPTION_0_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeRemoveTraits>
 			<zValue>TRAIT_IMPRISONED</zValue>
 		</aeRemoveTraits>
@@ -24728,7 +25095,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_COMPLICATIONS_OPTION_1_CHARACTER_1</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeAddTraits>
 			<zValue>TRAIT_MOURNING</zValue>
 		</aeAddTraits>
@@ -24778,7 +25145,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_IN_THE_WATER_OPTION_2_CHARACTER_0</zType>
-		<AddLeaderRelationship>RELATIONSHIP_OBLIGED_TO</AddLeaderRelationship>
+		<AddLeaderRelationship>RELATIONSHIP_INFLUENCED_BY</AddLeaderRelationship>
 		<aeRemoveTraits>
 			<zValue>TRAIT_ILL</zValue>
 		</aeRemoveTraits>
@@ -25204,7 +25571,7 @@
 		</aiCityYields>
 	</Entry>
 	<Entry>
-		<zType>BONUS_EVENTOPTION_TUTORIAL_PROMOTION_YES_CHARACTER</zType>
+		<zType>BONUS_EVENTOPTION_TUTORIAL_GENERAL_YES_CHARACTER</zType>
 		<iGeneralOfSubject>0</iGeneralOfSubject>
 	</Entry>
 	<Entry beginGroup="Community">
@@ -25386,6 +25753,12 @@
 		<bMissionFree>1</bMissionFree>
 	</Entry>
 	<Entry>
+		<zType>BONUS_EVENTOPTION_HIGH_SYNOD_PEACE_MISSION</zType>
+		<Mission>MISSION_PLAYER_PEACE</Mission>
+		<iMissionSubject>1</iMissionSubject>
+		<bMissionFree>1</bMissionFree>
+	</Entry>
+	<Entry>
 		<zType>BONUS_EVENTOPTION_MEDDLING_CHANCELLOR_COURTIER</zType>
 		<AddCourtier>
 			<Pair>
@@ -25488,7 +25861,7 @@
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RIOTS_AT_THE_RACES_OPTION_0</zType>
-		<iRebelUnits>4</iRebelUnits>
+		<iRebelUnits>3</iRebelUnits>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_RIOTS_AT_THE_RACES_OPTION_1</zType>
@@ -25511,6 +25884,13 @@
 				<iValue>3</iValue>
 			</Pair>
 		</aiBonusUnits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EVENTOPTION_RIOTS_AT_THE_RACES_OPTION_3</zType>
+		<aeBonuses>
+			<zValue>BONUS_CIVICS_LOSS_AVERAGE</zValue>
+			<zValue>BONUS_DISCONTENT_GAIN_SMALL</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_THE_RISK_OF_CHARM_OPTION_0_CHARACTER_3</zType>
@@ -25663,11 +26043,6 @@
 		<aeAddTraits>
 			<zValue>TRAIT_CUNNING</zValue>
 		</aeAddTraits>
-	</Entry>
-	<Entry>
-		<zType>BONUS_EVENTOPTION_LEGITIMACY_MONTH</zType>
-		<zName>Added an extra month to a year</zName>
-		<iLegitimacy>1</iLegitimacy>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_LEGITIMACY_CALENDAR</zType>
@@ -25991,9 +26366,6 @@
 	<Entry>
 		<zType>BONUS_EVENTOPTION_ASPIRING_GENERAL_DENY_CHARACTER</zType>
 		<MemoryCharacter>MEMORYCHARACTER_DENIED_BARRACKS_ASSIGNMENT</MemoryCharacter>
-		<aeBonuses>
-			<zValue>BONUS_GIVE_TRAIT_SLIGHTED</zValue>
-		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EVENTOPTION_IGNORED_SUGGESTION_TO_INFILTRATE</zType>
@@ -26626,7 +26998,7 @@
 	<Entry>
 		<zType>BONUS_EVENTOPTION_HAREM_CONSPIRACY_CRUSHED_BELIEVE_CHARACTER_3</zType>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -27083,7 +27455,7 @@
 		<zType>BONUS_EVENTOPTION_UNEXPECTED_REUNION_REINSTATE_CHARACTER_0</zType>
 		<aeBonuses>
 			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>

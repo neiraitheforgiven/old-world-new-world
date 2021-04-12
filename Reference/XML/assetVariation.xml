@@ -1033,6 +1033,18 @@
 		<bShowBuildings>true</bShowBuildings>
 	</Entry>
 	<Entry>
+		<zType>ASSET_VARIATION_IMPROVEMENT_CATHEDRAL_3</zType>
+		<aiValidRotations>0</aiValidRotations>
+		<SingleAsset>ASSET_IMPROVEMENT_CATHEDRAL_3</SingleAsset>
+		<bShowBuildings>true</bShowBuildings>
+	</Entry>
+	<Entry>
+		<zType>ASSET_VARIATION_IMPROVEMENT_CATHEDRAL_4</zType>
+		<aiValidRotations>0</aiValidRotations>
+		<SingleAsset>ASSET_IMPROVEMENT_CATHEDRAL_4</SingleAsset>
+		<bShowBuildings>true</bShowBuildings>
+	</Entry>
+	<Entry>
 		<zType>ASSET_VARIATION_IMPROVEMENT_HOLY_SITE</zType>
 		<aiValidRotations>0</aiValidRotations>
 		<SingleAsset>ASSET_IMPROVEMENT_HOLY_SITE</SingleAsset>

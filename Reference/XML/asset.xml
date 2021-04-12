@@ -66,6 +66,10 @@
 		<zAsset>Sprites/HUD_SpriteAtlas_Filtered</zAsset>
 	</Entry>
 	<Entry>
+		<zType>ASSET_SPRITE_SHEET_EVENT_FRAMES</zType>
+		<zAsset>Sprites/HUD_PopupFrames</zAsset>
+	</Entry>
+	<Entry>
 		<zType>ASSET_SPRITE_SHEET_IMPROVEMENTS</zType>
 		<zAsset>Sprites/Improvement-Icons</zAsset>
 	</Entry>
@@ -639,6 +643,10 @@
 		<zType>ASSET_UNIT_CATAPHRACT</zType>
 		<zAsset>Prefabs/Units/Cataphract</zAsset>
 	</Entry>
+  <Entry>
+    <zType>ASSET_UNIT_PORTRAIT_CATAPHRACT</zType>
+    <zAsset>Prefabs/Units/Cataphract_portrait</zAsset>
+  </Entry>
 	<Entry>
 		<zType>ASSET_UNIT_ONAGER</zType>
 		<zAsset>Prefabs/Units/Catapult</zAsset>
@@ -712,7 +720,7 @@
 	</Entry>
 	<Entry>
 		<zType>ASSET_UNIT_CIMMERIAN_ARCHER</zType>
-		<zAsset>Prefabs/Units/CamelLancer</zAsset>
+		<zAsset>Prefabs/Units/Cimmerian_Archer</zAsset>
 	</Entry>
 	<Entry>
 		<zType>ASSET_UNIT_AFRICAN_ELEPHANT</zType>
@@ -758,10 +766,18 @@
 		<zType>ASSET_UNIT_CATAPHRACT_ARCHER</zType>
 		<zAsset>Prefabs/Units/CataphractArcher</zAsset>
 	</Entry>
+  <Entry>
+    <zType>ASSET_UNIT_PORTRAIT_CATAPHRACT_ARCHER</zType>
+    <zAsset>Prefabs/Units/CataphractArcher_portrait</zAsset>
+  </Entry>
 	<Entry>
 		<zType>ASSET_UNIT_HASTATUS</zType>
 		<zAsset>Prefabs/Units/Hastatus</zAsset>
 	</Entry>
+  <Entry>
+    <zType>ASSET_UNIT_PORTRAIT_HASTATUS</zType>
+    <zAsset>Prefabs/Units/Hastatus_portrait</zAsset>
+  </Entry>
 	<Entry>
 		<zType>ASSET_UNIT_LEGIONARY</zType>
 		<zAsset>Prefabs/Units/Legionary</zAsset>
@@ -1772,6 +1788,14 @@
 		<zAsset>Prefabs/Improvements/Cathedral_Manicean</zAsset>
 	</Entry>
 	<Entry>
+		<zType>ASSET_IMPROVEMENT_CATHEDRAL_3</zType>
+		<zAsset>Prefabs/Improvements/Cathedral_Jewish</zAsset>
+	</Entry>
+	<Entry>
+		<zType>ASSET_IMPROVEMENT_CATHEDRAL_4</zType>
+		<zAsset>Prefabs/Improvements/Cathedral_Christian</zAsset>
+	</Entry>
+	<Entry>
 		<zType>ASSET_IMPROVEMENT_HOLY_SITE</zType>
 		<zAsset>Prefabs/Improvements/ZoroastrianHolySite</zAsset>
 	</Entry>
@@ -1832,8 +1856,16 @@
 		<zAsset>Prefabs/Improvements/Lighthouse</zAsset>
 	</Entry>
 	<Entry>
+		<zType>ASSET_CONSTRUCTION_IMPROVEMENT_LIGHTHOUSE</zType>
+		<zAsset>Prefabs/Improvements/Lighthouse_cons</zAsset>
+	</Entry>
+	<Entry>
 		<zType>ASSET_IMPROVEMENT_COLOSSUS</zType>
 		<zAsset>Prefabs/Features/Colossus</zAsset>
+	</Entry>
+	<Entry>
+		<zType>ASSET_CONSTRUCTION_IMPROVEMENT_COLOSSUS</zType>
+		<zAsset>Prefabs/Features/Colossus_ConsStates</zAsset>
 	</Entry>
 	<Entry>
 		<zType>ASSET_IMPROVEMENT_GREAT_ZIGGURAT</zType>
@@ -2083,6 +2115,10 @@
 		<zType>ASSET_HORSE_RUN_DUST</zType>
 		<zAsset>Prefabs/Particles/HorseRunDust</zAsset>
 	</Entry>
+  <Entry>
+    <zType>ASSET_ELEPHANT_RUN_DUST</zType>
+    <zAsset>Prefabs/Particles/ElephantRunDust</zAsset>
+  </Entry>
 	<Entry>
 		<zType>ASSET_UNIT_PROMOTION_EFFECT</zType>
 		<zAsset>Prefabs/Particles/Promotion-effect</zAsset>

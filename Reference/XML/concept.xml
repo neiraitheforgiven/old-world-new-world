@@ -32,8 +32,8 @@
 		<zHelpText>TEXT_HELPTEXT_LINK_HELP_AMBITION</zHelpText>
 	</Entry>
 	<Entry>
-		<zType>CONCEPT_ANCHOR</zType>
-		<Name>TEXT_CONCEPT_ANCHOR</Name>
+		<zType>CONCEPT_ANCHORED</zType>
+		<Name>TEXT_CONCEPT_ANCHORED</Name>
 		<zHelpText>TEXT_HELPTEXT_WIDGET_ANCHOR_HELP</zHelpText>
 	</Entry>
 	<Entry>
@@ -250,6 +250,11 @@
 		<zType>CONCEPT_UNDO</zType>
 		<Name>TEXT_CONCEPT_UNDO</Name>
 		<zHelpText>TEXT_HELPTEXT_LINK_HELP_UNDO</zHelpText>
+	</Entry>
+	<Entry>
+		<zType>CONCEPT_UNLIMBERED</zType>
+		<Name>TEXT_CONCEPT_UNLIMBERED</Name>
+		<zHelpText>TEXT_HELPTEXT_WIDGET_UNLIMBER_HELP</zHelpText>
 	</Entry>
 	<Entry>
 		<zType>CONCEPT_UPGRADE</zType>

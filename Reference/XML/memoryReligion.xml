@@ -12,7 +12,7 @@
 	<Entry>
 		<zType>MEMORYRELIGION_ESTABLISH_THEOLOGY</zType>
 		<zText>Established a link(CONCEPT_THEOLOGY)</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_LOW_LONG</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_POS_LOW_NORMAL</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYRELIGION_PURGE_RELIGION</zType>
@@ -67,7 +67,7 @@
 	<Entry>
 		<zType>MEMORYRELIGION_ADOPTED_ZOROASTRIANISM</zType>
 		<zText>Adopted Zoroastrianism</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_HIGH_NORMAL</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYRELIGION_SPREAD_ZOROASTRIANISM</zType>
@@ -87,7 +87,7 @@
 	<Entry>
 		<zType>MEMORYRELIGION_ADOPTED_JUDAISM</zType>
 		<zText>Adopted Judaism</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_HIGH_NORMAL</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYRELIGION_REFUSED_JUDAISM</zType>
@@ -122,12 +122,12 @@
 	<Entry>
 		<zType>MEMORYRELIGION_ADOPTED_CHRISTIANITY</zType>
 		<zText>Adopted Christianity</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_SHORT</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYRELIGION_ADOPTED_MANICHAEISM</zType>
 		<zText>Founded Manichaeism</zText>
-		<MemoryLevel>MEMORYLEVEL_POS_HIGH_NORMAL</MemoryLevel>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
 	<Entry>
 		<zType>MEMORYRELIGION_ORTHDOXY_AGAINST</zType>
@@ -539,9 +539,19 @@
 		<zText>Abdicated for religious heir</zText>
 		<MemoryLevel>MEMORYLEVEL_POS_HIGH_NORMAL</MemoryLevel>
 	</Entry>
-		<Entry>
+	<Entry>
 		<zType>MEMORYRELIGION_DISCRACED_BY_RELIGION_HEAD</zType>
 		<zText>Discraced by our Religion Head</zText>
 		<MemoryLevel>MEMORYLEVEL_NEG_HIGH_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYRELIGION_CENSORED_HEAD_YES</zType>
+		<zText>Censored extreme religion head</zText>
+		<MemoryLevel>MEMORYLEVEL_POS_MEDIUM_NORMAL</MemoryLevel>
+	</Entry>
+	<Entry>
+		<zType>MEMORYRELIGION_CENSORED_HEAD_NO</zType>
+		<zText>Praised extreme religion head</zText>
+		<MemoryLevel>MEMORYLEVEL_NEG_MEDIUM_NORMAL</MemoryLevel>
 	</Entry>
 </Root>

@@ -231,7 +231,7 @@
 		<iCostPerChange>200</iCostPerChange>
 		<LawClass>LAWCLASS_PROFESSIONAL_ARMY_VOLUNTEERS</LawClass>
 		<EffectPlayer>EFFECTPLAYER_LAW_VOLUNTEERS</EffectPlayer>
-		<EffectPlayerUpkeep>EFFECTPLAYER_UPKEEP_MEDIUM_TRAINING</EffectPlayerUpkeep>
+		<EffectPlayerUpkeep>EFFECTPLAYER_UPKEEP_MEDIUM_CIVICS</EffectPlayerUpkeep>
 	</Entry>
 	<Entry>
 		<zType>LAW_PHILOSOPHY</zType>
@@ -314,13 +314,13 @@
 		<EffectPlayerUpkeep>EFFECTPLAYER_UPKEEP_VERY_HIGH_TRAINING</EffectPlayerUpkeep>
 	</Entry>
 	<Entry>
-		<zType>LAW_ISOLATIONISM</zType>
-		<zName>Isolationism</zName>
-		<zIconName>LAW_ISOLATIONISM</zIconName>
+		<zType>LAW_AUTARKY</zType>
+		<zName>Autarky</zName>
+		<zIconName>LAW_AUTARKY</zIconName>
 		<iCostBase>400</iCostBase>
 		<iCostPerChange>200</iCostPerChange>
-		<LawClass>LAWCLASS_ISOLATIONISM_TRADE_LEAGUE</LawClass>
-		<EffectPlayer>EFFECTPLAYER_LAW_ISOLATIONISM</EffectPlayer>
+		<LawClass>LAWCLASS_AUTARKY_TRADE_LEAGUE</LawClass>
+		<EffectPlayer>EFFECTPLAYER_LAW_AUTARKY</EffectPlayer>
 		<EffectPlayerUpkeep>EFFECTPLAYER_UPKEEP_VERY_HIGH_SCIENCE</EffectPlayerUpkeep>
 	</Entry>
 	<Entry>
@@ -329,7 +329,7 @@
 		<zIconName>LAW_TRADE_LEAGUE</zIconName>
 		<iCostBase>400</iCostBase>
 		<iCostPerChange>200</iCostPerChange>
-		<LawClass>LAWCLASS_ISOLATIONISM_TRADE_LEAGUE</LawClass>
+		<LawClass>LAWCLASS_AUTARKY_TRADE_LEAGUE</LawClass>
 		<EffectPlayer>EFFECTPLAYER_LAW_TRADE_LEAGUE</EffectPlayer>
 		<EffectPlayerUpkeep>EFFECTPLAYER_UPKEEP_VERY_HIGH_CIVICS</EffectPlayerUpkeep>
 	</Entry>

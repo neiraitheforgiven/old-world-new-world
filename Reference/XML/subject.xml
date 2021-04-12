@@ -69,11 +69,13 @@
 		<iMinCourtiers comment="Player has at least this many Courtiers."/>
 		<iMaxCourtiers comment="Player has at most this many Courtiers."/>
 		<iMaxHeirs comment="Maximum number of heirs permitted for this player Subject."/>
+		<iMinLevel comment="Unit has this minimum Level."/>
 		<bIgnoreRandom comment="Always chooses the first valid Subject."/>
 		<bIsUs comment="The player Subject must be the same as the player getting the event."/>
 		<bIsNotUs comment="The player Subject must be different from the player getting the event."/>
 		<bIsUsOrThem comment="The player Subject must be different from the player getting the event."/>
 		<bIsSameTeam comment="The player Subject must be different from the player getting the event but on the same team."/>
+		<bIsDiffTeam comment="The player Subject must be on a different team."/>
 		<bContactBoth comment="This player Subject has contacted us and vice-versa."/>
 		<bHuman comment="This player Subject must be human. If false, must not be an AI.
 (This value is only tested if either bIsUs, bIsNotUs, or bIsUsOrThem is true.)"/>
@@ -237,6 +239,7 @@ They must be an adult (at least 18) and no older than
 		<bIsNotUs/>
 		<bIsUsOrThem/>
 		<bIsSameTeam/>
+		<bIsDiffTeam/>
 		<bContactBoth/>
 		<bHuman/>
 		<bHumanOrAI/>
@@ -349,6 +352,12 @@ They must be an adult (at least 18) and no older than
 		<Class>SUBJECTCLASS_PLAYER</Class>
 		<bIsNotUs>1</bIsNotUs>
 		<bIsSameTeam>1</bIsSameTeam>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_PLAYER_DIFF_TEAM</zType>
+		<Class>SUBJECTCLASS_PLAYER</Class>
+		<bIsNotUs>1</bIsNotUs>
+		<bIsDiffTeam>1</bIsDiffTeam>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_PLAYER_HUMAN_DIPLOMACY_NOT_FOUND</zType>
@@ -571,6 +580,13 @@ They must be an adult (at least 18) and no older than
 		<bIsNotUs>1</bIsNotUs>
 	</Entry>
 	<Entry>
+		<zType>SUBJECT_PLAYER_MIN_FRIENDLY</zType>
+		<zName>Min Friendly</zName>
+		<Class>SUBJECTCLASS_PLAYER</Class>
+		<RelationUs>SUBJECTRELATION_PLAYER_MIN_FRIENDLY</RelationUs>
+		<bIsNotUs>1</bIsNotUs>
+	</Entry>
+	<Entry>
 		<zType>SUBJECT_PLAYER_ANGRY_PLEASED</zType>
 		<zName>Angry to Pleased</zName>
 		<Class>SUBJECTCLASS_PLAYER</Class>
@@ -771,12 +787,6 @@ They must be an adult (at least 18) and no older than
 		<bIsNotUs>1</bIsNotUs>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_PLAYER_GAVE_FAVOR</zType>
-		<Class>SUBJECTCLASS_PLAYER</Class>
-		<MemoryPlayerPrereq>MEMORYPLAYER_GAVE_FAVOR</MemoryPlayerPrereq>
-		<bIsNotUs>1</bIsNotUs>
-	</Entry>
-	<Entry>
 		<zType>SUBJECT_PLAYER_HOLD_HOSTAGE</zType>
 		<Class>SUBJECTCLASS_PLAYER</Class>
 		<MemoryPlayerPrereq>MEMORYPLAYER_HOLD_HOSTAGE</MemoryPlayerPrereq>
@@ -875,14 +885,14 @@ They must be an adult (at least 18) and no older than
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_PLAYER_NOT_MIN_CONFLICT_TURNS</zType>
-		<zName>Shorter than int(MIN_TREATY_TURNS) years since last link(DIPLOMACY_WAR)</zName>
+		<zName>Shorter than int(MIN_TREATY_TURNS) Turns since last link(DIPLOMACY_WAR)</zName>
 		<Class>SUBJECTCLASS_PLAYER</Class>
 		<RelationUs>SUBJECTRELATION_MIN_CONFLICT_TURNS</RelationUs>
 		<bIsNotUs>1</bIsNotUs>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_PLAYER_NOT_MIN_CONFLICT_TURNS_HUMAN</zType>
-		<zName>Shorter than int(MIN_TREATY_TURNS) years since last link(DIPLOMACY_WAR)</zName>
+		<zName>Shorter than int(MIN_TREATY_TURNS) Turns since last link(DIPLOMACY_WAR)</zName>
 		<Class>SUBJECTCLASS_PLAYER</Class>
 		<RelationUs>SUBJECTRELATION_MIN_CONFLICT_TURNS</RelationUs>
 		<bIsNotUs>1</bIsNotUs>
@@ -1175,9 +1185,9 @@ They must be an adult (at least 18) and no older than
 		<LawPrereq>LAW_ELITES</LawPrereq>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_PLAYER_ISOLATIONISM</zType>
+		<zType>SUBJECT_PLAYER_AUTARKY</zType>
 		<Class>SUBJECTCLASS_PLAYER</Class>
-		<LawPrereq>LAW_ISOLATIONISM</LawPrereq>
+		<LawPrereq>LAW_AUTARKY</LawPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_PLAYER_TRADE_LEAGUE</zType>
@@ -2355,9 +2365,9 @@ They must be an adult (at least 18) and no older than
 		<Law>LAW_ELITES</Law>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_LAW_ISOLATIONISM</zType>
+		<zType>SUBJECT_LAW_AUTARKY</zType>
 		<Class>SUBJECTCLASS_LAW</Class>
-		<Law>LAW_ISOLATIONISM</Law>
+		<Law>LAW_AUTARKY</Law>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_LAW_TRADE_LEAGUE</zType>
@@ -2605,6 +2615,13 @@ They must be an adult (at least 18) and no older than
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_WAS_LEADER_DEAD_US</zType>
+		<Class>SUBJECTCLASS_CHARACTER</Class>
+		<bIsUs>1</bIsUs>
+		<bDead>1</bDead>
+		<bWasLeader>1</bWasLeader>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_WAS_LEADER_DEAD_THEM</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<bIsUs>1</bIsUs>
 		<bDead>1</bDead>
@@ -3092,9 +3109,14 @@ They must be an adult (at least 18) and no older than
 		<RelationLeader>SUBJECTRELATION_TERRIFIED_OF</RelationLeader>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_OBLIGED_TO_LEADER</zType>
+		<zType>SUBJECT_INTERCESSED_FOR_LEADER</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<RelationLeader>SUBJECTRELATION_OBLIGED_TO</RelationLeader>
+		<RelationLeader>SUBJECTRELATION_INTERCESSED_FOR</RelationLeader>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_NO_INTERCESSED_FOR_LEADER</zType>
+		<Class>SUBJECTCLASS_CHARACTER</Class>
+		<NoRelationLeader>SUBJECTRELATION_INTERCESSED_FOR</NoRelationLeader>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_INFLUENCED_BY_LEADER</zType>
@@ -3107,14 +3129,14 @@ They must be an adult (at least 18) and no older than
 		<NoRelationLeader>SUBJECTRELATION_INFLUENCED_BY</NoRelationLeader>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_INTERCESSED_FOR_LEADER</zType>
+		<zType>SUBJECT_HOLDS_FAVOR_FROM_LEADER</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<RelationLeader>SUBJECTRELATION_INTERCESSED_FOR</RelationLeader>
+		<RelationLeader>SUBJECTRELATION_HOLDS_FAVOR_FROM</RelationLeader>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_NO_INTERCESSED_FOR_LEADER</zType>
+		<zType>SUBJECT_OWES_FAVOR_TO_LEADER</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<NoRelationLeader>SUBJECTRELATION_INTERCESSED_FOR</NoRelationLeader>
+		<RelationLeader>SUBJECTRELATION_OWES_FAVOR_TO</RelationLeader>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_JEALOUS_ABOUT_LEADER</zType>
@@ -3984,11 +4006,6 @@ They must be an adult (at least 18) and no older than
 		<TraitPrereq>TRAIT_ENGINEER</TraitPrereq>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_CUNNING</zType>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<TraitPrereq>TRAIT_CUNNING</TraitPrereq>
-	</Entry>
-	<Entry>
 		<zType>SUBJECT_BOLD</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<TraitPrereq>TRAIT_BOLD</TraitPrereq>
@@ -4069,6 +4086,16 @@ They must be an adult (at least 18) and no older than
 		<TraitInvalid>TRAIT_RUTHLESS</TraitInvalid>
 	</Entry>
 	<Entry>
+		<zType>SUBJECT_PIOUS</zType>
+		<Class>SUBJECTCLASS_CHARACTER</Class>
+		<TraitPrereq>TRAIT_PIOUS</TraitPrereq>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_NOT_PIOUS</zType>
+		<Class>SUBJECTCLASS_CHARACTER</Class>
+		<TraitInvalid>TRAIT_PIOUS</TraitInvalid>
+	</Entry>
+	<Entry>
 		<zType>SUBJECT_LOYAL</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<TraitPrereq>TRAIT_LOYAL</TraitPrereq>
@@ -4079,14 +4106,9 @@ They must be an adult (at least 18) and no older than
 		<TraitInvalid>TRAIT_LOYAL</TraitInvalid>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_PIOUS</zType>
+		<zType>SUBJECT_CUNNING</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<TraitPrereq>TRAIT_PIOUS</TraitPrereq>
-	</Entry>
-	<Entry>
-		<zType>SUBJECT_NOT_PIOUS</zType>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<TraitInvalid>TRAIT_PIOUS</TraitInvalid>
+		<TraitPrereq>TRAIT_CUNNING</TraitPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_HUMBLE</zType>
@@ -4119,11 +4141,6 @@ They must be an adult (at least 18) and no older than
 		<TraitInvalid>TRAIT_GRACIOUS</TraitInvalid>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_SPOILED</zType>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<TraitPrereq>TRAIT_SPOILED</TraitPrereq>
-	</Entry>
-	<Entry>
 		<zType>SUBJECT_WITTY</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<TraitPrereq>TRAIT_WITTY</TraitPrereq>
@@ -4132,6 +4149,11 @@ They must be an adult (at least 18) and no older than
 		<zType>SUBJECT_NOT_WITTY</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<TraitInvalid>TRAIT_WITTY</TraitInvalid>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_SPOILED</zType>
+		<Class>SUBJECTCLASS_CHARACTER</Class>
+		<TraitPrereq>TRAIT_SPOILED</TraitPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_DRUNK</zType>
@@ -4190,48 +4212,44 @@ They must be an adult (at least 18) and no older than
 		</aeTraitAny>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_CHARACTER_GOOD</zType>
+		<zType>SUBJECT_CHARACTER_HONORABLE</zType>
 		<zName>Good</zName>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<aeTraitAny>
 			<zValue>TRAIT_RIGHTEOUS</zValue>
-			<zValue>TRAIT_HUMBLE</zValue>
 			<zValue>TRAIT_GRACIOUS</zValue>
 			<zValue>TRAIT_LOYAL</zValue>
 			<zValue>TRAIT_COMPASSIONATE</zValue>
 		</aeTraitAny>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_CHARACTER_NOT_GOOD</zType>
+		<zType>SUBJECT_CHARACTER_NOT_HONORABLE</zType>
 		<zName>Not Good</zName>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<aeTraitNone>
 			<zValue>TRAIT_RIGHTEOUS</zValue>
-			<zValue>TRAIT_HUMBLE</zValue>
 			<zValue>TRAIT_GRACIOUS</zValue>
 			<zValue>TRAIT_LOYAL</zValue>
 			<zValue>TRAIT_COMPASSIONATE</zValue>
 		</aeTraitNone>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_CHARACTER_BAD</zType>
-		<zName>Bad</zName>
+		<zType>SUBJECT_CHARACTER_VILLAINOUS</zType>
+		<zName>Villainous</zName>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<aeTraitAny>
 			<zValue>TRAIT_CORRUPT</zValue>
-			<zValue>TRAIT_PROUD</zValue>
 			<zValue>TRAIT_GREEDY</zValue>
 			<zValue>TRAIT_BLOODTHIRSTY</zValue>
 			<zValue>TRAIT_RUTHLESS</zValue>
 		</aeTraitAny>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_CHARACTER_NOT_BAD</zType>
-		<zName>Not Bad</zName>
+		<zType>SUBJECT_CHARACTER_NOT_VILLAINOUS</zType>
+		<zName>Not Villainous</zName>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<aeTraitNone>
 			<zValue>TRAIT_CORRUPT</zValue>
-			<zValue>TRAIT_PROUD</zValue>
 			<zValue>TRAIT_GREEDY</zValue>
 			<zValue>TRAIT_BLOODTHIRSTY</zValue>
 			<zValue>TRAIT_RUTHLESS</zValue>
@@ -4526,8 +4544,6 @@ They must be an adult (at least 18) and no older than
 			<zValue>TRAIT_COWARDLY</zValue>
 			<zValue>TRAIT_CUNNING</zValue>
 			<zValue>TRAIT_RUTHLESS</zValue>
-			<zValue>TRAIT_CORRUPT</zValue>
-			<zValue>TRAIT_SLIGHTED</zValue>
 		</aeTraitAny>
 	</Entry>
 	<Entry>
@@ -4539,8 +4555,6 @@ They must be an adult (at least 18) and no older than
 			<zValue>TRAIT_COWARDLY</zValue>
 			<zValue>TRAIT_CUNNING</zValue>
 			<zValue>TRAIT_RUTHLESS</zValue>
-			<zValue>TRAIT_CORRUPT</zValue>
-			<zValue>TRAIT_SLIGHTED</zValue>
 		</aeTraitNone>
 	</Entry>
 	<Entry>
@@ -4710,44 +4724,14 @@ They must be an adult (at least 18) and no older than
 		</aeTraitNone>
 	</Entry>
 	<Entry>
-		<zType>SUBJECT_CHARACTER_AMBASSADOR_CANDIDATE</zType>
-		<zName>Ambassador Candidate</zName>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<aeTraitAny>
-			<zValue>TRAIT_COMMANDER_ARCHETYPE</zValue>
-			<zValue>TRAIT_DIPLOMAT_ARCHETYPE</zValue>
-			<zValue>TRAIT_ORATOR_ARCHETYPE</zValue>
-		</aeTraitAny>
-	</Entry>
-	<Entry>
-		<zType>SUBJECT_CHARACTER_CHANCELLOR_CANDIDATE</zType>
-		<zName>Chancellor Candidate</zName>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<aeTraitAny>
-			<zValue>TRAIT_ZEALOT_ARCHETYPE</zValue>
-			<zValue>TRAIT_JUDGE_ARCHETYPE</zValue>
-			<zValue>TRAIT_BUILDER_ARCHETYPE</zValue>
-		</aeTraitAny>
-	</Entry>
-	<Entry>
-		<zType>SUBJECT_CHARACTER_SPYMASTER_CANDIDATE</zType>
-		<zName>Spymaster Candidate</zName>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<aeTraitAny>
-			<zValue>TRAIT_TACTICIAN_ARCHETYPE</zValue>
-			<zValue>TRAIT_SCHEMER_ARCHETYPE</zValue>
-			<zValue>TRAIT_SCHOLAR_ARCHETYPE</zValue>
-		</aeTraitAny>
-	</Entry>
-	<Entry>
-		<zType>SUBJECT_CHARACTER_PROVIDED_FAVOR</zType>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<MemoryCharacterPrereq>MEMORYCHARACTER_PROVIDED_FAVOR</MemoryCharacterPrereq>
-	</Entry>
-	<Entry>
 		<zType>SUBJECT_EXPLORING</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<TraitPrereq>TRAIT_EXPLORING</TraitPrereq>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_EXOTIC</zType>
+		<Class>SUBJECTCLASS_CHARACTER</Class>
+		<TraitPrereq>TRAIT_EXOTIC</TraitPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_BLESSED</zType>
@@ -4933,11 +4917,6 @@ They must be an adult (at least 18) and no older than
 		<zType>SUBJECT_NOT_ABDICATED</zType>
 		<Class>SUBJECTCLASS_CHARACTER</Class>
 		<TraitInvalid>TRAIT_ABDICATED</TraitInvalid>
-	</Entry>
-	<Entry>
-		<zType>SUBJECT_EXOTIC</zType>
-		<Class>SUBJECTCLASS_CHARACTER</Class>
-		<TraitPrereq>TRAIT_EXOTIC</TraitPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_EXCLUDED</zType>
@@ -5520,6 +5499,11 @@ They must be an adult (at least 18) and no older than
 		<zType>SUBJECT_UNIT_RANGED</zType>
 		<Class>SUBJECTCLASS_UNIT</Class>
 		<UnitTrait>UNITTRAIT_RANGED</UnitTrait>
+	</Entry>
+	<Entry>
+		<zType>SUBJECT_UNIT_MIN_LEVEL_2</zType>
+		<Class>SUBJECTCLASS_UNIT</Class>
+		<iMinLevel>2</iMinLevel>
 	</Entry>
 	<Entry>
 		<zType>SUBJECT_UNIT_MERCENARY</zType>

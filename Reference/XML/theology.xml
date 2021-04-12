@@ -24,7 +24,7 @@
 		<EffectCity>EFFECTCITY_THEOLOGY_MYTHOLOGY</EffectCity>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_EPICS</zIndex>
+				<zIndex>LAW_POLYTHEISM</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 		</aiLawOpinion>
@@ -40,8 +40,8 @@
 		<EffectCity>EFFECTCITY_THEOLOGY_VENERATION</EffectCity>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_SENIORITY</zIndex>
-				<iValue>20</iValue>
+				<zIndex>LAW_ICONOGRAPHY</zIndex>
+				<iValue>40</iValue>
 			</Pair>
 		</aiLawOpinion>
 	</Entry>
@@ -56,7 +56,7 @@
 		<EffectCity>EFFECTCITY_THEOLOGY_LEGALISM</EffectCity>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_CONSTITUTION</zIndex>
+				<zIndex>LAW_CENTRALIZATION</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 		</aiLawOpinion>
@@ -71,8 +71,8 @@
 		<Achievement>ACHIEVEMENT_THEOLOGY_REVELATION</Achievement>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_ICONOGRAPHY</zIndex>
-				<iValue>20</iValue>
+				<zIndex>LAW_ORTHODOXY</zIndex>
+				<iValue>30</iValue>
 			</Pair>
 		</aiLawOpinion>
 	</Entry>
@@ -87,8 +87,8 @@
 		<EffectCity>EFFECTCITY_THEOLOGY_DUALISM</EffectCity>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_DIVINE_RULE</zIndex>
-				<iValue>20</iValue>
+				<zIndex>LAW_TOLERANCE</zIndex>
+				<iValue>30</iValue>
 			</Pair>
 		</aiLawOpinion>
 	</Entry>
@@ -103,7 +103,7 @@
 		<EffectCity>EFFECTCITY_THEOLOGY_GNOSTICISM</EffectCity>
 		<aiLawOpinion>
 			<Pair>
-				<zIndex>LAW_ELITES</zIndex>
+				<zIndex>LAW_MONOTHEISM</zIndex>
 				<iValue>20</iValue>
 			</Pair>
 		</aiLawOpinion>
@@ -120,7 +120,7 @@
 		<aiLawOpinion>
 			<Pair>
 				<zIndex>LAW_PILGRIMAGE</zIndex>
-				<iValue>20</iValue>
+				<iValue>40</iValue>
 			</Pair>
 		</aiLawOpinion>
 	</Entry>
@@ -136,7 +136,7 @@
 		<aiLawOpinion>
 			<Pair>
 				<zIndex>LAW_PHILOSOPHY</zIndex>
-				<iValue>20</iValue>
+				<iValue>40</iValue>
 			</Pair>
 		</aiLawOpinion>
 	</Entry>

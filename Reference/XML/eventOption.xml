@@ -17,7 +17,8 @@ over this option. Usually blank."/>
 		<LeaderSubject comment="Requires the Leader to be valid for this Subject"/>
 		<LeaderSubjectAny comment="Requires the Leader to be valid for one of these Subjects"/>
 		<bLawScreen comment="If set to 1 (true), selecting this option will open the Laws screen."/>
-		<bTimelineScreen comment="If set to 1 (true), selecting this option will open the Timeline sceen."/>
+		<bTimelineScreen comment="If set to 1 (true), selecting this option will open the Timeline screen."/>
+		<bVictoryScreen comment="If set to 1 (true), selecting this option will open the Victory screen."/>
 		<bMainMenu comment="If set to 1 (true), selecting this option will exit the current game and return to the main menu."/>
 		<bHidePrereqs comment="If set to 1 (true), the option text will not display certain prereqs that made this option selectable."/>
 		<bHideInvalid comment="If set to 1 (true), the option will be hidden if invalid."/>
@@ -498,7 +499,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_PLAYER_WAR_AT_TRUCE_INCIDENT_WAR</zType>
 		<Text>TEXT_EVENTOPTION_PLAYER_WAR_AT_TRUCE_INCIDENT_WAR</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_PLAYER_WAR_AT_TRUCE_INCIDENT_WAR</zValue>
+			<zValue>BONUS_DECLARE_WAR_PLAYER</zValue>
 			<zValue>BONUS_UNITCLASS_HEAVY_INFANTRY</zValue>
 		</aeBonuses>
 	</Entry>
@@ -746,8 +747,8 @@ one of the listed Event options."/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_LAW_ISOLATIONISM</zType>
-		<Text>TEXT_EVENTOPTION_LAW_ISOLATIONISM</Text>
+		<zType>EVENTOPTION_LAW_AUTARKY</zType>
+		<Text>TEXT_EVENTOPTION_LAW_AUTARKY</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_START_LAW</zValue>
@@ -2112,9 +2113,182 @@ one of the listed Event options."/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_0</zType>
+		<aiEventOptionProb>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_TILES</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_IMPROVEMENTS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+		</aiEventOptionProb>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_1</zType>
+		<aiEventOptionProb>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_LEGAL_CODE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_LAWS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_ENGINEERING</zIndex>
+				<iValue>500</iValue>
+			</Pair>
+		</aiEventOptionProb>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_2</zType>
+		<aiEventOptionProb>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_STONECUTTERS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_STONE_800</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_50_GOODS_TURN</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+		</aiEventOptionProb>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_TILES</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_TILES</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_TILES</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_IMPROVEMENTS</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_IMPROVEMENTS</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_20_URBAN_IMPROVEMENTS</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_LEGAL_CODE</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_LEGAL_CODE</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_LEGAL_CODE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_LAWS</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_LAWS</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_LAWS</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_ENGINEERING</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_ENGINEERING</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_ENGINEERING</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_STONECUTTERS</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_STONECUTTERS</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_FOUR_STONECUTTERS</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_STONE_800</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_STONE_800</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_STONE_800</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_50_GOODS_TURN</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_50_GOODS_TURN</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_50_GOODS_TURN</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_NO</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_NO</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_OPTION_NO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
 		<zType>EVENTOPTION_LEADER_LOVED_SPREAD_VISIBLE_MISMATCH</zType>
 		<Text>TEXT_EVENTOPTION_LEADER_LOVED_SPREAD_VISIBLE_MISMATCH</Text>
 		<HelpText>TEXT_EVENTOPTION_LEADER_LOVED_SPREAD_VISIBLE_MISMATCH_HELP</HelpText>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_THE_FINAL_FAVOR_PLAYER_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_THE_FINAL_FAVOR_PLAYER_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_GAIN_HUGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_THE_FINAL_FAVOR_PLAYER_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_THE_FINAL_FAVOR_PLAYER_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_THE_FINAL_FAVOR_PLAYER_HEIR_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_THE_FINAL_FAVOR_PLAYER_HEIR_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_GAIN_HUGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_THE_FINAL_FAVOR_PLAYER_HEIR_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_THE_FINAL_FAVOR_PLAYER_HEIR_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CLEARING_RELIGION_DEBT_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_CLEARING_RELIGION_DEBT_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_GAIN_HUGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CLEARING_RELIGION_DEBT_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_CLEARING_RELIGION_DEBT_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_CIVICS_GAIN_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CLEARING_THEIR_DEBT_NO</zType>
+		<Text>TEXT_EVENTOPTION_CLEARING_THEIR_DEBT_NO</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_CLEARING_THEIR_DEBT_OPTION_3_CHARACTER_0</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry beginGroup="Exploration">
 		<zType>EVENTOPTION_RUINS_SURVIVORS_INVITE</zType>
@@ -2983,7 +3157,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_RIDDLE_OF_THE_SPHINX_3_ANSWER</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_GIVE_TRAIT_INTELLIGENT</zValue>
+			<zValue>BONUS_GAIN_WISDOM_1</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -2999,7 +3173,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_RIDDLE_OF_THE_SPHINX_4_ANSWER</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_GIVE_TRAIT_INTELLIGENT</zValue>
+			<zValue>BONUS_GAIN_WISDOM_1</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -3007,7 +3181,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_RIDDLE_OF_THE_SPHINX_4_JOKE</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_GIVE_TRAIT_TOUGH</zValue>
+			<zValue>BONUS_GAIN_COURAGE_1</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -3544,7 +3718,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -4514,7 +4688,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_NEIGHBORS_HUMBLE_WELCOME_PERSIA_OPTION_1</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_NEIGHBORS_HUMBLE_WELCOME_PERSIA_OPTION_2</zType>
@@ -4839,7 +5013,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_NEIGHBORS_FRIENDLY_ROME_ACCEPT_OPTION_1</zType>
@@ -6106,7 +6280,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_CHARACTER_HONORARY_COUNSEL_OPTION_2_CHARACTER</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CHARACTER_PLOTTING_HEIR_OPTION_0</zType>
@@ -6131,7 +6305,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_CHARACTER_PLOTTING_HEIR_OPTION_2_CHARACTER_0</zValue>
 			<zValue>BONUS_LEADER_SUSPICIOUS_OF</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_SEVEN_VIRTUES</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_TERRIFYING</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CHARACTER_DEADLY_INHERITANCE_OPTION_0</zType>
@@ -6139,7 +6313,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_CHARACTER_DEADLY_INHERITANCE_OPTION_0_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
 		</aeBonuses>
 	</Entry>
@@ -6220,7 +6394,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_CHARACTER_IMMUNITY_OPTION_0_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -6289,7 +6463,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -8547,128 +8721,144 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_FOOD</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_FOOD</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_FOOD_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_WOOD</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_WOOD</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_WOOD_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_IRON</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_IRON</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_IRON_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_STONE</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_STONE</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_STONE_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_ORDERS</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_ORDERS</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_ORDERS_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_CIVICS</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_CIVICS</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_CIVICS_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_TRAINING</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_TRAINING</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_TRAINING_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_SCIENCE</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_SCIENCE</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_SCIENCE_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_MONEY</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_MONEY</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_MONEY_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_HEAVY_INFANTRY</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_HEAVY_INFANTRY</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_UNITCLASS_HEAVY_INFANTRY</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_POLEARM_INFANTRY</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_POLEARM_INFANTRY</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_UNITCLASS_POLEARM_INFANTRY</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_RANGED_INFANTRY</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_RANGED_INFANTRY</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_UNITCLASS_RANGED_INFANTRY</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_MELEE_CAVALRY</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_MELEE_CAVALRY</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_UNITCLASS_MELEE_CAVALRY</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_SIEGE</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_SIEGE</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_UNITCLASS_SIEGE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_SHIP</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_SHIP</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_UNITCLASS_SHIP</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RETURNING_A_FAVOR_POPULATION</zType>
 		<Text>TEXT_EVENTOPTION_RETURNING_A_FAVOR_POPULATION</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_RETURNING_A_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_ADD_CITIZEN_2</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -8677,6 +8867,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -8990,6 +9181,147 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_PLAYER_WAR_OFFER_ENEMY_TRAIT_COMMANDER_TRIBUTE_FURIOUS</Text>
 		<aeBonuses>
 			<zValue>BONUS_TRIBUTE_GIVE_MONEY_GIGANTIC</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_REFUSE_WAR</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_REFUSE_WAR</Text>
+		<zIcon>icon(DIPLOMACY_WAR)</zIcon>
+		<aeBonuses>
+			<zValue>BONUS_PLAYER_WAR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_REFUSE_LEGITIMACY</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_REFUSE_LEGITIMACY</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_DEMAND_TRIBUTE_REFUSE_LEGITIMACY</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_GIVE</zType>
+		<aiEventOptionProb>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_CIVICS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_TRAINING</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_SCIENCE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_MONEY</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_ORDERS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_FOOD</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_IRON</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_STONE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_DEMAND_TRIBUTE_WOOD</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+		</aiEventOptionProb>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_CIVICS</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_CIVICS</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_CIVICS_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_TRAINING</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_TRAINING</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_TRAINING_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_SCIENCE</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_SCIENCE</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_SCIENCE_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_MONEY</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_MONEY</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_MONEY_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_ORDERS</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_ORDERS</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_ORDERS_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_FOOD</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_FOOD</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_FOOD_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_IRON</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_IRON</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_IRON_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_STONE</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_STONE</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_STONE_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_WOOD</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_WOOD</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_WOOD_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -11142,7 +11474,17 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_PLAYER_WAR_DECLARE_GAVE_FAVOR</zType>
 		<Text>TEXT_EVENTOPTION_PLAYER_WAR_DECLARE_GAVE_FAVOR</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_PLAYER_WAR_DECLARE_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_PLAYER_WAR_DECLARE_GAVE_FAVOR_WAR</zType>
+		<Text>TEXT_EVENTOPTION_PLAYER_WAR_DECLARE_WAR</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_PLAYER_WAR_LEGITIMACY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -11505,11 +11847,11 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_WAR_OFFER_ANGRY_END_ALLIANCE_YES</zType>
 		<Text>TEXT_EVENTOPTION_WAR_OFFER_ANGRY_END_ALLIANCE_YES</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_PLAYER_ALLIANCE_END</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_NOT_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_NOT_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_WAR_OFFER_ANGRY_END_ALLIANCE_NO</zType>
@@ -11721,7 +12063,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -12311,7 +12653,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_SUSPECTED_SPY_OPTION_2_FAMILY</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_FACE_IN_GOLD_OPTION_0</zType>
@@ -12574,27 +12916,27 @@ one of the listed Event options."/>
 			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_HUMBLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_PLAYERS_POSITIVE_OPINION_2_INSPIRING</zType>
 		<Text>TEXT_EVENTOPTION_PLAYERS_POSITIVE_OPINION_2_INSPIRING</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_SEVEN_VIRTUES</LeaderSubject>
+		<LeaderSubject>SUBJECT_INSPIRING</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_PLAYERS_POSITIVE_OPINION_3_PIOUS</zType>
 		<Text>TEXT_EVENTOPTION_PLAYERS_POSITIVE_OPINION_3_PIOUS</Text>
 		<aeBonuses>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
-			<zValue>BONUS_PLAYER_GAVE_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_PIOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_PLAYERS_POSITIVE_OPINION_NO</zType>
@@ -12759,7 +13101,7 @@ one of the listed Event options."/>
 		<EventLinkStart>EVENTLINK_TRIBAL_UNREST</EventLinkStart>
 		<Text>TEXT_EVENTOPTION_TRIBAL_UNREST_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_TRAINING_LOSS_TINY</zValue>
 		</aeBonuses>
@@ -12804,7 +13146,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_NEW_ALLIANCE_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_NEW_ALLIANCE_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_CIVICS_GAIN_SMALL</zValue>
 		</aeBonuses>
@@ -13097,6 +13439,63 @@ one of the listed Event options."/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_MERCY_AGREE</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_MERCY_AGREE</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_DEMAND_TRIBUTE_MERCY_AGREE_PLAYER</zValue>
+			<zValue>BONUS_EVENTOPTION_DEMAND_TRIBUTE_MERCY_AGREE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_COUNTER_OFFER</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_COUNTER_OFFER</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_DEMAND_TRIBUTE_COUNTER_OFFER</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_OFFERING_ACCEPT</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_OFFERING_ACCEPT</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_GAIN_SMALL</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_OFFERING_REJECT</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_OFFERING_REJECT</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_RECEIVE_FOOD_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_REVERSAL_GOLD</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_REVERSAL_GOLD</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRIBUTE_GIVE_MONEY_LARGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_DEMAND_TRIBUTE_REVERSAL_WAR</zType>
+		<Text>TEXT_EVENTOPTION_DEMAND_TRIBUTE_REVERSAL_WAR</Text>
+		<zIcon>icon(DIPLOMACY_WAR)</zIcon>
+		<aeBonuses>
+			<zValue>BONUS_PLAYER_WAR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
 		<zType>EVENTOPTION_DIPLO_OFFER_RELIGION_SPREAD_JUDGE_YES</zType>
 		<Text>TEXT_EVENTOPTION_DIPLO_OFFER_RELIGION_SPREAD_JUDGE_YES</Text>
 		<aeBonuses>
@@ -13361,7 +13760,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_CAPTURED_PRISONERS_EXECUTE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_NOT_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_NOT_HONORABLE</LeaderSubject>
 		<bHidePrereqs>1</bHidePrereqs>
 	</Entry>
 	<Entry>
@@ -14532,7 +14931,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
 			<zValue>BONUS_PLAYER_TRUCE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -14591,7 +14990,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTCITY_MONEY_BOOM</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_TRIBE_ELIMINATED_THE_EBBING_SPRING_OPTION_2_WOOD</zType>
@@ -14987,6 +15386,336 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_THE_TIDE_OF_BATTLE_OPTION_2_PLAYER_1</zValue>
 		</aeBonuses>
 	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TRAPPED_GENERAL_0</zType>
+		<Text>TEXT_EVENTOPTION_TRAPPED_GENERAL_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_ORDERS_LOSS_SMALL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TRAPPED_GENERAL_1</zType>
+		<Text>TEXT_EVENTOPTION_TRAPPED_GENERAL_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HONORED_ENEMY_0</zType>
+		<Text>TEXT_EVENTOPTION_HONORED_ENEMY_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_HONORED_ENEMY_MEM_POS</zValue>
+			<zValue>BONUS_EVENTOPTION_HONORED_ENEMY_LEG_NEG</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HONORED_ENEMY_1</zType>
+		<Text>TEXT_EVENTOPTION_HONORED_ENEMY_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_HONORED_ENEMY_MEM_NEG</zValue>
+			<zValue>BONUS_EVENTOPTION_HONORED_ENEMY_LEG_POS</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_GENERAL_DUEL_0</zType>
+		<Text>TEXT_EVENTOPTION_GENERAL_DUEL_0</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue/>
+			<zValue>BONUS_TRAINING_GAIN_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_GENERAL_DUEL_1</zType>
+		<Text>TEXT_EVENTOPTION_GENERAL_DUEL_1</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue/>
+			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_GENERAL_DUEL_2</zType>
+		<Text>TEXT_EVENTOPTION_GENERAL_DUEL_2</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue/>
+			<zValue>BONUS_EVENTOPTION_GENERAL_DUEL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HEROIC_STAND_0</zType>
+		<Text>TEXT_EVENTOPTION_HEROIC_STAND_0</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
+			<zValue/>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HEROIC_STAND_1</zType>
+		<Text>TEXT_EVENTOPTION_HEROIC_STAND_1</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue/>
+			<zValue>BONUS_EVENTOPTION_AMBITION_NEW_PLAYER_WAR_GOAL_15_KILLS</zValue>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HEROIC_STAND_2</zType>
+		<Text>TEXT_EVENTOPTION_HEROIC_STAND_2</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue>BONUS_DISCONTENT_GAIN_SMALL</zValue>
+			<zValue>BONUS_GAIN_COURAGE_2</zValue>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_OWN_SWORD_0</zType>
+		<Text>TEXT_EVENTOPTION_OWN_SWORD_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_OWN_SWORD_1</zType>
+		<Text>TEXT_EVENTOPTION_OWN_SWORD_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBUSHED_GENERAL_0</zType>
+		<Text>TEXT_EVENTOPTION_AMBUSHED_GENERAL_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CAPTURED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBUSHED_GENERAL_1</zType>
+		<Text>TEXT_EVENTOPTION_AMBUSHED_GENERAL_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CAPTURED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_VIGILANT</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AMBUSHED_GENERAL_2</zType>
+		<Text>TEXT_EVENTOPTION_AMBUSHED_GENERAL_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>EVENTOPTION_AMBUSHED_GENERAL_THREATEN</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_BLOODTHIRSTY</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_LOVER_LOST_0</zType>
+		<Text>TEXT_EVENTOPTION_LOVER_LOST_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_AMBITION_NEW_PLAYER_WAR_GOAL_10_KILLS_GENERAL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_LOVER_LOST_1</zType>
+		<Text>TEXT_EVENTOPTION_LOVER_LOST_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_MOURNING</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_LOVER_LOST_2</zType>
+		<Text>TEXT_EVENTOPTION_LOVER_LOST_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_REGAL</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CEASE_FIRE_TRAGEDY_0</zType>
+		<Text>TEXT_EVENTOPTION_CEASE_FIRE_TRAGEDY_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>EVENTOPTION_CEASE_FIRE_TRAGEDY_NEG</zValue>
+			<zValue>EVENTOPTION_CEASE_FIRE_TRAGEDY_POS</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CEASE_FIRE_TRAGEDY_1</zType>
+		<Text>TEXT_EVENTOPTION_CEASE_FIRE_TRAGEDY_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>EVENTOPTION_CEASE_FIRE_TRAGEDY_POS</zValue>
+			<zValue>EVENTOPTION_CEASE_FIRE_TRAGEDY_NEG</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CEASE_FIRE_TRAGEDY_2</zType>
+		<Text>TEXT_EVENTOPTION_CEASE_FIRE_TRAGEDY_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>EVENTOPTION_CEASE_FIRE_TRAGEDY_POS</zValue>
+			<zValue>EVENTOPTION_CEASE_FIRE_TRAGEDY_POS</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_REGAL</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_MUTINY_IN_THE_RANKS_0</zType>
+		<Text>TEXT_EVENTOPTION_MUTINY_IN_THE_RANKS_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>BONUS_TRAINING_LOSS_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_MUTINY_IN_THE_RANKS_1</zType>
+		<Text>TEXT_EVENTOPTION_MUTINY_IN_THE_RANKS_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_MUTINY_IN_THE_RANKS</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_MUTINY_IN_THE_RANKS_2</zType>
+		<Text>TEXT_EVENTOPTION_MUTINY_IN_THE_RANKS_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>BONUS_TRAINING_GAIN_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_SUDDEN_SAVIOUR_0</zType>
+		<Text>TEXT_EVENTOPTION_SUDDEN_SAVIOUR_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_ADD_GREAT_SOLDIER</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_SUDDEN_SAVIOUR_1</zType>
+		<Text>TEXT_EVENTOPTION_SUDDEN_SAVIOUR_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_WOUNDED_GENERAL_0</zType>
+		<Text>TEXT_EVENTOPTION_WOUNDED_GENERAL_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_WOUNDED_GENERAL_1</zType>
+		<Text>TEXT_EVENTOPTION_WOUNDED_GENERAL_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_SCARRED_AND_WOUNDED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_WOUNDED_GENERAL_2</zType>
+		<Text>TEXT_EVENTOPTION_WOUNDED_GENERAL_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_SCARRED_AND_WOUNDED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_RELIGIOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_WOUNDED_GENERAL_3</zType>
+		<Text>TEXT_EVENTOPTION_WOUNDED_GENERAL_3</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_SCARRED_AND_WOUNDED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HERBALIST</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLEE_THE_FIELD_0</zType>
+		<Text>TEXT_EVENTOPTION_FLEE_THE_FIELD_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_FLREE_THE_FIELD_FLEE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLEE_THE_FIELD_1</zType>
+		<Text>TEXT_EVENTOPTION_FLEE_THE_FIELD_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>BONUS_EVENTOPTION_THE_TIDE_OF_BATTLE_OPTION_2_PLAYER_1</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HIGH_COURAGE</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTO_THE_MIST_0</zType>
+		<Text>TEXT_EVENTOPTION_INTO_THE_MIST_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTO_THE_MIST_RELIGION</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTO_THE_MIST_1</zType>
+		<Text>TEXT_EVENTOPTION_INTO_THE_MIST_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTO_THE_MIST_PLAYER</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTO_THE_MIST_2</zType>
+		<Text>TEXT_EVENTOPTION_INTO_THE_MIST_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTO_THE_MIST_FAMILY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
 	<Entry beginGroup="Marriage">
 		<zType>EVENTOPTION_MARRIAGE_OFFER_YES</zType>
 		<Text>TEXT_EVENTOPTION_MARRIAGE_OFFER_YES</Text>
@@ -15331,6 +16060,90 @@ one of the listed Event options."/>
 			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 		</aeBonuses>
 	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_A_WHOLE_NEW_WORLD_0</zType>
+		<Text>TEXT_EVENTOPTION_A_WHOLE_NEW_WORLD_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_A_WHOLE_NEW_WORLD</zValue>
+			<zValue>BONUS_EVENTOPTION_A_WHOLE_NEW_WORLD</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_A_WHOLE_NEW_WORLD_1</zType>
+		<Text>TEXT_EVENTOPTION_A_WHOLE_NEW_WORLD_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>BONUS_ORDERS_LOSS_TINY</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_A_SHORT_MARRIAGE_0</zType>
+		<Text>TEXT_EVENTOPTION_A_SHORT_MARRIAGE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_THREE_WEEKS_0</zValue>
+			<zValue>BONUS_EVENTOPTION_THREE_WEEKS_1</zValue>
+			<zValue>BONUS_EVENTOPTION_THREE_WEEKS_2</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_A_SHORT_MARRIAGE_1</zType>
+		<Text>TEXT_EVENTOPTION_A_SHORT_MARRIAGE_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_THREE_WEEKS_3</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_A_SHORT_MARRIAGE_2</zType>
+		<Text>TEXT_EVENTOPTION_A_SHORT_MARRIAGE_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_THREE_WEEKS_4</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ELOPER_CAPTURED_0</zType>
+		<Text>TEXT_EVENTOPTION_ELOPER_CAPTURED_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_LOSS_LARGE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ELOPER_CAPTURED_2</zType>
+		<Text>TEXT_EVENTOPTION_ELOPER_CAPTURED_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CAPTURED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_CAPTURED</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ELOPER_CAPTURED_1</zType>
+		<Text>TEXT_EVENTOPTION_ELOPER_CAPTURED_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
+			<zValue>BONUS_GIVE_TRAIT_CAPTURED</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_SUDDEN_RETURN_WELCOME</zType>
+		<Text>TEXT_EVENTOPTION_SUDDEN_RETURN_WELCOME</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_SUDDEN_RETURN_WELCOME</zValue>
+		</aeBonuses>
+	</Entry>
 	<Entry beginGroup="Family">
 		<zType>EVENTOPTION_FAMILY_GIFT_YES</zType>
 		<Text>TEXT_EVENTOPTION_FAMILY_GIFT_YES</Text>
@@ -15384,7 +16197,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_DEVOTED_FAMILY_OPTION_0_RELIGION</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_DEVOTED_FAMILY_OPTION_0_FAMILY</zValue>
-			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
+			<zValue>BONUS_MONEY_LOSS_LARGE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -15820,7 +16633,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INCRIMINATING_MESSAGES_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_TERRIFIED_OF</zValue>
 			<zValue>BONUS_EVENTOPTION_INCRIMINATING_MESSAGES_OPTION_1_FAMILY</zValue>
 		</aeBonuses>
 	</Entry>
@@ -15918,7 +16731,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_NO_EVIDENCE_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_NO_EVIDENCE_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_CIVICS_LOSS_TINY</zValue>
@@ -17994,7 +18807,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_XP_CHARACTER_AVERAGE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_NOT_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_NOT_VILLAINOUS</LeaderSubject>
 		<bHidePrereqs>1</bHidePrereqs>
 	</Entry>
 	<Entry>
@@ -20695,7 +21508,7 @@ one of the listed Event options."/>
 		<EventLinkAdd>EVENTLINK_LOVE_BIRDS_RUMORS</EventLinkAdd>
 		<Text>TEXT_EVENTOPTION_LOVE_BIRDS_RUMORS_IGNORE</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<bFutureEvents>1</bFutureEvents>
@@ -21135,7 +21948,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_DISMISSAL_VASSALAGE</zType>
 		<Text>TEXT_EVENTOPTION_DISMISSAL_VASSALAGE</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_DISMISSAL_VASSALAGE_CHARACTER_1</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -21145,7 +21958,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_DISMISSAL_CENTRALIZATION</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_DISMISSAL_CENTRALIZATION_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -22243,15 +23056,34 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_SCHEMER_SUCCESSION_OPTION_0</Text>
 	</Entry>
 	<Entry>
+		<zType>EVENTOPTION_SCHEMER_SUCCESSION_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_SCHEMER_SUCCESSION_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_SCHEMER_SUCCESSION_OPTION_1_ASSASSINATE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
 		<zType>EVENTOPTION_SCHEMER_SUCCESSION_SPOUSE_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_SCHEMER_SUCCESSION_SPOUSE_OPTION_0</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_SCHEMER_SUCCESSION_SPOUSE_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_SCHEMER_SUCCESSION_SPOUSE_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_SCHEMER_SUCCESSION_SPOUSE_OPTION_1_ASSASSINATE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CHARACTER_BITE_THE_HAND_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_CHARACTER_BITE_THE_HAND_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
+			<zValue>BONUS_MONEY_LOSS_LARGE</zValue>
 			<zValue>BONUS_UNITCLASS_LEVY</zValue>
 		</aeBonuses>
 	</Entry>
@@ -22260,7 +23092,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_CHARACTER_BITE_THE_HAND_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_FOOD_LOSS_TINY</zValue>
+			<zValue>BONUS_FOOD_LOSS_AVERAGE</zValue>
 			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_COURTEOUS</LeaderSubject>
@@ -22270,7 +23102,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_CHARACTER_BITE_THE_HAND_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
-			<zValue>BONUS_ORDERS_GAIN_TINY</zValue>
+			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -22294,7 +23126,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_PAY_TO_PLAY_OPTION_2</zType>
 		<Text>TEXT_EVENTOPTION_PAY_TO_PLAY_OPTION_2</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_PAY_TO_PLAY_OPTION_2_CHARACTER_1</zValue>
 		</aeBonuses>
 	</Entry>
@@ -23393,7 +24225,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_A_CALL_FOR_HELP_OPTION_3</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_A_CALL_FOR_HELP_OPTION_3</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_RELATIONSHIP_A_CALL_FOR_HELP_OPTION_3_PLAYER</zValue>
 		</aeBonuses>
@@ -24425,7 +25257,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_STUDY_PHYSICAL_CONFRONTATION_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_STUDY_PHYSICAL_CONFRONTATION_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_MONEY_LOSS_TINY</zValue>
 		</aeBonuses>
 	</Entry>
@@ -24844,7 +25676,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TRAIT_DISTURBING_THE_PEACE_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue/>
 			<zValue/>
 			<zValue/>
@@ -25008,7 +25840,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TRAIT_PERSONAL_INFLUENCE_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_TRAIT_PERSONAL_INFLUENCE_OPTION_2_FAMILY</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_SCHEMER</LeaderSubject>
@@ -25321,7 +26153,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TRAIT_PUSHED_TOO_FAR_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_TRAIT_PUSHED_TOO_FAR_OPTION_0_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -26398,7 +27230,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_RELATIONSHIP_THE_ORPHAN_EATER_OPTION_0_CHARACTER_3</zValue>
 		</aeBonuses>
 	</Entry>
@@ -26571,7 +27403,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_PLEA_FOR_LENIENCY_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_PLEA_FOR_LENIENCY_OPTION_0_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -26642,7 +27474,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_SURPRISE_BIRTH_OPTION_2</zType>
 		<Text>TEXT_EVENTOPTION_SURPRISE_BIRTH_OPTION_2</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_SURPRISE_BIRTH_OPTION_2_CHARACTER_1</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_SURPRISE_BIRTH_OPTION_2_CHARACTER_2</zValue>
@@ -26702,7 +27534,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_ALLIES_OF_CONVENIENCE_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
 		</aeBonuses>
 	</Entry>
@@ -27248,7 +28080,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_DISCONTENT_GAIN_SMALL</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -27303,7 +28135,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_PIRACY_POWERS_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_PIRACY_POWERS_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_PIRACY_POWERS_OPTION_0_PLAYER</zValue>
 			<zValue>BONUS_EVENTOPTION_PIRACY_POWERS_OPTION_0_TRIBE_0</zValue>
 			<zValue>NONE</zValue>
@@ -27323,7 +28155,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_POWER_BROKER_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_POWER_BROKER_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_RELATIONSHIP_POWER_BROKER_OPTION_0_BARBARIAN_1</zValue>
 			<zValue>NONE</zValue>
@@ -27333,7 +28165,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_POWER_BROKER_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_POWER_BROKER_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 			<zValue>BONUS_TRIBE_ALLIANCE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -27401,7 +28233,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_GIVE_TRAIT_COMPASSIONATE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_GRACIOUS</LeaderSubject>
@@ -27410,7 +28242,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_ENAMORED_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_ENAMORED_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_RELATIONSHIP_ENAMORED_OPTION_0_CHARACTER_1</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -27475,7 +28307,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_CARAVAN_ATTACK_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_CARAVAN_ATTACK_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_DISCONTENT_GAIN_SMALL</zValue>
 			<zValue>NONE</zValue>
@@ -27657,7 +28489,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_FALSE_LOYALTIES_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_FALSE_LOYALTIES_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -27848,7 +28680,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_THE_LONG_NIGHT_OPTION_2</zType>
 		<Text>TEXT_EVENTOPTION_THE_LONG_NIGHT_OPTION_2</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_HIGH_WISDOM</LeaderSubject>
@@ -27945,7 +28777,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_VIOLENT_ALTERCATION_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_GAIN_CHARISMA_1</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_COURTEOUS</LeaderSubject>
@@ -28098,7 +28930,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_BLEEDING_FOR_NATION_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_BLEEDING_FOR_NATION_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
 			<zValue>NONE</zValue>
@@ -28150,7 +28982,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_COUNCIL_SWAP_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_COUNCIL_SWAP_OPTION_2_CHARACTER_0</zValue>
-			<zValue>BONUS_MISSIONRESULT_FAMILY_GIFT_SUCCESS</zValue>
+			<zValue>BONUS_EVENTOPTION_COUNCIL_SWAP_OPTION_2_FAMILY_0</zValue>
 			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -28563,7 +29395,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_TRAIT_DEFACED_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_TRAIT_DEFACED_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_GIVE_TRAIT_COWARDLY</zValue>
 		</aeBonuses>
 	</Entry>
@@ -28770,7 +29602,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_A_MATTER_OF_INCEST_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_UNJUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -28780,7 +29612,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_A_MATTER_OF_INCEST_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zValue>
+			<zValue>BONUS_KILL_CHARACTER_EXPOSED</zValue>
 			<zValue>BONUS_KILL_CHARACTER</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -28804,36 +29636,36 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_JUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_HIGH_WISDOM</LeaderSubject>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_PLOTTING_COURTIERS_OPTION_0</zType>
-		<Text>TEXT_EVENTOPTION_PLOTTING_COURTIERS_OPTION_0</Text>
+		<zType>EVENTOPTION_PLOTTING_NOBLES_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_PLOTTING_NOBLES_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_KILL_CHARACTER</zValue>
-			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_SEVEN_SINS</LeaderSubject>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_PLOTTING_COURTIERS_OPTION_1</zType>
-		<Text>TEXT_EVENTOPTION_PLOTTING_COURTIERS_OPTION_1</Text>
+		<zType>EVENTOPTION_PLOTTING_NOBLES_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_PLOTTING_NOBLES_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_UNJUST</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_UNJUST</zValue>
+			<zValue>BONUS_EVENTOPTION_PLOTTING_NOBLES_OPTION_1</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_PLOTTING_COURTIERS_OPTION_2</zType>
-		<Text>TEXT_EVENTOPTION_PLOTTING_COURTIERS_OPTION_2</Text>
+		<zType>EVENTOPTION_PLOTTING_NOBLES_OPTION_2</zType>
+		<Text>TEXT_EVENTOPTION_PLOTTING_NOBLES_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_SUSPICIOUS_OF</zValue>
-			<zValue>BONUS_LEADER_SUSPICIOUS_OF</zValue>
+			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
+			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_SEVEN_VIRTUES</LeaderSubject>
 	</Entry>
@@ -28888,7 +29720,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_DUNGEONS_AND_INSANITY_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_UNJUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 		</aeBonuses>
 	</Entry>
@@ -28897,7 +29729,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_DUNGEONS_AND_INSANITY_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_BLOODTHIRSTY</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zValue>
+			<zValue>BONUS_KILL_CHARACTER_EXPOSED</zValue>
 			<zValue>BONUS_KILL_CHARACTER</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_MARTIAL</LeaderSubject>
@@ -28917,8 +29749,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_DUNGEONS_AND_INSANITY_OPTION_3</Text>
 		<aeBonuses>
 			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_EXTRAVAGANT</LeaderSubject>
 	</Entry>
@@ -28927,7 +29759,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_SPITE_AMONG_SIBLINGS_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zValue>
+			<zValue>BONUS_KILL_CHARACTER_EXPOSED</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -29712,7 +30544,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_JUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -29721,7 +30553,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL</zValue>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_BLOODTHIRSTY</LeaderSubject>
 	</Entry>
@@ -29757,7 +30589,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_COUNCIL_AMBASSADOR_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
-			<zValue>BONUS_MISSIONRESULT_AMBASSADOR</zValue>
+			<zValue>BONUS_MAKE_AMBASSADOR</zValue>
 			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 		</aeBonuses>
 	</Entry>
@@ -29775,8 +30607,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_COUNCIL_AMBASSADOR_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_DEALMAKER</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_CONSPIRATOR</LeaderSubject>
 	</Entry>
@@ -29785,7 +30617,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_COUNCIL_SPYMASTER_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
-			<zValue>BONUS_MISSIONRESULT_SPYMASTER</zValue>
+			<zValue>BONUS_MAKE_SPYMASTER</zValue>
 			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 		</aeBonuses>
 	</Entry>
@@ -29803,8 +30635,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_COUNCIL_SPYMASTER_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_DEALMAKER</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_CONSPIRATOR</LeaderSubject>
 	</Entry>
@@ -29813,7 +30645,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_COUNCIL_CHANCELLOR_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
-			<zValue>BONUS_MISSIONRESULT_CHANCELLOR</zValue>
+			<zValue>BONUS_MAKE_CHANCELLOR</zValue>
 			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 		</aeBonuses>
 	</Entry>
@@ -29831,8 +30663,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_COUNCIL_CHANCELLOR_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_DEALMAKER</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_CONSPIRATOR</LeaderSubject>
 	</Entry>
@@ -29872,7 +30704,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_REJECTION_OF_INFLUENCE_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zValue>
+			<zValue>BONUS_KILL_CHARACTER_EXPOSED</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_HIGH_COURAGE</LeaderSubject>
 	</Entry>
@@ -29889,7 +30721,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_REJECTION_OF_INFLUENCE_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_CUNNING</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_PLAYER_DIPLOMAT</LeaderSubject>
 	</Entry>
@@ -29899,7 +30731,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_LEADER_LOVER_OF</zValue>
 			<zValue>BONUS_EVENTOPTION_MARRIAGE_POLY_YES</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -29955,7 +30787,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_MARRIAGE_POLY_YES</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -30132,7 +30964,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_KILL_CHARACTER</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zValue>
+			<zValue>BONUS_KILL_CHARACTER_EXPOSED</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_INSANE</LeaderSubject>
@@ -30143,7 +30975,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_JUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -30164,7 +30996,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_JUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -30187,7 +31019,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_FAMILY_GIFT_SUCCESS</zValue>
+			<zValue>BONUS_EVENTOPTION_LEGITIMIZE_THREE_FAMILIES_CONCERN</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -30199,7 +31031,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_FOOD_LOSS_SMALL</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_FAMILY_GIFT_SUCCESS</zValue>
+			<zValue>BONUS_EVENTOPTION_LEGITIMIZE_THREE_FAMILIES_CONCERN</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -30211,14 +31043,14 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_MISSIONRESULT_FAMILY_GIFT_SUCCESS</zValue>
+			<zValue>BONUS_EVENTOPTION_LEGITIMIZE_THREE_FAMILIES_CONCERN</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CLASSIC_TRAGEDY_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_CLASSIC_TRAGEDY_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL_EXPOSED</zValue>
+			<zValue>BONUS_KILL_CHARACTER_EXPOSED</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -31105,7 +31937,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_INFLUENCE_OF_TERROR_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_REGAL</LeaderSubject>
 	</Entry>
@@ -31123,14 +31955,14 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_BREAKING_THEIR_FEAR_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_BREAKING_THEIR_FEAR_OPTION_2</zType>
 		<Text>TEXT_EVENTOPTION_BREAKING_THEIR_FEAR_OPTION_2</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_HIGH_CHARISMA</LeaderSubject>
@@ -31325,7 +32157,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_MISSING_ADVENTURE_PREGNANT</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_ROMANTIC</zValue>
-			<zValue>BONUS_MISSIONRESULT_MARRY_COURTIER</zValue>
+			<zValue>BONUS_EVENTOPTION_MISSING_ADVENTURE_PREGNANT</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -32056,7 +32888,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_RETURNING_THE_FAVOR_DONATION_ACCEPT</Text>
 		<HelpText>TEXT_EVENTSTORY_RETURNING_THE_FAVOR_TOOLTIP</HelpText>
 		<aeBonuses>
-			<zValue>BONUS_CHARACTER_FORGET_FAVOR</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
 		</aeBonuses>
@@ -32069,7 +32901,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_CONVERT_S0</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_CHARACTER_PROVIDED_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -32126,7 +32958,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_GENEROUS_OFFER_ACCEPT</Text>
 		<HelpText>TEXT_EVENTOPTION_GENEROUS_OFFER_ACCEPT_TOOLTIP</HelpText>
 		<aeBonuses>
-			<zValue>BONUS_CHARACTER_PROVIDED_FAVOR</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
 			<zValue>BONUS_STONE_GAIN_AVERAGE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -32563,7 +33395,7 @@ one of the listed Event options."/>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>EVENTOPTION_AMBITION_WINTER_SOLSTICE_ISOLATIONISM</zIndex>
+				<zIndex>EVENTOPTION_AMBITION_WINTER_SOLSTICE_AUTARKY</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
@@ -32665,10 +33497,10 @@ one of the listed Event options."/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_AMBITION_WINTER_SOLSTICE_ISOLATIONISM</zType>
-		<Text>TEXT_EVENTOPTION_AMBITION_WINTER_SOLSTICE_ISOLATIONISM</Text>
+		<zType>EVENTOPTION_AMBITION_WINTER_SOLSTICE_AUTARKY</zType>
+		<Text>TEXT_EVENTOPTION_AMBITION_WINTER_SOLSTICE_AUTARKY</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_WINTER_SOLSTICE_AMBITION_ISOLATIONISM</zValue>
+			<zValue>BONUS_EVENTOPTION_WINTER_SOLSTICE_AMBITION_AUTARKY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -32690,6 +33522,421 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_AMBITION_WINTER_SOLSTICE_MONETARY_REFORM</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_WINTER_SOLSTICE_AMBITION_MONETARY_REFORM</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SACRIFICE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SACRIFICE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_PIOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SACRIFICE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SACRIFICE_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_CIVICS_LOSS_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SACRIFICE_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SACRIFICE_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SACRIFICE_3</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SACRIFICE_3</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_RELIGION_REJECTED_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_RELIGION_REJECTED_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubjectAny>
+			<zValue>SUBJECT_DIPLOMAT</zValue>
+			<zValue>SUBJECT_HIGH_CHARISMA</zValue>
+			<zValue>SUBJECT_JUDGE</zValue>
+		</LeaderSubjectAny>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_RELIGION_REJECTED_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_RELIGION_REJECTED_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_RELIGION_REJECTED_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_RELIGION_REJECTED_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTSTORY_CONVERT_PERSONAL_RELIGION</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_FEAST_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_FEAST_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_STRICT</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_FEAST_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_FEAST_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FEAST_IGNORE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_FEAST_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_FEAST_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FEAST_ACCEPT</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_YOUNG_BOND_0</zType>
+		<EventLinkAdd>EVENTLINK_CHILDHOOD_FRIENDS</EventLinkAdd>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_YOUNG_BOND_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_YOUNG_BOND</zValue>
+		</aeBonuses>
+		<bFutureEvents>1</bFutureEvents>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_YOUNG_BOND_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_YOUNG_BOND_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_YOUNG_BOND_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_YOUNG_BOND_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_PROUD</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_RIVALS_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_RIVALS_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HIGH_CHARISMA</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_RIVALS_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_RIVALS_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_RIVALS_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_RIVALS_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GAIN_COURAGE_1</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_ELOPEMENT_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_ELOPEMENT_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_ELOPEMENT_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_ELOPEMENT_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_ELOPEMENT_MARRIAGE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_ELOPEMENT_LEGITIMACY</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_ELOPEMENT_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_ELOPEMENT_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>BONUS_GIVE_TRAIT_STRICT</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSIONAL_NEW_LOVE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSIONAL_NEW_LOVE_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_NEW_LOVE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSIONAL_NEW_LOVE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSIONAL_NEW_LOVE_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_FAMILY_UNITED_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_FAMILY_UNITED_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_TERRIFIED_OF</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_LEG_NEG</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_FAMILY_UNITED_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_FAMILY_UNITED_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_LEG_NEG</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_FAMILY_UNITED_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_FAMILY_UNITED_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_LEG_POS</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_MEM</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DUEL_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DUEL_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_DUEL_DEATH</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DUEL_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DUEL_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EXILED</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_DUEL_EXILE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DUEL_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DUEL_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_DUEL_PARDON</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_GREED_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_GREED_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_GREED_PAY</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_GREED_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_GREED_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_GREED_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_GREED_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_GREED_REFUSE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_LOYALTY_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_LOYALTY_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GAIN_WISDOM_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_LOYALTY_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_LOYALTY_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GAIN_COURAGE_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_LOYALTY_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_LOYALTY_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_CULTURE_GAIN_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_COMPULSION_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_COMPULSION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_COMPULSION_POS</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_COMPULSION_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_COMPULSION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_COMPULSION_NEG</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_COMPULSION_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_COMPULSION_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_COMPULSION_POS_ALT</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_RELIGIOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DEBATE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DEBATE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_TRAINING_LOSS_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_COVERT</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DEBATE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DEBATE_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DEBATE_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DEBATE_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_REPLACEMENT_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_REPLACEMENT_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_ORDERS_LOSS_AVERAGE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_REPLACEMENT</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -33786,6 +35033,1007 @@ one of the listed Event options."/>
 			<zValue>BONUS_GIVE_TRAIT_WITTY</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_COVERT</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ADOPTED_SUCCESSOR_0</zType>
+		<Text>TEXT_EVENTOPTION_ADOPTED_SUCCESSOR_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_ADOPTED_SUCCESSOR</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ADOPTED_SUCCESSOR_1</zType>
+		<Text>TEXT_EVENTOPTION_ADOPTED_SUCCESSOR_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_RIVAL_SUCCESSORS_0</zType>
+		<Text>TEXT_EVENTOPTION_RIVAL_SUCCESSORS_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_SUCCESSORS_FAMILY_POS</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_SUCCESSORS_FAMILY_NEG</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_RIVAL_SUCCESSORS_1</zType>
+		<Text>TEXT_EVENTOPTION_RIVAL_SUCCESSORS_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_ADOPTED_SUCCESSOR</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_SUCCESSORS_FAMILY_NEG</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_SUCCESSORS_FAMILY_POS</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_REPLACEMENT_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_REPLACEMENT_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_REPLACEMENT_ASSASSIN</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_REPLACEMENT_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_REPLACEMENT_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DONATION_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DONATION_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DONATION_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DONATION_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_DONATION</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_DONATION_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_DONATION_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_SUSPICIOUS_OF</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_MONEY_GAIN_LARGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_TRUCE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_TRUCE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_PLAYER_TRUCE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_TRUCE_YES</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_TRUCE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_TRUCE_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_TRUCE_NO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_0</zType>
+		<EventLinkStart>EVENTLINK_SUSPICIOUS_HEAD_NO_CHANCES</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_0</Text>
+		<bFutureEvents>1</bFutureEvents>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_1</zType>
+		<EventLinkStart>EVENTLINK_SUSPICIOUS_MEET_ALONE</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_1</Text>
+		<bFutureEvents>1</bFutureEvents>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_NO_CHANCES_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_NO_CHANCES_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_SUSPICION_NO_CHANCES</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_NO_CHANCES_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_NO_CHANCES_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_SAFE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_SAFE_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_SAFE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_SAFE_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LOSE_DISCIPLINE_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_MURDER_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_MURDER_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_STRONG</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_MURDER_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_MURDER_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HIGH_COURAGE</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_SUSPICION_MURDER_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_SUSPICION_MURDER_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_CONFUSION_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_CONFUSION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_CONFUSION_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_CONFUSION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_CONFUSION_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_CONFUSION_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_TERRIFIED_OF</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_PARRICIDE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_PARRICIDE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_PARRICIDE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_PARRICIDE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_PARRICIDE_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_INTERCESSION_FAMILY_UNITED_LEG_POS</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_PARRICIDE_2</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_PARRICIDE_2</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_ORDERS_LOSS_MINIMAL</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_EXILE_0</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_EXILE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_INTERCESSED_FOR</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_INTERCESSION_EXILE_1</zType>
+		<Text>TEXT_EVENTOPTION_INTERCESSION_EXILE_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EXILED</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_SPOILED_ONE</zType>
+		<EventLinkStart>EVENTLINK_SPOILED_WINE</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_FLAWS_SPOILED_ONE</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_SPOILED_TWO</zType>
+		<EventLinkStart>NONE</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_FLAWS_SPOILED_TWO</Text>
+		<aeBonuses>
+			<zValue>BONUS_GAIN_WISDOM_1</zValue>
+			<zValue>BONUS_OWE_FAVOR_TO_LEADER</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_SLOTHFUL_ONE</zType>
+		<EventLinkStart>EVENTLINK_FLAWS_SLOTHFUL_ONE</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_FLAWS_SLOTHFUL_ONE</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_SLOTHFUL_TWO</zType>
+		<EventLinkStart>EVENTLINK_FLAWS_SLOTHFUL_TWO</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_FLAWS_SLOTHFUL_TWO</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_SLOTHFUL_THREE</zType>
+		<EventLinkStart>EVENTLINK_FLAWS_SLOTHFUL_THREE</EventLinkStart>
+		<Text>TEXT_EVENTOPTION_FLAWS_SLOTHFUL_THREE</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_SLOTHFUL_FOUR</zType>
+		<Text>TEXT_EVENTOPTION_FLAWS_SLOTHFUL_FOUR</Text>
+		<HelpText>TEXT_EVENTOPTION_FLAWS_SLOTHFUL_FOUR_HELP</HelpText>
+		<aeBonuses>
+			<zValue>BONUS_XP_AND_ORDERS</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_NO</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_NO</Text>
+		<aeBonuses>
+			<zValue>BONUS_GAIN_DISCIPLINE_2</zValue>
+			<zValue>BONUS_LEADER_SUSPICIOUS_OF</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HIGH_DISCIPLINE</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_AFFABLE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_AFFABLE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_AFFABLE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_ELOQUENT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_ELOQUENT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_ELOQUENT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_WARLIKE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_WARLIKE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_WARLIKE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_INSPIRING</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_INSPIRING</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_INSPIRING</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_INTELLIGENT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_INTELLIGENT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_INTELLIGENT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_PROSPEROUS</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_PROSPEROUS</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_PROSPEROUS</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_FRUGAL</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_FRUGAL</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_FRUGAL</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_RIGHTEOUS</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_RIGHTEOUS</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_RIGHTEOUS</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_CRUEL</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_CRUEL</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CRUEL</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_INTOLERANT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_INTOLERANT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_INTOLERANT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_SLOTHFUL</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_SLOTHFUL</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_SLOTHFUL</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_UNCOUTH</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_UNCOUTH</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_UNCOUTH</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_FOOLISH</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_FOOLISH</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_FOOLISH</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_EXTRAVAGANT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_EXTRAVAGANT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EXTRAVAGANT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_CORRUPT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_CORRUPT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CORRUPT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_DEBAUCHED</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_DEBAUCHED</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_DEBAUCHED</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_ROBUST</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_ROBUST</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_ROBUST</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_VIGILANT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_VIGILANT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_VIGILANT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_STRICT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_STRICT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_STRICT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_EQUESTRIAN</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_EQUESTRIAN</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EQUESTRIAN</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_CARPENTER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_CARPENTER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CARPENTER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_PATHFINDER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_PATHFINDER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_PATHFINDER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_CULTIVATOR</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_CULTIVATOR</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CULTIVATOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_NATURALIST</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_NATURALIST</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_NATURALIST</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_DELVER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_DELVER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_DELVER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_DEALMAKER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_DEALMAKER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_DEALMAKER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_TRACKER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_TRACKER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_TRACKER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_SWIFT</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_SWIFT</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_SWIFT</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_BESIEGER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_BESIEGER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_BESIEGER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_TOUGH</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_TOUGH</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_TOUGH</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_BLOODTHIRSTY</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_BLOODTHIRSTY</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_BLOODTHIRSTY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_HECKLER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_HECKLER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_HECKLER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_STEADFAST</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_STEADFAST</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_STEADFAST</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_HERBALIST</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_HERBALIST</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_HERBALIST</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_HIGHLANDER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_HIGHLANDER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_HIGHLANDER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_RANGER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_RANGER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_RANGER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_BRAVE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_BRAVE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_BRAVE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_SHIELDBEARER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_SHIELDBEARER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_SHIELDBEARER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_FIERCE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_FIERCE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_FIERCE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_HORSEBANE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_HORSEBANE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_HORSEBANE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_ENGINEER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_ENGINEER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_ENGINEER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_LOYAL</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_LOYAL</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_LOYAL</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_CUNNING</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_CUNNING</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CUNNING</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_BOLD</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_BOLD</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_BOLD</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_COWARDLY</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_COWARDLY</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_COWARDLY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_GRACIOUS</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_GRACIOUS</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_GRACIOUS</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_GREEDY</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_GREEDY</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_GREEDY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_ROMANTIC</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_ROMANTIC</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_ROMANTIC</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_BITTER</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_BITTER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_BITTER</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_EDUCATED</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_EDUCATED</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EDUCATED</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_SUPERSTITIOUS</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_SUPERSTITIOUS</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_SUPERSTITIOUS</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_COMPASSIONATE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_COMPASSIONATE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_COMPASSIONATE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_RUTHLESS</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_RUTHLESS</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_PIOUS</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_PIOUS</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_PIOUS</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_WANTON</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_WANTON</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_WANTON</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_HUMBLE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_HUMBLE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_HUMBLE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_PROUD</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_PROUD</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_PROUD</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_EXOTIC</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_EXOTIC</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_EXOTIC</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_SPOILED</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_SPOILED</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_SPOILED</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_WITTY</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_WITTY</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_WITTY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_DRUNK</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_DRUNK</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_DRUNK</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_COMPANIONSHIP_INSANE</zType>
+		<Text>TEXT_EVENTOPTION_COMPANIONSHIP_INSANE</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_INSANE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_YOU_OWE_ME_FAMILY_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_YOU_OWE_ME_FAMILY_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_YOU_OWE_ME_FAMILY_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_YOU_OWE_ME_FAMILY_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_YOU_OWE_ME_FAMILY_OPTION_2</zType>
+		<Text>TEXT_EVENTOPTION_YOU_OWE_ME_FAMILY_OPTION_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_YOU_OWE_ME_RELIGION_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_YOU_OWE_ME_RELIGION_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_YOU_OWE_ME_RELIGION_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_YOU_OWE_ME_RELIGION_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_YOU_OWE_ME_RELIGION_OPTION_2</zType>
+		<Text>TEXT_EVENTOPTION_YOU_OWE_ME_RELIGION_OPTION_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_QUID_PRO_QUO</zType>
+		<aiEventOptionProb>
+			<Pair>
+				<zIndex>EVENTOPTION_QUID_PRO_QUO_MONEY</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_QUID_PRO_QUO_STONE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_QUID_PRO_QUO_TRAINING</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_QUID_PRO_QUO_CIVICS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+		</aiEventOptionProb>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_QUID_PRO_QUO_MONEY</zType>
+		<Text>TEXT_EVENTOPTION_QUID_PRO_QUO_MONEY</Text>
+		<aeBonuses>
+			<zValue>BONUS_MONEY_LOSS_AVERAGE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_QUID_PRO_QUO_STONE</zType>
+		<Text>TEXT_EVENTOPTION_QUID_PRO_QUO_STONE</Text>
+		<aeBonuses>
+			<zValue>BONUS_STONE_LOSS_LARGE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_QUID_PRO_QUO_TRAINING</zType>
+		<Text>TEXT_EVENTOPTION_QUID_PRO_QUO_TRAINING</Text>
+		<aeBonuses>
+			<zValue>BONUS_TRAINING_LOSS_AVERAGE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_QUID_PRO_QUO_CIVICS</zType>
+		<Text>TEXT_EVENTOPTION_QUID_PRO_QUO_CIVICS</Text>
+		<aeBonuses>
+			<zValue>BONUS_CIVICS_LOSS_LARGE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM_REMOVE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_QUID_PRO_QUO_NO</zType>
+		<Text>TEXT_EVENTOPTION_QUID_PRO_QUO_NO</Text>
+		<aeBonuses>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FAUX_PAS_REGAL_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_FAUX_PAS_REGAL_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FAUX_PAS_REGAL_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_FAUX_PAS_REGAL_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FAUX_PAS_MARTIAL_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_FAUX_PAS_MARTIAL_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FAUX_PAS_MARTIAL_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_FAUX_PAS_MARTIAL_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FAUX_PAS_COVERT_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_FAUX_PAS_COVERT_OPTION_0</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FAUX_PAS_COVERT_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_FAUX_PAS_COVERT_OPTION_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
+			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry beginGroup="City">
 		<zType>EVENTOPTION_HAPPINESS_IMMIGRANTS_YES</zType>
@@ -34937,7 +37185,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_TO_ARMS_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_TO_ARMS_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_ORDERS_GAIN_GIGANTIC</zValue>
+			<zValue>BONUS_ORDERS_GAIN_AVERAGE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -37026,7 +39274,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_GOOD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_SHRINE_BLESSING_BAD</zType>
@@ -37037,7 +39285,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_SHRINE_REFUSE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_SHRINE_BLESSING_STRONG</zType>
@@ -37067,7 +39315,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_SUPPORTED_FAITH_YES</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_TRADITIONAL</LeaderSubject>
@@ -37089,7 +39337,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_SUPPORTED_FAITH_NO</zValue>
-			<zValue>BONUS_MISSIONRESULT_IMPRISON_UNJUST</zValue>
+			<zValue>BONUS_GIVE_TRAIT_IMPRISONED</zValue>
 			<zValue>BONUS_EVENTOPTION_SHRINE_REFUSE</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_SEVEN_SINS</LeaderSubject>
@@ -37237,25 +39485,40 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_THOUGHTS_WORDS_DEEDS_THOUGHT</zType>
 		<Text>TEXT_EVENTOPTION_THOUGHTS_WORDS_DEEDS_THOUGHT</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_THOUGHTS_WORDS_DEEDS</zValue>
-			<zValue>BONUS_XP_CHARACTER_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_INQUISITIVE</LeaderSubject>
+		<LeaderSubject>SUBJECT_HIGH_WISDOM</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_THOUGHTS_WORDS_DEEDS_DEEDS</zType>
 		<Text>TEXT_EVENTOPTION_THOUGHTS_WORDS_DEEDS_DEEDS</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_THOUGHTS_WORDS_DEEDS</zValue>
-			<zValue>BONUS_XP_CHARACTER_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_TRADITIONAL</LeaderSubject>
+		<LeaderSubject>SUBJECT_HIGH_COURAGE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_THOUGHTS_WORDS_DEEDS_NONE</zType>
 		<Text>TEXT_EVENTOPTION_THOUGHTS_WORDS_DEEDS_NONE</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_XP_CHARACTER_AVERAGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_FLAWS_CARNAL_RESULT</zType>
+		<Text>TEXT_EVENTOPTION_FLAWS_CARNAL_RESULT</Text>
+		<HelpText>TEXT_EVENTOPTION_FLAWS_CARNAL_RESULT_HELP</HelpText>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>ADD_MEMORY_GREAT_PARTY</zValue>
+			<zValue>ADD_MEMORY_GREAT_PARTY</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_INFLUENCE_SPOUSE_START_OPTION_0</zType>
@@ -37343,11 +39606,11 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_THOUGHTS_WORDS_DEEDS_WORDS</zType>
 		<Text>TEXT_EVENTOPTION_THOUGHTS_WORDS_DEEDS_WORDS</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_THOUGHTS_WORDS_DEEDS</zValue>
-			<zValue>BONUS_XP_CHARACTER_AVERAGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_ARCHETYPE_REGAL</LeaderSubject>
+		<LeaderSubject>SUBJECT_HIGH_CHARISMA</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_LEGENDS_OF_MITHRA_1</zType>
@@ -37526,7 +39789,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_PAYING_FOR_THE_SACRIFICE_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_PAYING_FOR_THE_SACRIFICE_YES</zValue>
 		</aeBonuses>
 	</Entry>
@@ -37691,34 +39954,37 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RIVER_REVELATION_0</zType>
 		<Text>TEXT_EVENTOPTION_RIVER_REVELATION_0</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 			<zValue>BONUS_GIVE_TRAIT_BLESSED</zValue>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 			<zValue>NONE</zValue>
-			<zValue/>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RIVER_REVELATION_1</zType>
 		<Text>TEXT_EVENTOPTION_RIVER_REVELATION_1</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_GIVE_TRAIT_VIGILANT</zValue>
-			<zValue/>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RIVER_REVELATION_2</zType>
+		<EventLinkAdd>EVENTLINK_CHANGE_RELIGION_HEAD</EventLinkAdd>
 		<Text>TEXT_EVENTOPTION_RIVER_REVELATION_2</Text>
+		<HelpText>TEXT_EVENTSTORY_CHANGE_RELIGION_HEAD_INFO</HelpText>
 		<aeBonuses>
-			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
 			<zValue>NONE</zValue>
-			<zValue/>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
+		<bFutureEvents>1</bFutureEvents>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_AHUNA_VAIRYA_0</zType>
@@ -37825,7 +40091,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_NOWRUZ_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38410,7 +40676,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_DECLARE_WAR_PLAYER</zValue>
 			<zValue>BONUS_SUPPORTED_FAITH_NO</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 		<PlayerSubject>SUBJECT_PLAYER_HOLY_WAR</PlayerSubject>
@@ -38420,7 +40686,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_PLACE_OF_DWELLING_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_PLACE_OF_DWELLING_YES</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38438,7 +40704,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_GUARDIAN_FIRE_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_GUARDIAN_FIRE_YES</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38456,7 +40722,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_THREE_CROSSES_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_THREE_CROSSES_YES</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38474,7 +40740,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TEMPLE_FROM_THE_EAST_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_TEMPLE_FROM_THE_EAST_YES</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38614,7 +40880,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_RETURNED_TO_THE_FOLD_YES</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -38625,7 +40891,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_RETURNED_TO_THE_FOLD_NO</zValue>
 			<zValue/>
-			<zValue>BONUS_LEADER_OBLIGED_TO_REMOVE</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY_REMOVE</zValue>
 			<zValue/>
 			<zValue/>
 		</aeBonuses>
@@ -38649,7 +40915,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_SUPPORTED_FAITH_NO</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -38777,7 +41043,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_HOLY_MATRIMONY_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
 		</aeBonuses>
@@ -38808,7 +41074,7 @@ one of the listed Event options."/>
 		<HelpText>TEXT_EVENTSTORY_THE_WEIGHT_OF_DEBT_TOOLTIP</HelpText>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_CHARACTER_FORGET_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_TRAINING_LOSS_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38818,7 +41084,7 @@ one of the listed Event options."/>
 		<HelpText>TEXT_EVENTSTORY_THE_WEIGHT_OF_DEBT_TOOLTIP</HelpText>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_CHARACTER_FORGET_FAVOR</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 			<zValue>BONUS_CIVICS_LOSS_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -38965,7 +41231,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_TEMPLE_AND_STATE_0</zType>
 		<Text>TEXT_EVENTOPTION_TEMPLE_AND_STATE_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTSTORY_TEMPLE_AND_STATE</zValue>
 		</aeBonuses>
@@ -38983,7 +41249,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_APOSTATE_LEADER_0</zType>
 		<Text>TEXT_EVENTSTORY_APOSTATE_LEADER_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTSTORY_TEMPLE_AND_STATE</zValue>
 			<zValue>NONE</zValue>
@@ -39041,7 +41307,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_THE_OTHER_RELIGION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_THE_DEDICATION_1</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_STATE_RELIGION</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -39079,6 +41345,7 @@ one of the listed Event options."/>
 	<Entry>
 		<zType>EVENTOPTION_BONDED_BY_FAITH_2</zType>
 		<Text>TEXT_EVENTOPTION_BONDED_BY_FAITH_2</Text>
+		<zIcon>icon(DIPLOMACY_WAR)</zIcon>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
@@ -39091,7 +41358,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_BABY_IN_THE_BASKET_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_BABY_IN_THE_BASKET_0</zValue>
 			<zValue>BONUS_EVENTOPTION_BABY_IN_THE_BASKET_1</zValue>
 		</aeBonuses>
@@ -39121,10 +41388,21 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_JACHIN_AND_BOAZ_0</Text>
 		<HelpText>TEXT_EVENTOPTION_JACHIN_AND_BOAZ_TOOLTIP</HelpText>
 		<aeBonuses>
-			<zValue>BONUS_CHARACTER_PROVIDED_FAVOR</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_ORDERS_GAIN_AVERAGE</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+			<zValue>BONUS_ORDERS_GAIN_HUGE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_JACHIN_AND_BOAZ_1</zType>
+		<Text>TEXT_EVENTOPTION_JACHIN_AND_BOAZ_1</Text>
+		<HelpText>TEXT_EVENTOPTION_JACHIN_AND_BOAZ_TOOLTIP</HelpText>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue>BONUS_CIVICS_GAIN_AVERAGE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -39135,17 +41413,6 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
-		</aeBonuses>
-	</Entry>
-	<Entry>
-		<zType>EVENTOPTION_JACHIN_AND_BOAZ_1</zType>
-		<Text>TEXT_EVENTOPTION_JACHIN_AND_BOAZ_1</Text>
-		<HelpText>TEXT_EVENTOPTION_JACHIN_AND_BOAZ_TOOLTIP</HelpText>
-		<aeBonuses>
-			<zValue>BONUS_CHARACTER_PROVIDED_FAVOR</zValue>
-			<zValue>NONE</zValue>
-			<zValue>NONE</zValue>
-			<zValue>BONUS_CIVICS_GAIN_AVERAGE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -39235,7 +41502,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_JUSTICE_AND_KINDNESS_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
 			<zValue>BONUS_CIVICS_GAIN_SMALL</zValue>
 		</aeBonuses>
@@ -39246,7 +41513,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_MONEY_GAIN_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -39284,7 +41551,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_DISCONTENT_GAIN_LARGE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
 		</aeBonuses>
 	</Entry>
@@ -40433,7 +42700,7 @@ one of the listed Event options."/>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>EVENTOPTION_PATRON_GODS_ROME_HYGIEIA</zIndex>
+				<zIndex>EVENTOPTION_PATRON_GODS_ROME_JUNO</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
@@ -40441,7 +42708,7 @@ one of the listed Event options."/>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>EVENTOPTION_PATRON_GODS_ROME_HERA</zIndex>
+				<zIndex>EVENTOPTION_PATRON_GODS_ROME_VESTA</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
@@ -40521,8 +42788,8 @@ one of the listed Event options."/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_PATRON_GODS_ROME_HYGIEIA</zType>
-		<Text>TEXT_EVENTOPTION_PATRON_GODS_ROME_HYGIEIA</Text>
+		<zType>EVENTOPTION_PATRON_GODS_ROME_JUNO</zType>
+		<Text>TEXT_EVENTOPTION_PATRON_GODS_ROME_JUNO</Text>
 		<aeBonuses>
 			<zValue>BONUS_GAIN_DISCIPLINE_1</zValue>
 			<zValue>BONUS_SHRINE_DEDICATION_MEMORY_YES</zValue>
@@ -40541,8 +42808,8 @@ one of the listed Event options."/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_PATRON_GODS_ROME_HERA</zType>
-		<Text>TEXT_EVENTOPTION_PATRON_GODS_ROME_HERA</Text>
+		<zType>EVENTOPTION_PATRON_GODS_ROME_VESTA</zType>
+		<Text>TEXT_EVENTOPTION_PATRON_GODS_ROME_VESTA</Text>
 		<aeBonuses>
 			<zValue>BONUS_GAIN_CHARISMA_1</zValue>
 			<zValue>BONUS_SHRINE_DEDICATION_MEMORY_YES</zValue>
@@ -40583,13 +42850,24 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_RIVAL_AT_THE_BRIDGE_0</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
 			<zValue>NONE</zValue>
-			<zValue/>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_FAMILY_0</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_LEG_0</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RIVAL_AT_THE_BRIDGE_1</zType>
+		<Text>TEXT_EVENTOPTION_RIVAL_AT_THE_BRIDGE_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_RIVAL_AT_THE_BRIDGE_2</zType>
@@ -40598,8 +42876,11 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_EVENTOPTION_THE_WORLD_MADE_WHOLE_1</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_FAMILY_1</zValue>
+			<zValue>BONUS_EVENTOPTION_RIVAL_AT_THE_BRIDGE_LEG_1</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
+		<LeaderSubject>SUBJECT_CHARACTER_HONORABLE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_FOUNDING_AVESTAN_0</zType>
@@ -40814,10 +43095,10 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_CONVERT_SPREAD_1</zType>
 		<Text>TEXT_EVENTOPTION_CONVERT_SPREAD_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
+			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -40833,17 +43114,40 @@ one of the listed Event options."/>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REJECTED_0</zType>
 		<Text>TEXT_EVENTOPTION_CONVERT_REJECTED_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_ESTRANGED_FROM</zValue>
+			<zValue>BONUS_EVENTOPTION_CONVERT_S0</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REJECTED_1</zType>
 		<Text>TEXT_EVENTOPTION_CONVERT_REJECTED_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_CONVERT_S0</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HIGH_DISCIPLINE</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REJECTED_2</zType>
 		<Text>TEXT_EVENTOPTION_CONVERT_REJECTED_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_CONVERT_S0</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+		<LeaderSubject>SUBJECT_HIGH_CHARISMA</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REJECTED_3</zType>
+		<Text>TEXT_EVENTOPTION_CONVERT_REJECTED_3</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_NEW_FRIEND_0</zType>
@@ -40858,7 +43162,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_CONVERT_NEW_FRIEND_1</zType>
 		<Text>TEXT_EVENTOPTION_CONVERT_NEW_FRIEND_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_CIVICS_LOSS_TINY</zValue>
 		</aeBonuses>
@@ -40898,18 +43202,39 @@ one of the listed Event options."/>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REFUSED_0</zType>
+		<Text>TEXT_EVENTOPTION_CONVERT_REFUSED_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>BONUS_EVENTOPTION_CONVERT_S0</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_SUPPORTED_FAITH_NO</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REFUSED_1</zType>
+		<Text>TEXT_EVENTOPTION_CONVERT_REFUSED_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_FOUNDING_FAITH_THEM_YES</zValue>
+			<zValue>BONUS_SUPPORTED_FAITH_YES</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_REFUSED_2</zType>
+		<Text>TEXT_EVENTOPTION_CONVERT_REFUSED_2</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_SUPPORTING_THE_FAITH_OPTION_REFUSE</zValue>
+			<zValue>BONUS_SUPPORTED_FAITH_NO</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CONVERT_BAD_BLOOD_0</zType>
 		<Text>TEXT_EVENTOPTION_CONVERT_BAD_BLOOD_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -40952,10 +43277,10 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELIGIOUS_ABDICATION_1</zType>
 		<Text>TEXT_EVENTOPTION_RELIGIOUS_ABDICATION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_RELIGIOUS_ABDICATION_YES</zValue>
-			<zValue>BONUS_MISSIONRESULT_ABDICATE</zValue>
+			<zValue>BONUS_ABDICATE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -41336,7 +43661,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_GIVE_TRAIT_FIERCE</zValue>
 			<zValue>BONUS_GIVE_TRAIT_BESIEGER</zValue>
 			<zValue>BONUS_UNITCLASS_MELEE_CAVALRY</zValue>
-			<zValue>BONUS_DISCONTENT_DOWN</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -41359,7 +43684,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_GAIN_WISDOM_2</zValue>
 			<zValue>BONUS_GAIN_WISDOM_2</zValue>
 			<zValue>BONUS_CULTURE_LEVEL</zValue>
-			<zValue>BONUS_UNIT_SCOUT</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -41367,8 +43692,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_ERA_OF_EXPLORATION_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_ERA_OF_EXPLORATION_OPTION_1_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_DISCONTENT_DOWN</zValue>
 			<zValue>BONUS_DISCONTENT_DOWN</zValue>
 		</aeBonuses>
@@ -41380,10 +43705,10 @@ one of the listed Event options."/>
 		<HelpText>TEXT_EVENTOPTION_REIGN_BY_WHIPS_AND_CHAINS_OPTION_0_HELP</HelpText>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_CRUEL</zValue>
-			<zValue>NONE</zValue>
-			<zValue>NONE</zValue>
-			<zValue>BONUS_EVENTOPTION_REIGN_BY_WHIPS_AND_CHAINS_OPTION_0_CHARACTER_1</zValue>
-			<zValue>BONUS_EVENTOPTION_REIGN_BY_WHIPS_AND_CHAINS_OPTION_0_CHARACTER_2</zValue>
+			<zValue>BONUS_UNIT_WORKER</zValue>
+			<zValue>BONUS_UNITCLASS_POLEARM_INFANTRY</zValue>
+			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
+			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -41409,7 +43734,6 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_1</zValue>
 			<zValue>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_2</zValue>
 			<zValue>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_3</zValue>
-			<zValue>BONUS_EVENTOPTION_REIGN_OF_CARNALITY_OPTION_0_CHARACTER_4</zValue>
 			<zValue>BONUS_MONEY_LOSS_GIGANTIC</zValue>
 		</aeBonuses>
 	</Entry>
@@ -41420,7 +43744,6 @@ one of the listed Event options."/>
 			<zValue>BONUS_GIVE_TRAIT_ROBUST</zValue>
 			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
-			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_DISCONTENT_DOWN</zValue>
 		</aeBonuses>
@@ -41442,7 +43765,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_ROBUST</zValue>
 			<zValue>BONUS_MONEY_GAIN_SMALL</zValue>
-			<zValue>BONUS_ORDERS_GAIN_AVERAGE</zValue>
+			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -41505,12 +43828,11 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
 			<zValue>BONUS_GIVE_TRAIT_CRUEL</zValue>
 			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
-			<zValue>BONUS_UNITCLASS_HEAVY_INFANTRY</zValue>
+			<zValue>BONUS_DISCONTENT_UP</zValue>
 			<zValue>BONUS_DISCONTENT_UP</zValue>
 			<zValue>BONUS_DISCONTENT_UP</zValue>
 		</aeBonuses>
@@ -41519,11 +43841,10 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_GIVE_TRAIT_CUNNING</zValue>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL</zValue>
-			<zValue>BONUS_MISSIONRESULT_ASSASSINATE_KILL</zValue>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
+			<zValue>BONUS_KILL_CHARACTER</zValue>
 			<zValue>BONUS_UNITCLASS_MELEE_CAVALRY</zValue>
 			<zValue>BONUS_EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_1_CITY_1</zValue>
 			<zValue>BONUS_EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_1_CITY_2</zValue>
@@ -41533,7 +43854,6 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_2</zType>
 		<Text>TEXT_EVENTOPTION_AGE_OF_OLIGARCHS_OPTION_2</Text>
 		<aeBonuses>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_GIVE_TRAIT_DEALMAKER</zValue>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>BONUS_LEADER_PLOTTING_AGAINST</zValue>
@@ -41548,22 +43868,29 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_ROBUST</zValue>
-			<zValue>BONUS_ORDERS_LOSS_GIGANTIC</zValue>
+			<zValue>BONUS_ORDERS_GAIN_SMALL</zValue>
 			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_0</zValue>
 			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_1</zValue>
 			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_2</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_3</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_0_CITY_4</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_AGE_OF_EXPANSION_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1</Text>
 		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_WARLIKE</zValue>
+			<zValue>BONUS_IRON_LOSS_LARGE</zValue>
+			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1_CITY_0</zValue>
+			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1_CITY_1</zValue>
+			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_1_CITY_2</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_AGE_OF_EXPANSION_OPTION_2</zType>
+		<Text>TEXT_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2</Text>
+		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_COMPASSIONATE</zValue>
 			<zValue>BONUS_RANDOM_TECH</zValue>
-			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
-			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
 			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
 			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
 			<zValue>BONUS_DISCONTENT_LOSS_AVERAGE</zValue>
@@ -41571,42 +43898,16 @@ one of the listed Event options."/>
 		<LeaderSubject>SUBJECT_HIGH_WISDOM</LeaderSubject>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_AGE_OF_EXPANSION_OPTION_2</zType>
-		<Text>TEXT_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2</Text>
-		<aeBonuses>
-			<zValue>BONUS_GIVE_TRAIT_WARLIKE</zValue>
-			<zValue>BONUS_IRON_LOSS_GIGANTIC</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_0</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_1</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_2</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_3</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_2_CITY_4</zValue>
-		</aeBonuses>
-	</Entry>
-	<Entry>
-		<zType>EVENTOPTION_AGE_OF_EXPANSION_OPTION_3</zType>
-		<Text>TEXT_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3</Text>
-		<aeBonuses>
-			<zValue>BONUS_GIVE_TRAIT_SPOILED</zValue>
-			<zValue>BONUS_ORDERS_GAIN_HUGE</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_0</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_1</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_2</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_3</zValue>
-			<zValue>BONUS_EVENTOPTION_AGE_OF_EXPANSION_OPTION_3_CITY_4</zValue>
-		</aeBonuses>
-	</Entry>
-	<Entry>
 		<zType>EVENTOPTION_ERA_OF_NOBILITY_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_ERA_OF_NOBILITY_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_ERA_OF_NOBILITY_OPTION_0</zValue>
+			<zValue>BONUS_GIVE_TRAIT_WARLIKE</zValue>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
-			<zValue>BONUS_REBEL_UNITS_2</zValue>
-			<zValue>BONUS_REBEL_UNITS_2</zValue>
-			<zValue>BONUS_REBEL_UNITS_2</zValue>
+			<zValue>BONUS_REBEL_UNITS_1</zValue>
+			<zValue>BONUS_REBEL_UNITS_1</zValue>
+			<zValue>BONUS_REBEL_UNITS_1</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_SEVEN_SINS</LeaderSubject>
 	</Entry>
@@ -41615,12 +43916,12 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_ERA_OF_NOBILITY_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
-			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
+			<zValue>BONUS_LEADER_HOLDS_FAVOR_FROM</zValue>
 			<zValue>BONUS_UNITCLASS_LEVY</zValue>
-			<zValue>BONUS_UNITCLASS_LEVY</zValue>
-			<zValue>BONUS_UNITCLASS_LEVY</zValue>
+			<zValue>BONUS_UNITCLASS_RANGED_INFANTRY</zValue>
+			<zValue>BONUS_UNITCLASS_MELEE_CAVALRY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -41644,7 +43945,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_RULE_BY_GODS_WILL_OPTION_0_PLAYER</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_CULTURE_LEVEL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -41689,7 +43990,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_HAVE_BASTARD</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -41722,7 +44023,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_DIVINE</zValue>
 			<zValue>BONUS_LEADER_ALLIED_WITH</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_CULTURE_LEVEL</zValue>
 			<zValue>BONUS_DISCONTENT_DOWN</zValue>
 			<zValue>BONUS_DISCONTENT_DOWN</zValue>
@@ -41759,8 +44060,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_ERA_OF_JUSTICE_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_TRAINING_LOSS_HUGE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_PROJECT_PROTECTION_EDICTS</zValue>
 			<zValue>BONUS_PROJECT_PROTECTION_EDICTS</zValue>
 			<zValue>BONUS_PROJECT_PROTECTION_EDICTS</zValue>
@@ -41796,8 +44097,8 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_AGE_OF_TOLERANCE_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_TRAINING_LOSS_HUGE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_PROJECT_PROTECTION_EDICTS</zValue>
 			<zValue>BONUS_PROJECT_PROTECTION_EDICTS</zValue>
 			<zValue>BONUS_PROJECT_PROTECTION_EDICTS</zValue>
@@ -41834,7 +44135,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_ORDERS_GAIN_HUGE</zValue>
 			<zValue>BONUS_MONEY_GAIN_GIGANTIC</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -41871,7 +44172,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_ORDERS_GAIN_HUGE</zValue>
 			<zValue>BONUS_MONEY_GAIN_GIGANTIC</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -41908,7 +44209,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_ORDERS_GAIN_HUGE</zValue>
 			<zValue>BONUS_MONEY_GAIN_GIGANTIC</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -41945,7 +44246,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_ORDERS_GAIN_HUGE</zValue>
 			<zValue>BONUS_MONEY_GAIN_GIGANTIC</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -43539,7 +45840,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_THE_LITERATE_CITIZEN</zType>
 		<Text>TEXT_EVENTOPTION_THE_LITERATE_CITIZEN</Text>
 		<aeBonuses>
-			<zValue>BONUS_ADD_CITIZEN_1</zValue>
+			<zValue>BONUS_EVENTOPTION_THE_LITERATE_CITIZEN</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -44602,7 +46903,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TECH_INFANTRY_SQUARE_FOOLISH_DISPLAY_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_GAIN_WISDOM_1</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_LOYAL</LeaderSubject>
 	</Entry>
@@ -45704,7 +48005,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_RELIGION_THE_TWENTY_SAINTS_OPTION_2_RELIGION</zValue>
 			<zValue>BONUS_EVENTOPTION_RELIGION_THE_TWENTY_SAINTS_OPTION_2_CHARACTER_0</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -46059,7 +48360,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_MORE_THAN_ALLIES_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_MORE_THAN_ALLIES_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_IRON_LOSS_AVERAGE</zValue>
 			<zValue>BONUS_EVENTOPTION_RELATIONSHIP_MORE_THAN_ALLIES_OPTION_0_CITY</zValue>
 		</aeBonuses>
@@ -46163,7 +48464,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_RELATIONSHIP_PARANOID_OPTION_3</zType>
 		<Text>TEXT_EVENTOPTION_RELATIONSHIP_PARANOID_OPTION_3</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_RELATIONSHIP_PARANOID_OPTION_3_CITY</zValue>
 		</aeBonuses>
@@ -46406,6 +48707,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TWO_VISIONS_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_TWO_VISIONS_OPTION_0_CHARACTER_0</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TWO_VISIONS_OPTION_0_CHARACTER_1</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -46415,6 +48717,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TWO_VISIONS_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_TWO_VISIONS_OPTION_1_CHARACTER_0</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TWO_VISIONS_OPTION_1_CHARACTER_1</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -46424,6 +48727,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TWO_VISIONS_OPTION_2</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_TWO_VISIONS_OPTION_2_CHARACTER_0</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TWO_VISIONS_OPTION_2_CHARACTER_1</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -46434,7 +48738,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_THE_RUNAWAY_PRINCE_OPTION_0_CHARACTER</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -46475,7 +48779,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_HEIR_TO_HEIR_OPTION_1</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_HEIR_TO_HEIR_OPTION_1_CHARACTER_0</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -46505,7 +48809,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_IN_ABSENTIA_OPTION_0_CHARACTER_1</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -46908,7 +49212,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_FAMILY_OSTRACIZED_OPTION_0_FAMILY_0</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_FAMILY_OSTRACIZED_OPTION_0_CITY</zValue>
 		</aeBonuses>
 	</Entry>
@@ -47468,7 +49772,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
 			<zValue>BONUS_EVENTOPTION_INWARD_GAZE_OPTION_2_CHARACTER_1</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_IRREPARABLE_DAMAGE_OPTION_0</zType>
@@ -47945,7 +50249,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_FAILED_ASSASSINATION_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_FAILED_ASSASSINATION_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -48347,7 +50651,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_SLANDER_DIPLOMATIC_DISASTER_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_SLANDER_DIPLOMATIC_DISASTER_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_SLANDER_DIPLOMATIC_DISASTER_OPTION_1_PLAYER_0</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -48546,6 +50850,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_0_CITY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -48555,6 +50860,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_1_CITY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -48564,6 +50870,17 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_2_CITY</zValue>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO_REMOVE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_A_GIFT_OF_LABOR_OPTION_3</zType>
+		<Text>TEXT_EVENTOPTION_A_GIFT_OF_LABOR_OPTION_3</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -48699,7 +51016,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_DISCONTENT_LOSS_TINY</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -49180,7 +51497,6 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_CAPTURED_NOBLE_HOLD</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -49188,7 +51504,6 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TREACHERY_STEAL_AWAY_OPTION_RETURN</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_TREACHERY_STEAL_AWAY_OPTION_RETURN_AGENT</zValue>
-			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -49203,7 +51518,6 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TREACHERY_STEAL_AWAY_OPTION_KILL_PLAYER</zValue>
 			<zValue>NONE</zValue>
-			<zValue>NONE</zValue>
 			<zValue>BONUS_GIVE_TRAIT_RUTHLESS</zValue>
 		</aeBonuses>
 	</Entry>
@@ -49214,7 +51528,6 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TREACHERY_STEAL_AWAY_OPTION_GUEST_DEFECT</zValue>
-			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TREACHERY_STEAL_AWAY_OPTION_GUEST_COURTIER</zValue>
 		</aeBonuses>
@@ -49347,8 +51660,8 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -50341,7 +52654,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_GROWING_THIRST_OPTION_3</zType>
 		<Text>TEXT_EVENTOPTION_GROWING_THIRST_OPTION_3</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_GROWING_THIRST_OPTION_3_CITY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
@@ -50352,7 +52665,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_IN_REMEMBRANCE_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_IN_REMEMBRANCE_OPTION_0</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_IN_REMEMBRANCE_OPTION_0_CHARACTER_2</zValue>
@@ -50472,7 +52785,7 @@ one of the listed Event options."/>
 		<zType>EVENTOPTION_OVERABUNDANCE_OPTION_3</zType>
 		<Text>TEXT_EVENTOPTION_OVERABUNDANCE_OPTION_3</Text>
 		<aeBonuses>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>BONUS_EVENTOPTION_OVERABUNDANCE_OPTION_3_CITY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
@@ -50511,6 +52824,102 @@ one of the listed Event options."/>
 			<zValue>BONUS_GAIN_CHARISMA_1</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_COMMANDER</LeaderSubject>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HIGH_SYNOD_MONEY_YES</zType>
+		<Text>TEXT_EVENTOPTION_HIGH_SYNOD_MONEY_YES</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_RELIGION_OPINION_GOOD</zValue>
+			<zValue>BONUS_MONEY_LOSS_HUGE</zValue>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HIGH_SYNOD_MONEY_NO</zType>
+		<Text>TEXT_EVENTOPTION_HIGH_SYNOD_MONEY_NO</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HIGH_SYNOD_PEACE_AMONG_THE_FAITHFUL_YES</zType>
+		<Text>TEXT_EVENTOPTION_HIGH_SYNOD_PEACE_AMONG_THE_FAITHFUL_YES</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_RELIGION_OPINION_GOOD</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_HIGH_SYNOD_PEACE_MISSION</zValue>
+			<zValue>NONE</zValue>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_HIGH_SYNOD_PEACE_AMONG_THE_FAITHFUL_NO</zType>
+		<Text>TEXT_EVENTOPTION_HIGH_SYNOD_PEACE_AMONG_THE_FAITHFUL_NO</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ORIGINAL_OWNER_0</zType>
+		<Text>TEXT_EVENTOPTION_ORIGINAL_OWNER_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_ORIGINAL_OWNER_0</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_PLAYER_FEAST_EXILED_PEOPLE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_BLOODTHIRSTY</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ORIGINAL_OWNER_1</zType>
+		<Text>TEXT_EVENTOPTION_ORIGINAL_OWNER_1</Text>
+		<aeBonuses>
+			<zValue>BONUS_DISCONTENT_DOWN</zValue>
+			<zValue>BONUS_MONEY_LOSS_LARGE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_GIVE_TRAIT_COMPASSIONATE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ORIGINAL_OWNER_PROSPERING_0</zType>
+		<Text>TEXT_EVENTOPTION_ORIGINAL_OWNER_PROSPERING_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_PROJECT_FESTIVAL_3</zValue>
+			<zValue>BONUS_MONEY_LOSS_LARGE</zValue>
+			<zValue>BONUS_EVENTOPTION_PLAYER_FEAST_ACCEPTED_CITY_MEMORY</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_ORIGINAL_OWNER_PROSPERING_1</zType>
+		<Text>TEXT_EVENTOPTION_ORIGINAL_OWNER_PROSPERING_1</Text>
+		<aeBonuses>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>BONUS_EVENTOPTION_PLAYER_FEAST_REJECTED_CITY_MEMORY</zValue>
+			<zValue>BONUS_GIVE_TRAIT_CRUEL</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TUTORIAL_TRAINING_IMPROVEMENT</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_TRAINING_IMPROVEMENT</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TUTORIAL_TRADE_NETWORK</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_TRADE_NETWORK</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TUTORIAL_MERCENARIES_OKAY</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_MERCENARIES_OKAY</Text>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TUTORIAL_MERCENARIES_RECRUIT_OKAY</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_MERCENARIES_RECRUIT_OKAY</Text>
 	</Entry>
 	<Entry beginGroup="Tutorial">
 		<zType>EVENTOPTION_VICTORY_OK</zType>
@@ -50601,10 +53010,15 @@ one of the listed Event options."/>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_TUTORIAL_TRIBE_CONTACT_OKAY</zType>
+		<EventLinkAdd>EVENTLINK_TRIBE_CONTACT</EventLinkAdd>
 		<Text>TEXT_EVENTOPTION_TUTORIAL_TRIBE_CONTACT_OKAY</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
+		<bFutureEvents>1</bFutureEvents>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_TUTORIAL_UNIT_COOLDOWN_OKAY</zType>
@@ -50681,16 +53095,16 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TUTORIAL_MARRIAGE_OKAY</Text>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_TUTORIAL_PROMOTION_YES</zType>
-		<Text>TEXT_EVENTOPTION_TUTORIAL_PROMOTION_YES</Text>
+		<zType>EVENTOPTION_TUTORIAL_GENERAL_YES</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_GENERAL_YES</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_EVENTOPTION_TUTORIAL_PROMOTION_YES_CHARACTER</zValue>
+			<zValue>BONUS_EVENTOPTION_TUTORIAL_GENERAL_YES_CHARACTER</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_TUTORIAL_PROMOTION_NO</zType>
-		<Text>TEXT_EVENTOPTION_TUTORIAL_PROMOTION_NO</Text>
+		<zType>EVENTOPTION_TUTORIAL_GENERAL_NO</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_GENERAL_NO</Text>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_TUTORIAL_BIREME_SELECTED_OKAY</zType>
@@ -50725,16 +53139,32 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_TUTORIAL_USE_SPYMASTER_OKAY</Text>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_TUTORIAL_APPOINT_AMBASSADOR_OKAY</zType>
-		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_AMBASSADOR_OKAY</Text>
+		<zType>EVENTOPTION_TUTORIAL_APPOINT_AMBASSADOR_YES</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_AMBASSADOR_YES</Text>
+		<aeBonuses>
+			<zValue>BONUS_MAKE_AMBASSADOR</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_TUTORIAL_APPOINT_CHANCELLOR_OKAY</zType>
-		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_CHANCELLOR_OKAY</Text>
+		<zType>EVENTOPTION_TUTORIAL_APPOINT_CHANCELLOR_YES</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_CHANCELLOR_YES</Text>
+		<aeBonuses>
+			<zValue>BONUS_MAKE_AMBASSADOR</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
 	</Entry>
 	<Entry>
-		<zType>EVENTOPTION_TUTORIAL_APPOINT_SPYMASTER_OKAY</zType>
-		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_SPYMASTER_OKAY</Text>
+		<zType>EVENTOPTION_TUTORIAL_APPOINT_SPYMASTER_YES</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_SPYMASTER_YES</Text>
+		<aeBonuses>
+			<zValue>BONUS_MAKE_SPYMASTER</zValue>
+			<zValue>NONE</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_TUTORIAL_APPOINT_NO</zType>
+		<Text>TEXT_EVENTOPTION_TUTORIAL_APPOINT_NO</Text>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_TUTORIAL_AGENTS_PART_ONE_OKAY</zType>
@@ -50970,7 +53400,7 @@ one of the listed Event options."/>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_EVENTOPTION_TROOPS_RANSACK_OPTION_1_LEADER</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -51061,7 +53491,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_GIVE_TRAIT_SLIGHTED</zValue>
 			<zValue>NONE</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
@@ -51236,6 +53666,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_RELIGION_OPINION_GOOD</zValue>
 			<zValue>BONUS_HIGH_SYNOD</zValue>
+			<zValue>NONE</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -51265,6 +53696,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_HIGH_SYNOD_NO</Text>
 		<aeBonuses>
 			<zValue>NONE</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -51274,6 +53706,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>BONUS_STATE_RELIGION</zValue>
 			<zValue>NONE</zValue>
+			<zValue/>
 		</aeBonuses>
 	</Entry>
 	<Entry>
@@ -51281,6 +53714,7 @@ one of the listed Event options."/>
 		<Text>TEXT_EVENTOPTION_HIGH_SYNOD_CONVERSION_NO</Text>
 		<aeBonuses>
 			<zValue>BONUS_EVENTOPTION_RELIGION_OPINION_BAD</zValue>
+			<zValue>NONE</zValue>
 			<zValue>BONUS_XP_CHARACTER_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
@@ -51682,6 +54116,13 @@ one of the listed Event options."/>
 		<LeaderSubject>SUBJECT_CHARACTER_TERRIFYING</LeaderSubject>
 	</Entry>
 	<Entry>
+		<zType>EVENTOPTION_RIOTS_AT_THE_RACES_OPTION_3</zType>
+		<Text>TEXT_EVENTOPTION_RIOTS_AT_THE_RACES_OPTION_3</Text>
+		<aeBonuses>
+			<zValue>BONUS_EVENTOPTION_RIOTS_AT_THE_RACES_OPTION_3</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
 		<zType>EVENTOPTION_THE_RISK_OF_CHARM_OPTION_0</zType>
 		<Text>TEXT_EVENTOPTION_THE_RISK_OF_CHARM_OPTION_0</Text>
 		<aeBonuses>
@@ -51838,25 +54279,26 @@ one of the listed Event options."/>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CALENDAR_AND_SEASONS_OPTION_0</zType>
+		<EventLinkAdd>EVENTLINK_CALENDAR_AND_SEASONS</EventLinkAdd>
 		<Text>TEXT_EVENTOPTION_CALENDAR_AND_SEASONS_OPTION_0</Text>
 		<aeBonuses>
 			<zValue>BONUS_MONEY_LOSS_SMALL</zValue>
 			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 		</aeBonuses>
+		<bFutureEvents>1</bFutureEvents>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_CALENDAR_AND_SEASONS_OPTION_1</zType>
 		<Text>TEXT_EVENTOPTION_CALENDAR_AND_SEASONS_OPTION_1</Text>
 		<aeBonuses>
-			<zValue>BONUS_EVENTOPTION_LEGITIMACY_MONTH</zValue>
+			<zValue>NONE</zValue>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_DISCONTENT_LOSS_SMALL</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_PASSAGE_OF_THE_MOON_OPTION_0</zType>
-		<EventLinkAdd>EVENTLINK_CALENDAR_AND_SEASONS</EventLinkAdd>
 		<Text>TEXT_EVENTOPTION_PASSAGE_OF_THE_MOON_OPTION_0</Text>
 		<HelpText>TEXT_EVENTOPTION_PASSAGE_OF_THE_MOON_OPTION_0_HELP</HelpText>
 		<aeBonuses>
@@ -51865,7 +54307,6 @@ one of the listed Event options."/>
 			<zValue>BONUS_EVENTOPTION_LEGITIMACY_CALENDAR</zValue>
 		</aeBonuses>
 		<LeaderSubject>SUBJECT_CHARACTER_NOT_WEAK</LeaderSubject>
-		<bFutureEvents>1</bFutureEvents>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_PASSAGE_OF_THE_MOON_OPTION_1</zType>
@@ -52080,7 +54521,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_TRIBE_PEACE_LEGITIMACY</zValue>
 			<zValue>BONUS_LEADER_ENDEARED_TO</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_NOT_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_NOT_VILLAINOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_MOST_BLESSED_PEOPLE_ON_EARTH_OPTION_1</zType>
@@ -52089,7 +54530,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_GAIN_WISDOM_1</zValue>
 			<zValue>BONUS_LEADER_DISAPPOINTED_WITH</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_NOT_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_NOT_VILLAINOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_MOST_BLESSED_PEOPLE_ON_EARTH_OPTION_2</zType>
@@ -52098,7 +54539,7 @@ one of the listed Event options."/>
 			<zValue>BONUS_TRIBE_WAR_LEGITIMACY</zValue>
 			<zValue>BONUS_LEADER_VENGEFUL_AGAINST</zValue>
 		</aeBonuses>
-		<LeaderSubject>SUBJECT_CHARACTER_BAD</LeaderSubject>
+		<LeaderSubject>SUBJECT_CHARACTER_VILLAINOUS</LeaderSubject>
 	</Entry>
 	<Entry>
 		<zType>EVENTOPTION_SUCCESSION_POWER_STRUGGLES_OPTION_REMOVE</zType>
@@ -52721,7 +55162,7 @@ one of the listed Event options."/>
 		<aeBonuses>
 			<zValue>NONE</zValue>
 			<zValue>BONUS_GIVE_TRAIT_DEBAUCHED</zValue>
-			<zValue>BONUS_LEADER_OBLIGED_TO</zValue>
+			<zValue>BONUS_LEADER_INFLUENCED_BY</zValue>
 		</aeBonuses>
 	</Entry>
 	<Entry>

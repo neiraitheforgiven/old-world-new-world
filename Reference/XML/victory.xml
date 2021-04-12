@@ -26,7 +26,7 @@
 		<iPercentVP>50</iPercentVP>
 		<iOpponentMaxPointPercent>50</iOpponentMaxPointPercent>
 		<zHelp>Victory from acquiring twice as many VPs as any other Nation.
-(Must also have at least half the target number of VPs.)</zHelp>
+(Must also have at least half the target number of VPs. Only possible for Humans.)</zHelp>
 	</Entry>
 	<Entry>
 		<zType>VICTORY_AMBITION</zType>

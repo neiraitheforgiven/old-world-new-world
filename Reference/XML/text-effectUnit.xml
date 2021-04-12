@@ -59,10 +59,6 @@
 		<English>Swift Leader</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EFFECTUNIT_HARDY</zType>
-		<English>Hardy</English>
-	</Entry>
-	<Entry>
 		<zType>TEXT_EFFECTUNIT_EAGLE_EYE</zType>
 		<English>Eagle Eye</English>
 	</Entry>
@@ -219,6 +215,18 @@
 		<English>Fireship</English>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EFFECTUNIT_INGENUITY</zType>
+		<English>Ingenuity</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EFFECTUNIT_SADDLEBORN</zType>
+		<English>Saddleborn</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EFFECTUNIT_SNIPING</zType>
+		<English>Sniping</English>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EFFECTUNIT_ROUT</zType>
 		<English>Rout</English>
 	</Entry>
@@ -249,18 +257,6 @@
 	<Entry>
 		<zType>TEXT_EFFECTUNIT_SOLDIER</zType>
 		<English>Soldier</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EFFECTUNIT_INGENUITY</zType>
-		<English>Ingenuity</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EFFECTUNIT_SADDLEBORN</zType>
-		<English>Saddleborn</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EFFECTUNIT_SNIPING</zType>
-		<English>Sniping</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EFFECTUNIT_SURVEYOR</zType>

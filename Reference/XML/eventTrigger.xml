@@ -3,7 +3,7 @@
 <Root>
 	<Entry>
 		<zType/>
-		<DataAllowed comment="The Event can test for this via TriggerData"/>
+		<Data comment="The Event requires this Data type"/>
 		<SubjectClass comment="The Event can test for this Subject via TriggerSubject"/>
 		<ExtraClass comment="The Event can test for this Subject via TriggerExtra"/>
 		<iProb comment="The probability of an Event if this Trigger occurs"/>
@@ -13,12 +13,12 @@
 	</Entry>
 	<Entry>
 		<zType>EVENTTRIGGER_START_GAME</zType>
-		<DataAllowed>VICTORY</DataAllowed>
+		<iSortOrder>7</iSortOrder>
 		<bModal>1</bModal>
 	</Entry>
 	<Entry comment="Data = VictoryType">
 		<zType>EVENTTRIGGER_WIN_GAME</zType>
-		<DataAllowed>VICTORY</DataAllowed>
+		<Data>VICTORY</Data>
 		<iSortOrder>6</iSortOrder>
 		<bModal>1</bModal>
 	</Entry>
@@ -36,7 +36,7 @@
 	</Entry>
 	<Entry comment="Data = TechType">
 		<zType>EVENTTRIGGER_TECHNOLOGY</zType>
-		<DataAllowed>TECH</DataAllowed>
+		<Data>TECH</Data>
 	</Entry>
 	<Entry comment="Subject = City, Extra = Religion">
 		<zType>EVENTTRIGGER_RELIGION_FOUNDED_US</zType>
@@ -62,7 +62,6 @@
 	</Entry>
 	<Entry comment="Subject = City, Extra = Theology">
 		<zType>EVENTTRIGGER_THEOLOGY_ESTABLISHED</zType>
-		<DataAllowed>THEOLOGY</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_RELIGION</SubjectClass>
 		<ExtraClass>SUBJECTCLASS_THEOLOGY</ExtraClass>
 		<iProb>10</iProb>
@@ -137,9 +136,8 @@
 		<iProb>10</iProb>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = City, Data = CultureType">
+	<Entry comment="Subject = City">
 		<zType>EVENTTRIGGER_CITY_CULTURE</zType>
-		<DataAllowed>CULTURE</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
 	</Entry>
 	<Entry comment="Subject = City">
@@ -148,34 +146,32 @@
 	</Entry>
 	<Entry comment="Subject = City, Data = ProjectType">
 		<zType>EVENTTRIGGER_PRODUCTION_PROJECT</zType>
-		<DataAllowed>PROJECT</DataAllowed>
+		<Data>PROJECT</Data>
 		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
 	</Entry>
 	<Entry comment="Subject = City, Data = SpecialistType">
 		<zType>EVENTTRIGGER_PRODUCTION_SPECIALIST</zType>
-		<DataAllowed>SPECIALIST</DataAllowed>
+		<Data>SPECIALIST</Data>
 		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
 	</Entry>
 	<Entry comment="Subject = City, Extra = Unit, Data = UnitType">
 		<zType>EVENTTRIGGER_PRODUCTION_UNIT</zType>
-		<DataAllowed>UNIT</DataAllowed>
+		<Data>UNIT</Data>
 		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
 		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
 	</Entry>
 	<Entry comment="Subject = City, Data = ImprovementType">
 		<zType>EVENTTRIGGER_IMPROVEMENT_FINISHED</zType>
-		<DataAllowed>IMPROVEMENT</DataAllowed>
+		<Data>IMPROVEMENT</Data>
 		<SubjectClass>SUBJECTCLASS_CITY</SubjectClass>
 	</Entry>
-	<Entry comment="Subject = Tribe, Extra = Tile, Data = ImprovementType">
+	<Entry comment="Subject = Tribe, Extra = Tile">
 		<zType>EVENTTRIGGER_IMPROVEMENT_PILLAGED_TRIBE</zType>
-		<DataAllowed>IMPROVEMENT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_TRIBE</SubjectClass>
 		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
 	</Entry>
-	<Entry comment="Subject = Player, Extra = Tile, Data = ImprovementType">
+	<Entry comment="Subject = Player, Extra = Tile">
 		<zType>EVENTTRIGGER_IMPROVEMENT_PILLAGED_ENEMY</zType>
-		<DataAllowed>IMPROVEMENT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_PLAYER</SubjectClass>
 		<ExtraClass>SUBJECTCLASS_TILE</ExtraClass>
 	</Entry>
@@ -184,22 +180,22 @@
 	</Entry>
 	<Entry comment="Data = GoalType">
 		<zType>EVENTTRIGGER_AMBITION_FINISHED</zType>
-		<DataAllowed>GOAL</DataAllowed>
+		<Data>GOAL</Data>
 		<bModal>1</bModal>
 	</Entry>
 	<Entry comment="Data = GoalType">
 		<zType>EVENTTRIGGER_QUEST_FINISHED</zType>
-		<DataAllowed>GOAL</DataAllowed>
+		<Data>GOAL</Data>
 		<bModal>1</bModal>
 	</Entry>
 	<Entry comment="Data = GoalType">
 		<zType>EVENTTRIGGER_QUEST_FAILED</zType>
-		<DataAllowed>GOAL</DataAllowed>
+		<Data>GOAL</Data>
 		<bModal>1</bModal>
 	</Entry>
 	<Entry comment="Extra = Character, Data = MissionType">
 		<zType>EVENTTRIGGER_MISSION_FINISHED</zType>
-		<DataAllowed>MISSION</DataAllowed>
+		<Data>MISSION</Data>
 		<ExtraClass>SUBJECTCLASS_CHARACTER</ExtraClass>
 		<iSortOrder>4</iSortOrder>
 	</Entry>
@@ -252,7 +248,7 @@
 	</Entry>
 	<Entry comment="Subject = Character, Data = CognomenType">
 		<zType>EVENTTRIGGER_COGNOMEN</zType>
-		<DataAllowed>COGNOMEN</DataAllowed>
+		<Data>COGNOMEN</Data>
 		<SubjectClass>SUBJECTCLASS_CHARACTER</SubjectClass>
 	</Entry>
 	<Entry comment="Subject = Character, Extra = Character">
@@ -348,7 +344,7 @@
 	</Entry>
 	<Entry comment="Subject = Unit, Data = PromotionType">
 		<zType>EVENTTRIGGER_UNIT_PROMOTION</zType>
-		<DataAllowed>PROMOTION</DataAllowed>
+		<Data>PROMOTION</Data>
 		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
 		<bModal>1</bModal>
 	</Entry>
@@ -378,16 +374,14 @@
 		<iProb>10</iProb>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = Tile, Extra = Unit, Data = ImprovementType">
+	<Entry comment="Subject = Tile, Extra = Unit">
 		<zType>EVENTTRIGGER_TRIBE_CLEARED</zType>
-		<DataAllowed>IMPROVEMENT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
 		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = Tile, Extra = Unit, Data = ImprovementType">
+	<Entry comment="Subject = Tile, Extra = Unit">
 		<zType>EVENTTRIGGER_TRIBE_ELIMINATED</zType>
-		<DataAllowed>IMPROVEMENT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_TILE</SubjectClass>
 		<ExtraClass>SUBJECTCLASS_UNIT</ExtraClass>
 		<bModal>1</bModal>
@@ -400,31 +394,27 @@
 	</Entry>
 	<Entry comment="Subject = Unit, Data = UnitType">
 		<zType>EVENTTRIGGER_UNIT_SELECTED</zType>
-		<DataAllowed>UNIT</DataAllowed>
+		<Data>UNIT</Data>
 		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = Unit, Data = UnitType">
+	<Entry comment="Subject = Unit">
 		<zType>EVENTTRIGGER_UNIT_ATTACK_COOLDOWN</zType>
-		<DataAllowed>UNIT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = Unit, Data = UnitType">
+	<Entry comment="Subject = Unit">
 		<zType>EVENTTRIGGER_UNIT_MOVE_COOLDOWN</zType>
-		<DataAllowed>UNIT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = Unit, Data = UnitType">
+	<Entry comment="Subject = Unit">
 		<zType>EVENTTRIGGER_UNIT_IS_FATIGUED</zType>
-		<DataAllowed>UNIT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
 		<bModal>1</bModal>
 	</Entry>
-	<Entry comment="Subject = Unit, Data = UnitType">
+	<Entry comment="Subject = Unit">
 		<zType>EVENTTRIGGER_UNIT_NO_ORDERS</zType>
-		<DataAllowed>UNIT</DataAllowed>
 		<SubjectClass>SUBJECTCLASS_UNIT</SubjectClass>
 		<bModal>1</bModal>
 	</Entry>

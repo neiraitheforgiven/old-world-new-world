@@ -7,6 +7,7 @@
 		<zSubTitle/>
 		<zIcon/>
 		<zMapFile/>
+		<bAllowMap/>
 		<zMapScript/>
 		<zModName/>
 		<zAchievement/>
@@ -21,6 +22,7 @@
 	<Entry>
 		<zType>SCENARIO_BARBARIAN</zType>
 		<zName>Barbarian Invasion</zName>
+		<bAllowMap>0</bAllowMap>
 		<zModName>Barbarian</zModName>
 		<abOptionValid>
 			<Pair>

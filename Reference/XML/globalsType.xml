@@ -258,10 +258,6 @@
 		<zValue>BONUS_FAMILY_FOUND</zValue>
 	</Entry>
 	<Entry>
-		<zType>TRIBE_FOUND_BONUS</zType>
-		<zValue>BONUS_TRIBE_FOUND</zValue>
-	</Entry>
-	<Entry>
 		<zType>DISCOVERED_LANDMARK_BONUS</zType>
 		<zValue>BONUS_DISCOVERED_LANDMARK</zValue>
 	</Entry>
@@ -276,6 +272,10 @@
 	<Entry>
 		<zType>FINISHED_LEGACY_BONUS</zType>
 		<zValue>BONUS_FINISHED_LEGACY</zValue>
+	</Entry>
+	<Entry>
+		<zType>ABANDONED_AMBITION_BONUS</zType>
+		<zValue>BONUS_ABANDONED_AMBITION</zValue>
 	</Entry>
 	<Entry>
 		<zType>FAILED_LEGACY_BONUS</zType>
@@ -1070,8 +1070,8 @@
 		<zValue>MEMORYFAMILY_REMOVED_LUXURY</zValue>
 	</Entry>
 	<Entry>
-		<zType>TRADE_DEAL_MEMORY</zType>
-		<zValue>MEMORYPLAYER_TRADE_DEAL</zValue>
+		<zType>CARAVAN_ARRIVED_MEMORY</zType>
+		<zValue>MEMORYPLAYER_CARAVAN_ARRIVED</zValue>
 	</Entry>
 	<Entry>
 		<zType>TRIBE_RAID_MEMORY</zType>
@@ -1188,6 +1188,14 @@
 	<Entry>
 		<zType>TRIBE_CONVERSION_STAT</zType>
 		<zValue>STAT_TRIBE_CONVERSION</zValue>
+	</Entry>
+	<Entry>
+		<zType>MERCENARIES_HIRED_STAT</zType>
+		<zValue>STAT_MERCENARIES_HIRED</zValue>
+	</Entry>
+	<Entry>
+		<zType>MERCENARIES_RECRUITED_STAT</zType>
+		<zValue>STAT_MERCENARIES_RECRUITED</zValue>
 	</Entry>
 	<Entry>
 		<zType>TEAM_CONTACTED_STAT</zType>

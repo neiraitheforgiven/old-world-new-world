@@ -65,7 +65,7 @@
 		<TechPrereq>TECH_JURISPRUDENCE</TechPrereq>
 	</Entry>
 	<Entry>
-		<zType>LAWCLASS_ISOLATIONISM_TRADE_LEAGUE</zType>
+		<zType>LAWCLASS_AUTARKY_TRADE_LEAGUE</zType>
 		<TechPrereq>TECH_LATEEN_SAIL</TechPrereq>
 	</Entry>
 	<Entry>

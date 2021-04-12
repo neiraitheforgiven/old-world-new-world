@@ -144,6 +144,12 @@
 		<Name>TEXT_IMPROVEMENT_GREAT_ZIGGURAT</Name>
 		<SourceImprovement>IMPROVEMENT_GREAT_ZIGGURAT</SourceImprovement>
 		<EffectCity>EFFECTCITY_IMPROVEMENT_GREAT_ZIGGURAT_ALL</EffectCity>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>200</iValue>
+			</Pair>
+		</aiYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_IMPROVEMENT_ORACLE</zType>
@@ -173,7 +179,13 @@
 		<zType>EFFECTPLAYER_IMPROVEMENT_APADANA</zType>
 		<Name>TEXT_IMPROVEMENT_APADANA</Name>
 		<SourceImprovement>IMPROVEMENT_APADANA</SourceImprovement>
-		<StateReligionEffectCity>EFFECTCITY_IMPROVEMENT_APADANA_STATE</StateReligionEffectCity>
+		<EffectCity>EFFECTCITY_IMPROVEMENT_APADANA_ALL</EffectCity>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>200</iValue>
+			</Pair>
+		</aiYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_IMPROVEMENT_MAUSOLEUM</zType>
@@ -204,12 +216,24 @@
 		<Name>TEXT_IMPROVEMENT_CIRCUS_MAXIMUS</Name>
 		<SourceImprovement>IMPROVEMENT_CIRCUS_MAXIMUS</SourceImprovement>
 		<EffectCity>EFFECTCITY_IMPROVEMENT_CIRCUS_MAXIMUS_ALL</EffectCity>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>400</iValue>
+			</Pair>
+		</aiYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_IMPROVEMENT_PANTHEON</zType>
 		<Name>TEXT_IMPROVEMENT_PANTHEON</Name>
 		<SourceImprovement>IMPROVEMENT_PANTHEON</SourceImprovement>
 		<StateReligionEffectCity>EFFECTCITY_IMPROVEMENT_PANTHEON_STATE</StateReligionEffectCity>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>400</iValue>
+			</Pair>
+		</aiYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_IMPROVEMENT_HAGIA_SOPHIA</zType>
@@ -423,10 +447,10 @@
 		<iMaxActions>100</iMaxActions>
 	</Entry>
 	<Entry>
-		<zType>EFFECTPLAYER_LAW_ISOLATIONISM</zType>
-		<Name>TEXT_EFFECTPLAYER_LAW_ISOLATIONISM</Name>
-		<SourceLaw>LAW_ISOLATIONISM</SourceLaw>
-		<EffectCity>EFFECTCITY_LAW_ISOLATIONISM</EffectCity>
+		<zType>EFFECTPLAYER_LAW_AUTARKY</zType>
+		<Name>TEXT_EFFECTPLAYER_LAW_AUTARKY</Name>
+		<SourceLaw>LAW_AUTARKY</SourceLaw>
+		<EffectCity>EFFECTCITY_LAW_AUTARKY</EffectCity>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_LAW_TRADE_LEAGUE</zType>

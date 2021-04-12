@@ -199,16 +199,20 @@
 		<RelationshipInvalid>RELATIONSHIP_TERRIFIED_OF</RelationshipInvalid>
 	</Entry>
 	<Entry>
-		<zType>SUBJECTRELATION_OBLIGED_TO</zType>
-		<RelationshipPrereq>RELATIONSHIP_OBLIGED_TO</RelationshipPrereq>
-	</Entry>
-	<Entry>
 		<zType>SUBJECTRELATION_INFLUENCED_BY</zType>
 		<RelationshipPrereq>RELATIONSHIP_INFLUENCED_BY</RelationshipPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECTRELATION_INTERCESSED_FOR</zType>
 		<RelationshipPrereq>RELATIONSHIP_INTERCESSED_FOR</RelationshipPrereq>
+	</Entry>
+	<Entry>
+		<zType>SUBJECTRELATION_HOLDS_FAVOR_FROM</zType>
+		<RelationshipPrereq>RELATIONSHIP_HOLDS_FAVOR_FROM</RelationshipPrereq>
+	</Entry>
+	<Entry>
+		<zType>SUBJECTRELATION_OWES_FAVOR_TO</zType>
+		<RelationshipPrereq>RELATIONSHIP_OWES_FAVOR_TO</RelationshipPrereq>
 	</Entry>
 	<Entry>
 		<zType>SUBJECTRELATION_JEALOUS_ABOUT</zType>
@@ -573,6 +577,10 @@
 		<MinOpinionPlayer>OPINIONPLAYER_PLEASED</MinOpinionPlayer>
 	</Entry>
 	<Entry>
+		<zType>SUBJECTRELATION_PLAYER_MIN_FRIENDLY</zType>
+		<MinOpinionPlayer>OPINIONPLAYER_FRIENDLY</MinOpinionPlayer>
+	</Entry>
+	<Entry>
 		<zType>SUBJECTRELATION_PLAYER_ANGRY_TO_PLEASED</zType>
 		<MinOpinionPlayer>OPINIONPLAYER_ANGRY</MinOpinionPlayer>
 		<MaxOpinionPlayer>OPINIONPLAYER_PLEASED</MaxOpinionPlayer>
@@ -825,7 +833,7 @@
 	</Entry>
 	<Entry>
 		<zType>SUBJECTRELATION_MIN_CONFLICT_TURNS</zType>
-		<zName>Shorter than int(MIN_TREATY_TURNS) years since last link(DIPLOMACY_WAR)</zName>
+		<zName>Shorter than int(MIN_TREATY_TURNS) Turns since last link(DIPLOMACY_WAR)</zName>
 		<bMinTreatyTurns>1</bMinTreatyTurns>
 	</Entry>
 	<Entry>

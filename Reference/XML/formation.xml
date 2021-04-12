@@ -7,7 +7,7 @@
 		<UnitPortraitAsset/>
 		<UnitProjectileAsset/>
 		<UnitProjectileImpactAudio/>
-        <UnitProjectileImpactAudioEarly/>
+		<UnitProjectileImpactAudioEarly/>
 		<eGender/>
 		<bLand/>
 		<bWater/>
@@ -36,8 +36,8 @@
 	<Entry>
 		<zType>FORMATION_SETTLER</zType>
 		<UnitAsset>ASSET_UNIT_SETTLER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SETTLER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SETTLER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -45,8 +45,8 @@
 	<Entry>
 		<zType>FORMATION_WORKER</zType>
 		<UnitAsset>ASSET_UNIT_WORKER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WORKER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WORKER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
@@ -64,8 +64,8 @@
 	<Entry>
 		<zType>FORMATION_SCOUT</zType>
 		<UnitAsset>ASSET_UNIT_SCOUT</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SCOUT</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SCOUT</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
@@ -83,8 +83,8 @@
 	<Entry>
 		<zType>FORMATION_CARAVAN</zType>
 		<UnitAsset>ASSET_UNIT_CARAVAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CARAVAN</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CARAVAN</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -92,9 +92,9 @@
 	<Entry>
 		<zType>FORMATION_ZOROASTRIANISM_DISCIPLE</zType>
 		<UnitAsset>ASSET_UNIT_ZOROASTRIANISM_DISCIPLE</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ZOROASTRIANISM_DISCIPLE</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ZOROASTRIANISM_DISCIPLE</UnitPortraitAsset>
 
-    <bLand>1</bLand>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -102,9 +102,9 @@
 	<Entry>
 		<zType>FORMATION_JUDAISM_DISCIPLE</zType>
 		<UnitAsset>ASSET_UNIT_JUDAISM_DISCIPLE</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_JUDAISM_DISCIPLE</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_JUDAISM_DISCIPLE</UnitPortraitAsset>
 
-    <bLand>1</bLand>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -112,9 +112,9 @@
 	<Entry>
 		<zType>FORMATION_CHRISTIANITY_DISCIPLE</zType>
 		<UnitAsset>ASSET_UNIT_CHRISTIANITY_DISCIPLE</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CHRISTIANITY_DISCIPLE</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CHRISTIANITY_DISCIPLE</UnitPortraitAsset>
 
-    <bLand>1</bLand>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -122,9 +122,9 @@
 	<Entry>
 		<zType>FORMATION_MANICHAEISM_DISCIPLE</zType>
 		<UnitAsset>ASSET_UNIT_MANICHAEISM_DISCIPLE</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MANICHAEISM_DISCIPLE</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MANICHAEISM_DISCIPLE</UnitPortraitAsset>
 
-    <bLand>1</bLand>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -132,7 +132,7 @@
 	<Entry>
 		<zType>FORMATION_WARRIOR</zType>
 		<UnitAsset>ASSET_UNIT_WARRIOR</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WARRIOR</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WARRIOR</UnitPortraitAsset>
 		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
@@ -147,8 +147,8 @@
 	<Entry>
 		<zType>FORMATION_MACEMAN</zType>
 		<UnitAsset>ASSET_UNIT_MACEMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MACEMAN</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MACEMAN</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
 			<f3Value>-2.27, -1.84, 0</f3Value>
@@ -161,22 +161,22 @@
 	<Entry>
 		<zType>FORMATION_SPEARMAN</zType>
 		<UnitAsset>ASSET_UNIT_SPEARMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SPEARMAN</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SPEARMAN</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_SWORDSMAN</zType>
 		<UnitAsset>ASSET_UNIT_SWORDSMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SWORDSMAN</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SWORDSMAN</UnitPortraitAsset>
 		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
@@ -190,65 +190,65 @@
 	<Entry>
 		<zType>FORMATION_AXEMAN</zType>
 		<UnitAsset>ASSET_UNIT_AXEMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_AXEMAN</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 15</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, -15</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_AXEMAN</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 15</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, -15</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_PIKEMAN</zType>
 		<UnitAsset>ASSET_UNIT_PIKEMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_PIKEMAN</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 15</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, -15</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_PIKEMAN</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 15</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, -15</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_MILITIA</zType>
 		<UnitAsset>ASSET_UNIT_MILITIA</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MILITIA</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MILITIA</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_CONSCRIPT</zType>
 		<UnitAsset>ASSET_UNIT_CONSCRIPT</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CONSCRIPT</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CONSCRIPT</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_SLINGER</zType>
 		<UnitAsset>ASSET_UNIT_SLINGER</UnitAsset>
 		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SLINGER</UnitPortraitAsset>
 		<UnitProjectileAsset>ASSET_UNIT_SLINGER_PROJECTILE</UnitProjectileAsset>
-        <UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_SLINGER_ROCK</UnitProjectileImpactAudio>
+		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_SLINGER_ROCK</UnitProjectileImpactAudio>
 		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
@@ -265,52 +265,57 @@
 		<UnitAsset>ASSET_UNIT_ARCHER</UnitAsset>
 		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ARCHER</UnitPortraitAsset>
 		<UnitProjectileAsset>ASSET_UNIT_ARCHER_PROJECTILE</UnitProjectileAsset>
-        <UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW</UnitProjectileImpactAudio>
-        <UnitProjectileImpactAudioEarly>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW_EARLY</UnitProjectileImpactAudioEarly>
+		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW</UnitProjectileImpactAudio>
+		<UnitProjectileImpactAudioEarly>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW_EARLY</UnitProjectileImpactAudioEarly>
 		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_LONGBOWMAN</zType>
 		<UnitAsset>ASSET_UNIT_LONGBOWMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_LONGBOWMAN</UnitPortraitAsset>
-
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_LONGBOWMAN</UnitPortraitAsset>
+		<UnitProjectileAsset>ASSET_UNIT_ARCHER_PROJECTILE</UnitProjectileAsset>
+		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW</UnitProjectileImpactAudio>
+		<UnitProjectileImpactAudioEarly>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW_EARLY</UnitProjectileImpactAudioEarly>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_CROSSBOWMAN</zType>
 		<UnitAsset>ASSET_UNIT_CROSSBOWMAN</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CROSSBOWMAN</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CROSSBOWMAN</UnitPortraitAsset>
+		<UnitProjectileAsset>ASSET_UNIT_ARCHER_PROJECTILE</UnitProjectileAsset>
+		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW</UnitProjectileImpactAudio>
+		<UnitProjectileImpactAudioEarly>AUDIO_UNIT_PROJECTILE_IMPACT_ARROW_EARLY</UnitProjectileImpactAudioEarly>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_CHARIOT</zType>
 		<UnitAsset>ASSET_UNIT_CHARIOT</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CHARIOT</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CHARIOT</UnitPortraitAsset>
 		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
@@ -322,38 +327,38 @@
 		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_HORSEMAN</UnitPortraitAsset>
 		<bLand>1</bLand>
 		<lf3FrontRow>
-		  <f3Value>-2.8, 0.9, 0</f3Value>
-		  <f3Value>0.11, -1.44, 0</f3Value>
-		  <f3Value>2.97, 0.9, 0</f3Value>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
 		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_HORSE_ARCHER</zType>
 		<UnitAsset>ASSET_UNIT_HORSE_ARCHER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_HORSE_ARCHER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_HORSE_ARCHER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
-		  <f3Value>-2.8, 0.9, 0</f3Value>
-		  <f3Value>0.11, -1.44, 0</f3Value>
-		  <f3Value>2.97, 0.9, 0</f3Value>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
 		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_CAMEL_ARCHER</zType>
 		<UnitAsset>ASSET_UNIT_CAMEL_ARCHER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CAMEL_ARCHER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CAMEL_ARCHER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
-		  <f3Value>-2.8, 0.9, 0</f3Value>
-		  <f3Value>0.11, -1.44, 0</f3Value>
-		  <f3Value>2.97, 0.9, 0</f3Value>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
 		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_WAR_ELEPHANT</zType>
 		<UnitAsset>ASSET_UNIT_WAR_ELEPHANT</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WAR_ELEPHANT</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WAR_ELEPHANT</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -361,16 +366,19 @@
 	<Entry>
 		<zType>FORMATION_CATAPHRACT</zType>
 		<UnitAsset>ASSET_UNIT_CATAPHRACT</UnitAsset>
-		<bLand>1</bLand>
+    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CATAPHRACT</UnitPortraitAsset>
+    <bLand>1</bLand>
 		<lf3FrontRow>
-			<f3Value>0, 0, 0</f3Value>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
 		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_BALLISTA</zType>
 		<UnitAsset>ASSET_UNIT_BALLISTA</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_BALLISTA</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_BALLISTA</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -378,8 +386,8 @@
 	<Entry>
 		<zType>FORMATION_POLYBOLOS</zType>
 		<UnitAsset>ASSET_UNIT_POLYBOLOS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_POLYBOLOS</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_POLYBOLOS</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -387,8 +395,8 @@
 	<Entry>
 		<zType>FORMATION_ONAGER</zType>
 		<UnitAsset>ASSET_UNIT_ONAGER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ONAGER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ONAGER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -396,8 +404,8 @@
 	<Entry>
 		<zType>FORMATION_MANGONEL</zType>
 		<UnitAsset>ASSET_UNIT_MANGONEL</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MANGONEL</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_MANGONEL</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -405,8 +413,8 @@
 	<Entry>
 		<zType>FORMATION_BIREME</zType>
 		<UnitAsset>ASSET_UNIT_BIREME</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_BIREME</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_BIREME</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -466,7 +474,7 @@
 	<Entry>
 		<zType>FORMATION_SIEGE_TOWER</zType>
 		<UnitAsset>ASSET_UNIT_SIEGE_TOWER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SIEGE_TOWER</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SIEGE_TOWER</UnitPortraitAsset>
 		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
@@ -485,13 +493,18 @@
 		<UnitAsset>ASSET_UNIT_CIMMERIAN_ARCHER</UnitAsset>
 		<bLand>1</bLand>
 		<lf3FrontRow>
-			<f3Value>0, 0, 0</f3Value>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
 		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_AFRICAN_ELEPHANT</zType>
 		<UnitAsset>ASSET_UNIT_AFRICAN_ELEPHANT</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_AFRICAN_ELEPHANT</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_AFRICAN_ELEPHANT</UnitPortraitAsset>
 		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
@@ -500,8 +513,8 @@
 	<Entry>
 		<zType>FORMATION_TURRETED_ELEPHANT</zType>
 		<UnitAsset>ASSET_UNIT_TURRETED_ELEPHANT</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_TURRETED_ELEPHANT</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_TURRETED_ELEPHANT</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>0, 0, 0</f3Value>
 		</lf3FrontRow>
@@ -525,16 +538,16 @@
 	<Entry>
 		<zType>FORMATION_HOPLITE</zType>
 		<UnitAsset>ASSET_UNIT_HOPLITE</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_HOPLITE</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_HOPLITE</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_PHALANGITE</zType>
@@ -555,24 +568,33 @@
 	<Entry>
 		<zType>FORMATION_CATAPHRACT_ARCHER</zType>
 		<UnitAsset>ASSET_UNIT_CATAPHRACT_ARCHER</UnitAsset>
-		<bLand>1</bLand>
+    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CATAPHRACT_ARCHER</UnitPortraitAsset>
+    <bLand>1</bLand>
 		<lf3FrontRow>
-			<f3Value>0, 0, 0</f3Value>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
 		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_HASTATUS</zType>
 		<UnitAsset>ASSET_UNIT_HASTATUS</UnitAsset>
-		<bLand>1</bLand>
+    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_HASTATUS</UnitPortraitAsset>
+    <bLand>1</bLand>
 		<lf3FrontRow>
-			<f3Value>0, 0, 0</f3Value>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
 		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_LEGIONARY</zType>
 		<UnitAsset>ASSET_UNIT_LEGIONARY</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_LEGIONARY</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_LEGIONARY</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
 			<f3Value>-2.27, -1.84, 0</f3Value>
@@ -600,8 +622,8 @@
 	<Entry>
 		<zType>FORMATION_SKIRMISHER</zType>
 		<UnitAsset>ASSET_UNIT_SKIRMISHER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SKIRMISHER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_SKIRMISHER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
 			<f3Value>-2.27, -1.84, 0</f3Value>
@@ -614,9 +636,9 @@
 	<Entry>
 		<zType>FORMATION_NOMAD_MARAUDER</zType>
 		<UnitAsset>ASSET_UNIT_NOMAD_MARAUDER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_NOMAD_MARAUDER</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_NOMAD_MARAUDER</UnitPortraitAsset>
 
-    <bLand>1</bLand>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>-2.8, 0.9, 0</f3Value>
 			<f3Value>0.11, -1.44, 0</f3Value>
@@ -626,19 +648,19 @@
 	<Entry>
 		<zType>FORMATION_NOMAD_SKIRMISHER</zType>
 		<UnitAsset>ASSET_UNIT_NOMAD_SKIRMISHER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_NOMAD_SKIRMISHER</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_NOMAD_SKIRMISHER</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_MARAUDER</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_MARAUDER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_MARAUDER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_MARAUDER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
@@ -666,30 +688,30 @@
 	<Entry>
 		<zType>FORMATION_ELITE_NOMAD_MARAUDER</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_NOMAD_MARAUDER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_NOMAD_MARAUDER</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
-  </Entry>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_NOMAD_MARAUDER</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
+	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_NOMAD_SKIRMISHER</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_NOMAD_SKIRMISHER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_NOMAD_SKIRMISHER</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_NOMAD_SKIRMISHER</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_WARLORD</zType>
 		<UnitAsset>ASSET_UNIT_WARLORD</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WARLORD</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_WARLORD</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
 			<f3Value>-2.27, -1.84, 0</f3Value>
@@ -702,18 +724,18 @@
 	<Entry>
 		<zType>FORMATION_JAVELINEER</zType>
 		<UnitAsset>ASSET_UNIT_JAVELINEER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_JAVELINEER</UnitPortraitAsset>
-    <UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_SPEAR_SMALL</UnitProjectileImpactAudio>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_JAVELINEER</UnitPortraitAsset>
+		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_SPEAR_SMALL</UnitProjectileImpactAudio>
 		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_NOMAD_WARLORD</zType>
@@ -726,16 +748,16 @@
 	<Entry>
 		<zType>FORMATION_GAESATA_GAULS</zType>
 		<UnitAsset>ASSET_UNIT_GAESATA_GAULS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_GAESATA</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_GAESATA</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_HUSCARL_DANES</zType>
@@ -744,35 +766,35 @@
 		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_CLUBTHROWER_VANDALS</zType>
 		<UnitAsset>ASSET_UNIT_CLUBTHROWER_VANDALS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CLUBTHROWER_VANDALS</UnitPortraitAsset>
-    <UnitProjectileAsset>ASSET_UNIT_CLUBTHROWER_VANDALS_PROJECTILE</UnitProjectileAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_CLUBTHROWER_VANDALS</UnitPortraitAsset>
+		<UnitProjectileAsset>ASSET_UNIT_CLUBTHROWER_VANDALS_PROJECTILE</UnitProjectileAsset>
 		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_HAMMER</UnitProjectileImpactAudio>
 		<bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_PELTAST_THRACIANS</zType>
 		<UnitAsset>ASSET_UNIT_PELTAST_THRACIANS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_PELTAST_THRACIANS</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_PELTAST_THRACIANS</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<lf3FrontRow>
 			<f3Value>2.4, -1.84, 0</f3Value>
 			<f3Value>-2.27, -1.84, 0</f3Value>
@@ -785,92 +807,92 @@
 	<Entry>
 		<zType>FORMATION_AMAZON_CAVALRY_SCYTHIANS</zType>
 		<UnitAsset>ASSET_UNIT_AMAZON_CAVALRY_SCYTHIANS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_AMAZON_CAVALRY_SCYTHIANS</UnitPortraitAsset>
-   <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_AMAZON_CAVALRY_SCYTHIANS</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_LIBYAN_CAVALRY_NUMIDIANS</zType>
 		<UnitAsset>ASSET_UNIT_LIBYAN_CAVALRY_NUMIDIANS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_LIBYAN_CAVALRY_NUMIDIANS</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_LIBYAN_CAVALRY_NUMIDIANS</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_WARLORD</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_WARLORD</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_WARLORD</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_WARLORD</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_JAVELINEER</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_JAVELINEER</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_JAVELINEER</UnitPortraitAsset>
-    <bLand>1</bLand>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_JAVELINEER</UnitPortraitAsset>
+		<bLand>1</bLand>
 		<bHeadControl>1</bHeadControl>
 		<lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_NOMAD_WARLORD</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_NOMAD_WARLORD</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_NOMAD_WARLORD</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_NOMAD_WARLORD</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_GAESATA_GAULS</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_GAESATA_GAULS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_GAESATA_GAULS</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_GAESATA_GAULS</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_HUSCARL_DANES</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_HUSCARL_DANES</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_HUSCARL_DANES</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_HUSCARL_DANES</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_CLUBTHROWER_VANDALS</zType>
@@ -878,51 +900,51 @@
 		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_CLUBTHROWER_VANDALS</UnitPortraitAsset>
 		<UnitProjectileAsset>ASSET_UNIT_ELITE_CLUBTHROWER_VANDALS_PROJECTILE</UnitProjectileAsset>
 		<UnitProjectileImpactAudio>AUDIO_UNIT_PROJECTILE_IMPACT_HAMMER</UnitProjectileImpactAudio>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_PELTAST_THRACIANS</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_PELTAST_THRACIANS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_PELTAST_THRACIANS</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>2.4, -1.84, 0</f3Value>
-      <f3Value>-2.27, -1.84, 0</f3Value>
-    </lf3FrontRow>
-    <lf3BackRow>
-      <f3Value>-2.27, 2.03, 0</f3Value>
-      <f3Value>1.79, 2.03, 0</f3Value>
-    </lf3BackRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_PELTAST_THRACIANS</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+		</lf3FrontRow>
+		<lf3BackRow>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3BackRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_AMAZON_CAVALRY_SCYTHIANS</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_AMAZON_CAVALRY_SCYTHIANS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_AMAZON_CAVALRY_SCYTHIANS</UnitPortraitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_AMAZON_CAVALRY_SCYTHIANS</UnitPortraitAsset>
 		<bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_ELITE_LIBYAN_CAVALRY_NUMIDIANS</zType>
 		<UnitAsset>ASSET_UNIT_ELITE_LIBYAN_CAVALRY_NUMIDIANS</UnitAsset>
-    <UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_LIBYAN_CAVALRY_NUMIDIANS</UnitPortraitAsset>
-    <bLand>1</bLand>
-    <lf3FrontRow>
-      <f3Value>-2.8, 0.9, 0</f3Value>
-      <f3Value>0.11, -1.44, 0</f3Value>
-      <f3Value>2.97, 0.9, 0</f3Value>
-    </lf3FrontRow>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_ELITE_LIBYAN_CAVALRY_NUMIDIANS</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>-2.8, 0.9, 0</f3Value>
+			<f3Value>0.11, -1.44, 0</f3Value>
+			<f3Value>2.97, 0.9, 0</f3Value>
+		</lf3FrontRow>
 	</Entry>
 	<Entry>
 		<zType>FORMATION_DEFAULT_WATER</zType>

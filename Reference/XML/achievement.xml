@@ -13,6 +13,8 @@
 		<aiCultureCount/>
 		<aiStatCount/>
 		<aeGameOptions/>
+		<bGOTW/>
+		<iNumOpponents/>
 	</Entry>
 	<Entry>
 		<zType>ACHIEVEMENT_VICTORY_NO_UNDO</zType>
@@ -2382,5 +2384,36 @@
 		<aiCultureCount/>
 		<aiStatCount/>
 		<aeGameOptions/>
+	</Entry>
+	<Entry>
+		<zType>ACHIEVEMENT_GOTW</zType>
+		<zName>Won a Game of the Week</zName>
+		<Victory/>
+		<EventLevel/>
+		<Mortality/>
+		<Difficulty/>
+		<Nation/>
+		<FamilyClass/>
+		<aiCultureCount/>
+		<aiStatCount/>
+		<aeGameOptions/>
+		<bGOTW>1</bGOTW>
+	</Entry>
+	<Entry>
+		<zType>ACHIEVEMENT_HARDCORE</zType>
+		<zName>Hardcore (Won a game on the Great difficulty against all nations with High Event Level, Realistic Mortality, Locked Save and No Undo)</zName>
+		<Victory/>
+		<EventLevel>EVENTLEVEL_HIGH</EventLevel>
+		<Mortality>MORTALITY_REALISTIC</Mortality>
+		<Difficulty>DIFFICULTY_GREAT</Difficulty>
+		<Nation/>
+		<FamilyClass/>
+		<aiCultureCount/>
+		<aiStatCount/>
+		<aeGameOptions>
+			<zValue>GAMEOPTION_NO_UNDO</zValue>
+			<zValue>GAMEOPTION_LOCKED_SAVE</zValue>
+		</aeGameOptions>
+		<iNumOpponents>6</iNumOpponents>
 	</Entry>
 </Root>

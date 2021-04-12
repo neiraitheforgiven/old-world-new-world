@@ -407,7 +407,7 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_UI_UNIT_ATTACK_PREVIEW_FAMILY_TERRITORY</zType>
-		<English>Family Territory</English>
+		<English>{0_family} Territory</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_UI_UNIT_ATTACK_PREVIEW_CRITICAL_CHANCE</zType>
@@ -1152,7 +1152,7 @@ Any unsaved progress will be lost.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_WIKI_NAV_UI_SECTION_IMPROVEMENTS</zType>
-		<English>Improvements</English>
+		<English>Improvements (General)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_WIKI_NAV_UI_SECTION_RESOURCES</zType>
@@ -1168,15 +1168,27 @@ Any unsaved progress will be lost.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_WIKI_NAV_UI_SECTION_ARCHETYPES</zType>
-		<English>Archetypes</English>
+		<English>Traits (Archetypes)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_WIKI_NAV_UI_SECTION_COUNCILS</zType>
-		<English>Councils</English>
+		<English>Councilors</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_WIKI_NAV_UI_SECTION_WONDERS</zType>
+		<English>Improvements (Wonders)</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_WIKI_NAV_UI_SECTION_RELIGIOUSIMPROVEMENTS</zType>
+		<English>Improvements (Religion)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_WIKI_NAV_UI_SECTION_TRAITS</zType>
-		<English>Traits</English>
+		<English>Traits (Other)</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_WIKI_NAV_UI_SECTION_TRAITSADJECTIVES</zType>
+		<English>Traits (Adjectives)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_WIKI_NAV_UI_SECTION_THEOLOGIES</zType>
@@ -1670,7 +1682,7 @@ Any unsaved progress will be lost.</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_MP_SETUP_INVALID_START_NATIONS</zType>
-		<English>"No Duplicate Nations" game option is enabled, but there are more players than unique nations or duplicate nations have been selected</English>
+		<English>"No Duplicate Nations" game option is enabled or "No Characters" is disabled, but there are more players than unique nations or duplicate nations have been selected</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_MP_SETUP_INVALID_START_MAP</zType>
@@ -2170,6 +2182,30 @@ Any unsaved progress will be lost.</English>
 		<zType>TEXT_TECH_TREE_TECHS_FULL</zType>
 		<English>Detailed Tree</English>
 	</Entry>
+	<Entry>
+		<zType>TEXT_TECH_TREE_COMPLETED</zType>
+		<English>Completed</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TECH_TREE_LOCKED</zType>
+		<English>Locked</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TECH_TREE_RESEARCHING</zType>
+		<English>Researching</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TECH_TREE_AVAILABLE</zType>
+		<English>Available</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TECH_TREE_DISCARD</zType>
+		<English>Discard Pile</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TECH_TREE_DECK</zType>
+		<English>In Deck</English>
+	</Entry>
 	<!--selected-worker.xml-->
 	<Entry>
 		<zType>TEXT_SELECTED_WORKER_TURN</zType>
@@ -2297,11 +2333,27 @@ Any unsaved progress will be lost.</English>
 	<!--game-log.xml-->
 	<Entry>
 		<zType>TEXT_GAME_LOG</zType>
-		<English>Game Log</English>
+		<English>Your Timeline</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GAME_LOG_LEADERS</zType>
+		<English>Leaders</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GAME_LOG_LOG</zType>
-		<English>Log</English>
+		<English>Game Log</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GAME_LOG_EXPORT</zType>
+		<English>Export GIF</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GAME_LOG_SHOW_MAP</zType>
+		<English>Map View</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GAME_LOG_SHOW_TREE</zType>
+		<English>Family Tree View</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GAME_LOG_TIMELINE</zType>

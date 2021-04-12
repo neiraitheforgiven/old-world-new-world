@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <!-- Old World's system for game objectives. Goal objects can be used for the Ambition system, for Scenario or Campaign game objectives, and in general through events to set up completable Quests. -->
 <Root>
 	<Entry>
@@ -711,13 +711,13 @@
 		</aiDesiredWeight>
 	</Entry>
 	<Entry>
-		<zType>GOAL_ISOLATIONISM</zType>
-		<Name>TEXT_GOAL_ISOLATIONISM</Name>
+		<zType>GOAL_AUTARKY</zType>
+		<Name>TEXT_GOAL_AUTARKY</Name>
 		<iAmbitionClass>1</iAmbitionClass>
 		<iMinTier>5</iMinTier>
 		<iMaxTier>6</iMaxTier>
 		<TechObsolete>TECH_LATEEN_SAIL</TechObsolete>
-		<StartLaw>LAW_ISOLATIONISM</StartLaw>
+		<StartLaw>LAW_AUTARKY</StartLaw>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_RIDERS</zIndex>
@@ -1938,39 +1938,34 @@
 		</aiImprovementCount>
 	</Entry>
 	<Entry>
-		<zType>GOAL_SIX_LUMBERMILLS</zType>
-		<Name>TEXT_GOAL_SIX_LUMBERMILLS</Name>
+		<zType>GOAL_SIX_MINES</zType>
+		<Name>TEXT_GOAL_SIX_MINES</Name>
 		<iAmbitionClass>7</iAmbitionClass>
-		<iMinTier>2</iMinTier>
-		<iMaxTier>3</iMaxTier>
-		<TechPrereq>TECH_FORESTRY</TechPrereq>
+		<iMinTier>1</iMinTier>
+		<iMaxTier>2</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
-				<zIndex>FAMILYCLASS_ARTISANS</zIndex>
+				<zIndex>FAMILYCLASS_CHAMPIONS</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 		</aiFamilyClassWeight>
 		<aiDesiredWeight>
 			<Pair>
-				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
-				<iValue>1000</iValue>
-			</Pair>
-			<Pair>
 				<zIndex>TRAIT_BUILDER_ARCHETYPE</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>TRAIT_ZEALOT_ARCHETYPE</zIndex>
+				<zIndex>TRAIT_HERO_ARCHETYPE</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>TRAIT_SCHOLAR_ARCHETYPE</zIndex>
+				<zIndex>TRAIT_COMMANDER_ARCHETYPE</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 		</aiDesiredWeight>
 		<aiImprovementCount>
 			<Pair>
-				<zIndex>IMPROVEMENT_LUMBERMILL</zIndex>
+				<zIndex>IMPROVEMENT_MINE</zIndex>
 				<iValue>6</iValue>
 			</Pair>
 		</aiImprovementCount>
@@ -2010,34 +2005,39 @@
 		</aiImprovementCount>
 	</Entry>
 	<Entry>
-		<zType>GOAL_SIX_MINES</zType>
-		<Name>TEXT_GOAL_SIX_MINES</Name>
+		<zType>GOAL_SIX_LUMBERMILLS</zType>
+		<Name>TEXT_GOAL_SIX_LUMBERMILLS</Name>
 		<iAmbitionClass>7</iAmbitionClass>
-		<iMinTier>1</iMinTier>
-		<iMaxTier>2</iMaxTier>
+		<iMinTier>2</iMinTier>
+		<iMaxTier>3</iMaxTier>
+		<TechPrereq>TECH_FORESTRY</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
-				<zIndex>FAMILYCLASS_CHAMPIONS</zIndex>
+				<zIndex>FAMILYCLASS_ARTISANS</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 		</aiFamilyClassWeight>
 		<aiDesiredWeight>
 			<Pair>
+				<zIndex>TRAIT_TACTICIAN_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
 				<zIndex>TRAIT_BUILDER_ARCHETYPE</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>TRAIT_HERO_ARCHETYPE</zIndex>
+				<zIndex>TRAIT_ZEALOT_ARCHETYPE</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 			<Pair>
-				<zIndex>TRAIT_COMMANDER_ARCHETYPE</zIndex>
+				<zIndex>TRAIT_SCHOLAR_ARCHETYPE</zIndex>
 				<iValue>1000</iValue>
 			</Pair>
 		</aiDesiredWeight>
 		<aiImprovementCount>
 			<Pair>
-				<zIndex>IMPROVEMENT_MINE</zIndex>
+				<zIndex>IMPROVEMENT_LUMBERMILL</zIndex>
 				<iValue>6</iValue>
 			</Pair>
 		</aiImprovementCount>
@@ -3047,8 +3047,8 @@
 		<zType>GOAL_FIVE_DEVELOPING</zType>
 		<Name>TEXT_GOAL_FIVE_DEVELOPING</Name>
 		<iAmbitionClass>10</iAmbitionClass>
-		<iMinTier>3</iMinTier>
-		<iMaxTier>4</iMaxTier>
+		<iMinTier>2</iMinTier>
+		<iMaxTier>3</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_PATRONS</zIndex>
@@ -3096,8 +3096,8 @@
 		<zType>GOAL_FOUR_STRONG</zType>
 		<Name>TEXT_GOAL_FOUR_STRONG</Name>
 		<iAmbitionClass>10</iAmbitionClass>
-		<iMinTier>5</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMinTier>4</iMinTier>
+		<iMaxTier>5</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_PATRONS</zIndex>
@@ -3145,8 +3145,8 @@
 		<zType>GOAL_THREE_LEGENDARY</zType>
 		<Name>TEXT_GOAL_THREE_LEGENDARY</Name>
 		<iAmbitionClass>10</iAmbitionClass>
-		<iMinTier>7</iMinTier>
-		<iMaxTier>8</iMaxTier>
+		<iMinTier>6</iMinTier>
+		<iMaxTier>7</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_PATRONS</zIndex>
@@ -3191,8 +3191,8 @@
 		</aiCultureCount>
 	</Entry>
 	<Entry>
-		<zType>GOAL_FIVE_LEGENDARY</zType>
-		<Name>TEXT_GOAL_FIVE_LEGENDARY</Name>
+		<zType>GOAL_SIX_LEGENDARY</zType>
+		<Name>TEXT_GOAL_SIX_LEGENDARY</Name>
 		<iAmbitionClass>10</iAmbitionClass>
 		<iMinTier>10</iMinTier>
 		<iMaxTier>10</iMaxTier>
@@ -3206,7 +3206,7 @@
 		<aiCultureCount>
 			<Pair>
 				<zIndex>CULTURE_LEGENDARY</zIndex>
-				<iValue>5</iValue>
+				<iValue>6</iValue>
 			</Pair>
 		</aiCultureCount>
 	</Entry>
@@ -3664,11 +3664,55 @@
 		</aiSpecialistCount>
 	</Entry>
 	<Entry>
+		<zType>GOAL_THREE_SPECIALISTS</zType>
+		<Name>TEXT_GOAL_THREE_SPECIALISTS</Name>
+		<iAmbitionClass>12</iAmbitionClass>
+		<iMinTier>1</iMinTier>
+		<iMaxTier>2</iMaxTier>
+		<iSpecialists>10</iSpecialists>
+		<aiFamilyClassWeight>
+			<Pair>
+				<zIndex>FAMILYCLASS_ARTISANS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>FAMILYCLASS_LANDOWNERS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+		</aiFamilyClassWeight>
+		<aiDesiredWeight>
+			<Pair>
+				<zIndex>TRAIT_JUDGE_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_ORATOR_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_SCHOLAR_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_SCHEMER_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_ZEALOT_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_DIPLOMAT_ARCHETYPE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+		</aiDesiredWeight>
+	</Entry>
+	<Entry>
 		<zType>GOAL_10_SPECIALISTS</zType>
 		<Name>TEXT_GOAL_10_SPECIALISTS</Name>
 		<iAmbitionClass>12</iAmbitionClass>
-		<iMinTier>2</iMinTier>
-		<iMaxTier>3</iMaxTier>
+		<iMinTier>3</iMinTier>
+		<iMaxTier>4</iMaxTier>
 		<iSpecialists>10</iSpecialists>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -3711,8 +3755,8 @@
 		<zType>GOAL_20_SPECIALISTS</zType>
 		<Name>TEXT_GOAL_20_SPECIALISTS</Name>
 		<iAmbitionClass>12</iAmbitionClass>
-		<iMinTier>4</iMinTier>
-		<iMaxTier>5</iMaxTier>
+		<iMinTier>5</iMinTier>
+		<iMaxTier>6</iMaxTier>
 		<iSpecialists>20</iSpecialists>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -4540,7 +4584,7 @@
 		<zType>GOAL_SIX_TECHS</zType>
 		<Name>TEXT_GOAL_SIX_TECHS</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>2</iMinTier>
+		<iMinTier>1</iMinTier>
 		<iMaxTier>3</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -4566,7 +4610,7 @@
 		<Name>TEXT_GOAL_EIGHT_TECHS</Name>
 		<iAmbitionClass>16</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>5</iMaxTier>
+		<iMaxTier>6</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_SAGES</zIndex>
@@ -4590,8 +4634,8 @@
 		<zType>GOAL_SCHOLARSHIP_VAULTING</zType>
 		<Name>TEXT_GOAL_SCHOLARSHIP_VAULTING</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_SAGES</zIndex>
@@ -4621,8 +4665,8 @@
 		<zType>GOAL_ARCHITECTURE_JURISPRUDENCE</zType>
 		<Name>TEXT_GOAL_ARCHITECTURE_JURISPRUDENCE</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_STATESMEN</zIndex>
@@ -4652,8 +4696,8 @@
 		<zType>GOAL_COINAGE_FISCAL_POLICY</zType>
 		<Name>TEXT_GOAL_COINAGE_FISCAL_POLICY</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_TRADERS</zIndex>
@@ -4675,8 +4719,8 @@
 		<zType>GOAL_HYDRAULICS_CHAIN_DRIVE</zType>
 		<Name>TEXT_GOAL_HYDRAULICS_CHAIN_DRIVE</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_LANDOWNERS</zIndex>
@@ -4698,8 +4742,8 @@
 		<zType>GOAL_COHORTS_MARTIAL_CODE</zType>
 		<Name>TEXT_GOAL_COHORTS_MARTIAL_CODE</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_CHAMPIONS</zIndex>
@@ -4733,8 +4777,8 @@
 		<zType>GOAL_BODKIN_ARROW_BALLISTICS</zType>
 		<Name>TEXT_GOAL_BODKIN_ARROW_BALLISTICS</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_HUNTERS</zIndex>
@@ -4764,8 +4808,8 @@
 		<zType>GOAL_WINDLASS_LATEEN_SAIL</zType>
 		<Name>TEXT_GOAL_WINDLASS_LATEEN_SAIL</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_TRADERS</zIndex>
@@ -4791,8 +4835,8 @@
 		<zType>GOAL_BARDING_INFANTRY_SQUARE</zType>
 		<Name>TEXT_GOAL_BARDING_INFANTRY_SQUARE</Name>
 		<iAmbitionClass>16</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>7</iMaxTier>
+		<iMinTier>7</iMinTier>
+		<iMaxTier>8</iMaxTier>
 		<aiFamilyClassWeight>
 			<Pair>
 				<zIndex>FAMILYCLASS_RIDERS</zIndex>
@@ -6674,7 +6718,7 @@
 		<Name>TEXT_GOAL_FOUR_BATHS_1</Name>
 		<iAmbitionClass>27</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMaxTier>5</iMaxTier>
 		<TechPrereq>TECH_ARCHITECTURE</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -6715,7 +6759,7 @@
 		<zType>GOAL_FOUR_BATHS_2</zType>
 		<Name>TEXT_GOAL_FOUR_BATHS_2</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>5</iMinTier>
+		<iMinTier>6</iMinTier>
 		<iMaxTier>7</iMaxTier>
 		<TechPrereq>TECH_ARCHITECTURE</TechPrereq>
 		<aiFamilyClassWeight>
@@ -6757,8 +6801,8 @@
 		<zType>GOAL_FOUR_BATHS_3</zType>
 		<Name>TEXT_GOAL_FOUR_BATHS_3</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>8</iMaxTier>
+		<iMinTier>8</iMinTier>
+		<iMaxTier>9</iMaxTier>
 		<TechPrereq>TECH_ARCHITECTURE</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -6799,8 +6843,8 @@
 		<zType>GOAL_FOUR_THEATER_1</zType>
 		<Name>TEXT_GOAL_FOUR_THEATER_1</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>3</iMinTier>
-		<iMaxTier>5</iMaxTier>
+		<iMinTier>2</iMinTier>
+		<iMaxTier>3</iMaxTier>
 		<TechPrereq>TECH_DRAMA</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -6838,7 +6882,7 @@
 		<Name>TEXT_GOAL_FOUR_THEATER_2</Name>
 		<iAmbitionClass>27</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMaxTier>5</iMaxTier>
 		<TechPrereq>TECH_DRAMA</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -6875,7 +6919,7 @@
 		<zType>GOAL_FOUR_THEATER_3</zType>
 		<Name>TEXT_GOAL_FOUR_THEATER_3</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>5</iMinTier>
+		<iMinTier>6</iMinTier>
 		<iMaxTier>7</iMaxTier>
 		<TechPrereq>TECH_DRAMA</TechPrereq>
 		<aiFamilyClassWeight>
@@ -6914,7 +6958,7 @@
 		<Name>TEXT_GOAL_FOUR_MARKET_1</Name>
 		<iAmbitionClass>27</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMaxTier>5</iMaxTier>
 		<TechPrereq>TECH_COINAGE</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -6947,7 +6991,7 @@
 		<zType>GOAL_FOUR_MARKET_2</zType>
 		<Name>TEXT_GOAL_FOUR_MARKET_2</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>5</iMinTier>
+		<iMinTier>6</iMinTier>
 		<iMaxTier>7</iMaxTier>
 		<TechPrereq>TECH_COINAGE</TechPrereq>
 		<aiFamilyClassWeight>
@@ -6981,8 +7025,8 @@
 		<zType>GOAL_FOUR_MARKET_3</zType>
 		<Name>TEXT_GOAL_FOUR_MARKET_3</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>8</iMaxTier>
+		<iMinTier>8</iMinTier>
+		<iMaxTier>9</iMaxTier>
 		<TechPrereq>TECH_COINAGE</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7016,7 +7060,7 @@
 		<Name>TEXT_GOAL_FOUR_LIBRARY_1</Name>
 		<iAmbitionClass>27</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMaxTier>5</iMaxTier>
 		<TechPrereq>TECH_SCHOLARSHIP</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7045,7 +7089,7 @@
 		<zType>GOAL_FOUR_LIBRARY_2</zType>
 		<Name>TEXT_GOAL_FOUR_LIBRARY_2</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>5</iMinTier>
+		<iMinTier>6</iMinTier>
 		<iMaxTier>7</iMaxTier>
 		<TechPrereq>TECH_SCHOLARSHIP</TechPrereq>
 		<aiFamilyClassWeight>
@@ -7075,8 +7119,8 @@
 		<zType>GOAL_FOUR_LIBRARY_3</zType>
 		<Name>TEXT_GOAL_FOUR_LIBRARY_3</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>8</iMaxTier>
+		<iMinTier>8</iMinTier>
+		<iMaxTier>9</iMaxTier>
 		<TechPrereq>TECH_SCHOLARSHIP</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7106,7 +7150,7 @@
 		<Name>TEXT_GOAL_FOUR_COURTHOUSE_1</Name>
 		<iAmbitionClass>27</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMaxTier>5</iMaxTier>
 		<TechPrereq>TECH_CITIZENSHIP</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7135,7 +7179,7 @@
 		<zType>GOAL_FOUR_COURTHOUSE_2</zType>
 		<Name>TEXT_GOAL_FOUR_COURTHOUSE_2</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>5</iMinTier>
+		<iMinTier>6</iMinTier>
 		<iMaxTier>7</iMaxTier>
 		<TechPrereq>TECH_CITIZENSHIP</TechPrereq>
 		<aiFamilyClassWeight>
@@ -7165,8 +7209,8 @@
 		<zType>GOAL_FOUR_COURTHOUSE_3</zType>
 		<Name>TEXT_GOAL_FOUR_COURTHOUSE_3</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>6</iMinTier>
-		<iMaxTier>8</iMaxTier>
+		<iMinTier>8</iMinTier>
+		<iMaxTier>9</iMaxTier>
 		<TechPrereq>TECH_CITIZENSHIP</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7195,8 +7239,8 @@
 		<zType>GOAL_FOUR_GARRISON_1</zType>
 		<Name>TEXT_GOAL_FOUR_GARRISON_1</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>3</iMinTier>
-		<iMaxTier>5</iMaxTier>
+		<iMinTier>2</iMinTier>
+		<iMaxTier>3</iMaxTier>
 		<TechPrereq>TECH_SOVEREIGNTY</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7238,7 +7282,7 @@
 		<Name>TEXT_GOAL_FOUR_GARRISON_2</Name>
 		<iAmbitionClass>27</iAmbitionClass>
 		<iMinTier>4</iMinTier>
-		<iMaxTier>6</iMaxTier>
+		<iMaxTier>5</iMaxTier>
 		<TechPrereq>TECH_SOVEREIGNTY</TechPrereq>
 		<aiFamilyClassWeight>
 			<Pair>
@@ -7279,7 +7323,7 @@
 		<zType>GOAL_FOUR_GARRISON_3</zType>
 		<Name>TEXT_GOAL_FOUR_GARRISON_3</Name>
 		<iAmbitionClass>27</iAmbitionClass>
-		<iMinTier>5</iMinTier>
+		<iMinTier>6</iMinTier>
 		<iMaxTier>7</iMaxTier>
 		<TechPrereq>TECH_SOVEREIGNTY</TechPrereq>
 		<aiFamilyClassWeight>

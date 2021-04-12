@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
 <Root>
 	<Entry>
 		<zType/>
@@ -656,6 +656,7 @@
 		<bNoPopup>1</bNoPopup>
 		<SubjectCharacter>SUBJECT_LEADER_US</SubjectCharacter>
 		<SubjectTarget>SUBJECT_TRIBE_PEACE</SubjectTarget>
+		<SubjectTargetEnabled>SUBJECT_TRIBE_NO_ALLIANCE</SubjectTargetEnabled>
 		<aiResultDie>
 			<Pair>
 				<zIndex>MISSIONRESULT_TRIBE_BREAK_PEACE_EVENT</zIndex>
@@ -671,7 +672,6 @@
 		<bNoPopup>1</bNoPopup>
 		<SubjectCharacter>SUBJECT_LEADER_US</SubjectCharacter>
 		<SubjectTarget>SUBJECT_TRIBE_ALLIANCE</SubjectTarget>
-		<SubjectTargetEnabled>SUBJECT_TRIBE_NO_ALLIANCE</SubjectTargetEnabled>
 		<aiResultDie>
 			<Pair>
 				<zIndex>MISSIONRESULT_TRIBE_END_ALLIANCE_EVENT</zIndex>
@@ -1394,6 +1394,40 @@
 		</aiYieldCostOpinion>
 	</Entry>
 	<Entry>
+		<zType>MISSION_DEMAND_TRIBUTE</zType>
+		<Name>TEXT_MISSION_DEMAND_TRIBUTE</Name>
+		<NameTarget>TEXT_MISSION_DEMAND_TRIBUTE_TARGET</NameTarget>
+		<NameCharacter>TEXT_MISSION_DEMAND_TRIBUTE_CHARACTER</NameCharacter>
+		<zIcon>MISSION_DEMAND_TRIBUTE</zIcon>
+		<iXP>20</iXP>
+		<iMissionTurns>3</iMissionTurns>
+		<bVisibleCharacter>1</bVisibleCharacter>
+		<bVisibleTarget>1</bVisibleTarget>
+		<bNoPopup>1</bNoPopup>
+		<bCharacterNoEvents>1</bCharacterNoEvents>
+		<bCharacterUs>1</bCharacterUs>
+		<SubjectCharacter>SUBJECT_AMBASSADOR</SubjectCharacter>
+		<SubjectTarget>SUBJECT_PLAYER_TRUCE</SubjectTarget>
+		<aiResultDie>
+			<Pair>
+				<zIndex>MISSIONRESULT_DEMAND_TRIBUTE_EVENT</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+		</aiResultDie>
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_ORDERS</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldCost>
+		<aiYieldCostOpinion>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCostOpinion>
+	</Entry>
+	<Entry>
 		<zType>MISSION_TRADE_MISSION</zType>
 		<Name>TEXT_MISSION_TRADE_MISSION</Name>
 		<NameTarget>TEXT_MISSION_TRADE_MISSION_TARGET</NameTarget>
@@ -1830,12 +1864,13 @@
 		<Name>TEXT_MISSION_TRIBE_PLAYER_WAR</Name>
 		<NameTarget>TEXT_MISSION_TRIBE_PLAYER_WAR_TARGET</NameTarget>
 		<zIcon>MISSION_PLAYER_TRIBE_WAR</zIcon>
-		<iMissionTurns>1</iMissionTurns>
+		<iMissionTurns>2</iMissionTurns>
 		<bVisibleCharacter>1</bVisibleCharacter>
 		<bNoPopup>1</bNoPopup>
 		<SubjectCharacter>SUBJECT_LEADER_TRIBE_PEACE_OR_TRUCE</SubjectCharacter>
 		<SubjectCharacterEnabled>SUBJECT_TRIBE_MIN_PLEASED</SubjectCharacterEnabled>
 		<SubjectTarget>SUBJECT_PLAYER_THEM_HUMAN_OR_AI</SubjectTarget>
+		<SubjectTargetStart>SUBJECT_PLAYER_DIFF_TEAM</SubjectTargetStart>
 		<SubjectRelationStart>SUBJECTRELATION_TRIBE_PEACE_OR_TRUCE</SubjectRelationStart>
 		<aiResultDie>
 			<Pair>
@@ -1859,12 +1894,12 @@
 		<Name>TEXT_MISSION_PLAYER_TRIBE_WAR</Name>
 		<NameTarget>TEXT_MISSION_PLAYER_TRIBE_WAR_TARGET</NameTarget>
 		<zIcon>MISSION_PLAYER_TRIBE_WAR</zIcon>
-		<iMissionTurns>1</iMissionTurns>
+		<iMissionTurns>2</iMissionTurns>
 		<bVisibleCharacter>1</bVisibleCharacter>
 		<bNoPopup>1</bNoPopup>
 		<SubjectCharacter>SUBJECT_LEADER_PEACE_OR_TRUCE</SubjectCharacter>
 		<SubjectCharacterEnabled>SUBJECT_PLAYER_MIN_PLEASED</SubjectCharacterEnabled>
-		<SubjectTarget>SUBJECT_TRIBE</SubjectTarget>
+		<SubjectTarget>SUBJECT_TRIBE_NO_ALLIANCE</SubjectTarget>
 		<SubjectRelationStart>SUBJECTRELATION_TRIBE_PEACE_OR_TRUCE</SubjectRelationStart>
 		<aiResultDie>
 			<Pair>
@@ -1888,13 +1923,14 @@
 		<Name>TEXT_MISSION_PLAYER_PLAYER_WAR</Name>
 		<NameTarget>TEXT_MISSION_PLAYER_PLAYER_WAR_TARGET</NameTarget>
 		<zIcon>MISSION_PLAYER_BREAK_PEACE</zIcon>
-		<iMissionTurns>1</iMissionTurns>
+		<iMissionTurns>2</iMissionTurns>
 		<bVisibleCharacter>1</bVisibleCharacter>
 		<bNoPopup>1</bNoPopup>
 		<TechPrereq>TECH_POLIS</TechPrereq>
 		<SubjectCharacter>SUBJECT_LEADER_PEACE_OR_TRUCE</SubjectCharacter>
-		<SubjectCharacterEnabled>SUBJECT_PLAYER_MIN_PLEASED</SubjectCharacterEnabled>
+		<SubjectCharacterEnabled>SUBJECT_PLAYER_MIN_FRIENDLY</SubjectCharacterEnabled>
 		<SubjectTarget>SUBJECT_PLAYER_THEM_HUMAN_OR_AI</SubjectTarget>
+		<SubjectTargetStart>SUBJECT_PLAYER_DIFF_TEAM</SubjectTargetStart>
 		<SubjectRelationStart>SUBJECTRELATION_MISSION_PLAYER_PLAYER_WAR</SubjectRelationStart>
 		<SubjectRelationEnabled>SUBJECTRELATION_MIN_CONFLICT_TURNS</SubjectRelationEnabled>
 		<aiResultDie>

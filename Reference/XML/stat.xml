@@ -15,7 +15,7 @@
 	</Entry>
 	<Entry>
 		<zType>STAT_TRIBE_CONTACTED</zType>
-		<zName>Tribal Contacted</zName>
+		<zName>Tribe Contacted</zName>
 	</Entry>
 	<Entry>
 		<zType>STAT_TRIBE_CLEARED</zType>
@@ -32,6 +32,14 @@
 	<Entry>
 		<zType>STAT_TRIBE_CONVERSION</zType>
 		<zName>Tribal Conversion</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_MERCENARIES_RECRUITED</zType>
+		<zName>Mercenaries Recruited</zName>
+	</Entry>
+	<Entry>
+		<zType>STAT_MERCENARIES_HIRED</zType>
+		<zName>Mercenaries Hired</zName>
 	</Entry>
 	<Entry>
 		<zType>STAT_TEAM_CONTACTED</zType>

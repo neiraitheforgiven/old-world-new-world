@@ -163,8 +163,8 @@
 		<English>Elites</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EFFECTPLAYER_LAW_ISOLATIONISM</zType>
-		<English>Isolationism</English>
+		<zType>TEXT_EFFECTPLAYER_LAW_AUTARKY</zType>
+		<English>Autarky</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EFFECTPLAYER_LAW_TRADE_LEAGUE</zType>

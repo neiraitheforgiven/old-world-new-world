@@ -31,16 +31,16 @@
 		</aiImprovementClassModifier>
 	</Entry>
 	<Entry>
-		<zType>SPECIALIST_WOODCUTTER</zType>
-		<Name>TEXT_SPECIALIST_WOODCUTTER</Name>
-		<zIconName>SPECIALIST_WOODCUTTER</zIconName>
-		<Class>SPECIALISTCLASS_WOODCUTTER</Class>
+		<zType>SPECIALIST_MINER</zType>
+		<Name>TEXT_SPECIALIST_MINER</Name>
+		<zIconName>SPECIALIST_MINER</zIconName>
+		<Class>SPECIALISTCLASS_MINER</Class>
 		<iCivics>40</iCivics>
-		<EffectCity>EFFECTCITY_SPECIALIST_WOODCUTTER</EffectCity>
+		<EffectCity>EFFECTCITY_SPECIALIST_MINER</EffectCity>
 		<EffectCityExtra>EFFECTCITY_SPECIALIST_RURAL</EffectCityExtra>
 		<aiImprovementClassModifier>
 			<Pair>
-				<zIndex>IMPROVEMENTCLASS_LUMBERMILL</zIndex>
+				<zIndex>IMPROVEMENTCLASS_MINE</zIndex>
 				<iValue>50</iValue>
 			</Pair>
 		</aiImprovementClassModifier>
@@ -61,16 +61,16 @@
 		</aiImprovementClassModifier>
 	</Entry>
 	<Entry>
-		<zType>SPECIALIST_MINER</zType>
-		<Name>TEXT_SPECIALIST_MINER</Name>
-		<zIconName>SPECIALIST_MINER</zIconName>
-		<Class>SPECIALISTCLASS_MINER</Class>
+		<zType>SPECIALIST_WOODCUTTER</zType>
+		<Name>TEXT_SPECIALIST_WOODCUTTER</Name>
+		<zIconName>SPECIALIST_WOODCUTTER</zIconName>
+		<Class>SPECIALISTCLASS_WOODCUTTER</Class>
 		<iCivics>40</iCivics>
-		<EffectCity>EFFECTCITY_SPECIALIST_MINER</EffectCity>
+		<EffectCity>EFFECTCITY_SPECIALIST_WOODCUTTER</EffectCity>
 		<EffectCityExtra>EFFECTCITY_SPECIALIST_RURAL</EffectCityExtra>
 		<aiImprovementClassModifier>
 			<Pair>
-				<zIndex>IMPROVEMENTCLASS_MINE</zIndex>
+				<zIndex>IMPROVEMENTCLASS_LUMBERMILL</zIndex>
 				<iValue>50</iValue>
 			</Pair>
 		</aiImprovementClassModifier>

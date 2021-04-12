@@ -615,7 +615,7 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_PERSONAL_RELIGION_TITLE</zType>
-		<English>Convert Religion?</English>
+		<English>Growing Religion</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_AMBITION_FINISHED_EPICS_TITLE</zType>
@@ -716,6 +716,152 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 	<Entry>
 		<zType>TEXT_EVENTSTORY_LEADER_LOVED_LOVE_SPREADING_SIX_TITLE</zType>
 		<English>Love(?) is in the air</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SACRIFICE_TITLE</zType>
+		<English>intercessional Sacrifice</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_RELIGION_REJECTED_TITLE</zType>
+		<English>Intercessional Conversion</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_FEAST_TITLE</zType>
+		<English>Intercessional Feast</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_YOUNG_BOND_TITLE</zType>
+		<English>Intercessional Bond</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_RIVALS_TITLE</zType>
+		<English>Intercessional Rivals</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_ELOPEMENT_TITLE</zType>
+		<English>Intercessional Elopement</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_NEW_LOVE_TITLE</zType>
+		<English>Intercessional Romance</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_FAMILY_UNITED_TITLE</zType>
+		<English>Intercessional Deception</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_DUEL_TITLE</zType>
+		<English>Intercessional Duel</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_GREED_TITLE</zType>
+		<English>Intercessional Greed</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_LOYALTY_TITLE</zType>
+		<English>Intercessional Loyalty</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_ADOPTED_SUCCESSOR_TITLE</zType>
+		<English>Adopted Successor</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_RIVAL_SUCCESSORS_TITLE</zType>
+		<English>Rival Successors</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_COMPULSION_TITLE</zType>
+		<English>Intercessional Compulsion</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_DEBATE_TITLE</zType>
+		<English>Intercessional Debate</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_REPLACEMENT_TITLE</zType>
+		<English>Intercessional Replacement</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_DONATION_TITLE</zType>
+		<English>Intercessional Donation</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_TRUCE_TITLE</zType>
+		<English>Intercessional Truce</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_SUSPICION_TITLE</zType>
+		<English>Intercessional Suspicion  </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CHILDHOOD_FRIENDS_TITLE</zType>
+		<English>Childhood Friends</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_CONFUSION_TITLE</zType>
+		<English>Intercessional Confusion</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_PARRICIDE_TITLE</zType>
+		<English>Intercessional Parricide</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTERCESSION_EXILE_TITLE</zType>
+		<English>Intercessional Exile</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AMBITION_FINISHED_SIX_URBAN_IMPROVEMENTS_TITLE</zType>
+		<English>The Cities Take Shape</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_THE_FINAL_FAVOR_PLAYER_TITLE</zType>
+		<English>The Final Favor</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_THE_FINAL_FAVOR_PLAYER_HEIR_TITLE</zType>
+		<English>The Final Favor</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CLEARING_FAMILY_DEBT_TITLE</zType>
+		<English>Clearing {G0:His:Her} Debt</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CLEARING_RELIGION_DEBT_TITLE</zType>
+		<English>Clearing {G0:His:Her} Debt</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_SUDDEN_SAVIOUR_TITLE</zType>
+		<English>Sudden Savior</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_WOUNDED_GENERAL_TITLE</zType>
+		<English>Wounded General</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FLEE_THE_FIELD_TITLE</zType>
+		<English>Flee the Field</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_INTO_THE_MIST_TITLE</zType>
+		<English>Into the Mist</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_A_WHOLE_NEW_WORLD_TITLE</zType>
+		<English>A Whole New World</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_A_SHORT_MARRIAGE_TITLE</zType>
+		<English>Three Weeks</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_ELOPER_CAPTURED</zType>
+		<English>The message is short, but alarming. While eloping, {CHARACTER-0} and {CHARACTER-1} have been captured by {PLAYER-1}. The {PLAYER-1,1} are offering to return the two hostages for payment. 
+
+Will you accept? </English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_SUDDEN_RETURN_TITLE</zType>
+		<English>Sudden Return</English>
 	</Entry>
 	<Entry beginGroup="Exploration">
 		<zType>TEXT_EVENTSTORY_RUINS_SURVIVORS_TITLE</zType>
@@ -1528,6 +1674,10 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 	<Entry>
 		<zType>TEXT_EVENTSTORY_PLAYER_WAR_OFFER_TRAIT_TITLE</zType>
 		<English>Agitated Nation</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_TITLE</zType>
+		<English>Demand Tribute</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TRADE_MISSION_TITLE</zType>
@@ -2437,6 +2587,42 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 		<zType>TEXT_EVENTSTORY_TRIBE_ELIMINATED_THRACIANS_DIEGYLIS_RECRUIT_TITLE</zType>
 		<English>Diegylis</English>
 	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HONORED_ENEMY_TITLE</zType>
+		<English>Honored Enemy</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_GENERAL_DUEL_TITLE</zType>
+		<English>Battlefield Duel</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HEROIC_STAND_TITLE</zType>
+		<English>Heroic Stand</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_OWN_SWORD_TITLE</zType>
+		<English>By {G0:His:Her} own Sword</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AMBUSHED_GENERAL_TITLE</zType>
+		<English>Ambushed General</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_LOVER_LOST_TITLE</zType>
+		<English>Lover Lost</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CEASE_FIRE_TRAGEDY_TITLE</zType>
+		<English>Cease Fire Tragedy</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_MUTINY_IN_THE_RANKS_TITLE</zType>
+		<English>Mutiny in the Ranks</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TRAPPED_GENERAL_TITLE</zType>
+		<English>Trapped General</English>
+	</Entry>
 	<Entry beginGroup="Family">
 		<zType>TEXT_EVENTSTORY_FAMILY_GIFT_TITLE</zType>
 		<English>A Kind Gesture</English>
@@ -2483,7 +2669,7 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DEMAND_LUXURY_TITLE</zType>
-		<English>[DEMAND LUXURY]</English>
+		<English>A Luxurious Demand</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_ABDUCTING_THE_HEIR_TITLE</zType>
@@ -4742,8 +4928,8 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 		<English>A Matter of Incest</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_PLOTTING_COURTIERS_TITLE</zType>
-		<English>Plotting Courtiers</English>
+		<zType>TEXT_EVENTSTORY_PLOTTING_NOBLES_TITLE</zType>
+		<English>Plotting Nobles</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_BEE_OF_BUMBLE_TITLE</zType>
@@ -5078,27 +5264,7 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 		<English>Recognition of Lover</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_FRIENDLY_TITLE</zType>
-		<English>An Assignment</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_PLEASED_TITLE</zType>
-		<English>An Assignment</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_CAUTIOUS_TITLE</zType>
-		<English>An Assignment</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_UPSET_TITLE</zType>
-		<English>An Assignment</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_ANGRY_TITLE</zType>
-		<English>An Assignment</English>
-	</Entry>
-	<Entry>
-		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_FURIOUS_TITLE</zType>
+		<zType>TEXT_EVENTSTORY_STUDY_ASSIGNMENT_TITLE</zType>
 		<English>An Assignment</English>
 	</Entry>
 	<Entry>
@@ -5688,6 +5854,62 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 	<Entry>
 		<zType>TEXT_EVENTSTORY_INSPIRED_BY_COURT_TITLE</zType>
 		<English>Inspired by Court</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_DEBAUCHED_PARTY_TITLE</zType>
+		<English>A Wild Night</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SPOILED_WINE_TITLE</zType>
+		<English>Only the Best</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SPOILED_WINE_TWO_TITLE</zType>
+		<English>Only the Best</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_ONE_TITLE</zType>
+		<English>Let Sleeping Rulers Lie</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_TWO_TITLE</zType>
+		<English>Let Sleeping Rulers Lie</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_THREE_TITLE</zType>
+		<English>Let Sleeping Rulers Lie</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_BENEFICIAL_FLAWS_SLOTHFUL_FOUR_TITLE</zType>
+		<English>Let Sleeping Rulers Lie</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_COMPANIONSHIP_TITLE</zType>
+		<English>Companionship</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_YOU_OWE_ME_FAMILY_TITLE</zType>
+		<English>You Owe Me</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_YOU_OWE_ME_RELIGION_TITLE</zType>
+		<English>You Owe Me</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_QUID_PRO_QUO_TITLE</zType>
+		<English>Quid Pro Quo</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FAUX_PAS_REGAL_TITLE</zType>
+		<English>A Regal Faux Pas</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FAUX_PAS_MARTIAL_TITLE</zType>
+		<English>A Martial Faux Pas</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_FAUX_PAS_COVERT_TITLE</zType>
+		<English>A Covert Faux Pas</English>
 	</Entry>
 	<Entry beginGroup="City">
 		<zType>TEXT_EVENTSTORY_HAPPINESS_IMMIGRANTS_TITLE</zType>
@@ -6546,8 +6768,8 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 		<English>link(LAW_GUILDS) or link(LAW_ELITES)</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_ISOLATIONISM_TRADE_LEAGUE_TITLE</zType>
-		<English>link(LAW_ISOLATIONISM) or link(LAW_TRADE_LEAGUE)</English>
+		<zType>TEXT_EVENTSTORY_AUTARKY_TRADE_LEAGUE_TITLE</zType>
+		<English>link(LAW_AUTARKY) or link(LAW_TRADE_LEAGUE)</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_COIN_DEBASEMENT_MONETARY_REFORM_TITLE</zType>
@@ -8073,6 +8295,38 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 		<zType>TEXT_EVENTSTORY_TREACHERY_STEAL_AWAY_TITLE</zType>
 		<English>Steal Away</English>
 	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HIGH_SYNOD_MONEY_TITLE</zType>
+		<English>Funds for The High Synod</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_HIGH_SYNOD_PEACE_AMONG_THE_FAITHFUL_TITLE</zType>
+		<English>Peace Among The Faithful</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_EVENTSTORY_ORIGINAL_OWNER_UPSET_TITLE</zType>
+		<English>Locals in Uproar</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_EVENTSTORY_ORIGINAL_OWNER_PROSPERING_TITLE</zType>
+		<English>Intercultural Celebration</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_TRAINING_IMPROVEMENT_TITLE</zType>
+		<English>Tutorial: Training</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_TRADE_NETWORK_TITLE</zType>
+		<English>Tutorial: Trade Network</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_MERCENARIES_TITLE</zType>
+		<English>Tutorial: Hire Mercenaries</English>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_MERCENARIES_RECRUIT_TITLE</zType>
+		<English>Tutorial: Recruit Mercenaries</English>
+	</Entry>
 	<Entry beginGroup="Tutorial">
 		<zType>TEXT_EVENTSTORY_VICTORY_POINTS_TITLE</zType>
 		<English>POINTS VICTORY!</English>
@@ -8222,8 +8476,8 @@ Your heir {CHARACTER-2} is furious and demands the mans head, but {CHARACTER-SHO
 		<English>Tutorial: Marriage</English>
 	</Entry>
 	<Entry>
-		<zType>TEXT_EVENTSTORY_TUTORIAL_PROMOTION_TITLE</zType>
-		<English>Take the Field</English>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_GENERAL_TITLE</zType>
+		<English>Tutorial: Take the Field</English>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_AXEMAN_SELECTED_TITLE</zType>
